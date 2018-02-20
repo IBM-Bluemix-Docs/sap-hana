@@ -39,10 +39,10 @@ SAP HANA on IBM Cloud
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    [Support](/docs/infrastructure/sap-netweaver/sap-support.html)
+    [Support](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-support.html)
 
     {: .topicgroup}
     FAQs
-        [FAQs: SAP on IBM Cloud](/docs/infrastructure/sap-netweaver/sap-faqs.html#faqs)
+        [FAQs: SAP on IBM Cloud](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-faqs.html#faqs)
         
 {: .navgroup-end}
