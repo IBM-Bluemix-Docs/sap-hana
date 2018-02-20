@@ -30,7 +30,7 @@ Table 1. Managing your environment overview
 | 1 | [Ordering storage](/docs/infrastructure/sap-hana/hana-order-storage.html) |
 | 2 | [Securing your environment](/docs/infrastructure/sap-hana/hana-secure-environment.html) |
 | 3 | [Installing guest OS on the VMware ESX hypervisor](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html) |
-| 4 | [Downloading and installing SAP software and applications](/docs/infrastructure/sap-hana/hana-installing-SAP-landscaping.html) |
+| 4 | [Downloading and installing SAP software and applications](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html) |
 | 5 | [Testing connectivity to your {{site.data.keyword.cloud_notm}} data center](/docs/infrastructure/sap-hana/hana-testing-connectivity.html) |
 
 ## Next Steps
