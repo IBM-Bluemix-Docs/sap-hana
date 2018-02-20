@@ -26,7 +26,7 @@ The guidance for setting up your SAP HANA {{site.data.keyword.baremetal_long}}, 
 
 Use the following steps to order your {{site.data.keyword.baremetal_short}}. Additional information can be found under [Configuring your bare metal server](https://console.bluemix.net/docs/bare-metal/configuring.html#configuring-your-bare-metal-server) using your unique credentials.
 
-1. Log in to the [{{site.data.keyword.cloud_notm}} infrastructure customer portal](https://control.softlayer.com).
+1. Log in to the [{{site.data.keyword.cloud_notm}} infrastructure customer portal](https://control.softlayer.com) with your unique credentials.
 2. Click the **Devices** icon on the Account Summary page.
 3. Click the **Monthly** link under {{site.data.keyword.baremetal_short}} on the Devices page. The Server List dialog box appears.
 4. The SAP Certified Servers are at the top of the list. Click the hyperlink under **STARTING PRICE PER MONTH** to select the appropriate server and be taken to the Configure/Order page. SAP HANA-certified servers are identified with an **-H** under CPU Model.  
