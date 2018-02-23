@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-02-06"
+lastupdated: "2018-02-23"
 
 
 ---
@@ -52,15 +52,6 @@ Table 1. SAP HANA 512 GB RAM configuration
 |   | `/dev/sdc` |   | 1851 |
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
 
-| Filesystem | Size | Used | Available | Use % | Mounted on |
-| --- | --- | --- | --- | --- | --- |
-| `/dev/sda2` | 48 G | 1.9 G | 44 G | 5% | `/` |
-| `/dev/sda1` | 477 M | 41 M | 411 M | 9% | `/boot` |
-| `/dev/sdc1` | 1.7 T | 69 M | 1.6 T | 1% | `/hana/data` |
-| `/dev/sdb1` | 542 G | 70 M | 514 G | 1% | `/hana/log` |
-| `/dev/sda6` | 633 G | 70 M | 601 G | 1% | `/hana/shared` |
-| `/dev/sda3` | 48 G | 52 M | 46 G | 1% | `/usr/sap` |
-
 
 ## 1024 GB (1 TB) SAP HANA memory
 {: #1024_GB_memory}
@@ -89,13 +80,6 @@ Table 2. SAP HANA 1024 GB (1 TB)  RAM configuration
 | --- | --- | --- | --- |
 |   | `/dev/sdc` |   | 3200 |
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
-
-| Filesystem | Size | Used | Available | Use % | Mounted on |
-| --- | --- | --- | --- | --- | --- |
-| `/dev/sda1` | 239 M | 41 M | 186 M | 18% | `/boot` |
-| `/dev/sdc1` | 2.9 T | 72 M | 2.8 T | 1% | `/hana/data` |
-| `/dev/sdb2` | 1.2 T | 71 M | 1.1 T | 1% | `/hana/log` |
-| `/dev/sda1` | 1.1 T | 71 M | 1004 G | 1% | `/hana/shared` |
 
 
 ## 2048 GB (2 TB) SAP HANA memory
@@ -127,13 +111,6 @@ Table 3. SAP HANA 2048 GB (2 TB) RAM configuration
 |   | `/dev/sdc` |   | 7200 |
 |   | `/dev/sdc1` | `/hana/data` | `Rest` |
 
-| Filesystem | Size | Used | Available | Use % | Mounted on |
-| --- | --- | --- | --- | --- | --- |
-| `/dev/sda1` | 239 M | 41 M | 186 M | 18% | `/boot` |
-| `/dev/sdc1` | 6.5 T | 53 M | 6.2 T | 1% | `/hana/data` |
-| `/dev/sdb2` | 2.3 T | 73 M | 2.2 T | 1% | `/hana/log` |
-| `/dev/sdb1` | 2.1 T | 73 M | 2.0 T | 1% | `/hana/shared` |
-
 
 ## 4096 GB (4 TB) SAP HANA memory 
 {: #4096_GB_memory}
@@ -163,15 +140,6 @@ Table 4. SAP HANA 4096 GB (4 TB) RAM configuration
 |   | `/dev/sdc` |   | 4100 |
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
 
-| Filesystem | Size | Used | Available | Use % | Mounted on |
-| --- | --- | --- | --- | --- | --- |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-
 
 ## 8192 GB (8 TB) SAP HANA memory
 {: #8192_GB_memory}
@@ -199,14 +167,6 @@ Table 5. SAP HANA 8192 GB (8 TB) RAM configuration
 | --- | --- | --- | --- |
 |   | `/dev/sdc` |   | 7200 |
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
-
-| Filesystem | Size | Used | Available | Use % | Mounted on |
-| --- | --- | --- | --- | --- | --- |
-| `/dev/sda2` | 48 G | 1.9 G | 44 G | 5% | `/` |
-| `/dev/sda1` | 239 M | 41 M | 186 M | 18% | `/boot` |
-| `/dev/sdc1` | 6.5 T | 53 M | 6.2 T | 1% | `/hana/data` |
-| `/dev/sdb2` | 2.3 T | 73 M | 2.2 T | 1% | `/hana/log` |
-| `/dev/sdb1` | 2.1 T | 73 M | 2.0 T | 1% | `/hana/shared` |
 
 ## Next Steps
 
