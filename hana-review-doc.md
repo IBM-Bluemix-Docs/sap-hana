@@ -26,8 +26,7 @@ Review relevant documentation to help you determine any prerequisites for the SA
   * SAP release notes, which can be found in the application help of the relevant SAP product documentation on the [SAP Help Portal](https://help.sap.com/); requires an SAP S-user ID.
   * [SAP Product Availability Matrix (PAM)](https://apps.support.sap.com/sap/support/pam); requires an SAP S-user ID.
   * [SAP Notes](https://support.sap.com/notes); requires an SAP S-user ID.
-  * [SAP NetWeaver on {{site.data.keyword.cloud_notm}}](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-index.html#getting-started)
-  * [{{site.data.keyword.cloud_notm}} for SAP Applications Reference Architecture](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-index.html#getting-started)
+  * [SAP NetWeaver on {{site.data.keyword.cloud_notm}}](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-index.html#getting-started) 
   * Third-party documentation
   
 ## Next Steps
