@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-01-31"
+lastupdated: "2018-03-02"
 
 
 ---
@@ -45,7 +45,6 @@ Table 1 contains steps to help you get your {{site.data.keyword.cloud_notm}} inf
    <li><a href="https://www.sap.com/products/hana/implementation/resources.html">SAP HANA Installation Guide</a>; download the installation guide</li> 
    <li><a href="https://www.sapappsdevelopmentpartnercenter.com/en/faq/program-faqs_2/how-to-receive-an-s-user-to-access-the-s_77/">How to set up an SAP S-user ID</a></li>
    <li><a href="https://help.sap.com/hana/SAP_HANA_Administration_Guide_en.pdf">SAP HANA Administration Guide</a></li>
-   <li><a href="https://service.sap.com/instguides">SAP Installation Guide</a>; requires an SAP S-user ID</li>
    <li><a href="https://support.sap.com">SAP Notes</a>; requires an SAP S-user ID</li>
    <tr>
    <td>2. Sign up for IBM Cloud</td>
