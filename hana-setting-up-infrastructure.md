@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2010-03-02"
+lastupdated: "2010-03-05"
 
 
 ---
@@ -60,5 +60,5 @@ A confirmation email with the subject Your _{{site.data.keyword.cloud_notm}} Ord
 
 ## Next Steps
 
-You are now ready to begin Managing your {{site.data.keyword.baremetal_short}}. See [Managing your SAP HANA environment](docs/infrastructure/sap-hana/hana-manage-environment.html) for your next steps.
+You are now ready to begin Managing your {{site.data.keyword.baremetal_short}}. See [Managing you SAP HANA environment](/docs/infrastructure/sap-hana/hana-manage-environment.html).
 
