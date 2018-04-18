@@ -1,0 +1,48 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="sap-hana" audience="compute" href="/docs/infrastructure/sap-hana/hana-index.html"}
+SAP HANA on IBM Cloud
+
+    {: .navgroup id="learn"}
+    hana-index.md
+    hana-about.md
+    hana-general-iaas-concepts.md
+    hana-byol.md
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    {: .topicgroup}
+    Planificación
+        hana-planning-your-system-landscape.md
+        hana-considerations.md
+        hana-get-credentials.md
+        hana-review-doc.md
+        hana-determine-apps.md
+        hana-size-server.md
+        hana-determine-configuration.md
+
+    {: .topicgroup}
+    Suministro
+        hana-provision-environment.md
+        hana-requesting-setting-up-VPN.md
+        hana-setting-up-infrastructure.md
+
+    {: .topicgroup}
+    Gestión
+        hana-manage-environment.md
+        hana-order-storage.md
+        hana-secure-environment.md
+        hana-installing-guest-operating-system-VMware-deployments.md
+        hana-installing-SAP-landscape.md
+        hana-testing-connectivity.md
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    [Soporte](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-support.html)
+
+    {: .topicgroup}
+    Preguntas más frecuentes
+        [Preguntas más frecuentes: SAP on IBM Cloud](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-faqs.html#faqs)
+        
+{: .navgroup-end}
