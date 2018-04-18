@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-04-18"
 
 
 ---
@@ -44,11 +44,11 @@ In addition to the local storage, you might require more external storage to per
 
 For external storage, it's important to calculate your project requirements before deciding on a storage solution. If you need to restore and SAP HANA system, then the IOPS of your storage have a significant influence on your restore window. Backup windows are not as critical with SAP HANA since all backups are online backups no matter how you configure SAP HANA.
 
-For example, using {{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}}, you can calculate for an approximate 12 TB restore of SAP HANA at a maximum speed. You must create three physical storage devices (block storage iSCSI LUNs) because the maximum size per device is 4 TB. You can create a stripe over these three devices with the Linux Logical Volume Manager and create one logical device of 12 TB. 
+For example, using {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, you can calculate for an approximate 12 TB restore of SAP HANA at a maximum speed. You must create three physical storage devices (block storage iSCSI LUNs) because the maximum size per device is 4 TB. You can create a stripe over these three devices with the Linux Logical Volume Manager and create one logical device of 12 TB. 
 
 The 12 TB allows you 3x10 IOPS/GB, which is a total of 122,880 IOPS/GB at 16 KB. This gives you a restore time of 1.875 GB per second, or a total restore time of below 2 hours. Since the measurement for the IOPS is taken at a 50/50 distribution of read and write, you can consider the numbers as a lower boundary of restore performance. It is advisable to perform backup and restore tests if you rely on a certain restore window.
 
-Both {{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}, or NAS can server as either backup space or as storage for additional software components that are installed on your server. {{site.data.keyword.cloud_notm}} Storage and NSA cannot, however, be used as storage for SAP HANA because these options do not fulfill the KPI criteria.
+Both {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}, or NAS can server as either backup space or as storage for additional software components that are installed on your server. {{site.data.keyword.cloud_notm}} Storage and NSA cannot, however, be used as storage for SAP HANA because these options do not fulfill the KPI criteria.
 
 For more information, see [Getting started with {{site.data.keyword.blockstorageshort}}](https://console.bluemix.net/docs/infrastructure/BlockStorage/index.html#getting-started-with-block-storage) and [Getting started with {{site.data.keyword.filestorage_full_notm}}](https://console.bluemix.net/docs/infrastructure/FileStorage/index.html#getting-started-with-file-storage).
 
