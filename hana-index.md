@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-02"
+lastupdated: "2018-04-20"
 
 
 ---
@@ -35,7 +35,7 @@ Table 1 contains steps to help you get your {{site.data.keyword.cloud_notm}} inf
    </THEAD>
    <TBODY>
    <tr>
-   <td>1. Read IBM Cloud and SAP content that is related to your implementation.</td>
+   <td>1. Read IBM Cloud and SAP content that is related to your implementation</td>
    <td>If your organization is new to IBM Cloud, the following information can be useful and should be read before your planning phase.
    <li><a href="https://ibm.com/cloud-computing/">What is IBM Cloud</a></li>
    <li><a href="https://ibm.com/cloud/get-started">Getting started with IBM Cloud</a></li>
@@ -59,7 +59,7 @@ Table 1 contains steps to help you get your {{site.data.keyword.cloud_notm}} inf
    <td>5. Provision your system</td>
    <td>Use the steps and information in <a href="hana-provision-environment.html#provision_environment">Provisioning your SAP HANA environment</a> to set up your IBM Cloud infrastructure.</td>
    <tr>
-   <td>6. Install SAP landscap</td>
+   <td>6. Install SAP landscape</td>
    <td>You install your SAP landscape on your IBM Cloud infrastructure the same as if the servers were on premises. See <a href="hana-installing-SAP-landscape.htm#install_sap">Downloading and installing SAP software and applications</a> for more information.</td>
    </td>
    </tr>
