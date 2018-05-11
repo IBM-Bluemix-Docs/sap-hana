@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-05-09"
+lastupdated: "2018-05-11"
 
 
 ---
@@ -153,7 +153,7 @@ Table 5. SAP HANA 8192 GB (8 TB) RAM configuration
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 | 2x 800 GB s3710 | +1 Hotspare | RAID1-A | 800 GB |
-| RAID 5 | 8x 1.2 tB S3710 |  | RAID5-B | 8400 GB |
+| RAID 5 | 8x 1.2 TB S3710 |  | RAID5-B | 8400 GB |
 | RAID 5 | 18x 1.2 TB S3710 | +1 Hotspare | RAID5-C | 20400 GB |
 
 | Array | Partition | Name | Size (GB) |
