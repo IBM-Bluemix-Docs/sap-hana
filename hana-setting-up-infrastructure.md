@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2010-03-05"
+lastupdated: "2010-05-18"
 
 
 ---
@@ -24,7 +24,7 @@ The guidance for setting up your SAP HANA {{site.data.keyword.baremetal_long}}, 
 ## Ordering your server
 {: order-server}
 
-Use the following steps to order your {{site.data.keyword.baremetal_short}}. Additional information can be found under [Configuring your bare metal server](https://console.bluemix.net/docs/bare-metal/configuring.html#configuring-your-bare-metal-server) using your unique credentials.
+Use the following steps to order your {{site.data.keyword.baremetal_short}}. Additional information can be found under [Building a custom bare metal server](https://console.bluemix.net/docs/bare-metal/baremetal-provision.html#building-a-custom-bare-metal-server) using your unique credentials.
 
 1. Log in to the [{{site.data.keyword.cloud_notm}} infrastructure customer portal](https://control.softlayer.com) with your unique credentials.
 2. Click the **Devices** icon on the Account Summary page.
@@ -39,13 +39,13 @@ Use the following steps to order your {{site.data.keyword.baremetal_short}}. Add
 
 In the next step, you will select the type and number of disks you want to add to your configuration. You can also select different options for Redundant Array of Independent Disks (RAID) storage groups and partitioning layouts on-top of the RAID storage groups. For more information, see [About RAID](https://console.bluemix.net/docs/bare-metal/what-raid.html#about-raid} or [{{site.data.keyword.cloud_notm}} Support](https://console.bluemix.net/docs/get-support/howtogetsupport.html#getting-customer-support).
 
-1. Under **SAP Certified Servers**, make your selection based on how you plan to use your server. Details on each option can be found in [Setting up your bare metal servers](https://console.bluemix.net/docs/bare-metal/configuring.html#setting-up-your-bare-metal-servers). You can also consult the [Design Decision Tool](https://github.com/ibm-cloud-architecture/infrastructure-design-decision-tool) (scroll down to the tool) or [{{site.data.keyword.cloud_notm}} Support](https://console.bluemix.net/docs/get-support/howtogetsupport.html#getting-customer-support) for more information
+1. Under **SAP Certified Servers**, make your selection based on how you plan to use your server. Consult the [Design Decision Tool](https://github.com/ibm-cloud-architecture/infrastructure-design-decision-tool) (scroll down to the tool) or [{{site.data.keyword.cloud_notm}} Support](https://console.bluemix.net/docs/get-support/howtogetsupport.html#getting-customer-support) for more information
 2. Click **Add to order** at the bottom of the page.
 
 ## Setting up Advanced System Configurations
 {: #adv_config}
 
-1. Follow the [Advanced System Configuration](https://console.bluemix.net/docs/bare-metal/configuring.html#advanced-system-configuration) guidelines for help with the values in the **Advanced System Configuration** window.
+1. Follow the [Advanced System Configuration](https://console.bluemix.net/docs/bare-metal/baremetal-provision.html#advanced-server-configuration-options) guidelines for help with the values in the **Advanced System Configuration** window.
 
 SAP host names must consist of a maximum of 13 alpha-numeric characters. For more information on SAP host name, see [SAP Notes 611361](https://launchpad.support.sap.com/#/611361) and [129997](https://launchpad.support.sap.com/#/129997). 
 
