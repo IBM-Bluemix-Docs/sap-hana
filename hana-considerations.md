@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-04-18"
+lastupdated: "2018-05-18"
 
 
 ---
@@ -35,20 +35,20 @@ The second option accesses the {{site.data.keyword.cloud_notm}} Virtual Private 
 
 If you want to separate different types of network traffic in your landscape, you can order more virtual LANs (VLANs). Keep in mind that the additional VLANs only lead to traffic segregation, not increased performance. SAP generally recommends using 10 Gb networks for traffic between its application servers and SAP HANA databases, and for other SAP HANA clients, such as SAP Business Intelligence. If you want to segregate administrative access to your SAP HANA server from other clients, you should order another VLAN for your landscape. Another option is to separate the traffic through the public and private network, since further "physical" uplinks are not supported by {{site.data.keyword.cloud_notm}}. Follow the recommendations by SAP for [SAP HANA Tailored Data Center Integration (TDI)](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/).
 
-Access through VPN, as well as access from a jumpbox, allows transparent access to your SAP HANA instances from SAP HANA Studio.
+Access through VPN, as well as access from a jump box, allows transparent access to your SAP HANA instances from SAP HANA Studio.
 
 ## External storage
 {: #external_storage}
 
 In addition to the local storage, you might require more external storage to perform backups. For these requirements, you can order block storage or Network Attached Storage (NAS) as described in [Storage](/docs/infrastructure/sap-hana/hana-general-iaas-concepts.html#storage). Since extra block storage and Network File System (NFS) data is transferred through the same physical adapters as all other network traffic, the impact needs to be kept in mind. 
 
-For external storage, it's important to calculate your project requirements before deciding on a storage solution. If you need to restore and SAP HANA system, then the IOPS of your storage have a significant influence on your restore window. Backup windows are not as critical with SAP HANA since all backups are online backups no matter how you configure SAP HANA.
+For external storage, it's important to calculate your project requirements before deciding on a storage solution. If you need to restore an SAP HANA system, then the IOPS of your storage have a significant influence on your restore window. Backup windows are not as critical with SAP HANA since all backups are online backups no matter how you configure SAP HANA.
 
 For example, using {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, you can calculate for an approximate 12 TB restore of SAP HANA at a maximum speed. You must create three physical storage devices (block storage iSCSI LUNs) because the maximum size per device is 4 TB. You can create a stripe over these three devices with the Linux Logical Volume Manager and create one logical device of 12 TB. 
 
 The 12 TB allows you 3x10 IOPS/GB, which is a total of 122,880 IOPS/GB at 16 KB. This gives you a restore time of 1.875 GB per second, or a total restore time of below 2 hours. Since the measurement for the IOPS is taken at a 50/50 distribution of read and write, you can consider the numbers as a lower boundary of restore performance. It is advisable to perform backup and restore tests if you rely on a certain restore window.
 
-Both {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}, or NAS can server as either backup space or as storage for additional software components that are installed on your server. {{site.data.keyword.cloud_notm}} Storage and NSA cannot, however, be used as storage for SAP HANA because these options do not fulfill the KPI criteria.
+Both {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}, or NAS can serve as either backup space or as storage for additional software components that are installed on your server. {{site.data.keyword.cloud_notm}} Storage and NSA cannot, however, be used as storage for SAP HANA because these options do not fulfill the KPI criteria.
 
 For more information, see [Getting started with {{site.data.keyword.blockstorageshort}}](https://console.bluemix.net/docs/infrastructure/BlockStorage/index.html#getting-started-with-block-storage) and [Getting started with {{site.data.keyword.filestorage_full_notm}}](https://console.bluemix.net/docs/infrastructure/FileStorage/index.html#getting-started-with-file-storage).
 
@@ -65,7 +65,7 @@ For more information on system replication, and network throughput and latency, 
   * [How To Perform System Replication for SAP HANA](https://www.sap.com/documents/2013/10/26c02b58-5a7c-0010-82c7-eda71af511fa.html)
   * [Network Required for SAP HANA System Replication](https://www.sap.com/documents/2014/06/babb2b55-5a7c-0010-82c7-eda71af511fa.html)
 
-For more information on setting up the HA cluster extensions for your Linux operation system, see
+For more information on setting up the HA cluster extensions for your Linux operating system, see
   * [Automated SAP HANA System Replication with Pacemaker on RHEL Setup Guide](https://access.redhat.com/articles/1466063)
   * [SAP HANA SR Performance Optimized Scenario](https://www.suse.com/docrep/documents/ir8w88iwu7/suse_linux_enterprise_server_for_sap_applications_12_sp1.pdf)
 
