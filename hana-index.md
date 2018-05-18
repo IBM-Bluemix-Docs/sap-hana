@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-04-20"
+lastupdated: "2018-05-18"
 
 
 ---
@@ -60,7 +60,7 @@ Table 1 contains steps to help you get your {{site.data.keyword.cloud_notm}} inf
    <td>Use the steps and information in <a href="hana-provision-environment.html#provision_environment">Provisioning your SAP HANA environment</a> to set up your IBM Cloud infrastructure.</td>
    <tr>
    <td>6. Install SAP landscape</td>
-   <td>You install your SAP landscape on your IBM Cloud infrastructure the same as if the servers were on premises. See <a href="hana-installing-SAP-landscape.htm#install_sap">Downloading and installing SAP software and applications</a> for more information.</td>
+   <td>You install your SAP landscape on your IBM Cloud infrastructure the same as if the servers were on premises. See <a href="hana-installing-SAP-landscape.html#install_sap">Downloading and installing SAP software and applications</a> for more information.</td>
    </td>
    </tr>
    </TBODY>
