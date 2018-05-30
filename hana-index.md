@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-05-18"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -16,7 +16,7 @@ lastupdated: "2018-05-18"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Getting started with IBM Cloud for SAP applications tutorial
+# Getting started with IBM Cloud SAP-Certified Infrastructure tutorial
 {: #getting-started}
 
 {{site.data.keyword.IBM_notm}} and SAP have been collaborating for over 45 years in multiple areas, including hardware, software, cloud, services, and finance. They are now collaborating to optimize the {{site.data.keyword.cloud}} infrastructure products to include support for the SAP HANA solution in the more than 60 {{site.data.keyword.cloud_notm}} data centers worldwide.
