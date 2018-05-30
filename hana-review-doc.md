@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -27,6 +27,7 @@ Review relevant documentation to help you determine any prerequisites for the SA
   * [SAP Product Availability Matrix (PAM)](https://apps.support.sap.com/sap/support/pam); requires an SAP S-user ID.
   * [SAP Notes](https://support.sap.com/notes); requires an SAP S-user ID.
   * [SAP NetWeaver on {{site.data.keyword.cloud_notm}}](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-index.html#getting-started) 
+  * [{{site.data.keyword.cloud_notm}} SAP Reference Architecture](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-index.html#getting-started)
   * Third-party documentation
   
 ## Next Steps
