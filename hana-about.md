@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-23"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -17,7 +17,7 @@ lastupdated: "2018-03-23"
 {:table: .aria-labeledby="caption"}
 
 
-# About IBM Cloud for SAP applications
+# About IBM Cloud SAP-Certified Infrastructure
 {: #about_ibmcloud_for_sap}
 
 IBM and SAP have been teaming, partnering, and collaborating in areas that include hardware, software, cloud, services, and financing for over 45 years. The first collaboration was in 1972 and has continued to grow with hundreds of SAP clients that use {{site.data.keyword.cloud}} as their infrastructure-as-a-service (IaaS) solution. {{site.data.keyword.IBM_notm}} has continued to optimize its cloud infrastructure products to include support for SAP HANA solutions. 
@@ -26,7 +26,7 @@ It’s because of this relationship, and other {{site.data.keyword.cloud_notm}} 
 
 The {{site.data.keyword.cloud_notm}} offerings for SAP HANA are developed to meet the needs of the world's largest businesses. It's because of the scale of {{site.data.keyword.cloud_notm}} that those same offerings are available to everyone who wishes to use them. These offerings are true infrastructure; {{site.data.keyword.IBM_notm}} wants to provide you with the most powerful building blocks available in the cloud so that you can design and implement SAP landscapes that meet your business needs and requirements.
 
-You can use your servers for production, non-production, and proof-of-concept (PoC) environments. It's important to note that virtually all SAP HANA non-production and SAP Business Warehouse environments are supported on single-node {{site.data.keyword.baremetal_short}}.
+You can use your servers for production, non-production, and proof-of-concept (POC) environments. It's important to note that virtually all SAP HANA non-production and SAP Business Warehouse environments are supported on single-node {{site.data.keyword.baremetal_short}}.
 
 ## {{site.data.keyword.cloud_notm}} for SAP HANA offering model
 {: #sap_hana_offering_model}
