@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -22,7 +22,7 @@ lastupdated: "2018-02-05"
 An SAP *landscape* is a group of two or more SAP *systems* that usually include development, quality and test, and production. One SAP system consists of one or more *SAP instances*, which are a group of processes that are started and stopped at the same time. For more information on SAP landscapes, see [*SAP Business Suite on IBM X6 Systems Reference Architecture*](https://lenovopress.com/redp5073.pdf). 
 {: shortdesc}
 
-There are several possible landscape configurations, such as server (size)/storage (size), for all SAP solutions in the market. These solutions include SAP NetWeaver-based products, such as [SAP Business Suite](https://open.sap.com/courses/suitehana1), SAP Business Warehouse, and all specific SAP add-ons, which the servers in the {{site.data.keyword.cloud}} for SAP Applications offering support. Additional solutions to keep in mind are any third-party software that might integrate with SAP. 
+There are several possible landscape configurations, such as server (size)/storage (size), for all SAP solutions in the market. These solutions include SAP NetWeaver-based products, such as [SAP Business Suite](https://open.sap.com/courses/suitehana1), SAP Business Warehouse, and all specific SAP add-ons, which the servers in the {{site.data.keyword.cloud}} SAP-Certified Infrastructure support. Additional solutions to keep in mind are any third-party software that might integrate with SAP. 
 
 SAP HANA can run as a database for an SAP NetWeaver stack-based solution or as a standalone entity depending on your usage scenario. For both scenarios, the {{site.data.keyword.cloud_notm}} offering provides preconfigured SAP NetWeaver-certified servers where the landscape around those servers can be built from any other server.
 
