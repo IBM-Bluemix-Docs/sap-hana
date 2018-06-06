@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-02"
+lastupdated: "2018-06-06"
 
 
 ---
@@ -29,7 +29,7 @@ For more information, see [Data Centers](https://www.ibm.com/cloud-computing/blu
 
 ## Bare metal servers
 
-{{site.data.keyword.baremetal_long}} are physical servers with limited customization capabilities. The servers are dedicated for your use, or your customer's, and not shared in any part, including server resources, with other {{site.data.keyword.cloud_notm}} customers, and are provisioned as an entire physical server running your choice of operating system (OS). The OS for the SAP HANA offering is Red Hat Linux for SAP HANA 6.7 OS.
+{{site.data.keyword.baremetal_long}} are physical servers with limited customization capabilities. The servers are dedicated for your use, or your customer's, and not shared in any part, including server resources, with other {{site.data.keyword.cloud_notm}} customers, and are provisioned as an entire physical server running your choice of operating system (OS). The operating systems for the SAP HANA offering are Red Hat Enterprise Linux 7.4 for SAP HANA, SUSE Linux Enterprise Server 12 SP2 for SAP HANA, and VMware Server Virtualization 6.5.
 
 Because customization is limited on bare metal servers, faster provisioning times of between 1 - 4 hours are obtainable. Quick provisioning is helpful when you are trying to get an app to market before the competition.
 
