@@ -9,6 +9,11 @@ SAP HANA on IBM Cloud
     hana-about.md
     hana-general-iaas-concepts.md
     hana-byol.md
+    
+    {: .topicgroup}
+    Related links
+        [Fulcrum: Transformational digital business platform enables operational excellence](https://www.youtube.com/watch?v=Ha-3i3kD-cw)
+        [Case study: Fulcrum](https://www.ibm.com/case-studies/fulcrum-cloud-sap-legal-services)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
