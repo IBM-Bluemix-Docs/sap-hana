@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-05-18"
+lastupdated: "2018-06-07"
 
 
 ---
@@ -60,6 +60,8 @@ The {{site.data.keyword.cloud_notm}} environment does not support any preconfigu
 SAP HANA system replication can be configured with an automated fail-over from one server to a replica. Follow the SAP documentation on system replication to determine the replication mode that best fits your application scenario and your level of disaster resilience. Depending on the replication mode, different network KPIs need to be fulfilled. Consult SAP recommendations on the network throughput and latency to determine the required throughput and maximum latency for your operation mode of choice. The {{site.data.keyword.cloud_notm}} network topology should be able to serve all the required configurations. Contact {{site.data.keyword.cloud_notm}} Support to determine the optimal setup for your scenario if you're not sure or if you want your disaster recovery site in a different data center to achieve maximum disaster resilience.
 
 Be aware that SAP HANA Scale-Out (multi node) environments are still under evaluation. In other words, a standby-node for SAP HANA is not a current option in an {{site.data.keyword.cloud_notm}} environment.
+
+For more information on high availability and disaster recovery, see [High availability](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#availability), and [Disaster recovery](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#dr).
 
 For more information on system replication, and network throughput and latency, see
   * [How To Perform System Replication for SAP HANA](https://www.sap.com/documents/2013/10/26c02b58-5a7c-0010-82c7-eda71af511fa.html)
