@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-06-06"
+lastupdated: "2018-06-11"
 
 
 ---
@@ -21,7 +21,7 @@ lastupdated: "2018-06-06"
 # 5. Determining your configuration
 {: #determine_configuration}
 
-The following tables list the {{site.data.keyword.baremetal_short) configurations available with the {{site.data.keyword.cloud}} SAP-Certified Infrastructure offering. For additional considerations when running SAP HANA in a virtualized environment, see [VMware ESXi server deployements](/docs/infrastructure/sap-hana/hana-considerations.html#vmware-server).
+The following tables list the {{site.data.keyword.baremetal_long}} configurations available with the {{site.data.keyword.cloud}} SAP-Certified Infrastructure offering. For additional considerations when running SAP HANA in a virtualized environment, see [VMware ESXi server deployements](/docs/infrastructure/sap-hana/hana-considerations.html#vmware-server).
 
 ## B1.S1.H512
 {: #512_GB_memory}
@@ -102,6 +102,33 @@ The following tables list the {{site.data.keyword.baremetal_short) configuration
 |   | `/dev/sdb1` | `/hana/shared` | 1024 |
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
+## B1.S2.H4100
+{: #H4100}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 800 GB s3710 | `hdd0, hdd1, hdd2` | RAID1-A | 800 GB |
+| RAID 5 | 3x 800 GB s3710 | `hdd3, hdd4, hdd5, hdd6` | RAID5-B | 1600 GB |
+| RAID 5 | 4x 800 GB s3710 | `hdd7, hdd8, hdd9, hdd10, hdd11` | RAID5-C | 2400 GB |
+| Dedicated hot spare | 1X 800 GB s3710 | `hdd2, hdd6, hdd11` | 800 GB DHS | 800 GB |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   | 800 |
+|   | `/dev/sda1` | `/boot` | 0.25 |
+|   | `/dev/sda2` | `/hana/log` | 512 |
+|   | `/dev/sda3` | `/` | `rest` |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID5-B  | `/dev/sdb` |   | 4100 |
+|   | `/dev/sdb1` | `/hana/shared` | `rest` |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID5-C  | `/dev/sdc` |   | 4100 |
+|   | `/dev/sdc1` | `/hana/data` | `rest` |
+
 
 ## B1.S2.H4201
 {: #4201}
@@ -124,6 +151,34 @@ The following tables list the {{site.data.keyword.baremetal_short) configuration
 | RAID10-B | `/dev/sdb` |   |  |
 |   | `/dev/sdb1` | `/hana/shared` | 1024 |
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## B1.S2.H4200
+{: #H4200}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 800 GB s3710 | `hdd0, hdd1, hdd2` | RAID1-A | 800 GB |
+| RAID 5 | 3x 1.2 TB s3710 | `hdd3, hdd4, hdd5, hdd6` | RAID5-B | 2.4 TB |
+| RAID 5 | 5x 1.2 TB s3710 | `hdd7, hdd8, hdd9, hdd10, hdd11` | RAID5-C | 4.8 TB |
+| Dedicated hot spare | 1X 800 GB s3710 | `hdd2, hdd6, hdd11` | 800 GB DHS | 800 GB |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   | 800 |
+|   | `/dev/sda1` | `/boot` | 0.25 |
+|   | `/dev/sda2` | `/hana/log` | 512 |
+|   | `/dev/sda3` | `/` | `rest` |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID5-B  | `/dev/sdb` |   | 4100 |
+|   | `/dev/sdb1` | `/hana/shared` | `rest` |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID5-C  | `/dev/sdc` |   | 4100 |
+|   | `/dev/sdc1` | `/hana/data` | `rest` |
 
 
 ## B1.S1.H2000
@@ -202,7 +257,7 @@ The following tables list the {{site.data.keyword.baremetal_short) configuration
 
 
 ## B1.S2.H4400
-{: ##4096_GB_memory}
+{: #4096_GB_memory}
  
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
@@ -227,6 +282,35 @@ The following tables list the {{site.data.keyword.baremetal_short) configuration
 | --- | --- | --- | --- |
 | RAID5-C  | `/dev/sdc` |   | 4100 |
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
+
+
+## B1.S2.H4400
+{: #H4400}
+ 
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 3x 800 GB s3710 |`hdd0` | RAID1-A | 800 GB |
+| RAID 5 | 6x 1.2 TB s3710 | `hdd1` | RAID5-B | 4100 GB |
+| RAID 5 | 9x 1.2 TB s3710 | `hdd2` | RAID-5C | 8400 GB |
+|Global Hotspare | 1x 800 GB S3710 | `hdd22` | 800 GB GHS | 800 GB |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   | 800 |
+|   | `/dev/sda1` | `/boot` | 0.25 |
+|   | `/dev/sda2` | `/hana/log` | 512 |
+|   | `/dev/sda3` | `/` | `rest` |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID5-B  | `/dev/sdb` |   | 4100 |
+|   | `/dev/sdb1` | `/hana/shared` | `rest` |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID5-C  | `/dev/sdc` |   | 4100 |
+|   | `/dev/sdc1` | `/hana/data` | `rest` |
+
 
 
 ## B1.S2.H8801
@@ -258,7 +342,7 @@ The following tables list the {{site.data.keyword.baremetal_short) configuration
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 | 2x 800 GB s3710 | +1 Hotspare | RAID1-A | 800 GB |
-| RAID 5 | 8x 1.2 tB S3710 |  | RAID5-B | 8400 GB |
+| RAID 5 | 8x 1.2 TB S3710 |  | RAID5-B | 8400 GB |
 | RAID 5 | 18x 1.2 TB S3710 | +1 Hotspare | RAID5-C | 20400 GB |
 
 | Array | Partition | Name | Size (GB) |
