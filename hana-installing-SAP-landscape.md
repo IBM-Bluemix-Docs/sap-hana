@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-06"
+lastupdated: "2018-06-28"
 
 
 ---
@@ -23,6 +23,4 @@ Log in to SAP Support and download the appropriate hardware and installation ins
 
 Your SAP HANA software must be installed by a certified SAP HANA installer who has completed the SAP HANA installation certification course. For more information, see [Who Can Install SAP HANA?](http://www.saphanacentral.com/p/who-can-install-sap-hana.html).
 
-## Next Steps
 
-  [5. Testing connectivity to your {{site.data.keyword.cloud_notm}} data center](/docs/infrastructure/sap-hana/hana-testing-connectivity.html)
