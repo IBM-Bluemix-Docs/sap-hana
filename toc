@@ -40,7 +40,6 @@ SAP HANA on IBM Cloud
         hana-secure-environment.md
         hana-installing-guest-operating-system-VMware-deployments.md
         hana-installing-SAP-landscape.md
-        hana-testing-connectivity.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
