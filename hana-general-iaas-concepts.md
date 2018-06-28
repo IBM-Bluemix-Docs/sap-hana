@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-06"
+lastupdated: "2018-06-28"
 
 
 ---
@@ -35,7 +35,7 @@ Because customization is limited on bare metal servers, faster provisioning time
 
 You are offered an array of RAM and CPU combinations as the SAP-certified servers have a pre-configured amount of RAM and number of CPUs. The combination *cannot* be changed during the ordering process or through a support ticket after servers are deployed.
 
-For more information, see [About bare metal servers](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers). 
+For more information, see [About bare metal servers](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers). 
 
 ## Network connectivity
 
@@ -62,7 +62,7 @@ For more information on NAS in an {{site.data.keyword.cloud_notm}} environment, 
 
 ## Deployment and management
 
-{{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} are deployed through the {{site.data.keyword.cloud_notm}} infrastructure customer portal or API after you create your {{site.data.keyword.cloud_notm}} customer account. The servers can be managed through the customer portal, API, or command line interface (CLI). For more information, see [About bare metal servers](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers).
+{{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} are deployed through the {{site.data.keyword.cloud_notm}} infrastructure customer portal or API after you create your {{site.data.keyword.cloud_notm}} customer account. The servers can be managed through the customer portal, API, or command line interface (CLI). For more information, see [About bare metal servers](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers).
 
 ## Support
 
