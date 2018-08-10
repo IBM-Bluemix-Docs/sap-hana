@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2010-06-29"
+lastupdated: "2010-08-10"
 
 
 ---
@@ -32,7 +32,7 @@ Use the following steps to order your {{site.data.keyword.baremetal_short}}. Add
 4. Click the hyperlink under **STARTING PRICE PER MONTH** to select the appropriate server and be taken to the Configure/Order page. SAP HANA-certified servers are identified with an **-H** under CPU Model.  
 5. Enter the number of servers you are ordering in the **Quantity** field and select your **Data Center**.
 6. **Server**, **RAM**, and your private storage option default based on your server selection and cannot be changed. {{site.data.keyword.IBM_notm}} {{site.data.keyword.blockstorageshort}} for {{site.data.keyword.cloud_notm}} or {{site.data.keyword.filestorage_full_notm}}, and Network Attached Storage (NAS) are ordered after you have ordered your server.
-7. Select your **Operating System** from either Microsoft, Red Hat, or SUSE and select the specific operating system, or VMware hypervisor for your server. **Note**: If you are bringing your own license (BYOL) for your operating system, select **Other** > **No Operating System**. For more information, see [Bring your own license](#byol).
+7. Select your **Operating System** from either Red Hat or SUSE and select the specific operating system, or VMware hypervisor for your server. **Note**: If you are bringing your own license (BYOL) for your operating system, select **Other** > **No Operating System**. For more information, see [Bring your own license](#byol).
 
 ## Selecting your server options
 {: #select_options}
