@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-28"
+lastupdated: "2018-08-20"
 
 
 ---
@@ -23,4 +23,4 @@ Log in to [SAP Support Portal](https://support.sap.com/en/index.html) and click 
 
 Your SAP HANA software must be installed by a certified SAP HANA installer who has completed the SAP HANA installation certification course. For more information, see [Who Can Install SAP HANA?](http://www.saphanacentral.com/p/who-can-install-sap-hana.html).
 
-
+ [5. Configuring your IBM Cloud infrastructure to support SAP HANA multi-node](/docs/infrastructure/sap-hana/hana-multi-node.html)

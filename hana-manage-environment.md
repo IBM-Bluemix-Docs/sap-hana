@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-06-28"
+lastupdated: "2018-08-20"
 
 
 ---
@@ -31,6 +31,7 @@ Table 1. Managing your environment overview
 | 2 | [Securing your environment](/docs/infrastructure/sap-hana/hana-secure-environment.html) |
 | 3 | [Installing guest OS on the VMware ESX hypervisor](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html) |
 | 4 | [Downloading and installing SAP software and applications](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html) |
+| 5 | [Configuring your IBM Cloud infrastructure to support SAP HANA multi-node](/docs/infrastructure/sap-hana/hana-multi-node.html)
 
 ## Next Steps
 

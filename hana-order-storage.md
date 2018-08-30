@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-06-28"
+lastupdated: "2018-08-20"
 
 
 ---
@@ -19,7 +19,7 @@ lastupdated: "2018-06-28"
 # 1. Ordering storage
 {: #order_storage}
 
-{{site.data.keyword.blockstoragefull}}, {{site.data.keyword.filestorage_full_notm}}, and Network Attached Storage (NAS) are ordered after you deploy your {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}. 
+{{site.data.keyword.blockstoragefull}}, {{site.data.keyword.filestorage_full_notm}}, and Network Attached Storage (NAS) are ordered after you deploy your {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}.
 
 ## Ordering {{site.data.keyword.cloud_notm}} storage
 {: #ibm_storage}
@@ -38,4 +38,5 @@ NAS storage might be another valuable extension of the local storage of your ser
   [3. Installing your guest OS on the ESX hypervisor (optional)](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html)
 
   [4. Downloading and installing SAP software and applications](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
-  
+
+  [5. Configuring your IBM Cloud infrastructure to support SAP HANA multi-node](/docs/infrastructure/sap-hana/hana-multi-node.html)
