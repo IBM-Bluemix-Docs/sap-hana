@@ -23,7 +23,7 @@ lastupdated: "2018-08-29"
 
 With multi-node, multiple SAP HANA nodes build a single SAP HANA system. Data is distributed among these nodes, which form a single database. The multi-node configuration supports scalability and high availability through the standby configuration. The {{site.data.keyword.cloud_notm}} offering for this configuration follows [SAP HANA Tailored Data Center Integration](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/) (TDI), and uses {{site.data.keyword.cloud_notm}} SAP-HANA certified servers for centralized, shared enterprise storage.
 
-*Note* that you must follow the configuration guidelines outlined under (Ordering your multi-node system)[#ordering] to fulfill the SAP HANA TDI requirements and be supported by SAP.
+*Note* that you must follow the configuration guidelines outlined under [Ordering your multi-node system](#ordering) to fulfill the SAP HANA TDI requirements and be supported by SAP.
 
 Follow the guidelines in [Sizing SAP HANA](https://help.sap.com/viewer/eb3777d5495d46c5b2fa773206bbfb46/2.0.00/en-US/d4a122a7bb57101493e3f5ca08e6b039.html) to determine the required size for your target SAP HANA system, including the total amount of memory and storage required for your deployment. The sizing requirements help you establish the number of SAP HANA nodes required for your SAP HANA multi-node system, and the storage required to host the data.
 
