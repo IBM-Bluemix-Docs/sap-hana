@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-06-11"
+lastupdated: "2018-09-11"
 
 
 ---
@@ -196,18 +196,18 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 | --- | --- | --- | --- |
 | RAID1-A | `/dev/sda` |   | 800 |
 |   | `/dev/sda1` | `/boot` | 0.25 |
-|   | `/dev/sda2` | `/` | `Rest` |
+|   | `/dev/sda2` | `/` | `rest` |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
 | RAID10-B | `/dev/sdb` |   | 4800 |
-|   | `/dev/sdb1` | `/hana/log` | `Rest` |
+|   | `/dev/sdb1` | `/hana/log` | `rest` |
 |   | `/dev/sdb2` | `/hana/shared` | 2200 |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
 | RAID10-C | `/dev/sdc` |   | 7200 |
-|   | `/dev/sdc1` | `/hana/data` | `Rest` |
+|   | `/dev/sdc1` | `/hana/data` | `rest` |
 
 
 ## B1.S2.H4401
@@ -224,7 +224,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 |   | `/dev/sda1` | `/boot` | 1.0 |
 |   | `/dev/sda2` | `/` | 150 |
 |   | `/dev/sda3` | `/usr/sap` | 150 |
-|   | `/dev/sda4` | '/hana/log` | `rest` |
+|   | `/dev/sda4` | `/hana/log` | `rest` |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
