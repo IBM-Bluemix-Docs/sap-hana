@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -27,6 +27,7 @@ Lesen Sie die relevante Dokumentation, mit der Sie alle Anforderungen für die S
   * [SAP-Produktverfügbarkeitsmatrix (PAM)](https://apps.support.sap.com/sap/support/pam); erfordert eine SAP S-Benutzer-ID.
   * [SAP-Hinweise](https://support.sap.com/notes); erfordern eine SAP S-Benutzer-ID.
   * [SAP NetWeaver in {{site.data.keyword.cloud_notm}}](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-index.html#getting-started) 
+  * [{{site.data.keyword.cloud_notm}} SAP-Referenzarchitektur](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-index.html#getting-started)
   * Drittanbieter-Dokumentation
   
 ## Nächste Schritte

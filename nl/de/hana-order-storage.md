@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-02-12"
+lastupdated: "2018-08-20"
 
 
 ---
@@ -19,7 +19,7 @@ lastupdated: "2018-02-12"
 # 1. Speicher bestellen
 {: #order_storage}
 
-{{site.data.keyword.blockstoragefull}}, {{site.data.keyword.filestorage_full_notm}} und Network Attached Storage (NAS) werden nach der Bereitstellung Ihrer {{site.data.keyword.cloud_notm}}-{{site.data.keyword.baremetal_short}} bestellt. 
+{{site.data.keyword.blockstoragefull}}, {{site.data.keyword.filestorage_full_notm}} und Network Attached Storage (NAS) werden nach der Bereitstellung Ihrer {{site.data.keyword.cloud_notm}}-{{site.data.keyword.baremetal_short}} bestellt.
 
 ## {{site.data.keyword.cloud_notm}}-Speicher bestellen
 {: #ibm_storage}
@@ -38,5 +38,5 @@ NAS-Speicher kann eine weitere wertvolle Ergänzung des lokalen Speichers für I
   [3. Gastbetriebssystem auf dem ESX-Hypervisor installieren (optional)](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html)
 
   [4. SAP-Software und -anwendungen herunterladen und installieren](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
-  
-  [5. Konnektivität zu Ihrem {{site.data.keyword.cloud_notm}}-Rechenzentrum testen](/docs/infrastructure/sap-hana/hana-testing-connectivity.html)
+
+  [5. IBM Cloud-Infrastruktur für die Unterstützung von SAP HANA-Mehrfachknotensystemen konfigurieren](/docs/infrastructure/sap-hana/hana-multi-node.html)

@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-02-12"
+lastupdated: "2018-08-20"
 
 
 ---
@@ -31,5 +31,5 @@ Weitere Informationen zu den von {{site.data.keyword.cloud_notm}} angebotenen Fi
   [3. Gastbetriebssystem auf dem ESX-Hypervisor installieren (optional)](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html)
 
   [4. SAP-Software und -anwendungen herunterladen und installieren](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
-  
-  [5. Konnektivität zu Ihrem {{site.data.keyword.cloud_notm}}-Rechenzentrum testen](/docs/infrastructure/sap-hana/hana-testing-connectivity.html)
+
+  [5. IBM Cloud-Infrastruktur für die Unterstützung von SAP HANA-Mehrfachknotensystemen konfigurieren](/docs/infrastructure/sap-hana/hana-multi-node.html)

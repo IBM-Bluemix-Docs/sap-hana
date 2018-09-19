@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-06-07"
 
 
 ---
@@ -35,20 +35,20 @@ Bei der zweiten Option wird entweder über das Kundenportal der {{site.data.keyw
 
 Wenn Sie unterschiedliche Typen von Netzverkehr in Ihrer Umgebung voneinander trennen möchten, können Sie weitere virtuelle LANs (VLANs) bestellen. Denken Sie daran, dass die zusätzlichen VLANs nur die Trennung des Datenverkehrs bewirken, keine Steigerung der Leistung. SAP empfiehlt im Allgemeinen die Verwendung von 10-GB-Netzen für den Datenverkehr zwischen den Anwendungsservern und den SAP HANA-Datenbanken sowie für andere SAP HANA-Clients wie z. B. SAP Business Intelligence. Wenn Sie den Verwaltungszugriff auf Ihren SAP HANA-Server von anderen Clients trennen möchten, sollten Sie für Ihre Umgebung ein weiteres VLAN bestellen. Eine weitere Option ist die Trennung des Datenverkehrs durch das öffentliche und das private Netz, da weitere "physische" Uplinks von {{site.data.keyword.cloud_notm}} nicht unterstützt werden. Folgen Sie den Empfehlungen von SAP für [SAP HANA Tailored Data Center Integration (TDI)](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/).
 
-Der Zugriff über VPN, wie auch der über eine Jumpbox, ermöglicht transparenten Zugriff auf Ihre SAP HANA-Instanzen über SAP HANA Studio.
+Der Zugriff über VPN, wie auch der über eine Jumpbox, ermöglicht transparenten Zugriff auf Ihre SAP HANA-Instanzen über SAP HANA Studio. 
 
 ## Externer Speicher
 {: #external_storage}
 
 Zusätzlich zum lokalen Speicher benötigen Sie möglicherweise zusätzlichen externen Speicher, um Backups durchführen zu können. Für diese Anforderungen können Sie Blockspeicher oder Network Attached Storage (NAS) bestellen, wie unter [Speicher](/docs/infrastructure/sap-hana/hana-general-iaas-concepts.html#storage) beschrieben. Da zusätzliche Blockspeicher- und NFS-Daten (Network File System) über dieselben physischen Adapter wie der gesamte übrige Netzverkehr übertragen werden, müssen die Auswirkungen in Betracht gezogen werden. 
 
-Für den externen Speicher ist es wichtig, Ihre Projektanforderungen zu berechnen, bevor Sie sich für eine Speicherlösung entscheiden. Wenn Sie das SAP HANA-System wiederherstellen müssen, haben die E/A-Operationen pro Sekunde Ihres Speichers signifikanten Einfluss auf Ihr Wiederherstellungsfenster. Backup-Fenster sind bei SAP HANA nicht so kritisch, da alle Backups Online-Backups sind, unabhängig von Ihrer Konfiguration von SAP HANA.
+Für den externen Speicher ist es wichtig, Ihre Projektanforderungen zu berechnen, bevor Sie sich für eine Speicherlösung entscheiden. Wenn Sie ein SAP HANA-System wiederherstellen müssen, haben die E/A-Operationen pro Sekunde Ihres Speichers signifikanten Einfluss auf Ihr Wiederherstellungsfenster. Backup-Fenster sind bei SAP HANA nicht so kritisch, da alle Backups Online-Backups sind, unabhängig von Ihrer Konfiguration von SAP HANA.
 
-Zum Beispiel können Sie unter Verwendung von {{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}} eine ungefähre Wiederherstellung von SAP HANA von 12 TB bei maximaler Geschwindigkeit berechnen. Sie müssen drei physische Speichereinheiten (Blockspeicher-iSCSI-LUNs) erstellen, da die maximale Größe pro Gerät 4 TB beträgt. Sie können mit dem Linux Logical Volume Manager einen Stripe über diese drei Geräte ziehen und eine logische Einheit von 12 TB erstellen. 
+Zum Beispiel können Sie unter Verwendung von {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}} eine ungefähre Wiederherstellung von SAP HANA von 12 TB bei maximaler Geschwindigkeit berechnen. Sie müssen drei physische Speichereinheiten (Blockspeicher-iSCSI-LUNs) erstellen, da die maximale Größe pro Gerät 4 TB beträgt. Sie können mit dem Linux Logical Volume Manager einen Stripe über diese drei Geräte ziehen und eine logische Einheit von 12 TB erstellen. 
 
 Die 12 TB ermöglichen Ihnen 3x10 E/A-Operationen pro Sekunde/GB, also insgesamt 122.880 E/A-Operationen pro Sekunde/GB bei 16 KB. Dadurch erhalten Sie eine Wiederherstellungszeit von 1875 GB pro Sekunde oder eine Gesamt-Wiederherstellungszeit von weniger als 2 Stunden. Da die Messung hinsichtlich E/A-Operationen pro Sekunde bei einer Verteilung der Lese- und Schreibvorgänge von 50/50 erfolgt, können Sie die Zahlen als Untergrenze für die Wiederherstellungsleistung betrachten. Es wird empfohlen, Backups und Wiederherstellungstests durchzuführen, wenn Sie sich auf ein bestimmtes Wiederherstellungsfenster verlassen.
 
-{{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}} oder NAS können als Backup-Bereich oder als Speicher für zusätzliche Softwarekomponenten dienen, die auf Ihrem Server installiert sind. {{site.data.keyword.cloud_notm}}-Speicher und NSA können jedoch nicht als Speicher für SAP HANA verwendet werden, da diese Optionen nicht die KPI-Kriterien erfüllen.
+{{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}} oder NAS können als Backup-Bereich oder als Speicher für zusätzliche Softwarekomponenten dienen, die auf Ihrem Server installiert sind. {{site.data.keyword.cloud_notm}}-Speicher und NSA können jedoch nicht als Speicher für SAP HANA verwendet werden, da diese Optionen nicht die KPI-Kriterien erfüllen.
 
 Weitere Informationen finden Sie unter [Einführung in {{site.data.keyword.blockstorageshort}}](https://console.bluemix.net/docs/infrastructure/BlockStorage/index.html#getting-started-with-block-storage) und [Einführung in {{site.data.keyword.filestorage_full_notm}}](https://console.bluemix.net/docs/infrastructure/FileStorage/index.html#getting-started-with-file-storage).
 
@@ -61,11 +61,13 @@ Die SAP HANA-Systemreplikation kann mit einem automatisierten Failover von einem
 
 Wir weisen darauf hin, dass SAP HANA-Scale-out- (Mehrfachknoten-) Umgebungen noch in der Evaluierung sind. Ein Standby-Knoten für SAP HANA ist also für eine {{site.data.keyword.cloud_notm}}-Umgebung aktuell keine Option.
 
+Weitere Informationen zur Hochverfügbarkeit und Disaster-Recovery finden Sie unter [Hochverfügbarkeit](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#availability) und [Disaster-Recovery](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#dr).
+
 Weitere Informationen zur Systemreplikation und zu Netzdurchsatz und Latenz finden Sie unter folgenden Links:
   * [Vorgehensweise zur Durchführung einer Systemreplikation für SAP HANA](https://www.sap.com/documents/2013/10/26c02b58-5a7c-0010-82c7-eda71af511fa.html)
   * [Für SAP HANA-Systemreplikation erforderliches Netz](https://www.sap.com/documents/2014/06/babb2b55-5a7c-0010-82c7-eda71af511fa.html)
 
-Weitere Informationen zum Einrichten der HA-Clustererweiterungen für Ihr Linux-Betriebssystem finden Sie unter folgenden Links:
+Weitere Informationen zum Einrichten der HA-Clustererweiterungen für Ihr Linux-Betriebssystem finden Sie unter folgenden Links: 
   * [Automatisierte SAP HANA-Systemreplikation mit Pacemaker unter RHEL - Installationshandbuch](https://access.redhat.com/articles/1466063)
   * [SAP HANA SR - Szenario mit Leistungsoptimierung](https://www.suse.com/docrep/documents/ir8w88iwu7/suse_linux_enterprise_server_for_sap_applications_12_sp1.pdf)
 

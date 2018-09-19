@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-02"
+lastupdated: "2018-06-28"
 
 
 ---
@@ -29,13 +29,13 @@ Weitere Informationen finden Sie unter [Rechenzentren](https://www.ibm.com/cloud
 
 ## Bare-Metal-Server
 
-{{site.data.keyword.baremetal_long}} sind physische Server mit eingeschränkten Anpassungsfähigkeiten. Die Server sind für die Verwendung durch Sie oder Ihren Kunden dediziert und werden in keinen Teilen, auch nicht den Serverressourcen, mit anderen {{site.data.keyword.cloud_notm}}-Kunden gemeinsam genutzt. Sie werden als komplette physische Server mit einem Betriebssystem Ihrer Wahl bereitgestellt. Das Betriebssystem für das SAP HANA-Angebot ist Red Hat Linux for SAP HANA 6.7.
+{{site.data.keyword.baremetal_long}} sind physische Server mit eingeschränkten Anpassungsfähigkeiten. Die Server sind für die Verwendung durch Sie oder Ihren Kunden dediziert und werden in keinen Teilen, auch nicht den Serverressourcen, mit anderen {{site.data.keyword.cloud_notm}}-Kunden gemeinsam genutzt. Sie werden als komplette physische Server mit einem Betriebssystem Ihrer Wahl bereitgestellt. Als Betriebssystem für das SAP HANA-Angebot stehen Red Hat Enterprise Linux 7.4 for SAP HANA, SUSE Linux Enterprise Server 12 SP2 for SAP HANA sowie VMware Server Virtualization 6.5 zur Verfügung.
 
 Da die Anpassung auf Bare-Metal-Servern begrenzt ist, sind schnellere Bereitstellungszeiten von 1 bis 4 Stunden erhältlich. Eine schnelle Bereitstellung ist hilfreich, wenn Sie versuchen, eine App vor den Wettbewerbern auf den Markt zu bringen.
 
 Es besteht das Angebot eines Arrays von RAM- und CPU-Kombinationen, da die von SAP zertifizierten Server eine vorkonfigurierte Menge an RAM und Anzahl von CPUs besitzen. Die Kombination kann während des Bestellablaufs oder über ein Support-Ticket nach Bereitstellung der Server *nicht* mehr geändert werden.
 
-Weitere Informationen finden Sie unter [Informationen zu Bare-Metal-Servern](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers). 
+Weitere Informationen finden Sie unter [Informationen zu Bare-Metal-Servern](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers). 
 
 ## Netzkonnektivität
 
@@ -62,7 +62,7 @@ Weitere Informationen zu NAS in {{site.data.keyword.cloud_notm}}-Umgebungen find
 
 ## Bereitstellung und Verwaltung
 
-{{site.data.keyword.cloud_notm}}-{{site.data.keyword.baremetal_short}} werden über das Kundenportal oder die API der {{site.data.keyword.cloud_notm}}-Infrastruktur bereitgestellt, nachdem Sie Ihr {{site.data.keyword.cloud_notm}}-Kundenkonto eingerichtet haben. Die Server können über das Kundenportal, die API oder die Befehlszeilenschnittstelle (CLI) verwaltet werden. Weitere Informationen finden Sie unter [Informationen zu Bare-Metal-Servern](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers).
+{{site.data.keyword.cloud_notm}}-{{site.data.keyword.baremetal_short}} werden über das Kundenportal oder die API der {{site.data.keyword.cloud_notm}}-Infrastruktur bereitgestellt, nachdem Sie Ihr {{site.data.keyword.cloud_notm}}-Kundenkonto eingerichtet haben. Die Server können über das Kundenportal, die API oder die Befehlszeilenschnittstelle (CLI) verwaltet werden. Weitere Informationen finden Sie unter [Informationen zu Bare-Metal-Servern](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers).
 
 ## Unterstützung
 

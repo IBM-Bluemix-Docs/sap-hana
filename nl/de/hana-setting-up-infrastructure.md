@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2010-03-05"
+lastupdated: "2010-08-10"
 
 
 ---
@@ -24,28 +24,28 @@ Anweisungen zur Konfiguration von {{site.data.keyword.baremetal_long}}n, Netz, S
 ## Server bestellen
 {: order-server}
 
-Gehen Sie anhand der folgenden Schritte vor, um Ihre {{site.data.keyword.baremetal_short}} zu bestellen. Weitere Informationen finden Sie unter [Bare-Metal-Server konfigurieren](https://console.bluemix.net/docs/bare-metal/configuring.html#configuring-your-bare-metal-server) mit eindeutigen Berechtigungsnachweisen.
+Gehen Sie anhand der folgenden Schritte vor, um Ihre {{site.data.keyword.baremetal_short}} zu bestellen. Weitere Informationen finden Sie unter Verwendung Ihrer eindeutigen Berechtigungsnachweise unter [Angepassten Bare-Metal-Server erstellen](https://console.bluemix.net/docs/bare-metal/baremetal-provision.html#building-a-custom-bare-metal-server). 
 
 1. Melden Sie sich mit Ihren eindeutigen Berechtigungsnachweisen beim [Kundenportal für die {{site.data.keyword.cloud_notm}}-Infrastruktur](https://control.softlayer.com) an.
-2. Klicken Sie auf der Seite "Konto - Zusammenfassung" auf das Symbol **Geräte**.
-3. Klicken Sie auf der Seite "Geräte" unter {{site.data.keyword.baremetal_short}} auf den Link **Monatlich**. Das Dialogfeld "Serverliste" wird angezeigt.
-4. Die SAP-zertifizierten Server sind oben in der Liste angeführt. Klicken Sie auf den Hyperlink unter **AUSGANGSPREIS - MONATLICH**, um den richtigen Server auszuwählen und zur Seite für Konfiguration und Bestellung weitergeleitet zu werden. SAP HANA-zertifizierte Server sind mit einem **-H** unter dem CPU-Modell gekennzeichnet.  
-5. Geben Sie im Feld **Qualität** die Anzahl zu bestellender Server ein und wählen Sie Ihr **Rechenzentrum** aus.
-6. Die Standardwerte für **Server**, **RAM**, **Betriebssystem** und Ihre Option für privaten Speicher basieren auf Ihrer Serverauswahl und können nicht geändert werden. Die Speicherdimensionierung entspricht den Größen, die für SAP HANA mit einer bestimmten RAM-Größe erforderlich sind. {{site.data.keyword.IBM_notm}}-{{site.data.keyword.blockstorageshort}} für {{site.data.keyword.cloud_notm}} oder {{site.data.keyword.filestorage_full_notm}} und Network Attached Storage (NAS) werden nach der Bestellung Ihres Servers bestellt.
-7. Wählen Sie Ihr **Betriebssystem** aus, entweder Red Hat oder Microsoft, und wählen Sie das spezifische Betriebssystem oder den VMware-Hypervisor für Ihren Server aus.
+2. Klicken Sie auf der Seite "Konto - Zusammenfassung" auf **Konto** > **Bestellung aufgeben**.
+3. Klicken Sie auf der Seite "Geräte" unter {{site.data.keyword.baremetal_short}} auf den Link **Monatlich**. Auf der Liste der Server, die nun angezeigt wird, werden die SAP-zertifizierten ganz oben angeführt. 
+4. Klicken Sie auf den Hyperlink unter **AUSGANGSPREIS - MONATLICH**, um den richtigen Server auszuwählen und zur Seite für Konfiguration und Bestellung weitergeleitet zu werden. SAP HANA-zertifizierte Server sind mit einem **-H** unter dem CPU-Modell gekennzeichnet.  
+5. Geben Sie im Feld **Menge** die Anzahl zu bestellender Server ein und wählen Sie Ihr **Rechenzentrum** aus. 
+6. Die Standardwerte für **Server** und **RAM** sowie Ihre Option für privaten Speicher basieren auf Ihrer Serverauswahl und können nicht geändert werden. {{site.data.keyword.IBM_notm}}-{{site.data.keyword.blockstorageshort}} für {{site.data.keyword.cloud_notm}} oder {{site.data.keyword.filestorage_full_notm}} und Network Attached Storage (NAS) werden nach der Bestellung Ihres Servers bestellt.
+7. Wählen Sie Ihr **Betriebssystem** aus, entweder Red Hat oder SUSE, und wählen Sie das spezifische Betriebssystem oder aber den VMware-Hypervisor für Ihren Server aus. **Hinweis**: Wenn Sie für Ihr Betriebssystem nach dem BYOL-Prinzip eine eigene Lizenz verwenden, wählen Sie die Optionen **Andere** > **Kein Betriebssystem** aus. Weitere Informationen finden Sie unter ["Bring your own license" - BYOL](#byol).
 
 ## Serveroptionen auswählen
 {: #select_options}
 
-Im nächsten Schritt wählen Sie den Typ und die Anzahl der Platten aus, die zu Ihrer Konfiguration hinzugefügt werden sollen. Außerdem wählen Sie verschiedene Optionen für RAID-Speichergruppen (Redundant Array of Independent Disks) und Partitionslayouts über den RAID-Speichergruppen aus. Weitere Informationen finden Sie unter [Informationen zu RAID](https://console.bluemix.net/docs/bare-metal/what-raid.html#about-raid} or [{{site.data.keyword.cloud_notm}} Support](https://console.bluemix.net/docs/get-support/howtogetsupport.html#getting-customer-support).
+Im nächsten Schritt wählen Sie den Typ und die Anzahl der Platten aus, die zu Ihrer Konfiguration hinzugefügt werden sollen. Außerdem wählen Sie verschiedene Optionen für RAID-Speichergruppen (Redundant Array of Independent Disks) und Partitionslayouts über den RAID-Speichergruppen aus. Weitere Informationen finden Sie unter [Informationen zu RAID](https://console.bluemix.net/docs/bare-metal/what-raid.html#about-raid) oder [{{site.data.keyword.cloud_notm}}](https://console.bluemix.net/docs/get-support/howtogetsupport.html#getting-customer-support)-Support.
 
-1. Treffen Sie unter **SAP-zertifizierte Server** Ihre Auswahl auf Grundlage des geplanten Verwendungszwecks für Ihren Server. Details zu den Optionen finden Sie unter [Bare-Metal-Server einrichten](https://console.bluemix.net/docs/bare-metal/configuring.html#setting-up-your-bare-metal-servers). Sie können auch das [Tool für die Designentscheidung](https://github.com/ibm-cloud-architecture/infrastructure-design-decision-tool) (bis zum Tool hinunterblättern) oder den [{{site.data.keyword.cloud_notm}}-Support](https://console.bluemix.net/docs/get-support/howtogetsupport.html#getting-customer-support) zu Rate ziehen.
+1. Treffen Sie unter **SAP-zertifizierte Server** Ihre Auswahl auf Grundlage des geplanten Verwendungszwecks für Ihren Server. Ziehen Sie das [Tool für Designentscheidungen](https://github.com/ibm-cloud-architecture/infrastructure-design-decision-tool) (bis zum Tool hinunterblättern) zu Rate oder wenden Sie sich an den [{{site.data.keyword.cloud_notm}}-Support](https://console.bluemix.net/docs/get-support/howtogetsupport.html#getting-customer-support), um weitere Informationen zu erhalten.
 2. Klicken Sie unten auf der Seite auf **Zur Bestellung hinzufügen**.
 
 ## Erweiterte Systemkonfigurationen einrichten
 {: #adv_config}
 
-1. Folgen Sie den Anleitungen für die [erweiterte Systemkonfiguration](https://console.bluemix.net/docs/bare-metal/configuring.html#advanced-system-configuration) als Hilfestellung mit den Werten im Fenster **Erweiterte Systemkonfiguration**.
+1. Folgen Sie den Anleitungen für die [erweiterte Systemkonfiguration](https://console.bluemix.net/docs/bare-metal/baremetal-provision.html#advanced-server-configuration-options) als Hilfestellung mit den Werten im Fenster **Erweiterte Systemkonfiguration**.
 
 Die SAP-Hostnamen dürfen maximal 13 alphanumerische Zeichen enthalten. Weitere Informationen zu SAP-Hostnamen finden Sie in den [SAP-Hinweisen 611361](https://launchpad.support.sap.com/#/611361) und [129997](https://launchpad.support.sap.com/#/129997). 
 
@@ -57,6 +57,11 @@ Die SAP-Hostnamen dürfen maximal 13 alphanumerische Zeichen enthalten. Weitere 
 3. Klicken Sie auf **Bestellung abschicken**. Sie werden zu einem Bildschirm mit Ihrer Bestellnummer weitergeleitet. Da dies auch Ihre Bestellbestätigung ist, können Sie den Bildschirm ausdrucken.
 
 Eine Bestätigungs-E-Mail mit dem Betreff _Ihre {{site.data.keyword.cloud_notm}}-Bestellung Nr. ## wurde genehmigt_ wird an die in Ihrem Profil angegebene E-Mail-Adresse versendet. Diese E-Mail dient als Benachrichtigung, dass Ihr Server genehmigt wurde und gerade bereitgestellt wird. Nach seiner Bereitstellung wird eine weitere Benachrichtigung versendet, dass Ihr Server verfügbar ist und über das [Kundenportal der {{site.data.keyword.cloud_notm}}-Infrastruktur](https://control.softlayer.com) verwaltet werden kann.
+
+## "Bring your own license" - BYOL
+{: #byol}
+
+Wenn Sie über eine eigene Lizenz für Ihr Betriebssystem verfügen, installieren Sie sie unter Beachtung der Anweisungen des Anbieters auf Ihrer Bare Metal Servers-Instanz. Weitere Informationen finden Sie unter [Die Option "Ohne Betriebssystem"](https://console.bluemix.net/docs/bare-metal/introduction-no-os.html#how-to-install-an-operating-system-on-a-no-os-server-). 
 
 ## Nächste Schritte
 

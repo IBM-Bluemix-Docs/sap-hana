@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-02"
+lastupdated: "2018-08-10"
 
 
 ---
@@ -16,7 +16,7 @@ lastupdated: "2018-03-02"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Einführung in das Lernprogramm zu IBM Cloud für SAP-Anwendungen
+# Lernprogramm zur Einführung
 {: #getting-started}
 
 Schon seit über 45 Jahren arbeiten {{site.data.keyword.IBM_notm}} und SAP in vielen Bereichen zusammen, darunter Hardware, Software, Cloud, Services und Finanzierung. Jetzt arbeiten sie gemeinsam an der Optimierung der {{site.data.keyword.cloud}}-Infrastruktur-Produkte, um in den über 60 {{site.data.keyword.cloud_notm}}-Rechenzentren weltweit eine Unterstützung für die SAP HANA-Lösung einzubeziehen.
@@ -35,7 +35,7 @@ Tabelle 1 enthält die Schritte, mit denen Sie Ihre {{site.data.keyword.cloud_no
    </THEAD>
    <TBODY>
    <tr>
-   <td>1. Die Abschnitte zu IBM Cloud und SAP lesen, die sich auf Ihre Implementierung beziehen.</td>
+   <td>1. Die Abschnitte zu IBM Cloud und SAP lesen, die sich auf Ihre Implementierung beziehen </td>
    <td>Wenn Ihre Organisation neu bei IBM Cloud ist, können die folgenden Informationen hilfreich sein, die noch vor der Planungsphase gelesen werden sollten.
    <li><a href="https://ibm.com/cloud-computing/">Was ist IBM Cloud?</a></li>
    <li><a href="https://ibm.com/cloud/get-started">Einführung in IBM Cloud</a></li>
@@ -60,7 +60,7 @@ Tabelle 1 enthält die Schritte, mit denen Sie Ihre {{site.data.keyword.cloud_no
    <td>Gehen Sie anhand der Schritte und Informationen in <a href="hana-provision-environment.html#provision_environment">SAP HANA-Umgebung bereitstellen</a> vor, um Ihre IBM Cloud-Infrastruktur einzurichten.</td>
    <tr>
    <td>6. SAP-Umgebung installieren</td>
-   <td>Die SAP-Umgebung wird in gleicher Weise in Ihrer IBM Cloud-Infrastruktur installiert wie die Server vor Ort. Weitere Informationen finden Sie unter <a href="hana-installing-SAP-landscape.htm#install_sap">SAP-Software und -anwendungen herunterladen und installieren</a>.</td>
+   <td>Die SAP-Umgebung wird in gleicher Weise in Ihrer IBM Cloud-Infrastruktur installiert wie die Server vor Ort. Weitere Informationen finden Sie unter <a href="hana-installing-SAP-landscape.html#install_sap">SAP-Software und -anwendungen herunterladen und installieren</a>.</td>
    </td>
    </tr>
    </TBODY>

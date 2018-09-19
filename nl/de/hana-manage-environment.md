@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-02-12"
+lastupdated: "2018-08-20"
 
 
 ---
@@ -25,14 +25,13 @@ Tabelle 1 enthält Hyperlinks, die Ihnen durch den Verwaltungsprozess helfen.
 
 Tabelle 1. Umgebung verwalten - Übersicht
 
-| Schritt | Details|
+| Schritt | Details |
 | --- | --- |
 | 1 | [Speicher bestellen](/docs/infrastructure/sap-hana/hana-order-storage.html) |
 | 2 | [Umgebung sichern](/docs/infrastructure/sap-hana/hana-secure-environment.html) |
 | 3 | [Gastbetriebssystem auf dem VMware ESX-Hypervisor installieren](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html) |
 | 4 | [SAP-Software und -anwendungen herunterladen und installieren](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html) |
-| 5 | [Konnektivität zum {{site.data.keyword.cloud_notm}}-Rechenzentrum testen](/docs/infrastructure/sap-hana/hana-testing-connectivity.html) |
-
+| 5 | [IBM Cloud-Infrastruktur für die Unterstützung von SAP HANA-Mehrfachknotensystemen konfigurieren](/docs/infrastructure/sap-hana/hana-multi-node.html)
 ## Nächste Schritte
 
 Folgen Sie den Hyperlinks in Tabelle 1, um mit der Verwaltung Ihrer SAP HANA-Umgebung zu beginnen.
