@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-06-07"
 
 
 ---
@@ -35,7 +35,7 @@ lastupdated: "2018-02-05"
 
 如果您想要在架構中區隔不同類型的網路資料流量，則可以訂購更多虛擬 LAN (VLAN)。請記住，其他 VLAN 只會導致資料流量隔離，而不會提高效能。SAP 一般建議將 10 Gb 網路用於處理其應用程式伺服器與 SAP HANA 資料庫之間的資料流量，以及用於其他 SAP HANA 用戶端（例如 SAP Business Intelligence）。如果您要隔離 SAP HANA 伺服器與其他用戶端的管理存取權，則應該為架構訂購另一個 VLAN。另一個選項是透過公用及專用網路來區隔資料流量，因為 {{site.data.keyword.cloud_notm}} 不支援進一步的「實體」上行鏈路。請遵循 SAP for [SAP HANA Tailored Data Center Integration (TDI)](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/) 的建議。
 
-透過 VPN 存取，以及從 jumpbox 存取，容許從 SAP HANA Studio 透通存取 SAP HANA 實例。
+透過 VPN 存取，以及從跳箱存取，容許從 SAP HANA Studio 透通存取 SAP HANA 實例。
 
 ## 外部儲存空間
 {: #external_storage}
@@ -44,11 +44,11 @@ lastupdated: "2018-02-05"
 
 對於外部儲存空間，在決定儲存空間解決方案之前，請務必計算專案需求。如果您需要還原 SAP HANA 系統，則儲存空間的 IOPS 會對還原時間範圍造成顯著影響。因為所有備份都是線上備份，不論 SAP HANA 配置方式為何，所以備份時間範圍對 SAP HANA 來不是那麼重要。
 
-例如，使用 {{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}}，您可以計算以最大速度進行大約 12 TB 的 SAP HANA 還原。您必須建立三個實體儲存裝置（區塊儲存空間 iSCSI LUN），因為每個裝置的大小上限是 4 TB。您可以使用 Linux Logical Volume Manager 透過這三個裝置建立分段，並建立一個 12 TB 的邏輯裝置。 
+例如，使用 {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}，您可以計算以最大速度進行大約 12 TB 的 SAP HANA 還原。您必須建立三個實體儲存裝置（區塊儲存空間 iSCSI LUN），因為每個裝置的大小上限是 4 TB。您可以使用 Linux Logical Volume Manager 透過這三個裝置建立分段，並建立一個 12 TB 的邏輯裝置。 
 
 12 TB 可讓您使用 3x10 IOPS/GB，這總共 122,880 IOPS/GB，以 16 KB 為單位。這可讓您具有每秒 1.875 GB 的還原時間，或還原時間總計低於 2 小時。因為以 50/50 分配的讀取及寫入進行 IOPS 測量，所以您可以將數字視為還原效能的較低界限。如果您依賴特定還原時間範圍，則建議執行備份及還原測試。
 
-{{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}}、{{site.data.keyword.filestorage_full_notm}} 或 NAS 可以提供為備份空間，或伺服器上所安裝之其他軟體元件的儲存空間。不過，「{{site.data.keyword.cloud_notm}} 儲存空間」及 NSA 無法用來作為 SAP HANA 的儲存空間，因為這些選項不滿足 KPI 準則。
+{{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}、{{site.data.keyword.filestorage_full_notm}} 或 NAS 可以提供為備份空間，或伺服器上所安裝之其他軟體元件的儲存空間。不過，「{{site.data.keyword.cloud_notm}} 儲存空間」及 NSA 無法用來作為 SAP HANA 的儲存空間，因為這些選項不滿足 KPI 準則。
 
 如需相關資訊，請參閱[開始使用 {{site.data.keyword.blockstorageshort}}](https://console.bluemix.net/docs/infrastructure/BlockStorage/index.html#getting-started-with-block-storage) 及[開始使用 {{site.data.keyword.filestorage_full_notm}}](https://console.bluemix.net/docs/infrastructure/FileStorage/index.html#getting-started-with-file-storage)。
 
@@ -60,6 +60,8 @@ lastupdated: "2018-02-05"
 SAP HANA 系統抄寫可以配置從某部伺服器自動失效接手至抄本。遵循系統抄寫上的 SAP 文件，以判定最適合您應用程式情境及災難備援層次的抄寫模式。根據抄寫模式，需要滿足不同的網路 KPI。請查閱網路傳輸量及延遲的 SAP 建議，以判斷您選擇的作業模式所需的傳輸量及延遲上限。{{site.data.keyword.cloud_notm}} 網路拓蹼應該可以提供所有必要的配置。如果您不確定，或想要不同資料中心內的災難回復站台達到最大災難備援，則請與「{{site.data.keyword.cloud_notm}} 支援中心」聯絡以決定您情境的最佳設定。
 
 請注意，「SAP HANA 橫向擴充（多節點）」環境仍在評估中。換句話說，SAP HANA 的待命節點不是 {{site.data.keyword.cloud_notm}} 環境中的現行選項。
+
+如需高可用性及災難回復的相關資訊，請參閱[High availability](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#availability), and [災難回復](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#dr)。
 
 如需系統抄寫以及網路傳輸量和延遲的相關資訊，請參閱
   * [如何執行 SAP HANA 的系統抄寫](https://www.sap.com/documents/2013/10/26c02b58-5a7c-0010-82c7-eda71af511fa.html)

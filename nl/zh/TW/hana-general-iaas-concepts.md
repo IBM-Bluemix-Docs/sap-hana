@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-02"
+lastupdated: "2018-06-28"
 
 
 ---
@@ -29,13 +29,13 @@ lastupdated: "2018-02-02"
 
 ## 裸機伺服器
 
-{{site.data.keyword.baremetal_long}} 是具有有限自訂功能的實體伺服器。這些伺服器專供您或您的客戶使用，而且不會與其他 {{site.data.keyword.cloud_notm}} 客戶共用任何部分（包括伺服器資源），並且佈建為執行您選擇之作業系統 (OS) 的整個實體伺服器。SAP HANA 供應項目的 OS 是 Red Hat Linux for SAP HANA 6.7 OS。
+{{site.data.keyword.baremetal_long}} 是具有有限自訂功能的實體伺服器。這些伺服器專供您或您的客戶使用，而且不會與其他 {{site.data.keyword.cloud_notm}} 客戶共用任何部分（包括伺服器資源），並且佈建為執行您選擇之作業系統 (OS) 的整個實體伺服器。SAP HANA 供應項目的作業系統是 Red Hat Enterprise Linux 7.4 for SAP HANA、SUSE Linux Enterprise Server 12 SP2 for SAP HANA 及 VMware Server Virtualization 6.5。
 
 因為自訂作業在裸機伺服器上受到限制，所以可以達到 1 到 4 小時的更快佈建時間。當您嘗試在競爭開始之前讓應用程式進入市場時，快速佈建很有幫助。
 
 已為您提供 RAM 及 CPU 組合的陣列，因為 SAP 認證的伺服器具有預先配置的 RAM 數量及 CPU 數目。在訂購處理程序期間，或在部署伺服器之後透過支援問題單，並*無法* 變更組合。
 
-如需相關資訊，請參閱[關於裸機伺服器](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers)。 
+如需相關資訊，請參閱[關於裸機伺服器](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers)。 
 
 ## 網路連線功能
 
@@ -62,7 +62,7 @@ NAS 及 FTP 儲存空間是每月計費，並且提供各種儲存空間大小�
 
 ## 部署及管理
 
-在您建立 {{site.data.keyword.cloud_notm}} 客戶帳戶之後，會透過 {{site.data.keyword.cloud_notm}} 基礎架構客戶入口網站或 API 來部署 {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}。伺服器可以透過客戶入口網站、API 或指令行介面 (CLI) 進行管理。如需相關資訊，請參閱[關於裸機伺服器](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers)。
+在您建立 {{site.data.keyword.cloud_notm}} 客戶帳戶之後，會透過 {{site.data.keyword.cloud_notm}} 基礎架構客戶入口網站或 API 來部署 {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}。伺服器可以透過客戶入口網站、API 或指令行介面 (CLI) 進行管理。如需相關資訊，請參閱[關於裸機伺服器](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers)。
 
 ## 支援
 

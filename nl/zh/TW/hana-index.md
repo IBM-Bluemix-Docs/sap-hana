@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-02"
+lastupdated: "2018-08-10"
 
 
 ---
@@ -16,7 +16,7 @@ lastupdated: "2018-03-02"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# 開始使用 IBM Cloud for SAP Applications 指導教學
+# 入門指導教學
 {: #getting-started}
 
 {{site.data.keyword.IBM_notm}} 及 SAP 已在多個領域（包括硬體、軟體、雲端、服務及融資）分工合作 45 年。它們現在分工合作以最佳化 {{site.data.keyword.cloud}} 基礎架構產品，支援全球超過 60 個 {{site.data.keyword.cloud_notm}} 資料中心內的 SAP HANA 解決方案。
@@ -24,7 +24,7 @@ lastupdated: "2018-03-02"
 
 此內容提供 {{site.data.keyword.cloud_notm}} 上 SAP HANA 基礎架構及訂閱的佈建及安裝建議。它不會取代為任何 SAP HANA 文件，也不是要提供安裝處理程序的完整說明。其目的是協助您進行基礎架構規劃及佈建，以開始 SAP 安裝。SAP 安裝（包括資料庫安裝）不會因內部部署環境的安裝而不同。關於提供的基礎架構，提供建議及準則，以協助您在 {{site.data.keyword.cloud_notm}} 環境中操作 SAP 系統。在基礎架構備妥之後，SAP HANA 系統的作業不會與其在任何其他資料中心內的作業不同。
 
-「表 1」包含的步驟可協助您快速建置 {{site.data.keyword.cloud_notm}} 基礎架構。
+表 1 包含的步驟可協助您快速建置 {{site.data.keyword.cloud_notm}} 基礎架構。
 <table>
    <CAPTION>表 1. 快速入門步驟</CAPTION>
    <THEAD>
@@ -35,7 +35,7 @@ lastupdated: "2018-03-02"
    </THEAD>
    <TBODY>
    <tr>
-   <td>1. 閱讀與您實作相關的 IBM Cloud 及 SAP 內容。</td>
+   <td>1. 讀取與您的實作相關的 IBM Cloud 和 SAP 內容</td>
    <td>如果您的組織初次使用 IBM Cloud，則下列資訊可能有用，您應該在規劃階段之前閱讀它。
    <li><a href="https://ibm.com/cloud-computing/">何謂 IBM Cloud</a></li>
    <li><a href="https://ibm.com/cloud/get-started">開始使用 IBM Cloud</a></li>
@@ -60,7 +60,7 @@ lastupdated: "2018-03-02"
    <td>使用<a href="hana-provision-environment.html#provision_environment">佈建 SAP HANA 環境</a>中的步驟及資訊，來設定 IBM Cloud 基礎架構。</td>
    <tr>
    <td>6. 安裝 SAP 架構</td>
-   <td>您可以在 IBM Cloud 基礎架構上安裝 SAP 架構，就像伺服器是內部部署一樣。如需相關資訊，請參閱<a href="hana-installing-SAP-landscape.htm#install_sap">下載並安裝 SAP 軟體及應用程式</a>。</td>
+   <td>您可以在 IBM Cloud 基礎架構上安裝 SAP 架構，就像伺服器是內部部署一樣。如需相關資訊，請參閱<a href="hana-installing-SAP-landscape.html#install_sap">下載並安裝 SAP 軟體及應用程式</a>。</td>
    </td>
    </tr>
    </TBODY>
