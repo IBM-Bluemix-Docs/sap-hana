@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-06"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -20,7 +20,7 @@ lastupdated: "2018-02-06"
 # Fornecendo seu ambiente SAP HANA
 {: #provision_environment}
 
-A Tabela 1 contém as etapas para provisionar sua infraestrutura do {{site.data.keyword.cloud}} for SAP Applications. 
+A Tabela 1 contém as etapas para provisionar o {{site.data.keyword.cloud}} SAP-Certified Infrastructure. 
 
 Tabela 1. Visão Geral de fornecimento
 

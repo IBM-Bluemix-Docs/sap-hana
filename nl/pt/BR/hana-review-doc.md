@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -27,6 +27,7 @@ Revise a documentação relevante para ajudá-lo a determinar quaisquer pré-req
   * [Product Availability Matrix (PAM) do SAP](https://apps.support.sap.com/sap/support/pam); requer um ID do usuário S do SAP.
   * [Notas SAP](https://support.sap.com/notes); requer um ID do usuário S do SAP.
   * [SAP NetWeaver no {{site.data.keyword.cloud_notm}}](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-index.html#getting-started) 
+  * [Arquitetura de referência da SAP do {{site.data.keyword.cloud_notm}}](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-index.html#getting-started)
   * Documentação de terceiro
   
 ## Próximas Etapas

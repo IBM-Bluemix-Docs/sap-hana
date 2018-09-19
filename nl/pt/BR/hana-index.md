@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-02"
+lastupdated: "2018-08-10"
 
 
 ---
@@ -16,7 +16,7 @@ lastupdated: "2018-03-02"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Introdução ao tutorial do IBM Cloud for SAP Applications
+# Tutorial de Introdução
 {: #getting-started}
 
 {{site.data.keyword.IBM_notm}} e SAP estão colaborando por mais de 45 anos em múltiplas áreas, incluindo hardware, software, nuvem, serviços e finanças. Elas estão agora colaborando para otimizar os produtos de infraestrutura do {{site.data.keyword.cloud}} para incluir suporte para a solução SAP HANA nos mais de 60 data centers do {{site.data.keyword.cloud_notm}} no mundo todo.
@@ -35,7 +35,7 @@ A Tabela 1 contém etapas para ajudá-lo a ter sua infraestrutura do {{site.data
    </THEAD>
    <TBODY>
    <tr>
-   <td>1. Ler o conteúdo do IBM Cloud e SAP que está relacionado à sua implementação.</td>
+   <td>1. Ler o conteúdo do IBM Cloud e da SAP que está relacionado à sua implementação</td>
    <td>Se a sua organização é nova para o IBM Cloud, as informações a seguir podem ser úteis e devem ser lidas antes da fase de planejamento.
    <li><a href="https://ibm.com/cloud-computing/">O que é IBM Cloud?</a></li>
    <li><a href="https://ibm.com/cloud/get-started">Introdução ao IBM Cloud</a></li>
@@ -59,8 +59,8 @@ A Tabela 1 contém etapas para ajudá-lo a ter sua infraestrutura do {{site.data
    <td>5. Provisionar seu sistema</td>
    <td>Use as etapas e informações em <a href="hana-provision-environment.html#provision_environment">Provisionando seu ambiente SAP HANA</a> para configurar a infraestrutura do IBM Cloud.</td>
    <tr>
-   <td>6. Instalar a paisagem do SAP</td>
-   <td>Você instala a sua paisagem do SAP em sua infraestrutura do IBM Cloud da mesma forma como se os servidores estivessem no local. Veja <a href="hana-installing-SAP-landscape.htm#install_sap">Fazendo download e instalando software e aplicativos SAP</a> para obter mais informações.</td>
+   <td>6. Instalar a paisagem da SAP</td>
+   <td>Você instala a sua paisagem do SAP em sua infraestrutura do IBM Cloud da mesma forma como se os servidores estivessem no local. Veja <a href="hana-installing-SAP-landscape.html#install_sap">Fazendo download e instalando software e aplicativos SAP</a> para obter mais informações.</td>
    </td>
    </tr>
    </TBODY>

@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-02-12"
+lastupdated: "2018-08-20"
 
 
 ---
@@ -19,7 +19,7 @@ lastupdated: "2018-02-12"
 # 1. Pedindo armazenamento
 {: #order_storage}
 
-O {{site.data.keyword.blockstoragefull}}, o {{site.data.keyword.filestorage_full_notm}} e o Network Attached Storage (NAS) são pedidos depois de implementar seus {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}. 
+O {{site.data.keyword.blockstoragefull}}, o {{site.data.keyword.filestorage_full_notm}} e o Network Attached Storage (NAS) são pedidos depois de implementar seus {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}.
 
 ## Pedindo armazenamento do {{site.data.keyword.cloud_notm}}
 {: #ibm_storage}
@@ -38,5 +38,5 @@ O armazenamento NAS pode ser outra extensão de valor do armazenamento local de 
   [3. Instalando seu S.O. guest no hypervisor ESX (opcional)](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html)
 
   [4. Fazendo download e instalando softwares e aplicativos SAP](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
-  
-  [5. Testando a conectividade com o seu data center do {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-hana/hana-testing-connectivity.html)
+
+  [5. Configurando sua infraestrutura do IBM Cloud para suportar o multinó do SAP HANA](/docs/infrastructure/sap-hana/hana-multi-node.html)

@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-06-07"
 
 
 ---
@@ -35,20 +35,20 @@ A segunda opção acessa a Rede Privada Virtual (VPN) do {{site.data.keyword.clo
 
 Se você deseja separar diferentes tipos de tráfego de rede em sua paisagem, é possível pedir mais LANs virtuais (VLANs). Tenha em mente que as VLANs adicionais somente levam à segregação de tráfego, sem aumentar o desempenho. A SAP geralmente recomenda usar redes de 10 Gb para o tráfego entre seus servidores de aplicativos e bancos de dados SAP HANA e para outros clientes SAP HANA, como SAP Business Intelligence. Se você deseja segregar o acesso administrativo para seu servidor SAP HANA de outros clientes, é necessário pedir outra VLAN para sua paisagem. Outra opção é separar o tráfego por meio da rede pública e privada, pois uplinks "físicos" adicionais não são suportados pelo {{site.data.keyword.cloud_notm}}. Siga as recomendações da SAP para [Tailored Data Center Integration (TDI) do SAP HANA](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/).
 
-O acesso por meio de VPN, bem como acesso de um jumpbox, permite acesso transparente às suas instâncias do SAP HANA por meio do SAP HANA Studio.
+O acesso por meio de VPN, bem como o acesso por meio de um jump box, permite acesso transparente às suas instâncias do SAP HANA por meio do SAP HANA Studio.
 
 ## Armazenamento externo
 {: #external_storage}
 
 Além do armazenamento local, você pode requerer mais armazenamento externo para executar backups. Para esses requisitos, é possível pedir armazenamento de bloco ou Network Attached Storage (NAS) conforme descrito em [Armazenamento](/docs/infrastructure/sap-hana/hana-general-iaas-concepts.html#storage). Como dados extras de bloco de armazenamento e de Network File System (NFS) são transferidos por meio dos mesmos adaptadores físicos que todos os outros tráfegos de rede, o impacto precisa ser considerado. 
 
-Para armazenamento externo, é importante calcular seus requisitos do projeto antes de decidir sobre uma solução de armazenamento. Se você precisar restaurar o sistema SAP HANA, o IOPS de seu armazenamento terá uma influência significativa na janela de restauração. As janelas de backup não são tão críticas com o SAP HANA porque todos os backups são backups on-line, não importa como você configura o SAP HANA.
+Para armazenamento externo, é importante calcular seus requisitos do projeto antes de decidir sobre uma solução de armazenamento. Se você precisar restaurar um sistema SAP HANA, o IOPS de seu armazenamento terá uma influência significativa na janela de restauração. As janelas de backup não são tão críticas com o SAP HANA porque todos os backups são backups on-line, não importa como você configura o SAP HANA.
 
-Por exemplo, usando o {{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}}, é possível calcular para uma restauração aproximada de 12 TB do SAP HANA em uma velocidade máxima. Deve-se criar três dispositivos de armazenamento físico (LUNs iSCSI de armazenamento de bloco) porque o tamanho máximo por dispositivo é 4 TB. É possível criar uma faixa nesses três dispositivos com o Gerenciador de Volume Lógico Linux e criar um dispositivo lógico de 12 TB. 
+Por exemplo, usando o {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, é possível calcular para uma restauração aproximada de 12 TB do SAP HANA em uma velocidade máxima. Deve-se criar três dispositivos de armazenamento físico (LUNs iSCSI de armazenamento de bloco) porque o tamanho máximo por dispositivo é 4 TB. É possível criar uma faixa nesses três dispositivos com o Gerenciador de Volume Lógico Linux e criar um dispositivo lógico de 12 TB. 
 
 Os 12 TB permitem 3x10 IOPS/GB, que é um total de 122.880 IOPS/GB em 16 KB. Isso fornece a você um tempo de restauração de 1,875 GB por segundo ou um tempo de restauração total abaixo de 2 horas. Como a medida para o IOPS é tomada em uma distribuição 50/50 de leitura e gravação, é possível considerar os números como um limite inferior de desempenho de restauração. É aconselhável executar testes de backup e restauração se você conta com uma determinada janela de restauração.
 
-O {{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}}, o {{site.data.keyword.filestorage_full_notm}} ou o NAS pode servir como um espaço de backup ou como armazenamento para componentes de software adicionais que são instalados em seu servidor. O {{site.data.keyword.cloud_notm}} Storage e o NSA não podem, no entanto, ser usados como armazenamento para o SAP HANA porque essas opções não cumprem os critérios de KPI.
+O {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, o {{site.data.keyword.filestorage_full_notm}} ou o NAS podem servir como um espaço de backup ou como armazenamento para componentes de software adicionais que são instalados em seu servidor. O {{site.data.keyword.cloud_notm}} Storage e o NSA não podem, no entanto, ser usados como armazenamento para o SAP HANA porque essas opções não cumprem os critérios de KPI.
 
 Para obter mais informações, veja [Introdução ao {{site.data.keyword.blockstorageshort}}](https://console.bluemix.net/docs/infrastructure/BlockStorage/index.html#getting-started-with-block-storage) e [Introdução ao {{site.data.keyword.filestorage_full_notm}}](https://console.bluemix.net/docs/infrastructure/FileStorage/index.html#getting-started-with-file-storage).
 
@@ -61,11 +61,13 @@ A replicação do sistema SAP HANA pode ser configurada com um failover automati
 
 Os ambientes de Ampliação do SAP HANA (multinó) ainda estão sob avaliação. Em outras palavras, um nó de espera para SAP HANA não é uma opção atual em um ambiente {{site.data.keyword.cloud_notm}}.
 
+Para obter mais informações sobre alta disponibilidade e recuperação de desastre, veja [Alta disponibilidade](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#availability) e [Recuperação de desastre](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#dr).
+
 Para obter mais informações sobre a replicação do sistema e o rendimento e latência de rede, veja
   * [Como executar a replicação do sistema para o SAP HANA](https://www.sap.com/documents/2013/10/26c02b58-5a7c-0010-82c7-eda71af511fa.html)
   * [Rede necessária para replicação do sistema do SAP HANA](https://www.sap.com/documents/2014/06/babb2b55-5a7c-0010-82c7-eda71af511fa.html)
 
-Para obter mais informações sobre como configurar as extensões de cluster HA para seu sistema operacional Linux, veja
+Para obter mais informações sobre como configurar as extensões de cluster de HA para seu sistema operacional Linux, veja
   * [Replicação automatizada do sistema do SAP HANA com marca-passo no Guia de configuração do RHEL](https://access.redhat.com/articles/1466063)
   * [Cenário otimizado de desempenho SR do SAP HANA](https://www.suse.com/docrep/documents/ir8w88iwu7/suse_linux_enterprise_server_for_sap_applications_12_sp1.pdf)
 

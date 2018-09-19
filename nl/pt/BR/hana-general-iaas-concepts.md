@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-02"
+lastupdated: "2018-06-28"
 
 
 ---
@@ -29,13 +29,13 @@ Para obter mais informações, veja [Data centers](https://www.ibm.com/cloud-com
 
 ## Servidores bare metal
 
-{{site.data.keyword.baremetal_long}} são servidores físicos com recursos de customização limitada. Os servidores são dedicados ao seu uso ou de seu cliente e não compartilhados em nenhuma parte, incluindo recursos do servidor, com outros clientes do {{site.data.keyword.cloud_notm}} e são provisionados como um servidor físico inteiro executando sua escolha de sistema operacional (OS). O sistema operacional para a oferta SAP HANA é o S.O. Red Hat Linux for SAP HANA 6.7.
+{{site.data.keyword.baremetal_long}} são servidores físicos com recursos de customização limitada. Os servidores são dedicados ao seu uso ou de seu cliente e não compartilhados em nenhuma parte, incluindo recursos do servidor, com outros clientes do {{site.data.keyword.cloud_notm}} e são provisionados como um servidor físico inteiro executando sua escolha de sistema operacional (OS). Os sistemas operacionais para a oferta SAP HANA são Red Hat Enterprise Linux 7.4 for SAP HANA, SUSE Linux Enterprise Server 12 SP2 for SAP HANA e VMware Server Virtualization 6.5.
 
 Como a customização é limitado em servidores bare metal, tempos mais rápidos de fornecimento entre 1 e 4 horas são obtidos. O fornecimento rápido é útil quando você está tentando colocar um app no mercado antes da concorrência.
 
 É oferecida uma matriz de combinações de RAM e CPU, pois os servidores SAP certificados têm uma quantia pré-configurada de RAM e número de CPUs. A combinação *não poderá* mudar durante o processo de solicitação ou por meio de um chamado de suporte depois que os servidores forem implementados.
 
-Para obter mais informações, consulte [Sobre os servidores bare metal](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers). 
+Para obter mais informações, veja [Sobre servidores bare metal](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers). 
 
 ## Conectividade de rede
 
@@ -50,7 +50,7 @@ Para obter mais informações, veja [Introdução à rede privada virtual](https
 
 O armazenamento local é fornecido com seus {{site.data.keyword.baremetal_short}} e usa a LAN virtual de rede privada (VLAN) do {{site.data.keyword.cloud_notm}} para ajudar a fornecer segurança de nível corporativo sem obstrução de acesso de administrador. Para os servidores SAP HANA certificados, ele é projetado e configurado para atender aos KPIs definidos pela SAP para o rendimento e a latência em conformidade com os critérios de certificação do SAP HANA. O armazenamento local tem o tamanho relevante dos diferentes sistemas de subarquivo, conforme definido pelo Guia de instalação do SAP HANA (`data.log` e `shared`). Nenhuma adaptação adicional precisa ser feita em sua parte.
 
-Há dois tipos de armazenamento para o {{site.data.keyword.cloud_notm}}, bloco e arquivo, dentre os quais escolher para executar backups e restaurações para o SAP HANA. Ambos os tipos usam input/output operations per second (IOPS), que é usado para determinar as necessidades de armazenamento. O IOPS é medido com base no tamanho de bloco de 16 KB com uma combinação de leitura/gravação 50/50. Para obter o IOPS máximo em um volume, recursos de rede adequados precisam estar no local. Outras considerações incluem uso de rede privada fora do armazenamento e do lado do host e ajustes específicos do aplicativo (por exemplo, pilhas de IP e profundidades da fila). Para obter mais informações, veja [Introdução ao armazenamento de bloco](https://console.bluemix.net/docs/infrastructure/BlockStorage/index.html#getting-started-with-block-storage) e [Introdução ao armazenamento de arquivo](https://console.bluemix.net/docs/infrastructure/FileStorage/index.html#getting-started-with-file-storage).
+Há dois tipos de armazenamento para o {{site.data.keyword.cloud_notm}}, bloco e arquivo, dentre os quais escolher para executar backups e restaurações para o SAP HANA. Ambos os tipos usam input/output operations per second (IOPS), que é usado para determinar as necessidades de armazenamento. O IOPS é medido com base no tamanho de bloco de 16 KB com uma combinação de leitura/gravação 50/50. Para obter o IOPS máximo em um volume, recursos de rede adequados precisam estar no local. Outras considerações incluem uso de rede privada fora do armazenamento e do lado do host e ajustes específicos do aplicativo (por exemplo, pilhas de IP e profundidades da fila). Para obter mais informações, veja [Introdução ao Block Storage](https://console.bluemix.net/docs/infrastructure/BlockStorage/index.html#getting-started-with-block-storage) e [Introdução ao File Storage](https://console.bluemix.net/docs/infrastructure/FileStorage/index.html#getting-started-with-file-storage).
 
 O {{site.data.keyword.cloud_notm}} também oferece o Network Attached Storage (NAS) se você está procurando uma solução de backup rápida e com custo eficiente para seus dispositivos. O NAS pode ser montado por meio do Network File System (NFS) e pode ser usado com o Protocolo de Transferência de Arquivos (FTP) com Parallels Plesk Painel e cPanel@WHM.
 
@@ -62,7 +62,7 @@ Para obter mais informações sobre NAS em um ambiente {{site.data.keyword.cloud
 
 ## Implementação e gerenciamento
 
-Os {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} são implementados por meio do portal do cliente de infraestrutura do {{site.data.keyword.cloud_notm}} ou da API depois de criar sua conta do cliente do {{site.data.keyword.cloud_notm}}. Os servidores podem ser gerenciados por meio do portal do cliente, API ou interface da linha de comandos (CLI). Para obter mais informações, consulte [Sobre os servidores bare metal](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers).
+Os {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} são implementados por meio do portal do cliente de infraestrutura do {{site.data.keyword.cloud_notm}} ou da API depois de criar sua conta do cliente do {{site.data.keyword.cloud_notm}}. Os servidores podem ser gerenciados por meio do portal do cliente, API ou interface da linha de comandos (CLI). Para obter mais informações, veja [Sobre servidores bare metal](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers).
 
 ## Suporte
 
