@@ -9,6 +9,11 @@ SAP HANA dans IBM Cloud
     hana-about.md
     hana-general-iaas-concepts.md
     hana-byol.md
+
+    {: .topicgroup}
+    Liens connexes
+        [Fulcrum: Transformational digital business platform enables operational excellence](https://www.youtube.com/watch?v=RHDIcxguyIE)
+        [Case study: Fulcrum](https://www.ibm.com/case-studies/fulcrum-cloud-sap-legal-services)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -35,7 +40,7 @@ SAP HANA dans IBM Cloud
         hana-secure-environment.md
         hana-installing-guest-operating-system-VMware-deployments.md
         hana-installing-SAP-landscape.md
-        hana-testing-connectivity.md
+        hana-multi-node.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
@@ -43,6 +48,6 @@ SAP HANA dans IBM Cloud
 
     {: .topicgroup}
     Foires aux questions
-        [FAQs: SAP on IBM Cloud](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-faqs.html#faqs)
-        
+        [FAQs: SAP on IBM Cloud](https://consoloe.bluemix.net/docs/infrastructure/sap-netweaver/sap-faqs.html#faqs)
+
 {: .navgroup-end}
