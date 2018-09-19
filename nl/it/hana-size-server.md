@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-08-29"
 
 
 ---
@@ -18,7 +18,7 @@ lastupdated: "2018-02-05"
 {:table: .aria-labeledby="caption"}
 
 
-# 4. Ridimensionamento del server 
+# 4. Ridimensionamento del server
 {: #size_the_server}
 
 Dopo che hai deciso quali soluzioni SAP pensi di utilizzare, il tuo passo successivo è di determinare il numero di {{site.data.keyword.baremetal_long}} di cui hai bisogno per supportare il tuo scenario SAP e per assicurarti che i server siano correttamente dimensionati.

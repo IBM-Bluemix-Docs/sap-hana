@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-06"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -20,7 +20,7 @@ lastupdated: "2018-02-06"
 # Provisioning del tuo ambiente SAP HANA
 {: #provision_environment}
 
-La tabella 1 contiene la procedura per il provisioning del tuo {{site.data.keyword.cloud}} per l'infrastruttura delle applicazioni SAP. 
+La tabella 1 contiene la procedura per il provisioning del tuo {{site.data.keyword.cloud}} SAP-Certified Infrastructure. 
 
 Tabella 1. Panoramica sul provisioning
 

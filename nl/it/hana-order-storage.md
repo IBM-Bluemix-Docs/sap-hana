@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-02-12"
+lastupdated: "2018-08-20"
 
 
 ---
@@ -19,9 +19,9 @@ lastupdated: "2018-02-12"
 # 1. Ordine dell'archiviazione
 {: #order_storage}
 
-{{site.data.keyword.blockstoragefull}}, {{site.data.keyword.filestorage_full_notm}} e NAS (Network Attached Storage) vengono ordinati dopo che distribuisci il tuo {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}. 
+{{site.data.keyword.blockstoragefull}}, {{site.data.keyword.filestorage_full_notm}} e NAS (Network Attached Storage) vengono ordinati dopo che distribuisci il tuo {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}.
 
-## Ordine dell'archiviazione {{site.data.keyword.cloud_notm}} 
+## Ordine dell'archiviazione {{site.data.keyword.cloud_notm}}
 {: #ibm_storage}
 
 Puoi utilizzare la procedura in [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](https://console.bluemix.net/docs/infrastructure/BlockStorage/provisioning-block_storage.html#provisioning-and-managing-block-storage) o [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](https://console.bluemix.net/docs/infrastructure/FileStorage/provisioning-file-storage.html#provisioning-and-managing-ibm-file-storage-for-ibm-cloud) per ordinare la tua soluzione di archiviazione del backup e del ripristino. Vieni guidato attraverso il processo di decisione di quale tipo di archiviazione utilizzare, come ordinarla e come distribuirla al tuo server.
@@ -38,5 +38,5 @@ L'archiviazione NAS può essere un'altra soluzione importante dell'archiviazione
   [3. Installazione del tuo SO guest nell'hypervisor ESX (facoltativo)](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html)
 
   [4. Scaricamento e installazione delle applicazioni e del software SAP](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
-  
-  [5. Test della connettività al tuo data center {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-hana/hana-testing-connectivity.html)
+
+  [5. Configurazione della tua infrastruttura IBM Cloud per supportare SAP HANA a più nodi](/docs/infrastructure/sap-hana/hana-multi-node.html)

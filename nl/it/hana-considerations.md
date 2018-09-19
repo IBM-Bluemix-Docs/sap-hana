@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-06-07"
 
 
 ---
@@ -37,18 +37,18 @@ Se vuoi separare tipi differenti di traffico di rete nel tuo scenario, puoi ordi
 
 L'accesso tramite la VPN, così come l'accesso da un jumpbox, consente l'accesso trasparente alle tue istanze SAP HANA da SAP HANA Studio.
 
-## Archiviazione esterna 
+## Archiviazione esterna
 {: #external_storage}
 
 In aggiunta all'archiviazione locale, potresti aver bisogno di ulteriore archiviazione per eseguire i backup. Per questi requisiti, puoi ordinare l'archiviazione blocchi o NAS (Network Attached Storage) come descritto in [Archiviazione](/docs/infrastructure/sap-hana/hana-general-iaas-concepts.html#storage). Poiché gli ulteriori dati NFS (Network File System) e di archiviazione blocchi sono trasferiti tramite gli stessi adattatori fisici come tutto il restante traffico di rete, bisogna tenerne presente l'impatto. 
 
-Per l'archiviazione esterna, è importante calcolare i tuoi requisiti del progetto prima di decidere una soluzione di archiviazione. Se hai bisogno di ripristinare il sistema SAP HANA, gli IOPS della tua archiviazione hanno un'influenza significativa nella tua finestra di ripristino. Le finestre di backup non sono così critiche per SAP HANA poiché tutti i backup sono online indipendentemente da come configuri SAP HANA.
+Per l'archiviazione esterna, è importante calcolare i tuoi requisiti del progetto prima di decidere una soluzione di archiviazione. Se hai bisogno di ripristinare un sistema SAP HANA, gli IOPS della tua archiviazione hanno un'influenza significativa nella tua finestra di ripristino. Le finestre di backup non sono così critiche per SAP HANA poiché tutti i backup sono online indipendentemente da come configuri SAP HANA.
 
-Ad esempio, utilizzando {{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}}, puoi calcolare un ripristino approssimativo di 12 TB per SAP HANA a una massima velocità. Devi creare tre dispositivi di archiviazione fisici (LUN iSCSI archiviazione blocchi) perché la dimensione massima per dispositivo è 4 TB. Puoi creare uno stripe di questi tre dispositivi con il gestore del volume logico Linux e creare un dispositivo logico di 12 TB. 
+Ad esempio, utilizzando {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, puoi calcolare un ripristino approssimativo di 12 TB per SAP HANA a una massima velocità. Devi creare tre dispositivi di archiviazione fisici (LUN iSCSI archiviazione blocchi) perché la dimensione massima per dispositivo è 4 TB. Puoi creare uno stripe di questi tre dispositivi con il gestore del volume logico Linux e creare un dispositivo logico di 12 TB. 
 
 I 12 TB ti consentono 3x10 IOPS/GB, per un totale di 122,880 IOPS/GB a 16 KB. Questo ti fornisce un tempo di ripristino di 1.875 GB al secondo o un totale di meno di 2 ore. Poiché la misurazione degli IOPS è presa in una distribuzione 50/50 di lettura e scrittura, puoi considerare questi numeri come un limite inferiore delle prestazioni di ripristino. Si consiglia di eseguire i test di backup e ripristino se utilizzi una certa finestra di ripristino.
 
-{{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}} o NAS possono essere utilizzati come spazio di backup o di archiviazione per ulteriori componenti software installati sul tuo server. L'archiviazione {{site.data.keyword.cloud_notm}} e NSA non può, tuttavia, essere utilizzata come archiviazione per SAP HANA perché queste opzioni non soddisfano i criteri KPI.
+{{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}} o NAS possono essere utilizzati come spazio di backup o di archiviazione per ulteriori componenti software installati sul tuo server. L'archiviazione {{site.data.keyword.cloud_notm}} e NSA non può, tuttavia, essere utilizzata come archiviazione per SAP HANA perché queste opzioni non soddisfano i criteri KPI.
 
 Per ulteriori informazioni, vedi [Getting started with {{site.data.keyword.blockstorageshort}}](https://console.bluemix.net/docs/infrastructure/BlockStorage/index.html#getting-started-with-block-storage) e [Getting started with {{site.data.keyword.filestorage_full_notm}}](https://console.bluemix.net/docs/infrastructure/FileStorage/index.html#getting-started-with-file-storage).
 
@@ -61,7 +61,9 @@ La replica del sistema SAP HANA può essere configurata con un failover automati
 
 Tieni presente che gli ambienti con scaling incrementale SAP HANA (a più nodi) sono ancora in corso di valutazione. In altre parole, un nodo di standby per SAP HANA non è un'opzione corrente in un ambiente {{site.data.keyword.cloud_notm}}.
 
-Per ulteriori informazioni sulla replica del sistema e la latenza e la velocità effettiva della rete, consulta 
+Per ulteriori informazioni sull'alta disponibilità e sul ripristino di emergenza, consulta [Alta disponibilità](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#availability) e [Ripristino di emergenza](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#dr).
+
+Per ulteriori informazioni sulla replica del sistema e la latenza e la velocità effettiva della rete, consulta
   * [How To Perform System Replication for SAP HANA](https://www.sap.com/documents/2013/10/26c02b58-5a7c-0010-82c7-eda71af511fa.html)
   * [Network Required for SAP HANA System Replication](https://www.sap.com/documents/2014/06/babb2b55-5a7c-0010-82c7-eda71af511fa.html)
 
@@ -78,7 +80,7 @@ Il processo di ridimensionamento di una distribuzione basata su ESX è diverso d
 
 Devono essere seguite molte altre regole definite da SAP per distribuire SAP HANA in un ambiente virtualizzato. Per la produzione, segui le limitazioni descritte in SAP Note 1995460. SAP Note 2024433 descrive le regole per più VM a un server.
 
-Per maggiori informazioni, consulta la seguente documentazione: 
+Per maggiori informazioni, consulta la seguente documentazione:
   * [SAP Note 2414820](https://launchpad.support.sap.com/#/notes/2414820)
   * [*Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide*](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf)
   * [SAP Note 1943937](https://launchpad.support.sap.com/#/notes/1943937)

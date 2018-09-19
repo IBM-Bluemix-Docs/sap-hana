@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-02"
+lastupdated: "2018-08-10"
 
 
 ---
@@ -16,7 +16,7 @@ lastupdated: "2018-03-02"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Introduzione a IBM Cloud per l'esercitazione con le applicazioni SAP
+# Esercitazione introduttiva
 {: #getting-started}
 
 {{site.data.keyword.IBM_notm}} e SAP hanno collaborato per più di 45 anni in molte aree inclusi hardware, software, cloud, servizi e finanza. Ora stanno collaborando per ottimizzare i prodotti dell'infrastruttura {{site.data.keyword.cloud}} per includere il supporto per la soluzione SAP HANA in più di 60 data center {{site.data.keyword.cloud_notm}} nel mondo.
@@ -29,13 +29,13 @@ La tabella 1 contiene la procedura per aiutarti a creare la tua infrastruttura {
    <CAPTION>Tabella 1. Procedura d'avvio rapida</CAPTION>
    <THEAD>
    <TR>
-   <th>Attività </th>
+   <th>Attività</th>
    <th>Dettagli</th>
    </TR>
    </THEAD>
    <TBODY>
    <tr>
-   <td>1. Leggi il contenuto IBM Cloud e SAP correlato alla tua implementazione.</td>
+   <td>1. Leggi il contenuto IBM Cloud e SAP correlato alla tua implementazione</td>
    <td>Se la tua organizzazione è nuova su IBM Cloud, le seguenti informazioni possono essere utili e dovrebbero essere lette prima della fase di pianificazione.
    <li><a href="https://ibm.com/cloud-computing/">What is IBM Cloud</a></li>
    <li><a href="https://ibm.com/cloud/get-started">Getting started with IBM Cloud</a></li>
@@ -60,7 +60,7 @@ La tabella 1 contiene la procedura per aiutarti a creare la tua infrastruttura {
    <td>Utilizza la procedura e le informazioni in <a href="hana-provision-environment.html#provision_environment">Provisioning del tuo ambiente SAP HANA</a> per configurare la tua infrastruttura IBM Cloud.</td>
    <tr>
    <td>6. Installa lo scenario SAP</td>
-   <td>Installa il tuo scenario SAP sulla tua infrastruttura IBM Cloud come se i server fossero in loco. Per ulteriori informazioni, consulta <a href="hana-installing-SAP-landscape.htm#install_sap">Scaricamento e installazione delle applicazioni e del software SAP</a>.</td>
+   <td>Installa il tuo scenario SAP sulla tua infrastruttura IBM Cloud come se i server fossero in loco. Per ulteriori informazioni, consulta <a href="hana-installing-SAP-landscape.html#install_sap">Scaricamento e installazione delle applicazioni e del software SAP</a>.</td>
    </td>
    </tr>
    </TBODY>

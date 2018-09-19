@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-02"
+lastupdated: "2018-06-28"
 
 
 ---
@@ -29,13 +29,13 @@ Per maggiori informazioni, consulta [Data Center](https://www.ibm.com/cloud-comp
 
 ## Server bare metal
 
-{{site.data.keyword.baremetal_long}} sono server fisici con funzionalità di personalizzazione limitate. I server sono dedicati al tuo utilizzo o dei tuoi clienti e non sono condivisi, neanche in parte, incluse le risorse del server, con altri clienti {{site.data.keyword.cloud_notm}} e sono forniti come un server fisico completo in esecuzione su un sistema operativo (SO) di tua scelta. Il SO per l'offerta SAP HANA è Red Hat Linux per SAP HANA 6.7 OS.
+{{site.data.keyword.baremetal_long}} sono server fisici con funzionalità di personalizzazione limitate. I server sono dedicati al tuo utilizzo o dei tuoi clienti e non sono condivisi, neanche in parte, incluse le risorse del server, con altri clienti {{site.data.keyword.cloud_notm}} e sono forniti come un server fisico completo in esecuzione su un sistema operativo (SO) di tua scelta. I sistemi operativi per l'offerta SAP HANA sono Red Hat Enterprise Linux 7.4 per SAP HANA, SUSE Linux Enterprise Server 12 SP2 per SAP HANA e VMware Server Virtualization 6.5.
 
 Poiché la personalizzazione è limitata sui server bare metal, sono ottenibili tempi di provisioning più veloci di 1 - 4 ore. Il provisioning rapido è utile quando stai tentando di ottenere un'applicazione dal mercato prima della concorrenza.
 
 Ti viene offerto un array di combinazioni di RAM e CPU poiché i server certificati SAP hanno molte RAM e CPU preconfigurate. La combinazione *non può* essere modificata durante il processo d'ordine o tramite un ticket di supporto dopo la distribuzione dei server.
 
-Per ulteriori informazioni, consulta [About bare metal servers](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers). 
+Per ulteriori informazioni, consulta [About bare metal servers](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers). 
 
 ## Connettività di rete
 
@@ -62,7 +62,7 @@ Per ulteriori informazioni su NAS in un ambiente {{site.data.keyword.cloud_notm}
 
 ## Distribuzione e gestione
 
-{{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} sono distribuiti tramite l'API o il portale del cliente dell'infrastruttura {{site.data.keyword.cloud_notm}} dopo che hai creato il tuo account cliente {{site.data.keyword.cloud_notm}}. I server possono essere gestiti tramite il portale del cliente, l'API o l'interfaccia della riga di comando (CLI). Per ulteriori informazioni, consulta [About bare metal servers](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers).
+{{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} sono distribuiti tramite l'API o il portale del cliente dell'infrastruttura {{site.data.keyword.cloud_notm}} dopo che hai creato il tuo account cliente {{site.data.keyword.cloud_notm}}. I server possono essere gestiti tramite il portale del cliente, l'API o l'interfaccia della riga di comando (CLI). Per ulteriori informazioni, consulta [About bare metal servers](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers).
 
 ## Supporto
 

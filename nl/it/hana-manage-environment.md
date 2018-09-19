@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-02-12"
+lastupdated: "2018-08-20"
 
 
 ---
@@ -31,7 +31,7 @@ Tabella 1. Panoramica sulla gestione del tuo ambiente
 | 2 | [Protezione dell'ambiente](/docs/infrastructure/sap-hana/hana-secure-environment.html) |
 | 3 | [Installazione del SO guest nell'hypervisor VMware ESX](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html) |
 | 4 | [Scaricamento e installazione delle applicazioni e del software SAP](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html) |
-| 5 | [Test della connettività al tuo data center {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-hana/hana-testing-connectivity.html) |
+| 5 | [Configurazione della tua infrastruttura IBM Cloud per supportare SAP HANA a più nodi](/docs/infrastructure/sap-hana/hana-multi-node.html)
 
 ## Passi successivi
 

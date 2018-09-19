@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-06"
+lastupdated: "2018-08-20"
 
 
 ---
@@ -24,5 +24,5 @@ Se decidi di utilizzare l'hypervisor ESX pre-installato, sei responsabile dell'i
 ## Passi successivi
 
   [4. Scaricamento e installazione delle applicazioni e del software SAP](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
-  
-  [5. Test della connettività al tuo data center {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-hana/hana-testing-connectivity.html)
+
+  [5. Configurazione della tua infrastruttura IBM Cloud per supportare SAP HANA a più nodi](/docs/infrastructure/sap-hana/hana-multi-node.html)

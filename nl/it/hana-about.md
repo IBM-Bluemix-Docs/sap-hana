@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-01-31"
+lastupdated: "2018-06-11"
 
 
 ---
@@ -17,16 +17,16 @@ lastupdated: "2018-01-31"
 {:table: .aria-labeledby="caption"}
 
 
-# Informazioni su IBM Cloud per le applicazioni SAP
+# Informazioni su IBM Cloud SAP-Certified Infrastructure
 {: #about_ibmcloud_for_sap}
 
-IBM e SAP stanno facendo squadra, sono partner e stanno collaborando in aree che includono hardware, software, cloud, servizi e finanza da più di 45 anni. La prima collaborazione è avvenuta nel 1972 e ha continuato a crescere con centinaia di client SAP che utilizzano {{site.data.keyword.cloud}} come loro soluzione di infrastruttura IaaS (infrastructure-as-a-service). {{site.data.keyword.IBM_notm}} ha continuato ad ottimizzare i propri prodotti dell'infrastruttura cloud per includere il supporto per le soluzioni SAP HANA. 
+IBM e SAP fanno squadra, sono partner e collaborano in aree che includono hardware, software, cloud, servizi e finanza da più di 46 anni. La prima collaborazione è avvenuta nel 1972 e ha continuato a crescere con centinaia di client SAP che utilizzano {{site.data.keyword.cloud}} come loro soluzione di infrastruttura IaaS (infrastructure-as-a-service). {{site.data.keyword.IBM_notm}} ha continuato ad ottimizzare i propri prodotti dell'infrastruttura cloud per includere il supporto per le soluzioni SAP HANA. 
 
-È grazie a questa relazione e altre funzionalità {{site.data.keyword.cloud_notm}}, che {{site.data.keyword.IBM_notm}} è stato selezionato come uno dei provider strategici di SAP  per i servizi dell'infrastruttura cloud per le proprie applicazioni critiche di business. Il supporto per la suite di prodotti SAP è disponibile tramite {{site.data.keyword.cloud_notm}} altamente scalabile, aperto e sicuro. Con questa collaborazione, le applicazioni SAP possono espandersi nei maggiori mercati grazie a più di 60 data center {{site.data.keyword.IBM_notm}} nel mondo.
+È grazie a questa relazione e altre funzionalità {{site.data.keyword.cloud_notm}}, che {{site.data.keyword.IBM_notm}} è stato selezionato come uno dei provider strategici di SAP per i servizi dell'infrastruttura cloud per le proprie applicazioni critiche di business. Il supporto per la suite di prodotti SAP è disponibile tramite {{site.data.keyword.cloud_notm}} altamente scalabile, aperto e sicuro. Con questa collaborazione, le applicazioni SAP possono espandersi nei maggiori mercati grazie a più di 60 data center {{site.data.keyword.IBM_notm}} nel mondo.
 
-L'offerta {{site.data.keyword.cloud_notm}} per SAP HANA è stata sviluppata per soddisfare i bisogni dei business più grandi del mondo. Questo grazie alla portata di {{site.data.keyword.cloud_notm}} e che quelle stesse offerte sono disponibili per chiunque intenda utilizzarle. Queste offerte sono infrastrutture reali; {{site.data.keyword.IBM_notm}} vuole fornirti gli elementi fondamentali più potenti nel cloud in modo che puoi progettare e implementare gli scenari SAP che soddisfano i tuoi requisiti e bisogni di business.
+L'offerta SAP HANA su {{site.data.keyword.cloud_notm}} è stata sviluppata per soddisfare i bisogni dei business più grandi del mondo. Questo grazie alla portata di {{site.data.keyword.cloud_notm}} e che quelle stesse offerte sono disponibili per chiunque intenda utilizzarle. Queste offerte sono infrastrutture reali; {{site.data.keyword.IBM_notm}} vuole fornirti gli elementi fondamentali più potenti nel cloud in modo che puoi progettare e implementare gli scenari SAP che soddisfano i tuoi requisiti e bisogni di business.
 
-Puoi utilizzare i tuoi server per gli ambienti di produzione, non produzione e PoC (proof-of-concept). È importante notare che virtualmente tutti gli ambienti non di produzione SAP HANA e SAP Business Warehouse sono supportati su un {{site.data.keyword.baremetal_short}} a singolo nodo.
+Puoi utilizzare i tuoi server per gli ambienti di produzione, non produzione e POC (proof-of-concept). È importante notare che virtualmente tutti gli ambienti non di produzione SAP HANA e SAP Business Warehouse sono supportati su un {{site.data.keyword.baremetal_short}} a singolo nodo.
 
 ## {{site.data.keyword.cloud_notm}} per il modello di offerta SAP HANA
 {: #sap_hana_offering_model}
