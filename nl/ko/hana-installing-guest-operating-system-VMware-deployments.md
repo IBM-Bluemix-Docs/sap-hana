@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-06"
+lastupdated: "2018-08-20"
 
 
 ---
@@ -24,5 +24,5 @@ lastupdated: "2018-02-06"
 ## 다음 단계
 
   [4. SAP 소프트웨어 및 애플리케이션 다운로드 및 설치](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
-  
-  [5. {{site.data.keyword.cloud_notm}} 데이터 센터에 대한 연결 테스트](/docs/infrastructure/sap-hana/hana-testing-connectivity.html)
+
+  [5. SAP HANA 다중 노드를 지원하도록 IBM Cloud 인프라 구성](/docs/infrastructure/sap-hana/hana-multi-node.html)

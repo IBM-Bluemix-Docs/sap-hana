@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -27,6 +27,7 @@ lastupdated: "2018-02-05"
   * [SAP 제품 가용성 매트릭스(PAM)](https://apps.support.sap.com/sap/support/pam): SAP S-사용자 ID가 필요함
   * [SAP 노트](https://support.sap.com/notes): SAP S-사용자 ID가 필요함
   * [SAP NetWeaver on {{site.data.keyword.cloud_notm}}](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-index.html#getting-started) 
+  * [{{site.data.keyword.cloud_notm}} SAP 참조 아키텍처](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-index.html#getting-started)
   * 써드파티 문서
   
 ## 다음 단계

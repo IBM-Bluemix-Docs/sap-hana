@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-06-07"
 
 
 ---
@@ -36,7 +36,7 @@ lastupdated: "2018-02-05"
 랜드스케이프에서 여러 유형의 네트워크 트래픽을 분리하려는 경우 추가 가상 LAN (VLAN)을 주문할 수 있습니다. 추가 VLAN을 사용할 때 성능이 향상되지 않고 트래픽 분리만 발생할 수 있음에 유의하십시오. 일반적으로 SAP에서는 애플리케이션 서버와 SAP HANA 데이터베이스 간의 트래픽 및 SAP Business Intelligence와 같은 다른 SAP HANA 클라이언트에 대해 10Gb 네트워크를 사용하도록 권장합니다. SAP HANA 서버에 대한 관리 액세스를 다른 클라이언트로부터 분리하려면 사용자 랜드스케이프에 대한 다른 VLAN을 주문해야 합니다. 
 또 다른 옵션은 공용 및 사설 네트워크를 통해 트래픽을 분리하는 것입니다. 추가 "물리적" 업링크가 {{site.data.keyword.cloud_notm}}에서 지원되지 않기 때문입니다. [SAP HANA Tailored Data Center Integration(TDI)](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/)에 대한 SAP의 권장사항에 따르십시오.
 
-점프 박스(jumpbox)에서 액세스하고 VPN을 통해 액세스하면 SAP HANA Studio에서 SAP HANA 인스턴스에 투명하게 액세스할 수 있습니다.
+점프 박스에서 액세스하고 VPN을 통해 액세스하면 SAP HANA Studio에서 SAP HANA 인스턴스에 액세스할 수 있습니다.
 
 ## 외부 스토리지
 {: #external_storage}
@@ -45,11 +45,11 @@ lastupdated: "2018-02-05"
 
 외부 스토리지의 경우 스토리지 솔루션에 대해 결정하기 전에 프로젝트 요구사항을 계산하는 것이 중요합니다. SAP HANA 시스템을 복원해야 하는 경우 스토리지의 IOPS가 복원 기간에 상당한 영향을 미칩니다. SAP HANA를 구성하는 방법에 관계없이 모든 백업은 온라인 백업이므로 SAP HANA에는 백업 기간이 중요하지 않습니다.
 
-예를 들어, {{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}}를 사용하는 경우 최대 속도로 약 12TB의 SAP HANA 복원에 대해 계산할 수 있습니다. 디바이스당 최대 크기는 4TB이므로 세 개의 물리적 스토리지 디바이스(블록 스토리지 iSCSI LUN)를 작성해야 합니다. Linux 논리적 볼륨 관리자(LVM)를 사용하여 이러한 세 개의 디바이스에 걸쳐 스트라이프를 작성하고 하나의 12TB 논리 디바이스를 작성할 수 있습니다. 
+예를 들어, {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}를 사용하는 경우 최대 속도로 약 12TB의 SAP HANA 복원에 대해 계산할 수 있습니다. 디바이스당 최대 크기는 4TB이므로 세 개의 물리적 스토리지 디바이스(블록 스토리지 iSCSI LUN)를 작성해야 합니다. Linux 논리적 볼륨 관리자(LVM)를 사용하여 이러한 세 개의 디바이스에 걸쳐 스트라이프를 작성하고 하나의 12TB 논리 디바이스를 작성할 수 있습니다. 
 
 12TB는 3 x 10 IOPS/GB를 허용하며, 16KB에서 총 122,880 IOPS/GB입니다. 이는 초당 1.875GB의 복원 시간 또는 2시간 미만의 전체 복원 시간을 제공합니다. IOPS에 대한 측정은 읽기 및 쓰기가 50/50 분포로 수행되므로 이 수를 복원 성능의 하한으로 간주할 수 있습니다. 특정 복원 기간에 의존하는 경우 백업 및 복원 테스트를 수행하는 것이 좋습니다.
 
-{{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}} 또는 NAS는 서버에 설치된 추가 소프트웨어 컴포넌트에 대한 스토리지 또는 백업 공간으로 사용될 수 있습니다. 그러나 {{site.data.keyword.cloud_notm}} Storage 및 NSA는 SAP HANA에 대한 스토리지로 사용될 수 없습니다. 이러한 옵션은 KPI 기준을 충족하지 않기 때문입니다.
+{{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}} 또는 NAS는 서버에 설치된 추가 소프트웨어 컴포넌트에 대한 스토리지 또는 백업 공간으로 사용될 수 있습니다. 그러나 {{site.data.keyword.cloud_notm}} Storage 및 NSA는 SAP HANA에 대한 스토리지로 사용될 수 없습니다. 이러한 옵션은 KPI 기준을 충족하지 않기 때문입니다.
 
 자세한 정보는 [{{site.data.keyword.blockstorageshort}} 시작하기](https://console.bluemix.net/docs/infrastructure/BlockStorage/index.html#getting-started-with-block-storage) 및 [{{site.data.keyword.filestorage_full_notm}} 시작하기](https://console.bluemix.net/docs/infrastructure/FileStorage/index.html#getting-started-with-file-storage)를 참조하십시오.
 
@@ -61,6 +61,8 @@ lastupdated: "2018-02-05"
 SAP HANA 시스템 복제는 하나의 서버에서 복제본으로의 자동화된 장애 복구로 구성될 수 있습니다. 시스템 복제에 대한 SAP 문서에 따라 애플리케이션 시나리오 및 재해 복원력 레벨에 가장 적합한 복제 모드를 판별하십시오. 복제 모드에 따라 다른 네트워크 KPI를 충족해야 합니다. 네트워크 처리량 및 대기 시간에 대한 SAP의 권장사항을 참조하여 선택한 오퍼레이션 모드에 필요한 처리량 및 최대 대기 시간을 판별하십시오. {{site.data.keyword.cloud_notm}} 네트워크 토폴로지가 모든 필수 구성을 제공할 수 있어야 합니다. 확실하지 않거나 다른 데이터 센터의 재해 복구 사이트가 최대 재해 복원력을 달성하도록 하려는 경우 {{site.data.keyword.cloud_notm}} 지원 센터에 문의하여 시나리오에 대한 최적의 설정을 판별하십시오.
 
 SAP HANA 스케일 확장(다중 노드)은 여전히 평가 중입니다. 즉, SAP HANA에 대한 대기 노드는 {{site.data.keyword.cloud_notm}} 환경에서 현재 옵션이 아닙니다.
+
+고가용성 및 재해 복구에 대한 자세한 정보는 [고가용성](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#availability) 및 [재해 복구](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#dr)를 참조하십시오.
 
 시스템 복제와 네트워크 처리량 및 대기 시간에 대한 자세한 정보는 다음을 참조하십시오.
   * [How To Perform System Replication for SAP HANA](https://www.sap.com/documents/2013/10/26c02b58-5a7c-0010-82c7-eda71af511fa.html)

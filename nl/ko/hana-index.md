@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-02"
+lastupdated: "2018-08-10"
 
 
 ---
@@ -16,7 +16,7 @@ lastupdated: "2018-03-02"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# IBM Cloud for SAP Applications 튜토리얼 시작하기
+# 시작하기 튜토리얼
 {: #getting-started}
 
 {{site.data.keyword.IBM_notm}}과 SAP는 45년 이상 동안 하드웨어, 소프트웨어, 클라우드, 서비스 및 금융을 포함한 여러 영역에서 협업해 왔습니다. 현재 전세계 60개 이상의 {{site.data.keyword.cloud_notm}} 데이터 센터에서 SAP HANA 솔루션에 대한 지원을 포함하도록 {{site.data.keyword.cloud}} 인프라 제품을 최적화하기 위해 협업하고 있습니다.
@@ -60,7 +60,7 @@ lastupdated: "2018-03-02"
    <td><a href="hana-provision-environment.html#provision_environment">SAP HANA 환경 프로비저닝</a>의 단계 및 정보를 사용하여 IBM Cloud 인프라를 설정하십시오.</td>
    <tr>
    <td>6. SAP 랜드스케이프 설치</td>
-   <td>서버가 온프레미스에 있었던 것과 동일하게 IBM Cloud 인프라에 SAP 랜드스케이프를 설치합니다. 자세한 정보는 <a href="hana-installing-SAP-landscape.htm#install_sap">SAP 소프트웨어 및 애플리케이션 다운로드 및 설치</a>를 참조하십시오.</td>
+   <td>서버가 온프레미스에 있었던 것과 동일하게 IBM Cloud 인프라에 SAP 랜드스케이프를 설치합니다. 자세한 정보는 <a href="hana-installing-SAP-landscape.html#install_sap">SAP 소프트웨어 및 애플리케이션 다운로드 및 설치</a>를 참조하십시오.</td>
    </td>
    </tr>
    </TBODY>

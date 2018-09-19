@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-02"
+lastupdated: "2018-06-28"
 
 
 ---
@@ -29,13 +29,13 @@ IaaS(Infrastructure-as-a-Server) 환경은 데이터 센터, 컴퓨팅, 연결, 
 
 ## 베어메탈 서버
 
-{{site.data.keyword.baremetal_long}}는 사용자 정의 기능이 제한되어 있는 실제 서버입니다. 이 서버는 사용자 또는 고객 전용으로 사용되고 서버 리소스를 포함한 어떤 파트에서도 다른 {{site.data.keyword.cloud_notm}} 고객과 공유되지 않으며 선택한 운영 체제(OS)를 실행 중인 전체 실제 서버로 프로비저닝됩니다. SAP HANA 오퍼링의 OS는 SAP HANA용 Red Hat Linux 6.7 OS입니다.
+{{site.data.keyword.baremetal_long}}는 사용자 정의 기능이 제한되어 있는 실제 서버입니다. 이 서버는 사용자 또는 고객 전용으로 사용되고 서버 리소스를 포함한 어떤 파트에서도 다른 {{site.data.keyword.cloud_notm}} 고객과 공유되지 않으며 선택한 운영 체제(OS)를 실행 중인 전체 실제 서버로 프로비저닝됩니다. SAP HANA 오퍼링에 대한 운영 체제는 Red Hat Enterprise Linux 7.4 for SAP HANA, SUSE Linux Enterprise Server 12 SP2 for SAP HANA 및 VMware Server Virtualization 6.5입니다.
 
 베어메탈 서버에서는 사용자 정의가 제한되기 때문에 프로비저닝 시간이 1 - 4시간 단축될 수 있습니다. 빠른 프로비저닝은 경쟁사보다 먼저 앱을 출시하려고 할 때 유용합니다.
 
 SAP 인증 서버에는 RAM 용량과 CPU 수가 사전 구성되어 있으므로 RAM 및 CPU 조합의 배열이 제공됩니다. 주문 프로세스 중이나 서버가 배치된 후 지원 티켓을 통해 이 조합을 변경할 수 *없습니다*.
 
-자세한 정보는 [베어메탈 서버 정보](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers)를 참조하십시오. 
+자세한 정보는 [베어메탈 서버 정보](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers)를 참조하십시오. 
 
 ## 네트워크 연결
 
@@ -62,7 +62,7 @@ NAS 및 FTP 스토리지는 매월 청구되며 다양한 스토리지 크기로
 
 ## 배치 및 관리
 
-{{site.data.keyword.cloud_notm}} 고객 계정을 작성한 후 {{site.data.keyword.cloud_notm}} 인프라 고객 포털 또는 API를 통해 {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}가 배치됩니다. 고객 포털, API 또는 명령행 인터페이스(CLI)를 통해 이 서버를 관리할 수 있습니다. 자세한 정보는 [베어메탈 서버 정보](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers)를 참조하십시오.
+{{site.data.keyword.cloud_notm}} 고객 계정을 작성한 후 {{site.data.keyword.cloud_notm}} 인프라 고객 포털 또는 API를 통해 {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}가 배치됩니다. 고객 포털, API 또는 명령행 인터페이스(CLI)를 통해 이 서버를 관리할 수 있습니다. 자세한 정보는 [베어메탈 서버 정보](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers)를 참조하십시오.
 
 ## 지원
 
