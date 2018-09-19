@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-06"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -20,7 +20,7 @@ lastupdated: "2018-02-06"
 # SAP HANA 環境のプロビジョニング
 {: #provision_environment}
 
-{{site.data.keyword.cloud}} for SAP Applications のインフラストラクチャーをプロビジョニングする手順を表 1 にまとめます。 
+{{site.data.keyword.cloud}} SAP-Certified Infrastructure をプロビジョンするための手順を表 1 に記載します。 
 
 表 1. プロビジョニングの概要
 

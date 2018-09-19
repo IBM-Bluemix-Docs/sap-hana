@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -27,6 +27,7 @@ lastupdated: "2018-02-05"
   * [SAP 製品一覧 (PAM)](https://apps.support.sap.com/sap/support/pam)。SAP S ユーザー ID が必要です。
   * [SAP Notes](https://support.sap.com/notes)。SAP S ユーザー ID が必要です。
   * [SAP NetWeaver on {{site.data.keyword.cloud_notm}}](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-index.html#getting-started) 
+  * [{{site.data.keyword.cloud_notm}} SAP リファレンス・アーキテクチャー](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-index.html#getting-started)
   * サード・パーティーの資料
   
 ## 次のステップ
