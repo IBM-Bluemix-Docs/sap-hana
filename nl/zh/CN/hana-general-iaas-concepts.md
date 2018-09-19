@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-02"
+lastupdated: "2018-06-28"
 
 
 ---
@@ -29,13 +29,13 @@ lastupdated: "2018-02-02"
 
 ## 裸机服务器
 
-{{site.data.keyword.baremetal_long}} 是具有有限定制功能的物理服务器。这些服务器专供您或您的客户使用，不会与其他 {{site.data.keyword.cloud_notm}} 客户共享任何部分（包括服务器资源），并且作为运行所选操作系统 (OS) 的整个物理服务器进行供应。SAP HANA 产品的操作系统是 Red Hat Linux for SAP HANA 6.7 操作系统。
+{{site.data.keyword.baremetal_long}} 是具有有限定制功能的物理服务器。这些服务器专供您或您的客户使用，不会与其他 {{site.data.keyword.cloud_notm}} 客户共享任何部分（包括服务器资源），并且作为运行所选操作系统 (OS) 的整个物理服务器进行供应。针对 SAP HANA 产品的操作系统是 Red Hat Enterprise Linux 7.4 for SAP HANA、SUSE Linux Enterprise Server 12 SP2 for SAP HANA、VMware Server Virtualization 6.5。
 
 由于裸机服务器上的定制有限，因此可将供应时间缩短为 1 到 4 小时。当您力争先于竞争对手将应用程序推向市场时，快速供应会很有帮助。
 
 由于 SAP 认证的服务器具有预先配置的 RAM 量和 CPU 数量，因此为您提供了一系列 RAM 和 CPU 组合。部署服务器之后，*无法*在订购过程中或通过支持凭单更改组合。
 
-有关更多信息，请参阅[关于裸机服务器](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers)。 
+有关更多信息，请参阅[关于裸机服务器](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers)。 
 
 ## 网络连接
 
@@ -62,7 +62,7 @@ NAS 和 FTP 存储器按月计费，并且提供各种存储器大小。您可�
 
 ## 部署和管理
 
-创建 {{site.data.keyword.cloud_notm}} 客户帐户后，通过 {{site.data.keyword.cloud_notm}} 基础架构客户门户网站或 API 部署 {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}。可通过客户门户网站、API 或命令行界面 (CLI) 来管理服务器。有关更多信息，请参阅[关于裸机服务器](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers)。
+创建 {{site.data.keyword.cloud_notm}} 客户帐户后，通过 {{site.data.keyword.cloud_notm}} 基础架构客户门户网站或 API 部署 {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}。可通过客户门户网站、API 或命令行界面 (CLI) 来管理服务器。有关更多信息，请参阅[关于裸机服务器](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers)。
 
 ## 支持
 

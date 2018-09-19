@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-06-07"
 
 
 ---
@@ -44,11 +44,11 @@ lastupdated: "2018-02-05"
 
 对于外部存储器，请务必在决定存储解决方案之前计算项目需求。如果需要复原 SAP HANA 系统，那么存储器的 IOPS 会对复原窗口产生重大影响。由于所有备份都是联机备份，与 SAP HANA 配置方式无关，因此备份窗口对于 SAP HANA 不那么重要。
 
-例如，使用 {{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}}，可按最大速度计算 SAP HANA 的大约 12 TB 复原。由于每个设备的最大大小为 4 TB，因此必须创建三个物理存储设备（块存储器 iSCSI LUN）。您可以使用 Linux 逻辑卷管理器在这三个设备上创建条带，并创建一个 12 TB 的逻辑设备。 
+例如，使用 {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}，可按最大速度计算 SAP HANA 的大约 12 TB 复原。由于每个设备的最大大小为 4 TB，因此必须创建三个物理存储设备（块存储器 iSCSI LUN）。您可以使用 Linux 逻辑卷管理器在这三个设备上创建条带，并创建一个 12 TB 的逻辑设备。 
 
 12 TB 提供 3x10 IOPS/GB，总计为 122,880 IOPS/GB，以 16 KB 为单位。这可实现 1.875 GB/秒的复原时间，或者低于 2 小时的总复原时间。由于按 50/50 读写分配来获取 IOPS 度量，因此可将数字视为复原性能的下限。如果您依赖某个特定复原窗口，那么建议执行备份和复原测试。
 
-{{site.data.keyword.cloud_notm}}{{site.data.keyword.blockstorageshort}} 和 {{site.data.keyword.filestorage_full_notm}} 或 NAS 可充当备份空间或服务器上安装的其他软件组件的存储器。但是，{{site.data.keyword.cloud_notm}} 存储器和 NSA 无法用作 SAP HANA 的存储器，因为这些选项不符合 KPI 条件。
+{{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}} 和 {{site.data.keyword.filestorage_full_notm}} 或 NAS 可充当备份空间或服务器上安装的其他软件组件的存储器。但是，{{site.data.keyword.cloud_notm}} 存储器和 NSA 无法用作 SAP HANA 的存储器，因为这些选项不符合 KPI 条件。
 
 有关更多信息，请参阅 [{{site.data.keyword.blockstorageshort}} 入门](https://console.bluemix.net/docs/infrastructure/BlockStorage/index.html#getting-started-with-block-storage)和 [{{site.data.keyword.filestorage_full_notm}} 入门](https://console.bluemix.net/docs/infrastructure/FileStorage/index.html#getting-started-with-file-storage)。
 
@@ -60,6 +60,8 @@ lastupdated: "2018-02-05"
 可以为 SAP HANA 系统复制配置从一台服务器到副本的自动故障转移。请遵循有关系统复制的 SAP 文档来确定最适合您的应用程序场景和灾难弹性级别的复制方式。根据复制方式，需要实现不同的网络 KPI。请参阅有关网络吞吐量和等待时间的 SAP 建议，以确定首选操作方式所需的吞吐量和最长等待时间。{{site.data.keyword.cloud_notm}} 网络拓扑应该能够处理所有必需的配置。如果不确定或者想要灾难恢复站点位于不同的数据中心以实现最大灾难弹性，请联系 {{site.data.keyword.cloud_notm}} 支持人员以确定您的场景的最佳设置。
 
 请注意，SAP HANA Scale-Out（多节点）环境仍在评估中。换句话说，SAP HANA 的备用节点不是 {{site.data.keyword.cloud_notm}} 环境中的当前选项。
+
+有关高可用性和灾难恢复的更多信息，请参阅[高可用性](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#availability)和[灾难恢复](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#dr)。
 
 有关系统复制以及网络吞吐量和等待时间的更多信息，请参阅
   * [How To Perform System Replication for SAP HANA](https://www.sap.com/documents/2013/10/26c02b58-5a7c-0010-82c7-eda71af511fa.html)

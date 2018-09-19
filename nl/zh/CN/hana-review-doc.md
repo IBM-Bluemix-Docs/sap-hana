@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -27,6 +27,7 @@ lastupdated: "2018-02-05"
   * [SAP Product Availability Matrix (PAM)](https://apps.support.sap.com/sap/support/pam)；需要 SAP S 用户标识。
   * [SAP Note](https://support.sap.com/notes)；需要 SAP S 用户标识。
   * [SAP NetWeaver on {{site.data.keyword.cloud_notm}}](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-index.html#getting-started) 
+  * [{{site.data.keyword.cloud_notm}} SAP 参考体系结构](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-index.html#getting-started)
   * 第三方文档
   
 ## 后续步骤

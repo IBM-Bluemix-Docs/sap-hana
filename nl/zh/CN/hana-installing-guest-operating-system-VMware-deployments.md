@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-06"
+lastupdated: "2018-08-20"
 
 
 ---
@@ -24,5 +24,5 @@ lastupdated: "2018-02-06"
 ## 后续步骤
 
   [4. 下载和安装 SAP 软件和应用程序](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
-  
-  [5. 测试与 {{site.data.keyword.cloud_notm}} 数据中心的连接](/docs/infrastructure/sap-hana/hana-testing-connectivity.html)
+
+  [5. 配置 IBM Cloud 基础架构以支持 SAP HANA 多节点](/docs/infrastructure/sap-hana/hana-multi-node.html)

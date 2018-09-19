@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-01-31"
+lastupdated: "2018-06-11"
 
 
 ---
@@ -17,16 +17,16 @@ lastupdated: "2018-01-31"
 {:table: .aria-labeledby="caption"}
 
 
-# 关于 IBM Cloud for SAP Applications
+# 关于 IBM Cloud SAP-Certified Infrastructure
 {: #about_ibmcloud_for_sap}
 
-IBM 和 SAP 已在包括硬件、软件、云、服务和融资在内的多个领域开展合作、合伙和协作超过 45 年。第一次协作是在 1972 年进行的，随后又与使用 {{site.data.keyword.cloud}} 作为其基础架构即服务 (IaaS) 解决方案的数百个 SAP 客户开展合作。{{site.data.keyword.IBM_notm}} 持续优化其云基础架构产品，以支持 SAP HANA 解决方案。 
+IBM 和 SAP 已在包括硬件、软件、云、服务和融资在内的多个领域开展合作、合伙和协作超过 46 年。第一次协作是在 1972 年进行的，随后又与使用 {{site.data.keyword.cloud}} 作为其基础架构即服务 (IaaS) 解决方案的数百个 SAP 客户开展合作。{{site.data.keyword.IBM_notm}} 持续优化其云基础架构产品，以支持 SAP HANA 解决方案。 
 
 由于此关系以及其他 {{site.data.keyword.cloud_notm}} 功能，{{site.data.keyword.IBM_notm}} 被选为 SAP 业务关键型应用程序的云基础架构服务的首要战略提供商之一。通过高度可扩展、开放且高度安全的 {{site.data.keyword.cloud_notm}}，提供了对 SAP 系列产品的支持。利用这种合作伙伴关系，SAP 应用程序能够借助于全球范围内超过 60 个 {{site.data.keyword.IBM_notm}} 数据中心占领主要市场。
 
-为满足世界上最大型企业的需求，开发了针对 SAP HANA 的 {{site.data.keyword.cloud_notm}} 产品。由于 {{site.data.keyword.cloud_notm}} 的扩展能力，这些相同产品适用于希望使用它们的任何人。这些产品是真正的基础架构；{{site.data.keyword.IBM_notm}} 希望在云中为您提供最强大的构建块，以便您可以设计和实施满足业务要求和需求的 SAP 格局。
+为满足世界上最大型企业的需求，开发了 SAP HANA on {{site.data.keyword.cloud_notm}} 产品。由于 {{site.data.keyword.cloud_notm}} 的扩展能力，这些相同产品适用于希望使用它们的任何人。这些产品是真正的基础架构；{{site.data.keyword.IBM_notm}} 希望在云中为您提供最强大的构建块，以便您可以设计和实施满足业务要求和需求的 SAP 格局。
 
-您可以将服务器用于生产、非生产和概念证明 (PoC) 环境。请务必注意，在单节点 {{site.data.keyword.baremetal_short}} 上支持几乎所有 SAP HANA 非生产和 SAP Business Warehouse 环境。
+您可以将服务器用于生产、非生产和概念证明 (POC) 环境。请务必注意，在单节点 {{site.data.keyword.baremetal_short}} 上支持几乎所有 SAP HANA 非生产和 SAP Business Warehouse 环境。
 
 ## {{site.data.keyword.cloud_notm}} for SAP HANA 产品模型
 {: #sap_hana_offering_model}

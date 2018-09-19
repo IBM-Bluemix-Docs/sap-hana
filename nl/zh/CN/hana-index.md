@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-02"
+lastupdated: "2018-08-10"
 
 
 ---
@@ -16,7 +16,7 @@ lastupdated: "2018-03-02"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# IBM Cloud for SAP Applications 教程入门
+# 入门教程
 {: #getting-started}
 
 {{site.data.keyword.IBM_notm}} 和 SAP 已在包括硬件、软件、云、服务和融资在内的多个领域开展协作超过 45 年。目前双方正在协作以优化 {{site.data.keyword.cloud}} 基础架构产品，从而在全球 60 多个 {{site.data.keyword.cloud_notm}} 数据中心内支持 SAP HANA 解决方案。
@@ -35,7 +35,7 @@ lastupdated: "2018-03-02"
    </THEAD>
    <TBODY>
    <tr>
-   <td>1. 阅读与您的实施相关的 IBM Cloud 和 SAP 内容。</td>
+   <td>1. 阅读与您的实施相关的 IBM Cloud 和 SAP 内容</td>
    <td>如果您的组织不熟悉 IBM Cloud，那么以下信息可能会很有用，您应该在规划阶段之前进行阅读。
    <li><a href="https://ibm.com/cloud-computing/">什么是 IBM Cloud</a></li>
    <li><a href="https://ibm.com/cloud/get-started">IBM Cloud 入门</a></li>
@@ -60,7 +60,7 @@ lastupdated: "2018-03-02"
    <td>使用<a href="hana-provision-environment.html#provision_environment">供应 SAP HANA 环境</a>中的步骤和信息来设置 IBM Cloud 基础架构。</td>
    <tr>
    <td>6. 安装 SAP 格局</td>
-   <td>您在 IBM Cloud 基础架构上安装 SAP 格局时，就如同服务器是内部部署的一样进行安装。请参阅<a href="hana-installing-SAP-landscape.htm#install_sap">下载和安装 SAP 软件和应用程序</a>以获取更多信息。</td>
+   <td>您在 IBM Cloud 基础架构上安装 SAP 格局时，就如同服务器是内部部署的一样进行安装。请参阅<a href="hana-installing-SAP-landscape.html#install_sap">下载和安装 SAP 软件和应用程序</a>以获取更多信息。</td>
    </td>
    </tr>
    </TBODY>

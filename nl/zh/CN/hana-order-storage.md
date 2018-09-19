@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-02-12"
+lastupdated: "2018-08-20"
 
 
 ---
@@ -19,7 +19,7 @@ lastupdated: "2018-02-12"
 # 1. 订购存储器
 {: #order_storage}
 
-部署 {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} 后，即订购了 {{site.data.keyword.blockstoragefull}}、{{site.data.keyword.filestorage_full_notm}} 和网络连接的存储器 (NAS)。 
+部署 {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} 后，即订购了 {{site.data.keyword.blockstoragefull}}、{{site.data.keyword.filestorage_full_notm}} 和网络连接的存储器 (NAS)。
 
 ## 订购 {{site.data.keyword.cloud_notm}} 存储器
 {: #ibm_storage}
@@ -38,5 +38,5 @@ lastupdated: "2018-02-12"
   [3. 在 ESX 管理程序上安装访客操作系统（可选）](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html)
 
   [4. 下载和安装 SAP 软件和应用程序](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
-  
-  [5. 测试与 {{site.data.keyword.cloud_notm}} 数据中心的连接](/docs/infrastructure/sap-hana/hana-testing-connectivity.html)
+
+  [5. 配置 IBM Cloud 基础架构以支持 SAP HANA 多节点](/docs/infrastructure/sap-hana/hana-multi-node.html)
