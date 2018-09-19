@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-02"
+lastupdated: "2018-06-28"
 
 
 ---
@@ -29,13 +29,13 @@ Para obtener más información, consulte [Centros de datos](https://www.ibm.com/
 
 ## Servidores nativos
 
-{{site.data.keyword.baremetal_long}} son servidores físicos con funcionalidades de personalización limitadas. Los servidores están dedicados a su uso, o de su cliente, y no se comparten, ni los recursos de servidor, con otros clientes de {{site.data.keyword.cloud_notm}}, y se suministran como servidores físicos completos en los que se ejecuta el sistema operativo (SO) que elija. El SO correspondiente a la oferta de SAP HANA es el SO Red Hat Linux para SAP HANA 6.7.
+{{site.data.keyword.baremetal_long}} son servidores físicos con funcionalidades de personalización limitadas. Los servidores están dedicados a su uso, o de su cliente, y no se comparten, ni los recursos de servidor, con otros clientes de {{site.data.keyword.cloud_notm}}, y se suministran como servidores físicos completos en los que se ejecuta el sistema operativo (SO) que elija. Los sistemas operativos que corresponden a la oferta de SAP HANA son Red Hat Enterprise Linux 7.4 for SAP HANA, SUSE Linux Enterprise Server 12 SP2 for SAP HANA y VMware Server Virtualization 6.5.
 
 Como la personalización está limitada en los servidores nativos, se pueden obtener tiempos de suministro de 1 a 4 horas más rápidos. El suministro rápido es útil si intenta lanzar al mercado una app antes que la competencia.
 
 Se le ofrece una matriz de combinaciones de RAM y CPU, ya que los servidores certificados por SAP tienen una cantidad de RAM y un número de CPU preconfigurados. La combinación *no se puede* cambiar durante el proceso de pedido o mediante una incidencia de soporte después de desplegar los servidores.
 
-Para obtener más información, consulte [Acerca de los servidores nativos](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers). 
+Para obtener más información, consulte [Acerca de los servidores nativos](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers). 
 
 ## Conectividad de red
 
@@ -56,13 +56,13 @@ Existen dos tipos de almacenamiento para {{site.data.keyword.cloud_notm}}, en bl
 
 El almacenamiento NAS se puede utilizar para cualquier fin, pero, en este caso, *no* se utilizará para datos SAP HANA ni para archivos de registro. El almacenamiento no cumple los criterios en cuanto a KPI de E/S. Sin embargo, el almacenamiento se puede utilizar para dispositivos de copia seguridad y para todos los demás tipos de datos. SAP HANA lo puede utilizar como dispositivos de copia de seguridad, para datos y archivos de registro, si se monta mediante NFS.  
   
-El almacenamiento de NAS y FTP se factura mensualmente y está disponible en distintos tamaños de almacenamiento. Puede interactuar con el almacenamiento de NAS y FTP en la línea de mandatos o el terminal con el sistema operativo, o bien a través de interacciones de apuntar y pulsar en los paneles del portal del cliente de infraestructura de {{site.data.keyword.cloud_notm}}. En el portal del cliente, se pueden utilizar los detalles y uso de NAS, pero el servicio no se puede manipular fuera de la línea de mandatos, del kernel o del panel de control.
+El almacenamiento de NAS y FTP se factura mensualmente y está disponible en distintos tamaños de almacenamiento. Puede interactuar con el almacenamiento de NAS y FTP en la línea de mandatos o el terminal con el sistema operativo, o bien a través de interacciones de apuntar y pulsar en los paneles del portal de clientes de infraestructura de {{site.data.keyword.cloud_notm}}. En el portal de clientes, se pueden utilizar los detalles y uso de NAS, pero el servicio no se puede manipular fuera de la línea de mandatos, del kernel o del panel de control.
 
 Para obtener más información sobre NAS en un entorno {{site.data.keyword.cloud_notm}}, consulte [Iniciación a NAS](https://console.bluemix.net/docs/infrastructure/network-attached-storage/index.html#getting-started-with-nas).
 
 ## Despliegue y gestión
 
-Los {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloud_notm}} se despliegan a través del portal del cliente de infraestructura de {{site.data.keyword.cloud_notm}} o la API, después de crear su cuenta de cliente de {{site.data.keyword.cloud_notm}}. Los servidores se pueden gestionar a través del portal del cliente, API o interfaz de línea de mandatos (CLI). Para obtener más información, consulte [Acerca de los servidores nativos](https://console.bluemix.net/docs/bare-metal/index.html#about-bare-metal-servers).
+Los {{site.data.keyword.baremetal_short}} {{site.data.keyword.cloud_notm}} se despliegan a través del portal de clientes de infraestructura de {{site.data.keyword.cloud_notm}} o la API, después de crear su cuenta de cliente de {{site.data.keyword.cloud_notm}}. Los servidores se pueden gestionar a través del portal de clientes, API o interfaz de línea de mandatos (CLI). Para obtener más información, consulte [Acerca de los servidores nativos](https://console.bluemix.net/docs/bare-metal/about.html#about-bare-metal-servers).
 
 ## Soporte
 

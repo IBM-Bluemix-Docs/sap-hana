@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -22,7 +22,7 @@ lastupdated: "2018-02-05"
 Un *entorno* SAP es un grupo de dos o más *sistemas* SAP, que normalmente incluyen desarrollo, calidad y pruebas y producción. Un sistema SAP consta de una o más *instancias de SAP*, que son un grupo de procesos que se inician y detienen al mismo tiempo. Para obtener más información sobre entornos SAP, consulte [*SAP Business Suite sobre la arquitectura de referencia de IBM X6 Systems*](https://lenovopress.com/redp5073.pdf). 
 {: shortdesc}
 
-Existen varias posibles configuraciones de entorno, como servidor (tamaño)/almacenamiento (tamaño), para todas las soluciones SAP del mercado. Estas soluciones incluyen productos basados en SAP NetWeaver, como [SAP Business Suite](https://open.sap.com/courses/suitehana1), SAP Business Warehouse y todos los complementos específicos de SAP, que admiten los servidores de la oferta de {{site.data.keyword.cloud}} para aplicaciones SAP. Otra solución a tener en cuenta es cualquier software de terceros que pueda integrarse con SAP. 
+Existen varias posibles configuraciones de entorno, como servidor (tamaño)/almacenamiento (tamaño), para todas las soluciones SAP del mercado. Estas soluciones incluyen productos basados en SAP NetWeaver, como [SAP Business Suite](https://open.sap.com/courses/suitehana1), SAP Business Warehouse y todos los complementos específicos de SAP, que admiten los servidores de {{site.data.keyword.cloud}} SAP-Certified Infrastructure. Otra solución a tener en cuenta es cualquier software de terceros que pueda integrarse con SAP. 
 
 SAP HANA se puede ejecutar como una base de datos para una solución basada en la pila de SAP NetWeaver o como una entidad autónoma dependiendo del caso de uso. En ambos casos, la oferta {{site.data.keyword.cloud_notm}} proporciona servidores preconfigurados con el certificado de SAP NetWeaver alrededor de los cuales se puede crear el entorno desde cualquier otro servidor.
 

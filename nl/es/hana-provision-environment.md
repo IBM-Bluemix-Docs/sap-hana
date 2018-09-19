@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-06"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -20,7 +20,7 @@ lastupdated: "2018-02-06"
 # Suministro del entorno SAP HANA
 {: #provision_environment}
 
-La Tabla 1 contiene los pasos para suministrar la infraestructura de {{site.data.keyword.cloud}} para aplicaciones SAP. 
+La Tabla 1 contiene los pasos para suministrar {{site.data.keyword.cloud}} SAP-Certified Infrastructure. 
 
 Tabla 1. Visión general del suministro
 

@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-02"
+lastupdated: "2018-08-10"
 
 
 ---
@@ -16,7 +16,7 @@ lastupdated: "2018-03-02"
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Guía de aprendizaje de iniciación a IBM Cloud para aplicaciones SAP
+# Guía de aprendizaje de iniciación
 {: #getting-started}
 
 {{site.data.keyword.IBM_notm}} y SAP llevan más de 45 años colaborando en muchas áreas, incluyendo hardware, software, nube, servicios y finanzas. Ahora colaboran para optimizar los productos de la infraestructura de {{site.data.keyword.cloud}} para incluir soporte para la solución SAP HANA en más de 60 centros de datos de {{site.data.keyword.cloud_notm}} en todo el mundo.
@@ -35,7 +35,7 @@ La Tabla 1 contiene los pasos para construir rápidamente la infraestructura de 
    </THEAD>
    <TBODY>
    <tr>
-   <td>1. Lea el contenido de IBM Cloud y SAP relacionado con su implementación.</td>
+   <td>1. Lea el contenido de IBM Cloud y SAP relacionado con su implementación</td>
    <td>Si su empresa es nueva en IBM Cloud, la siguiente información puede ser útil y debe leerse antes de la fase de planificación.
    <li><a href="https://ibm.com/cloud-computing/">Qué es IBM Cloud</a></li>
    <li><a href="https://ibm.com/cloud/get-started">Iniciación a IBM Cloud</a></li>
@@ -50,8 +50,8 @@ La Tabla 1 contiene los pasos para construir rápidamente la infraestructura de 
    <td>2. Regístrese en IBM Cloud</td>
    <td>Consulte <a href="https://console.bluemix.net/docs/admin/adminpublic.html#signing-up-for-ibm-cloud">Registro de IBM Cloud</a> para conocer los pasos sobre cómo configurar su cuenta de IBM Cloud.</td>
  <tr>
-   <td>3. Acceda al portal del cliente de infraestructura de IBM Cloud</td>
-   <td>El <a href="https://control.softlayer.com">portal del cliente de infraestructura de IBM Cloud</a> es su pasarela gráfica a todos los componentes de la infraestructura: cálculo, conectividad, almacenamiento, red y centros de datos. Necesita un <a href="https://console.bluemix.net/docs/customer-portal/getting-started.html#getting-started">IBMid y contraseña</a> para acceder al portal del cliente.</td> 
+   <td>3. Acceda al portal de clientes de infraestructura de IBM Cloud</td>
+   <td>El <a href="https://control.softlayer.com">portal de clientes de infraestructura de IBM Cloud</a> es su pasarela gráfica a todos los componentes de la infraestructura: cálculo, conectividad, almacenamiento, red y centros de datos. Necesita un <a href="https://console.bluemix.net/docs/customer-portal/getting-started.html#getting-started">IBMid y contraseña</a> para acceder al portal de clientes.</td> 
    <tr>
    <td>4. Planifique su entorno de sistemas</td>
    <td>Utilice la información de <a href="hana-planning-your-system-landscape.html">Planificación de su entorno de sistemas</a> para determinar la arquitectura y el tamaño y suministrar su entorno IBM Cloud para dar soporte a la carga de trabajo de SAP HANA.</td>  
@@ -60,7 +60,7 @@ La Tabla 1 contiene los pasos para construir rápidamente la infraestructura de 
    <td>Utilice los pasos y la información de <a href="hana-provision-environment.html#provision_environment">Suministro de su entorno SAP HANA</a> para configurar su infraestructura de IBM Cloud.</td>
    <tr>
    <td>6. Instale el entorno SAP</td>
-   <td>Instale su entorno SAP en su infraestructura de IBM Cloud como si los servidores estuvieran en local. Consulte <a href="hana-installing-SAP-landscape.htm#install_sap">Descarga e instalación de software y aplicaciones SAP</a> para obtener más información.</td>
+   <td>Instale su entorno SAP en su infraestructura de IBM Cloud como si los servidores estuvieran en local. Consulte <a href="hana-installing-SAP-landscape.html#install_sap">Descarga e instalación de software y aplicaciones SAP</a> para obtener más información.</td>
    </td>
    </tr>
    </TBODY>

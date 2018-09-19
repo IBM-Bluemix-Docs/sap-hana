@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-02-05"
+lastupdated: "2018-05-30"
 
 
 ---
@@ -27,6 +27,7 @@ Revise la documentación relevante para determinar los requisitos previos para l
   * [Matriz de disponibilidad de productos SAP (PAM)](https://apps.support.sap.com/sap/support/pam); requiere un ID S-user de SAP.
   * [Notas de SAP](https://support.sap.com/notes); requiere un ID S-user de SAP.
   * [SAP NetWeaver on {{site.data.keyword.cloud_notm}}](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-index.html#getting-started) 
+  * [Arquitectura de referencia SAP de {{site.data.keyword.cloud_notm}}](https://console.bluemix.net/docs/infrastructure/sap-reference-architecture/sap-ra-index.html#getting-started)
   * Documentación de otras compañías
   
 ## Siguientes pasos

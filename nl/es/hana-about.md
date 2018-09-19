@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-01-31"
+lastupdated: "2018-06-11"
 
 
 ---
@@ -17,16 +17,16 @@ lastupdated: "2018-01-31"
 {:table: .aria-labeledby="caption"}
 
 
-# Acerca de IBM Cloud para aplicaciones SAP
+# Acerca de IBM Cloud SAP-Certified Infrastructure
 {: #about_ibmcloud_for_sap}
 
-IBM y SAP llevan más de 45 años asociándose y colaborando en áreas como hardware, software, nube, servicios y financiación. La primera colaboración fue en 1972 y ha seguido creciendo gracias a cientos de clientes de SAP que utilizan {{site.data.keyword.cloud}} como solución de infraestructura como servicio(IaaS). {{site.data.keyword.IBM_notm}} ha seguido optimizando sus productos de infraestructura en nube para incluir soporte para las soluciones SAP HANA. 
+IBM y SAP llevan más de 46 años asociándose y colaborando en áreas como hardware, software, nube, servicios y financiación. La primera colaboración fue en 1972 y ha seguido creciendo gracias a cientos de clientes de SAP que utilizan {{site.data.keyword.cloud}} como solución de infraestructura como servicio(IaaS). {{site.data.keyword.IBM_notm}} ha seguido optimizando sus productos de infraestructura en nube para incluir soporte para las soluciones SAP HANA. 
 
 Gracias a esta relación, y a otras funcionalidades de {{site.data.keyword.cloud_notm}}, {{site.data.keyword.IBM_notm}} ha sido elegido como uno de los principales proveedores estratégicos de SAP en servicios de infraestructura en nube para sus aplicaciones críticas de negocio. El soporte para la suite de productos de SAP está disponible a través de una {{site.data.keyword.cloud_notm}} altamente segura, abierta y escalable. Esta asociación permite que las aplicaciones SAP se expandan a los principales mercados, posibilitado por más de 60 centros de datos {{site.data.keyword.IBM_notm}} en todo el mundo.
 
-Las ofertas de {{site.data.keyword.cloud_notm}} para SAP HANA se han desarrollado para atender las necesidades de las mayores empresa del mundo. Debido a la capacidad de escalado de {{site.data.keyword.cloud_notm}}, estas mismas ofertas están disponibles para cualquiera desee utilizarlas. Estas ofertas constituyen una verdadera infraestructura; {{site.data.keyword.IBM_notm}} quiere proporcionarle los bloques de construcción más potentes disponibles en la nube para que pueda diseñar e implementar entornos SAP que satisfagan sus necesidades y requisitos empresariales.
+Las ofertas de SAP HANA on {{site.data.keyword.cloud_notm}} se han desarrollado para atender las necesidades de las mayores empresa del mundo. Debido a la capacidad de escalado de {{site.data.keyword.cloud_notm}}, estas mismas ofertas están disponibles para cualquiera desee utilizarlas. Estas ofertas constituyen una verdadera infraestructura; {{site.data.keyword.IBM_notm}} quiere proporcionarle los bloques de construcción más potentes disponibles en la nube para que pueda diseñar e implementar entornos SAP que satisfagan sus necesidades y requisitos empresariales.
 
-Puede utilizar sus servidores para entornos de producción, no producción y de pruebas (PoC). Es importante tener en cuenta que prácticamente cualquier entorno de SAP Business Warehouse y de SAP HANA que no sea de producción recibe soporte como {{site.data.keyword.baremetal_short}} de un solo nodo.
+Puede utilizar sus servidores para entornos de producción, no producción y de pruebas (POC). Es importante tener en cuenta que prácticamente cualquier entorno de SAP Business Warehouse y de SAP HANA que no sea de producción recibe soporte como {{site.data.keyword.baremetal_short}} de un solo nodo.
 
 ## Modelo de oferta de {{site.data.keyword.cloud_notm}} para SAP HANA
 {: #sap_hana_offering_model}
