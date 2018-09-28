@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-06-28"
+lastupdated: "2018-09-28"
 
 
 ---
@@ -51,14 +51,6 @@ For more information, see [Getting started with Virtual Private Networking](http
 Local storage is provided with your {{site.data.keyword.baremetal_short}} and uses the {{site.data.keyword.cloud_notm}} private network virtual LAN (VLAN) to help provide enterprise-grade security while not obstructing administrator access. For the SAP HANA-certified servers, it is designed and configured to meet the KPIs defined by SAP for both throughput and latency in compliance with the SAP HANA certification criteria. Local storage has the relevant size of the different subfile systems as defined by the SAP HANA Installation Guide (`data.log` and `shared`). No further adaptation needs to be done on your part.
 
 There are two types of storage for {{site.data.keyword.cloud_notm}}-block and file-from which to choose to perform backups and restores for SAP HANA. Both types use input/output operations per second (IOPS), which are used to determine storage needs. IOPS are measured based on 16 KB block size with a 50/50 read/write mix. To achieve maximum IOPS on a volume, adequate network resources need to be in place. Other considerations include private network usage outside of storage and host side, and application-specific tunings (for example, IP stacks and queue depths). For more information, see [Getting started with Block Storage](https://console.bluemix.net/docs/infrastructure/BlockStorage/index.html#getting-started-with-block-storage) and [Getting started with File Storage](https://console.bluemix.net/docs/infrastructure/FileStorage/index.html#getting-started-with-file-storage).
-
-{{site.data.keyword.cloud_notm}} also offers Network Attached Storage (NAS) if you are looking to for a quick, cost-efficient, backup solution for your devices. NAS can be mounted through the Network File System (NFS) and can be used with File Transfer Protocol (FTP) with both Parallels Plesk Panel and cPanel@WHM.
-
-NAS storage can be used for any purpose, but, in this case, is *not* to be used for SAP HANA data or log files. The storage does not fulfill the criteria regarding I/O KPIs. However, the storage can be used for backup devices and all other kinds of data. It can be used by SAP HANA as backup devices, for data and log files, when mounted through NFS.  
-  
-NAS and FTP storage are billed monthly and are available in various storage sizes. You can primarily interact with your NAS and FTP storage within the command line or terminal with the OS, or through point-and-click interactions on the panels within the {{site.data.keyword.cloud_notm}} infrastructure customer portal. Within the customer portal, NAS details and usage can be used, but the service cannot be manipulated outside the command line, kernel, or control panel.
-
-For more information on NAS in an {{site.data.keyword.cloud_notm}} environment, see [Getting started with NAS](https://console.bluemix.net/docs/infrastructure/network-attached-storage/index.html#getting-started-with-nas).
 
 ## Deployment and management
 
