@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-09-11"
+lastupdated: "2018-11-05"
 
 
 ---
@@ -23,7 +23,36 @@ lastupdated: "2018-09-11"
 
 The following tables list the {{site.data.keyword.baremetal_long}} configurations available with the {{site.data.keyword.cloud}} SAP-Certified Infrastructure offering. For additional considerations when running SAP HANA in a virtualized environment, see [VMware ESXi server deployements](/docs/infrastructure/sap-hana/hana-considerations.html#vmware-server).
 
-## B1.S1.H512
+## Deciphering the server names
+{: #server-names}
+
+Here's an example on how to decipher the SAP HANA server names.
+
+| Server name | Naming convention component | What it means |
+| --- | --- | --- |
+| BI.S2.H8401 | BI | Bluemix Interface |
+| | S2 | Series 2 (processor generation) |
+| | | S1 is Ivy Bridge/Haswell |
+| | | S2 is Broadwell |
+| | | S3 is Skylake/Kaby Lake |
+| | H | HANA-certified server |
+| | 8 | 8-socket server |
+| | 4 | 4 TB RAM |
+| | 01 | Revision number (00 is launch, 01 is first revision, and so on) |
+
+Here's an example on how to decipher the SAP NetWeaver server names.
+
+| Server name | Naming convention component | What it means |
+| --- | --- | --- |
+| BI.S3.NW768 | BI | Bluemix Interface |
+| | S3 | Series 2 (processor generation) |
+| | | S1 is Ivy Bridge/Haswell |
+| | | S2 is Broadwell |
+| | | S3 is Skylake/Kaby Lake |
+| | NW | NetWeaver-certified server |
+| | 768 | Amount of RAM |
+
+## BI.S1.H512
 {: #512_GB_memory}
  
 | RAID | Components | Drives | Array | Size |
@@ -52,7 +81,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
 
 
-## B1.S1.H1000
+## BI.S1.H1000
 {: #1024_GB_memory}
 
 | RAID | Components | Drives | Array | Size |
@@ -80,7 +109,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
 
 
-## B1.S2.H4101
+## BI.S2.H4101
 {: #H4101}
 
 | RAID | Components | Drives | Array | Size |
@@ -102,7 +131,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 |   | `/dev/sdb1` | `/hana/shared` | 1024 |
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
-## B1.S2.H4100
+## BI.S2.H4100
 {: #H4100}
 
 | RAID | Components | Drives | Array | Size |
@@ -130,7 +159,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
 
 
-## B1.S2.H4201
+## BI.S2.H4201
 {: #4201}
 
 | RAID | Components | Drives | Array | Size |
@@ -153,7 +182,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## B1.S2.H4200
+## BI.S2.H4200
 {: #H4200}
 
 | RAID | Components | Drives | Array | Size |
@@ -181,7 +210,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
 
 
-## B1.S1.H2000
+## BI.S1.H2000
 {: #2048_GB_memory}
  
 | RAID | Components | Drives | Array | Size |
@@ -210,7 +239,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
 
 
-## B1.S2.H4401
+## BI.S2.H4401
 {: #H4401}
  
 | RAID | Components | Drives | Array | Size |
@@ -233,7 +262,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## B1.S2.H8401
+## BI.S2.H8401
 {: #H8401}
  
 | RAID | Components | Drives | Array | Size |
@@ -256,7 +285,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 |   | `/dev/sdb2` | `hana/data` | `rest` |
 
 
-## B1.S2.H4400
+## BI.S2.H4400
 {: #4096_GB_memory}
  
 | RAID | Components | Drives | Array | Size |
@@ -284,7 +313,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
 
 
-## B1.S2.H4400
+## BI.S2.H4400
 {: #H4400}
  
 | RAID | Components | Drives | Array | Size |
@@ -313,7 +342,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 
 
 
-## B1.S2.H8801
+## BI.S2.H8801
 {: #H8801}
  
 | RAID | Components | Drives | Array | Size |
@@ -336,7 +365,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## B1.S2.H8800
+## BI.S2.H8800
 {: #8192_GB_memory}
  
 | RAID | Components | Drives | Array | Size |
@@ -366,7 +395,7 @@ The following tables list the {{site.data.keyword.baremetal_long}} configuration
 ## VMware
 {: #vmware}
 
-You are responsible for setting up VMware-related configurations for your server. You can choose from three sizes-1 TB (B1.S2.H4100 (VMware)), 2 TB (B1.S2.H4200 (VMware)), and 4 TB (B1.S2.4400 (VMware)). For more information on configuring VMware on your SAP-certified {{site.data.keyword.baremetal_short}}, see [Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf) (PDF).
+You are responsible for setting up VMware-related configurations for your server. You can choose from three sizes-1 TB (BI.S2.H4100 (VMware)), 2 TB (BI.S2.H4200 (VMware)), and 4 TB (BI.S2.4400 (VMware)). For more information on configuring VMware on your SAP-certified {{site.data.keyword.baremetal_short}}, see [Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf) (PDF).
 
 ## Next Steps
 
