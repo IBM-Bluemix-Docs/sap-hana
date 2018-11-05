@@ -40,18 +40,6 @@ Here's an example on how to decipher the SAP HANA server names.
 | | 4 | 4 TB RAM |
 | | 01 | Revision number (00 is launch, 01 is first revision, and so on) |
 
-Here's an example on how to decipher the SAP NetWeaver server names.
-
-| Server name | Naming convention component | What it means |
-| --- | --- | --- |
-| BI.S3.NW768 | BI | Bluemix Interface |
-| | S3 | Series 2 (processor generation) |
-| | | S1 is Ivy Bridge/Haswell |
-| | | S2 is Broadwell |
-| | | S3 is Skylake/Kaby Lake |
-| | NW | NetWeaver-certified server |
-| | 768 | Amount of RAM |
-
 ## BI.S1.H512
 {: #512_GB_memory}
  
