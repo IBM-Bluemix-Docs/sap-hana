@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="sap-hana" audience="compute" href="/docs/infrastructure/sap-hana/hana-index.html"}
+{: .toc subcollection="sap-hana" audience="compute" href="/docs/infrastructure/sap-hana/hana-index.html" path="infrastructure/sap-hana}
 SAP HANA on IBM Cloud
 
     {: .navgroup id="learn"}
@@ -41,6 +41,7 @@ SAP HANA on IBM Cloud
         hana-installing-guest-operating-system-VMware-deployments.md
         hana-installing-SAP-landscape.md
         hana-multi-node.md
+        hana-ha.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
