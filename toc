@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="sap-hana" audience="compute" arm="2437231" href="/docs/infrastructure/sap-hana/hana-index.html" path="infrastructure/sap-hana}
+{: .toc subcollection="sap-hana" audience="compute" arm="2437231" href="/docs/infrastructure/sap-hana/hana-index.html" path="infrastructure/sap-hana"}
 SAP HANA on IBM Cloud
 
     {: .navgroup id="learn"}
