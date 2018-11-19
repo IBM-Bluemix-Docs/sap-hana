@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-05"
+lastupdated: "2018-11-15"
 
 
 ---
@@ -42,13 +42,13 @@ Here's an example on how to decipher the SAP HANA server names.
 
 ## BI.S1.H512
 {: #512_GB_memory}
- 
+
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 | 2x 800 GB s3710 |`hdd0, hdd1` | RAID1-A | 800 GB |
 | RAID 10 | 6x 800 GB s3710 | `hdd2, hdd3, hdd4, hdd5, hdd6, hdd7` | RAID10-B | 550 GB |
 | RAID 10 | 6x 800 GB s3710 | `hdd2, hdd3, hdd4, hdd5, hdd6, hdd7` | RAID-10C | 1851 GB |
-| Global Hotspare | 1x 800 GB s3710 | `hdd8` | 800 GB GHS | 800 GB |
+| Global hot spare | 1x 800 GB s3710 | `hdd8` | 800 GB GHS | 800 GB |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
@@ -77,7 +77,7 @@ Here's an example on how to decipher the SAP HANA server names.
 | RAID 1 | 2x 800 GB s3710 |`hdd0, hdd1` | RAID1-A | 800 GB |
 | RAID 10 | 6x 800 GB s3710 | `hdd2, hdd3, hdd4, hdd5, hdd6, hdd7` | RAID10-B | 2400 GB |
 | RAID 10 | 8x 800 GB s3710 | `hdd8, hdd9, hdd10, hdd11, hdd12, hdd13, hdd14, hdd15` | RAID-10C | 3200 GB |
-| Global Hotspare | 1x 800 GB s3710 | `hdd16` | 800 GB GHS | 800 GB |
+| Global hot spare | 1x 800 GB s3710 | `hdd16` | 800 GB GHS | 800 GB |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
@@ -200,14 +200,14 @@ Here's an example on how to decipher the SAP HANA server names.
 
 ## BI.S1.H2000
 {: #2048_GB_memory}
- 
+
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 | 2x 800 GB s3710 |`hdd0, hdd1` | RAID1-A | 800 GB |
 | RAID 10 | 8x 800 GB s3710 | `hdd2, hdd3, hdd4, hdd5, hdd6, hdd7, hdd8, hdd9` | RAID10-B | 4800 GB |
 | RAID 10 | 106x 1.2 TB S3710 | `hdd10, hdd11, hdd12, hdd15, hdd16, hdd17, hdd18, hdd19, hdd20, hdd21` | RAID-10C | 7200 GB |
-| Global Hotspare | 1x 800 GB S3710 | `hdd22` | 800 GB GHS | 800 GB |
-| RAID 10-C Hotspare | 1x 1.2 TB S3710 | `hdd23` | 1.2 TB Hotspare | 1.2 TB |
+| Global hot spare | 1x 800 GB S3710 | `hdd22` | 800 GB GHS | 800 GB |
+| RAID 10-C hot spare | 1x 1.2 TB S3710 | `hdd23` | 1.2 TB Hotspare | 1.2 TB |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
@@ -229,7 +229,7 @@ Here's an example on how to decipher the SAP HANA server names.
 
 ## BI.S2.H4401
 {: #H4401}
- 
+
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 + hot spare | 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
@@ -252,7 +252,7 @@ Here's an example on how to decipher the SAP HANA server names.
 
 ## BI.S2.H8401
 {: #H8401}
- 
+
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 + hot spare| 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
@@ -275,13 +275,13 @@ Here's an example on how to decipher the SAP HANA server names.
 
 ## BI.S2.H4400
 {: #4096_GB_memory}
- 
+
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 | 3x 800 GB s3710 |`hdd0` | RAID1-A | 800 GB |
 | RAID 5 | 6x 1.2 TB s3710 | `hdd1` | RAID5-B | 4100 GB |
 | RAID 5 | 9x 1.2 TB s3710 | `hdd2` | RAID-5C | 8400 GB |
-|Global Hotspare | 1x 800 GB S3710 | `hdd22` | 800 GB GHS | 800 GB |
+|Global hot spare | 1x 800 GB S3710 | `hdd22` | 800 GB GHS | 800 GB |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
@@ -303,13 +303,13 @@ Here's an example on how to decipher the SAP HANA server names.
 
 ## BI.S2.H4400
 {: #H4400}
- 
+
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 | 3x 800 GB s3710 |`hdd0` | RAID1-A | 800 GB |
 | RAID 5 | 6x 1.2 TB s3710 | `hdd1` | RAID5-B | 4100 GB |
 | RAID 5 | 9x 1.2 TB s3710 | `hdd2` | RAID-5C | 8400 GB |
-|Global Hotspare | 1x 800 GB S3710 | `hdd22` | 800 GB GHS | 800 GB |
+|Global hot spare | 1x 800 GB S3710 | `hdd22` | 800 GB GHS | 800 GB |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
@@ -332,7 +332,7 @@ Here's an example on how to decipher the SAP HANA server names.
 
 ## BI.S2.H8801
 {: #H8801}
- 
+
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 + hot spare | 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
@@ -355,7 +355,7 @@ Here's an example on how to decipher the SAP HANA server names.
 
 ## BI.S2.H8800
 {: #8192_GB_memory}
- 
+
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 | 2x 800 GB s3710 | +1 Hotspare | RAID1-A | 800 GB |
@@ -380,10 +380,56 @@ Here's an example on how to decipher the SAP HANA server names.
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
 
 
+## BI.S3.H2192
+{: #2192_GB_memory}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 960 GB 5100 | `hdd0, hdd1` | RAID1-A | 960 GB |
+| RAID 1 | 2x 960 GB 5100 | `hdd2, hdd3` | RAID1-B | 960 GB |
+| Global hot spare | 1x 960 GB 5100 | `hdd4` |  |  |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` |  |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 250 |
+|   | `/dev\sdb2` | `/hana/data` | `rest` |
+
+## BI.S3.H2384
+{: #2384_GB_memory}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 960 GB 5100 |`hdd0, hdd1` | RAID1-A | 960 GB |
+| RAID 10 | 4x 960 GB 5100 | `hdd2, hdd3, hdd4, hdd5` | RAID1-B | 1920 GB |
+| Global hot spare | 1x 960 GB 5100 | `hdd` |  |  |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` |  |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 500 |
+|   | `/dev\sdb2` | `/hana/data` | `rest` |
+
 ## VMware
 {: #vmware}
 
-You are responsible for setting up VMware-related configurations for your server. You can choose from three sizes-1 TB (BI.S2.H4100 (VMware)), 2 TB (BI.S2.H4200 (VMware)), and 4 TB (BI.S2.4400 (VMware)). For more information on configuring VMware on your SAP-certified {{site.data.keyword.baremetal_short}}, see [Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf) (PDF).
+You are responsible for setting up VMware-related configurations for your server. You can choose from three sizes-1 TB (BI.S2.H4100 (VMware)), 2 TB (BI.S2.H4200 (VMware)), and 4 TB (BI.S2.4400 (VMware)). For more information on configuring VMware on your SAP-certified {{site.data.keyword.baremetal_short}}, see [Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf){: new_window} (PDF).
 
 ## Next Steps
 

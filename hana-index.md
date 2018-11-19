@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-08-10"
+lastupdated: "2018-11-15"
 
 
 ---
@@ -40,9 +40,9 @@ Table 1 contains steps to help you get your {{site.data.keyword.cloud_notm}} inf
    <li><a href="https://ibm.com/cloud-computing/">What is IBM Cloud</a></li>
    <li><a href="https://ibm.com/cloud/get-started">Getting started with IBM Cloud</a></li>
    <li><a href="https://www.ibm.com/cloud/bare-metal-servers/sap">SAP Certified Infrastructure on IBM Cloud</a></li>
-     
+
    You might also find the following SAP documentation useful:     
-   <li><a href="https://www.sap.com/products/hana/implementation/resources.html">SAP HANA Installation Guide</a>; download the installation guide</li> 
+   <li><a href="https://www.sap.com/products/hana/implementation/resources.html">SAP HANA Installation Guide</a>; download the installation guide</li>
    <li><a href="https://www.sapappsdevelopmentpartnercenter.com/en/faq/program-faqs_2/how-to-receive-an-s-user-to-access-the-s_77/">How to set up an SAP S-user ID</a></li>
    <li><a href="https://help.sap.com/hana/SAP_HANA_Administration_Guide_en.pdf">SAP HANA Administration Guide</a></li>
    <li><a href="https://support.sap.com">SAP Notes</a>; requires an SAP S-user ID</li>
@@ -51,7 +51,7 @@ Table 1 contains steps to help you get your {{site.data.keyword.cloud_notm}} inf
    <td>See <a href="https://console.bluemix.net/docs/admin/adminpublic.html#signing-up-for-ibm-cloud">Signing up for IBM Cloud</a> for the steps on how to set up your IBM Cloud account.</td>
  <tr>
    <td>3. Access the IBM Cloud infrastructure customer portal</td>
-   <td>The <a href="https://control.softlayer.com">IBM Cloud infrastructure customer portal</a> is your graphical gateway to all your infrastructure components-compute, connectivity, storage, network, and data centers. You need an <a href="https://console.bluemix.net/docs/customer-portal/getting-started.html#getting-started">IBMid and password</a> to access the customer portal.</td> 
+   <td>The <a href="https://control.softlayer.com">IBM Cloud infrastructure customer portal</a> is your graphical gateway to all your infrastructure components-compute, connectivity, storage, network, and data centers. You need an <a href="https://console.bluemix.net/docs/customer-portal/getting-started.html#getting-started">IBMid and password</a> to access the customer portal.</td>
    <tr>
    <td>4. Plan your system landscape</td>
    <td>Use the information in <a href="hana-planning-your-system-landscape.html">Planning your system landscape</a> to architect, size, and provision your IBM Cloud environment to support your SAP HANA workload.</td>  

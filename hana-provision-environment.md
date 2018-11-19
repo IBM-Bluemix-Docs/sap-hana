@@ -4,7 +4,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-05-30"
+lastupdated: "2018-11-15"
 
 
 ---
@@ -20,7 +20,7 @@ lastupdated: "2018-05-30"
 # Provisioning your SAP HANA environment
 {: #provision_environment}
 
-Table 1 contains the steps to provision your {{site.data.keyword.cloud}} SAP-Certified Infrastructure. 
+Table 1 contains the steps to provision your {{site.data.keyword.cloud}} SAP-Certified Infrastructure.
 
 Table 1. Provisioning overview
 

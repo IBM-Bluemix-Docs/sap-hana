@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-03-02"
+lastupdated: "2018-11-15"
 
 
 ---
@@ -25,9 +25,9 @@ You need to determine which SAP-based applications you plan to run on your {{sit
  * How will the database be used? There are two ways that SAP HANA can be deployed. The first is as a database to an SAP NetWeaver stack, where it primarily serves as a data source. The second deployment method is to run SAP HANA in a standalone mode with applications deployed directly in the SAP HANA system. Either way, the sizing process, and other system requirements and dependencies might differ based on how you use your system (development and testing, proof of concept, or production).
  * How do you intend to use the applications? Is the intended use for development and testing, or production?
  * Do you use an {{site.data.keyword.cloud_notm}} Virtual Private Network service-SSL or Point-to-Point Tunneling Protocol (PPTP)?
-  
+
 ## Next Steps
 
   [4. Sizing the server](/docs/infrastructure/sap-hana/hana-size-server.html)
-  
+
   [5. Determining your configuration](/docs/infrastructure/sap-hana/hana-determine-configuration.html)
