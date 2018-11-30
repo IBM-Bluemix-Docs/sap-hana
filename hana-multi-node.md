@@ -4,7 +4,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-11-15"
+lastupdated: "2018-11-30"
 
 
 ---
@@ -25,7 +25,7 @@ With multi-node, multiple SAP HANA nodes build a single SAP HANA system. Data is
 
 *Note* that you must follow the configuration guidelines outlined under [Ordering your multi-node system](#ordering) to fulfill the SAP HANA TDI requirements and be supported by SAP.
 
-Follow the guidelines in [Sizing SAP HANA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://help.sap.com/viewer/eb3777d5495d46c5b2fa773206bbfb46/2.0.00/en-US/d4a122a7bb57101493e3f5ca08e6b039.html){new_window} to determine the required size for your target SAP HANA system, including the total amount of memory and storage required for your deployment. The sizing requirements help you establish the number of SAP HANA nodes required for your SAP HANA multi-node system, and the storage required to host the data.
+Follow the guidelines in [Sizing SAP HANA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://help.sap.com/viewer/eb3777d5495d46c5b2fa773206bbfb46/2.0.00/en-US/d4a122a7bb57101493e3f5ca08e6b039.html){: new_window} to determine the required size for your target SAP HANA system, including the total amount of memory and storage required for your deployment. The sizing requirements help you establish the number of SAP HANA nodes required for your SAP HANA multi-node system, and the storage required to host the data.
 
 ## Reviewing the network topology and storage layout
 {: #reviewing-topology}
@@ -61,7 +61,7 @@ You now have the number of servers based on your sizing effort, and your network
 
 Your storage LAN connections and internode connections are configured by the {{site.data.keyword.cloud_notm}} deployment. Be sure to order the connections with two 10 Gb adapters each with failover configuration. This setup ensures the correct Linux bonding and LACP configuration. Contact the {{site.data.keyword.cloud_notm}} Support team with any questions.
 
-There are specific performance criteria that must be met by {{site.data.keyword.IBM_notm}} {{site.data.keyword.blockstorageshort}} (Endurance) and {{site.data.keyword.IBM_notm}} {{site.data.keyword.filestorage_short}} (Performance). For data volumes, 2 TB Endurance storage with a performance KPI of 10 IOPS/GB is required for each worker node. One additional volume of the same size is required as SAP HANA shared storage and will be shared by all nodes.
+There are specific performance criteria that must be met by the attached Network File System (NFS) volumes (see [Getting started with {{site.data.keyword.filestorage_short}}](/docs/infrastructure/FileStorage/index.html#getting-started-with-ibm-file-storage-for-bluemix) for more information). For `/data/` volumes, based on testing, 2 TB Endurance storage with a performance KPI of 10 IOPS/GB is required for each worker node. One additional volume of the same size is required as an SAP HANA `/shared/` volume and will be shared by all nodes. Based on testing, the `/shared/` volume should be a Performance storage volume with 12 IOPS/GB.
 
 For log volumes, one 512 GB volume of Performance storage is required for each node with a performance KPI of 10 K IOPS.
 
