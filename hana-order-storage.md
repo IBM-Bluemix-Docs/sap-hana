@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2019-01-31"
+  years: 2018, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}} storage, {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}
+
+subcollection: sap-hana
 
 ---
 
@@ -24,14 +25,14 @@ lastupdated: "2019-01-31"
 ## Ordering {{site.data.keyword.cloud_notm}} storage
 {: #ibm_storage}
 
-You can use the steps under [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage/provisioning-block_storage.html#provisioning-and-managing-block-storage) or [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage/provisioning-file-storage.html#provisioning-and-managing-ibm-file-storage-for-ibm-cloud) to order your backup and restore storage solution. You are guided through the process of deciding which storage type to use, how to order it, and how to deploy it to your server.
+You can use the steps under [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) or [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) to order your backup and restore storage solution. You are guided through the process of deciding which storage type to use, how to order it, and how to deploy it to your server.
 
 ## Next Steps
 
-  [2. Securing your environment](/docs/infrastructure/sap-hana/hana-secure-environment.html)
+  [2. Securing your environment](/docs/infrastructure/sap-hana?topic=sap-hana-secure_environment#secure_environment)
 
-  [3. Installing your guest OS on the ESX hypervisor (optional)](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html)
+  [3. Installing your guest OS on the ESX hypervisor (optional)](/docs/infrastructure/sap-hana?topic=sap-hana-install_guest_os#install_guest_os)
 
-  [4. Downloading and installing SAP software and applications](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
+  [4. Downloading and installing SAP software and applications](/docs/infrastructure/sap-hana?topic=sap-hana-install_sap#install_sap)
 
-  [5. Configuring your IBM Cloud infrastructure to support SAP HANA multi-node](/docs/infrastructure/sap-hana/hana-multi-node.html)
+  [5. Configuring your IBM Cloud infrastructure to support SAP HANA multi-node](/docs/infrastructure/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage)

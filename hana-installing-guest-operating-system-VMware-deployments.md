@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-15"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: guest operating system, ESX hypervisor, SAP HANA, TDI
+
+subcollection: sap-hana
 
 ---
 
@@ -23,6 +24,6 @@ If you decide to use the pre-installed ESX hypervisor, you are responsible for i
 
 ## Next Steps
 
-  [4. Downloading and installing SAP software and applications](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
+  [4. Downloading and installing SAP software and applications](/docs/infrastructure/sap-hana?topic=sap-hana-install_sap#install_sap)
 
-  [5. Configuring your IBM Cloud infrastructure to support SAP HANA multi-node](/docs/infrastructure/sap-hana/hana-multi-node.html)
+  [5. Configuring your IBM Cloud infrastructure to support SAP HANA multi-node](/docs/infrastructure/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage)

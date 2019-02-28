@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2018, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, BYOL, SAP OEM,
+
+subcollection: sap-hana
 
 ---
 

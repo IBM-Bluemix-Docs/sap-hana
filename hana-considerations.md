@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-15"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, network connectivity, VLANs, external storage, high availability, highly available, disaster recovery, HA, DR, VLANs,
+
+subcollection: sap-hana
 
 ---
 
@@ -24,11 +25,11 @@ The SAP systems in a landscape have specific requirements for connectivity, eith
 ## Network connectivity
 {: #network_connectivity}
 
-[{{site.data.keyword.cloud_notm}} network](/docs/infrastructure/sap-hana/hana-about.html#ibm_cloud_network) provided an overview of the {{site.data.keyword.cloud}} approach to network connectivity. Issues with network connectivity can cause significant delays for your project if you do not plan appropriately, regardless of how you plan to use your system.
+[{{site.data.keyword.cloud_notm}} network](/docs/infrastructure/sap-hana?topic=sap-hana-about_ibmcloud_for_sap#ibm_cloud_network) provided an overview of the {{site.data.keyword.cloud}} approach to network connectivity. Issues with network connectivity can cause significant delays for your project if you do not plan appropriately, regardless of how you plan to use your system.
 
 In general, you have two interface choices for your IaaS-provisioned {{site.data.keyword.cloud_notm}} servers—the first is an external interface with a public IP. The second is an internal interface that is provided with a “private IP” in compliance with Request for Comment (RFC) 1918. You can also choose a single internal interface with a “private IP.” The external IP might be easier to use, but there is a potential risk, even though a basic firewall is installed and preconfigured.
 
-The second option accesses the {{site.data.keyword.cloud_notm}} Virtual Private Network (VPN) through the {{site.data.keyword.cloud_notm}} infrastructure customer portal, or deploys a security device into your landscape. The security devices are offered for firewalls, network address conversion, VPN access, and other network functions. It is advised that your networking department speak with [{{site.data.keyword.cloud_notm}} Support](/docs/get-support/howtogetsupport.html#getting-customer-support) after the layout of your landscape and the connectivity that is required on the SAP application layer are determined.
+The second option accesses the {{site.data.keyword.cloud_notm}} Virtual Private Network (VPN) through the {{site.data.keyword.cloud_notm}} infrastructure customer portal, or deploys a security device into your landscape. The security devices are offered for firewalls, network address conversion, VPN access, and other network functions. It is advised that your networking department speak with [{{site.data.keyword.cloud_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) after the layout of your landscape and the connectivity that is required on the SAP application layer are determined.
 
 ### VLANs
 {: #vlans}
@@ -40,7 +41,7 @@ Access through VPN, as well as access from a jump box, allows transparent access
 ## External storage
 {: #external_storage}
 
-In addition to the local storage, you might require more external storage to perform backups. For these requirements, you can order block storage or Network Attached Storage (NAS) as described in [Storage](/docs/infrastructure/sap-hana/hana-general-iaas-concepts.html#storage). Since extra block storage and Network File System (NFS) data is transferred through the same physical adapters as all other network traffic, the impact needs to be kept in mind.
+In addition to the local storage, you might require more external storage to perform backups. For these requirements, you can order block storage or Network Attached Storage (NAS) as described in [Storage](/docs/infrastructure/sap-hana?topic=sap-hana-iaas-overview#storage). Since extra block storage and Network File System (NFS) data is transferred through the same physical adapters as all other network traffic, the impact needs to be kept in mind.
 
 For external storage, it's important to calculate your project requirements before deciding on a storage solution. If you need to restore an SAP HANA system, then the IOPS of your storage have a significant influence on your restore window. Backup windows are not as critical with SAP HANA since all backups are online backups no matter how you configure SAP HANA.
 
@@ -50,7 +51,7 @@ The 12 TB allows you 3x10 IOPS/GB, which is a total of 122,880 IOPS/GB at 16 KB.
 
 Both {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}, or NAS can serve as either backup space or as storage for additional software components that are installed on your server. {{site.data.keyword.cloud_notm}} Storage and NSA cannot, however, be used as storage for SAP HANA because these options do not fulfill the KPI criteria.
 
-For more information, see [Getting started with {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage/index.html#getting-started-with-block-storage) and [Getting started with {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage/index.html#getting-started-with-file-storage).
+For more information, see [Getting started with {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-GettingStarted#GettingStarted) and [Getting started with {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-file-storage).
 
 ## High availability and disaster recover scenarios
 {: #ha_dr}
@@ -61,7 +62,7 @@ SAP HANA system replication can be configured with an automated fail-over from o
 
 Be aware that SAP HANA Scale-Out (multi node) environments are still under evaluation. In other words, a standby-node for SAP HANA is not a current option in an {{site.data.keyword.cloud_notm}} environment.
 
-For more information on high availability and disaster recovery, see [{site.data.keyword.cloud_notm} high-availability support](/docs/infrastructure/sap-hana/hana-ha.html#ha), and [Disaster recovery](/docs/infrastructure/sap-reference-architecture/sap-ra-recommendations.html#dr).
+For more information on high availability and disaster recovery, see [{{site.data.keyword.cloud_notm}} high-availability support](/docs/infrastructure/sap-hana?topic=sap-hana-ha#ha), and [Disaster recovery](/docs/infrastructure/sap-reference-architecture?topic=sap-reference-architecture-recommendations#dr).
 
 For more information on system replication, and network throughput and latency, see
   * [How To Perform System Replication for SAP HANA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.sap.com/documents/2013/10/26c02b58-5a7c-0010-82c7-eda71af511fa.html){: new_window}

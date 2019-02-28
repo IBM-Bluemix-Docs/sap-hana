@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-15"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, download SAP software, deployment
+
+subcollection: sap-hana
 
 ---
 
@@ -23,4 +24,4 @@ Log in to [SAP Support Portal ![External link icon](../../icons/launch-glyph.svg
 
 Your SAP HANA software must be installed by a certified SAP HANA installer who has completed the SAP HANA installation certification course. For more information, see [Who Can Install SAP HANA? ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.saphanacentral.com/p/who-can-install-sap-hana.html){: new_window}.
 
- [5. Configuring your IBM Cloud infrastructure to support SAP HANA multi-node](/docs/infrastructure/sap-hana/hana-multi-node.html)
+ [5. Configuring your IBM Cloud infrastructure to support SAP HANA multi-node](/docs/infrastructure/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage)

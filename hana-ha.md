@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2018, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, high availability, highly available, SPOF, VLANs, HA, DR, disaster recovery, SAP NetWeaver
+
+subcollection: sap-hana
 
 ---
 
@@ -20,10 +21,10 @@ lastupdated: "2018-11-15"
 # IBM Cloud high-availability support
 {: #ha}
 
-The {{site.data.keyword.cloud}} Infrastructure as a Service (IaaS) offers you a robust compute environment with an optional operating system (OS) deployment on top that supports high availability (HA) solutions. The solution is based on the supported OS version, which is discussed in [SAP Note 2414097 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2414097){: new_window}. The HA solution is restricted to the ordered OS licenses that comes with your deployment, or third-party licenses, such as bring your own license (BYOL). Be sure to discuss HA details with {{site.data.keyword.cloud_notm}} Support before your deployment.
+The {{site.data.keyword.cloud}} Infrastructure as a Service (IaaS) offers you a robust compute environment with an optional operating system (OS) deployment on top that supports high availability (HA) solutions. The solution is based on the supported OS version, which is discussed in [SAP Note 2414097 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2414097){: new_window}. The HA solution is restricted to the ordered OS licenses that come with your deployment, or third-party licenses, such as bring your own license (BYOL). Be sure to discuss HA details with {{site.data.keyword.cloud_notm}} Support before your deployment.
 
 The operating systems supported and deployed by {{site.data.keyword.cloud_notm}} for SAP are
-* Linux [Red Hat Enterprise Linux (RHEL) or SUSE Enterprise Linux Server (SLES)] supports both SAP NetWeaver and SAP HANA HA solutions. There are minor restrictions in the {{site.data.keyword.cloud_notm}} environment, which are discussed in [Overview of SAP NetWeaver high-availability configurations](#overview-configs)).
+* Linux [Red Hat Enterprise Linux (RHEL) or SUSE Enterprise Linux Server (SLES)] supports both SAP NetWeaver and SAP HANA HA solutions. There are minor restrictions in the {{site.data.keyword.cloud_notm}} environment, which are discussed in [Overview of SAP NetWeaver high-availability configurations](#overview-configs).
 * Microsoft Windows supports SAP NetWeaver HA solution only (because of SAP HANA database restrictions).
 
 ## Overview of SAP NetWeaver high-availability configurations
@@ -31,7 +32,7 @@ The operating systems supported and deployed by {{site.data.keyword.cloud_notm}}
 
 There are numerous documents that provide in-depth help on planning and installing an HA environment for SAP services. The documents include information on failover, replication, scale-out, and disaster recovery (DR). References to certain documents are provided where appropriate.
 
-All the operating systems and distributions supported by {{site.data.keyword.cloud_notm}} for an SAP deployment (Windows, and Linux RHEL, and SLES) come with high-availability software and specific extensions. Following are the supported OS and distributions.
+All the operating systems and distributions supported by {{site.data.keyword.cloud_notm}} for an SAP deployment (Windows, Linux RHEL, and SLES) come with high-availability software and specific extensions. Following are the supported OS and distributions.
 
 * [New Failover Clustering Improvements in Windows Server 2012 and Its Benefits for SAP NetWeaver High Availability ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://blogs.sap.com/2013/10/16/new-failover-clustering-improvements-in-windows-server-2012-and-its-benefits-for-sap-netweaver-high-availability/){: new_window} provides a description based on Microsoft Windows Server Failover Clustering (WFSC) on the Windows OS with SAP NetWeaver.
 
@@ -44,7 +45,7 @@ All the operating systems and distributions supported by {{site.data.keyword.clo
 * [SAP NetWeaver High Availability and Business Continuity in Virtual Environments with VMware and Hyper-V on Microsoft Windows ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.sap.com/documents/2015/07/508b62bc-5b7c-0010-82c7-eda71af511fa.html){: new_window} covers the virtualization aspects if you’re planning to implement HA on virtualized servers.
 
 For more high-availability products certified by SAP partners for high-availability scenarios, see [High Availability Partner Information ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://wiki.scn.sap.com/wiki/display/SI/High+Availability+Partner+Information){: new_window}.
-For non-SAP HANA databases, more information on HA fail-over, and DR configurations, is available in your database documentation.
+For non-HANA SAP databases, more information on HA fail-over, and DR configurations, is available in your database documentation.
 
 Note that shared access to Network File System (NFS)/Common Internet File System (CIFS) storage, or shared access to iSCSI-based logical unique number storage (LUNS), is usually required to support system failover. Local storage, combined with a replication method, is usually required to support a DR-like setup. As with on-premises installations, check the performance and latency requirements of the database product when planning your deployment.
 

@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2018, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, SAP applications
+
+subcollection: sap-hana
 
 ---
 
@@ -28,6 +29,6 @@ You need to determine which SAP-based applications you plan to run on your {{sit
 
 ## Next Steps
 
-  [4. Sizing the server](/docs/infrastructure/sap-hana/hana-size-server.html)
+  [4. Sizing the server](/docs/infrastructure/sap-hana?topic=sap-hana-size_the_server#size_the_server)
 
-  [5. Determining your configuration](/docs/infrastructure/sap-hana/hana-determine-configuration.html)
+  [5. Determining your configuration](/docs/infrastructure/sap-hana?topic=sap-hana-determine_configuration#determine_configuration)

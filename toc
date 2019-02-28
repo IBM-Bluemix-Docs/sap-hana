@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="sap-hana" audience="compute" href="/docs/infrastructure/sap-hana/hana-index.html" path="infrastructure/sap-hana"}
+{: .toc subcollection="sap-hana" audience="compute" href="/docs/infrastructure/sap-hana?topic=sap-hana-getting-started#getting-started" path="infrastructure/sap-hana"}
 SAP HANA on IBM Cloud
 
     {: .navgroup id="learn"}
@@ -45,10 +45,10 @@ SAP HANA on IBM Cloud
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    [Support](https://console.bluemix.net/docs/infrastructure/sap-netweaver/sap-support.html)
+    [Getting help and support](/bare-metal/bare-metal-gettinghelp#gettinghelp)
 
     {: .topicgroup}
     FAQs
-        [FAQs: SAP on IBM Cloud](https://consoloe.bluemix.net/docs/infrastructure/sap-netweaver/sap-faqs.html#faqs)
+        [FAQs: SAP on IBM Cloud](/infrastructure/sap-netweaver/sap-netweaver-faqs#faqs)
 
 {: .navgroup-end}

@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-11-15"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, VPN
+
+subcollection: sap-hana
 
 ---
 
@@ -26,8 +27,8 @@ Table 1. Provisioning overview
 
 | Step | Details |
 | --- | --- |
-| 1 | [Requesting {{site.data.keyword.cloud_notm}} VPN connectivity](/docs/infrastructure/sap-hana/hana-requesting-setting-up-VPN.html) |
-| 2 | [Setting up your infrastructure](/docs/infrastructure/sap-hana/hana-setting-up-infrastructure.html) |
+| 1 | [Requesting {{site.data.keyword.cloud_notm}} VPN connectivity](/docs/infrastructure/sap-hana?topic=sap-hana-request_vpn_connect#request_vpn_connect) |
+| 2 | [Setting up your infrastructure](/docs/infrastructure/sap-hana?topic=sap-hana-set_up_infrastructure#set_up_infrastructure) |
 
 ## Next Steps
 

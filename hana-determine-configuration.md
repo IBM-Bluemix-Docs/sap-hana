@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-11-15"
+  years: 2018, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.baremetal_short}}, {{site.data.keyword.cloud_notm}}, database, application server
+
+subcollection: sap-hana
 
 ---
 
@@ -21,7 +22,7 @@ lastupdated: "2018-11-15"
 # 5. Determining your configuration
 {: #determine_configuration}
 
-The following tables list the {{site.data.keyword.baremetal_long}} configurations available with the {{site.data.keyword.cloud}} SAP-Certified Infrastructure offering. For additional considerations when running SAP HANA in a virtualized environment, see [VMware ESXi server deployements](/docs/infrastructure/sap-hana/hana-considerations.html#vmware-server).
+The following tables list the {{site.data.keyword.baremetal_long}} configurations available with the {{site.data.keyword.cloud}} SAP-Certified Infrastructure offering. For additional considerations when running SAP HANA in a virtualized environment, see [VMware ESXi server deployments](/docs/infrastructure/sap-hana?topic=sap-hana-considerations#vmware_server).
 
 ## Deciphering the server names
 {: #server-names}
@@ -433,4 +434,4 @@ You are responsible for setting up VMware-related configurations for your server
 
 ## Next Steps
 
-You are now ready to begin Provisioning your {{site.data.keyword.baremetal_short}}. See [Provisioning your SAP HANA environment](/docs/infrastructure/sap-hana/hana-provision-environment.html) for your next steps.
+You are now ready to begin Provisioning your {{site.data.keyword.baremetal_short}}. See [Provisioning your SAP HANA environment](/docs/infrastructure/sap-hana?topic=sap-hana-provision_environment#provision_environment) for your next steps.
