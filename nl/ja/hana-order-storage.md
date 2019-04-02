@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-08-20"
+  years: 2018, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}} storage, {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}
+
+subcollection: sap-hana
 
 ---
 
@@ -24,19 +25,14 @@ lastupdated: "2018-08-20"
 ## {{site.data.keyword.cloud_notm}} ストレージの注文
 {: #ibm_storage}
 
-[Provisioning and Managing {{site.data.keyword.blockstorageshort}}](https://console.bluemix.net/docs/infrastructure/BlockStorage/provisioning-block_storage.html#provisioning-and-managing-block-storage) か [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](https://console.bluemix.net/docs/infrastructure/FileStorage/provisioning-file-storage.html#provisioning-and-managing-ibm-file-storage-for-ibm-cloud) の手順を実行して、バックアップ/リストア用のストレージ・ソリューションを注文できます。 ガイドに従って、ストレージのタイプ、注文方法、サーバーへのデプロイ方法を決定するプロセスを進めていくことができます。
-
-## NAS の注文
-{: #order-nas}
-
-データベースのアーカイブ・ログ・ファイルや頻繁なオンライン/オフライン・バックアップのストレージが必要な場合は、サーバーのローカル・ストレージのもう 1 つの重要な拡張機能として NAS ストレージを利用できます。 [Ordering NAS/FTP Storage](https://console.bluemix.net/docs/infrastructure/network-attached-storage/index.html#ordering-nas-ftp-storage) のページにアクセスして、NAS の注文とセットアップの方法を確認してください。 [Mounting NAS Storage in Linux](https://console.bluemix.net/docs/infrastructure/network-attached-storage/mount-nas-storage-linux.html#mounting-nas-storage-in-linux) も参照して、ネットワーク・ファイル・ストレージ (NFS) を Linux サーバーにマップする方法を確認してください。 [NAS ストレージを NFS のデータ・ストアとして VMware ESXi にマップすることも可能です](https://console.bluemix.net/docs/infrastructure/network-attached-storage/connect-nas-storage-windows.html#connecting-to-nas-storage-in-windows)。
+[Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) か [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) の手順を実行して、バックアップ/リストア用のストレージ・ソリューションを注文できます。 ガイドに従って、ストレージのタイプ、注文方法、サーバーへのデプロイ方法を決定するプロセスを進めていくことができます。
 
 ## 次のステップ
 
-  [2. 環境の保護](/docs/infrastructure/sap-hana/hana-secure-environment.html)
+  [2. 環境の保護](/docs/infrastructure/sap-hana?topic=sap-hana-secure_environment#secure_environment)
 
-  [3. ESX ハイパーバイザーへのゲスト OS のインストール (オプション)](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html)
+  [3. ESX ハイパーバイザーへのゲスト OS のインストール (オプション)](/docs/infrastructure/sap-hana?topic=sap-hana-install_guest_os#install_guest_os)
 
-  [4. SAP ソフトウェア/アプリケーションのダウンロードとインストール](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
+  [4. SAP ソフトウェア/アプリケーションのダウンロードとインストール](/docs/infrastructure/sap-hana?topic=sap-hana-install_sap#install_sap)
 
-  [5. SAP HANA マルチノードをサポートする IBM Cloud インフラストラクチャーの構成](/docs/infrastructure/sap-hana/hana-multi-node.html)
+  [5. SAP HANA マルチノードをサポートする IBM Cloud インフラストラクチャーの構成](/docs/infrastructure/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage)

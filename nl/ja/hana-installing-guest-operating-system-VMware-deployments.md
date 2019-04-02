@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-08-20"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: guest operating system, ESX hypervisor, SAP HANA, TDI
+
+subcollection: sap-hana
 
 ---
 
@@ -19,10 +20,10 @@ lastupdated: "2018-08-20"
 # 3. ESX ハイパーバイザーへのゲスト OS のインストール (オプション)
 {: #install_guest_os}
 
-プリインストールの ESX ハイパーバイザーを使用する場合は、ゲスト・オペレーティング・システムとして Red Hat Enterprise Linux for SAP HANA 6.7 OS をハイパーバイザーにインストールする作業をお客様の側で行う必要があります。 SAP HANA をデプロイするすべての仮想マシンで SAP HANA Tailored Data Center Integration (TDI) の重要パフォーマンス指標 (KPI) が満たされているかどうかを確認する必要があります。
+プリインストールの ESX ハイパーバイザーを使用する場合は、ゲスト・オペレーティング・システムとして Red Hat Enterprise Linux for SAP HANA 7.4 OS をハイパーバイザーにインストールする作業をお客様の側で行う必要があります。SAP HANA をデプロイするすべての仮想マシンで SAP HANA Tailored Data Center Integration (TDI) の重要パフォーマンス指標 (KPI) が満たされているかどうかを確認する必要があります。
 
 ## 次のステップ
 
-  [4. SAP ソフトウェア/アプリケーションのダウンロードとインストール](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
+  [4. SAP ソフトウェア/アプリケーションのダウンロードとインストール](/docs/infrastructure/sap-hana?topic=sap-hana-install_sap#install_sap)
 
-  [5. SAP HANA マルチノードをサポートする IBM Cloud インフラストラクチャーの構成](/docs/infrastructure/sap-hana/hana-multi-node.html)
+  [5. SAP HANA マルチノードをサポートする IBM Cloud インフラストラクチャーの構成](/docs/infrastructure/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage)

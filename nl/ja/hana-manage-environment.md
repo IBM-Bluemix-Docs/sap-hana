@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-08-20"
+  years: 2018, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}}
+
+subcollection: sap-hana
 
 ---
 
@@ -27,11 +28,11 @@ lastupdated: "2018-08-20"
 
 | ステップ | 詳細 |
 | --- | --- |
-| 1 | [ストレージの注文](/docs/infrastructure/sap-hana/hana-order-storage.html) |
-| 2 | [環境の保護](/docs/infrastructure/sap-hana/hana-secure-environment.html) |
-| 3 | [VMware ESX ハイパーバイザーへのゲスト OS のインストール](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html) |
-| 4 | [SAP ソフトウェア/アプリケーションのダウンロードとインストール](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html) |
-| 5 | [SAP HANA マルチノードをサポートする IBM Cloud インフラストラクチャーの構成](/docs/infrastructure/sap-hana/hana-multi-node.html)
+| 1 | [ストレージの注文](/docs/infrastructure/sap-hana?topic=sap-hana-order_storage#order_storage) |
+| 2 | [環境の保護](/docs/infrastructure/sap-hana?topic=sap-hana-secure_environment#secure_environment) |
+| 3 | [VMware ESX ハイパーバイザーへのゲスト OS のインストール](/docs/infrastructure/sap-hana?topic=sap-hana-install_guest_os#install_guest_os) |
+| 4 | [SAP ソフトウェア/アプリケーションのダウンロードとインストール](/docs/infrastructure/sap-hana?topic=sap-hana-install_sap#install_sap) |
+| 5 | [SAP HANA マルチノードをサポートする IBM Cloud インフラストラクチャーの構成](/docs/infrastructure/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage)
 
 ## 次のステップ
 
