@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-08-29"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}} VPN connectivity
+
+subcollection: sap-hana
 
 ---
 
@@ -19,10 +20,10 @@ lastupdated: "2018-08-29"
 # 1. Solicitando a conectividade VPN do IBM Cloud
 {: #request_vpn_connect}
 
-Trabalhe com o [Suporte do {{site.data.keyword.cloud}}](https://console.bluemix.net/docs/get-support/howtogetsupport.html#getting-customer-support) para obter acesso à Rede Privada Virtual (VPN) do {{site.data.keyword.cloud_notm}} se você planeja desligar sua porta pública ou provisionar sua máquina somente como privada. Após criar os seus usuários, será possível designar a eles o acesso VPN à rede privada do {{site.data.keyword.cloud_notm}} se estiver usando uma das opções de VPN de nível de produção.
+Trabalhe com o [Suporte do {{site.data.keyword.cloud}}](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) para obter seu acesso à Rede privada virtual (VPN) do {{site.data.keyword.cloud_notm}} se planejar desativar sua porta pública ou provisionar sua máquina como privada apenas. Após criar os seus usuários, será possível designar a eles o acesso VPN à rede privada do {{site.data.keyword.cloud_notm}} se estiver usando uma das opções de VPN de nível de produção.
 
-Veja [Introdução à rede privada virtual](https://console.bluemix.net/docs/infrastructure/iaas-vpn/getting-started.html#getting-started-with-virtual-private-networking-vpn-) para as etapas sobre como configurar o acesso VPN.
+Veja [Introdução à rede privada virtual](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-#getting-started-with-virtual-private-networking-vpn-) para as etapas sobre como configurar o acesso VPN.
 
 ## Próximas Etapas
 
-  [2. Configurando sua infraestrutura](/docs/infrastructure/sap-hana/hana-setting-up-infrastructure.html)
+  [2. Configurando a sua infraestrutura](/docs/infrastructure/sap-hana?topic=sap-hana-set_up_infrastructure#set_up_infrastructure)

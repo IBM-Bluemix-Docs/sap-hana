@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-06-11"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, {{site.data.keyword.baremetal_short}}, BYOL
+
+subcollection: sap-hana
 
 ---
 
@@ -20,7 +21,7 @@ lastupdated: "2018-06-11"
 # Sobre o IBM Cloud SAP-Certified Infrastructure
 {: #about_ibmcloud_for_sap}
 
-A IBM e a SAP trabalham em equipe, parceria e colaboração em áreas que incluem hardware, software, nuvem, serviços e financiamento por mais de 46 anos. A primeira colaboração foi em 1972 e continuou crescendo com centenas de clientes SAP que usam o {{site.data.keyword.cloud}} como sua solução de infraestrutura como serviço (IaaS). A {{site.data.keyword.IBM_notm}} continua a otimizar seus produtos de infraestrutura em nuvem para incluir suporte para soluções SAP HANA. 
+A IBM e a SAP trabalham em equipe, parceria e colaboração em áreas que incluem hardware, software, nuvem, serviços e financiamento por mais de 46 anos. A primeira colaboração foi em 1972 e continuou crescendo com centenas de clientes SAP que usam o {{site.data.keyword.cloud}} como sua solução de infraestrutura como serviço (IaaS). A {{site.data.keyword.IBM_notm}} continua a otimizar seus produtos de infraestrutura em nuvem para incluir suporte para soluções SAP HANA.
 
 É por causa desse relacionamento e outros recursos do {{site.data.keyword.cloud_notm}} que a {{site.data.keyword.IBM_notm}} foi selecionada como um dos principais provedores estratégicos da SAP de serviços de infraestrutura em nuvem para seus aplicativos críticos aos negócios. O suporte para o conjunto de produtos da SAP está disponível por meio do {{site.data.keyword.cloud_notm}} altamente escalável, aberto e rico em segurança. Com essa parceria, os aplicativos SAP podem expandir para grandes mercados em mais de 60 data centers {{site.data.keyword.IBM_notm}} no mundo todo.
 
@@ -31,13 +32,13 @@ As ofertas do SAP HANA no {{site.data.keyword.cloud_notm}} são desenvolvidas pa
 ## Modelo de oferta {{site.data.keyword.cloud_notm}} for SAP HANA
 {: #sap_hana_offering_model}
 
-A oferta é ideal para praticamente todos os cenários de suporte de caso de uso do SAP HANA {{site.data.keyword.baremetal_short}} sobre a rede {{site.data.keyword.cloud_notm}}. O SAP HANA na oferta {{site.data.keyword.cloud_notm}} consiste em {{site.data.keyword.baremetal_short}} com o sistema operacional Red Hat Enterprise Linux para SAP HANA 6.7. Observe que o SAP Business Warehouse é suportado em produção em servidores bare metal SAP HANA de nó único. Os servidores estão disponíveis nas configurações a seguir - 512 GB, 1 TB, 2 TB, 4 TB e 8 TB.
+A oferta é ideal para praticamente todos os cenários de suporte de caso de uso do SAP HANA {{site.data.keyword.baremetal_short}} sobre a rede {{site.data.keyword.cloud_notm}}. A oferta SAP HANA on {{site.data.keyword.cloud_notm}} consiste no {{site.data.keyword.baremetal_short}} com o S.O. Red Hat Enterprise Linux for SAP HANA 7.4. Observe que o SAP Business Warehouse é suportado em produção em servidores bare metal SAP HANA de nó único. Os servidores estão disponíveis nas configurações a seguir: 512 GB, 1 TB, 2 TB, 4 TB, 6 TB, 8 TB e 12 TB.
 
-Deve-se ter uma licença atual para o banco de dados SAP HANA se você é um cliente Bring-Your-Own-License, especificamente verificando o acesso à mídia do SAP HANA Platform Edition. 
+Deve-se ter uma licença atual para o banco de dados SAP HANA se você é um cliente Bring-Your-Own-License, especificamente verificando o acesso à mídia do SAP HANA Platform Edition.
 
 ## Rede do {{site.data.keyword.cloud_notm}}
 {: #ibm_cloud_network}
 
 O {{site.data.keyword.cloud_notm}} fornece mais de 2.000 GB de conectividade em uma área de cobertura global de mais de 60 data centers do {{site.data.keyword.cloud_notm}} e 28 pontos de presença (PoPs). O {{site.data.keyword.cloud_notm}} tem 20 Gbps de conexões de rede em seus locais. Essas conexões são fornecidas pelos principais provedores de rede global e incluem de múltiplos links de peers públicos a dezenas de redes adicionais de acesso à internet.
 
-A rede tem três arquiteturas de rede gigabit distintas e redundantes - pública, privada e data center a data center - perfeitamente integradas à primeira topologia de rede dentro de uma rede do segmento de mercado. Esse design fornece acessibilidade máxima, segurança e controle para sua infraestrutura de TI. Para obter mais informações, veja [A rede IBM Cloud](https://www.ibm.com/cloud-computing/bluemix/our-network).
+A rede tem três arquiteturas de rede gigabit distintas e redundantes - pública, privada e data center a data center - perfeitamente integradas à primeira topologia de rede dentro de uma rede do segmento de mercado. Esse design fornece acessibilidade máxima, segurança e controle para sua infraestrutura de TI. Para obter mais informações, consulte [A rede do {{site.data.keyword.cloud_notm}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud-computing/bluemix/our-network){: new_window}.

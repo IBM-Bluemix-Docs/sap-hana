@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-08-29"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, support
+
+subcollection: sap-hana
 
 ---
 
@@ -26,26 +27,26 @@ As etapas a seguir fornecem orientação sobre como obter as credenciais necess�
 ## Credenciais e contas SAP para novos usuários
 {: #sap_credentials}
 
-1. Configure uma conta na [página inicial do SAP](https://www.sap.com/) e siga as instruções.
-2. [Configure uma conta do usuário do HANA](https://www.sap.com/developer/tutorials/hcpps-hana-create-user.html).
+1. Configure uma conta na [página inicial da SAP ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.sap.com/){: new_window} e siga as instruções.
+2. [Configure uma conta do usuário HANA ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/2.0.00/en-US/c0555f0bbb5710148faabb0a6e35c457){: new_window}.
 
 ## Credenciais e contas do {{site.data.keyword.cloud_notm}} para novos usuários
 {: #ibm_credentials}
 
-1. Acesse [Introdução ao {{site.data.keyword.cloud_notm}}](https://www.ibm.com/cloud/get-started) e role para a parte inferior da página para o link **Inscrever-se**.
+1. Acesse [Introdução ao {{site.data.keyword.cloud_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/cloud/get-started){: new_window} e role até a parte inferior da página para o link **Inscrever-se**.
 
    Você receberá um e-mail do Suporte do {{site.data.keyword.cloud_notm}} contendo o código de verificação, por meio do qual é possível criar seu ID de login e senha iniciais.
-   
-2. Configure seu [perfil](https://console.bluemix.net/docs/admin/profile.html#usersettings) para efetuar login como um novo usuário.
 
-É possível [criar outras contas](https://console.bluemix.net/docs/customer-portal/getting-started.html#getting-started) e [criar novos usuários](https://console.bluemix.net/docs/customer-portal/getting-started.html#users-permissions) depois que tiver recebido as credenciais de login e tiver conectividade com a rede privada do {{site.data.keyword.cloud_notm}}. 
+2. Configure seu [perfil](/docs/account?topic=account-usersettings#profile-photo) para efetuar login como um novo usuário.
+
+É possível [criar outras contas](/docs/customer-portal?topic=customer-portal-getting-started#getting-started) e [criar novos usuários](/docs/customer-portal?topic=customer-portal-getting-started#users-permissions) depois que tiver recebido as credenciais de login e tiver conectividade com a rede privada do {{site.data.keyword.cloud_notm}}.
 
 ## Próximas Etapas
 
-  [2. Revisando qualquer documentação relevante do SAP e IBM Cloud](/docs/infrastructure/sap-hana/hana-review-doc.html)
-  
-  [3. Determinando seus aplicativos SAP](/docs/infrastructure/sap-hana/hana-determine-apps.html)
-  
-  [4. Dimensionamento do servidor](/docs/infrastructure/sap-hana/hana-size-server.html)
-  
-  [5. Determinando sua configuração](/docs/infrastructure/sap-hana/hana-determine-configuration.html)
+  [2. Revisando qualquer documentação relevante do SAP e IBM Cloud](/docs/infrastructure/sap-hana?topic=sap-hana-review_doc#review_doc)
+
+  [3. Determinando seus aplicativos SAP](/docs/infrastructure/sap-hana?topic=sap-hana-3-determining-your-sap-applications#3-determining-your-sap-applications)
+
+  [4. Dimensionando o servidor](/docs/infrastructure/sap-hana?topic=sap-hana-size_the_server#size_the_server)
+
+  [5. Determinando sua configuração](/docs/infrastructure/sap-hana?topic=sap-hana-determine_configuration#determine_configuration)

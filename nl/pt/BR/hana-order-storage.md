@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-08-20"
+  years: 2018, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}} storage, {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}
+
+subcollection: sap-hana
 
 ---
 
@@ -24,19 +25,14 @@ O {{site.data.keyword.blockstoragefull}}, o {{site.data.keyword.filestorage_full
 ## Pedindo armazenamento do {{site.data.keyword.cloud_notm}}
 {: #ibm_storage}
 
-É possível usar as etapas em [Provisionando e gerenciando o {{site.data.keyword.blockstorageshort}}](https://console.bluemix.net/docs/infrastructure/BlockStorage/provisioning-block_storage.html#provisioning-and-managing-block-storage) ou [Provisionando e gerenciando o {{site.data.keyword.filestorage_full_notm}}](https://console.bluemix.net/docs/infrastructure/FileStorage/provisioning-file-storage.html#provisioning-and-managing-ibm-file-storage-for-ibm-cloud) para pedir sua solução de armazenamento de backup e restauração. Você é guiado pelo processo de decidir qual tipo de armazenamento usar, como pedi-lo e como implementá-lo em seu servidor.
-
-## Pedindo o NAS
-{: #order-nas}
-
-O armazenamento NAS pode ser outra extensão de valor do armazenamento local de seu servidor se você precisar de armazenamento para arquivos de log arquivado do seu banco de dados ou backups on-line e off-line frequentes. Visite [Pedindo armazenamento NAS/FTP](https://console.bluemix.net/docs/infrastructure/network-attached-storage/index.html#ordering-nas-ftp-storage) para pedir e configurar o NAS. Além disso, referencie [Montando o armazenamento NAS no Linux](https://console.bluemix.net/docs/infrastructure/network-attached-storage/mount-nas-storage-linux.html#mounting-nas-storage-in-linux) para ver como mapear o network file storage (NFS) para seu servidor Linux. [O armazenamento NAS também pode ser mapeado para o VMware ESXi como um armazenamento de dados por meio do NFS](https://console.bluemix.net/docs/infrastructure/network-attached-storage/connect-nas-storage-windows.html#connecting-to-nas-storage-in-windows).
+É possível usar as etapas em [Provisionando e gerenciando o {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) ou [Provisionando e gerenciando o {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) para pedir sua solução de armazenamento de backup e restauração. Você é guiado pelo processo de decidir qual tipo de armazenamento usar, como pedi-lo e como implementá-lo em seu servidor.
 
 ## Próximas Etapas
 
-  [2. Assegurando seu ambiente](/docs/infrastructure/sap-hana/hana-secure-environment.html)
+  [2. Assegurando seu ambiente](/docs/infrastructure/sap-hana?topic=sap-hana-secure_environment#secure_environment)
 
-  [3. Instalando seu S.O. guest no hypervisor ESX (opcional)](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html)
+  [3. Instalando seu S.O. guest no hypervisor ESX (opcional)](/docs/infrastructure/sap-hana?topic=sap-hana-install_guest_os#install_guest_os)
 
-  [4. Fazendo download e instalando softwares e aplicativos SAP](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
+  [4. Fazendo download e instalando softwares e aplicativos SAP](/docs/infrastructure/sap-hana?topic=sap-hana-install_sap#install_sap)
 
-  [5. Configurando sua infraestrutura do IBM Cloud para suportar o multinó do SAP HANA](/docs/infrastructure/sap-hana/hana-multi-node.html)
+  [5. Configurando sua infraestrutura do IBM Cloud para suportar o multinó do SAP HANA](/docs/infrastructure/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage)
