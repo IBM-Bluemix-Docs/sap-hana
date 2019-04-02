@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-06-11"
+  years: 2018, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.baremetal_short}}, {{site.data.keyword.cloud_notm}}, database, application server
+
+subcollection: sap-hana
 
 ---
 
@@ -21,17 +22,34 @@ lastupdated: "2018-06-11"
 # 5. 決定配置
 {: #determine_configuration}
 
-下列各表列出 {{site.data.keyword.cloud}} SAP 認證基礎架構供應項目所提供的 {{site.data.keyword.baremetal_long}} 配置。如需在虛擬化環境中執行 SAP HANA 時的其他考量，請參閱 [VMware ESXi 伺服器部署](/docs/infrastructure/sap-hana/hana-considerations.html#vmware-server)。
+下列各表列出 {{site.data.keyword.cloud}} SAP 認證基礎架構供應項目所提供的 {{site.data.keyword.baremetal_long}} 配置。如需在虛擬化環境中執行 SAP HANA 時的其他考量，請參閱 [VMware ESXi 伺服器部署](/docs/infrastructure/sap-hana?topic=sap-hana-considerations#vmware_server)。
 
-## B1.S1.H512
+## 解密伺服器名稱
+{: #server-names}
+
+以下是解密 SAP HANA 伺服器名稱的範例。
+
+| 伺服器名稱 | 命名慣例元件 | 代表意義 |
+| --- | --- | --- |
+| BI.S2.H8401 | BI | Bluemix 介面 |
+| | S2 |系列 2（處理器世代）|
+| | | S1 為 Ivy Bridge/Haswell |
+| | | S2 為 Broadwell |
+| | | S3 為 Skylake/Kaby Lake |
+| | H | HANA 認證伺服器|
+| | 8 | 8-Socket 伺服器 |
+| |4 | 4 TB RAM |
+| | 01 |修訂號碼（00 是發表、01 是第一修訂版，依此類推）|
+
+## BI.S1.H512
 {: #512_GB_memory}
- 
+
 | RAID |元件|磁碟機|陣列|大小|
 | --- | --- | --- | --- | --- |
 |RAID 1 |2x 800 GB s3710 |`hdd0, hdd1` |RAID1-A |800 GB |
 |RAID 10 |6x 800 GB s3710 |`hdd2, hdd3, hdd4, hdd5, hdd6, hdd7` |RAID10-B |550 GB |
 |RAID 10 |6x 800 GB s3710 |`hdd2, hdd3, hdd4, hdd5, hdd6, hdd7` |RAID-10C |1851 GB |
-|廣域緊急備用    |1x 800 GB s3710 |`hdd8` |800 GB GHS |800 GB |
+|廣域緊急備用|1x 800 GB s3710 |`hdd8` |800 GB GHS |800 GB |
 
 |陣列|分割區|名稱|大小 (GB) |
 | --- | --- | --- | --- |
@@ -52,7 +70,7 @@ lastupdated: "2018-06-11"
 |   |`/dev/sdc1` |`/hana/data` |`rest` |
 
 
-## B1.S1.H1000
+## BI.S1.H1000
 {: #1024_GB_memory}
 
 | RAID |元件|磁碟機|陣列|大小|
@@ -60,7 +78,7 @@ lastupdated: "2018-06-11"
 |RAID 1 |2x 800 GB s3710 |`hdd0, hdd1` |RAID1-A |800 GB |
 |RAID 10 |6x 800 GB s3710 |`hdd2, hdd3, hdd4, hdd5, hdd6, hdd7` |RAID10-B |2400 GB |
 |RAID 10 |8x 800 GB s3710 |`hdd8, hdd9, hdd10, hdd11, hdd12, hdd13, hdd14, hdd15` |RAID-10C |3200 GB |
-|廣域緊急備用    |1x 800 GB s3710 |`hdd16` |800 GB GHS |800 GB |
+|廣域緊急備用|1x 800 GB s3710 |`hdd16` |800 GB GHS |800 GB |
 
 |陣列|分割區|名稱|大小 (GB) |
 | --- | --- | --- | --- |
@@ -80,7 +98,7 @@ lastupdated: "2018-06-11"
 |   |`/dev/sdc1` |`/hana/data` |`rest` |
 
 
-## B1.S2.H4101
+## BI.S2.H4101
 {: #H4101}
 
 | RAID |元件|磁碟機|陣列|大小|
@@ -102,7 +120,7 @@ lastupdated: "2018-06-11"
 |   |`/dev/sdb1` |`/hana/shared` | 1024 |
 |   |`/dev/sdb2` |`/hana/data` |`rest` |
 
-## B1.S2.H4100
+## BI.S2.H4100
 {: #H4100}
 
 | RAID |元件|磁碟機|陣列|大小|
@@ -130,7 +148,7 @@ lastupdated: "2018-06-11"
 |   |`/dev/sdc1` |`/hana/data` |`rest` |
 
 
-## B1.S2.H4201
+## BI.S2.H4201
 {: #4201}
 
 | RAID |元件|磁碟機|陣列|大小|
@@ -153,7 +171,7 @@ lastupdated: "2018-06-11"
 |   |`/dev/sdb2` |`/hana/data` |`rest` |
 
 
-## B1.S2.H4200
+## BI.S2.H4200
 {: #H4200}
 
 | RAID |元件|磁碟機|陣列|大小|
@@ -181,38 +199,38 @@ lastupdated: "2018-06-11"
 |   |`/dev/sdc1` |`/hana/data` |`rest` |
 
 
-## B1.S1.H2000
+## BI.S1.H2000
 {: #2048_GB_memory}
- 
+
 | RAID |元件|磁碟機|陣列|大小|
 | --- | --- | --- | --- | --- |
 |RAID 1 |2x 800 GB s3710 |`hdd0, hdd1` |RAID1-A |800 GB |
 |RAID 10 |8x 800 GB s3710 |`hdd2, hdd3, hdd4, hdd5, hdd6, hdd7, hdd8, hdd9` |RAID10-B |4800 GB |
 |RAID 10 |106x 1.2 TB S3710 |`hdd10, hdd11, hdd12, hdd15, hdd16, hdd17, hdd18, hdd19, hdd20, hdd21` |RAID-10C |7200 GB |
-|廣域緊急備用    |1x 800 GB S3710 |`hdd22` |800 GB GHS |800 GB |
-|RAID 10-C 緊急備用 |1x 1.2 TB S3710 |`hdd23` |1.2 TB 緊急備用 |1.2 TB |
+|廣域緊急備用|1x 800 GB S3710 |`hdd22` |800 GB GHS |800 GB |
+| RAID 10-C 緊急備用 |1x 1.2 TB S3710 |`hdd23` |1.2 TB 緊急備用 |1.2 TB |
 
 |陣列|分割區|名稱|大小 (GB) |
 | --- | --- | --- | --- |
 |RAID1-A |`/dev/sda` |   |800 |
 |   |`/dev/sda1` |`/boot` |0.25 |
-|   |`/dev/sda2` | `/` |`Rest` |
+|   |`/dev/sda2` | `/` |`rest` |
 
 |陣列|分割區|名稱|大小 (GB) |
 | --- | --- | --- | --- |
 |RAID10-B |`/dev/sdb` |   |4800 |
-|   |`/dev/sdb1` |`/hana/log` |`Rest` |
+|   |`/dev/sdb1` |`/hana/log` |`rest` |
 |   |`/dev/sdb2` |`/hana/shared` |2200 |
 
 |陣列|分割區|名稱|大小 (GB) |
 | --- | --- | --- | --- |
 |RAID10-C |`/dev/sdc` |   |7200 |
-|   |`/dev/sdc1` |`/hana/data` |`Rest` |
+|   |`/dev/sdc1` |`/hana/data` |`rest` |
 
 
-## B1.S2.H4401
+## BI.S2.H4401
 {: #H4401}
- 
+
 | RAID |元件|磁碟機|陣列|大小|
 | --- | --- | --- | --- | --- |
 | RAID 1 + 緊急備用| 3x 960 GB 5100 |`hdd0, hdd1, hdd2` |RAID1-A | 960 GB |
@@ -224,7 +242,7 @@ lastupdated: "2018-06-11"
 |   |`/dev/sda1` |`/boot` | 1.0 |
 |   |`/dev/sda2` | `/` | 150 |
 |   |`/dev/sda3` |`/usr/sap` | 150 |
-|   |`/dev/sda4` | '/hana/log` | `rest` |
+|   |`/dev/sda4` |`/hana/log` |`rest` |
 
 |陣列|分割區|名稱|大小 (GB) |
 | --- | --- | --- | --- |
@@ -233,9 +251,9 @@ lastupdated: "2018-06-11"
 |   |`/dev/sdb2` |`/hana/data` |`rest` |
 
 
-## B1.S2.H8401
+## BI.S2.H8401
 {: #H8401}
- 
+
 | RAID |元件|磁碟機|陣列|大小|
 | --- | --- | --- | --- | --- |
 | RAID 1 + 緊急備用| 3x 960 GB 5100 |`hdd0, hdd1, hdd2` |RAID1-A | 960 GB |
@@ -256,15 +274,15 @@ lastupdated: "2018-06-11"
 |   |`/dev/sdb2` | `hana/data` |`rest` |
 
 
-## B1.S2.H4400
+## BI.S2.H4400
 {: #4096_GB_memory}
- 
+
 | RAID |元件|磁碟機|陣列|大小|
 | --- | --- | --- | --- | --- |
 |RAID 1 |3x 800 GB s3710 |`hdd0` |RAID1-A |800 GB |
 |RAID 5 |6x 1.2 TB s3710 |`hdd1` |RAID5-B |4100 GB |
 |RAID 5 |9x 1.2 TB s3710 |`hdd2` |RAID-5C |8400 GB |
-|廣域緊急備用    |1x 800 GB S3710 |`hdd22` |800 GB GHS |800 GB |
+|廣域緊急備用|1x 800 GB S3710 |`hdd22` |800 GB GHS |800 GB |
 
 |陣列|分割區|名稱|大小 (GB) |
 | --- | --- | --- | --- |
@@ -284,15 +302,15 @@ lastupdated: "2018-06-11"
 |   |`/dev/sdc1` |`/hana/data` |`rest` |
 
 
-## B1.S2.H4400
+## BI.S2.H4400
 {: #H4400}
- 
+
 | RAID |元件|磁碟機|陣列|大小|
 | --- | --- | --- | --- | --- |
 |RAID 1 |3x 800 GB s3710 |`hdd0` |RAID1-A |800 GB |
 |RAID 5 |6x 1.2 TB s3710 |`hdd1` |RAID5-B |4100 GB |
 |RAID 5 |9x 1.2 TB s3710 |`hdd2` |RAID-5C |8400 GB |
-|廣域緊急備用    |1x 800 GB S3710 |`hdd22` |800 GB GHS |800 GB |
+|廣域緊急備用|1x 800 GB S3710 |`hdd22` |800 GB GHS |800 GB |
 
 |陣列|分割區|名稱|大小 (GB) |
 | --- | --- | --- | --- |
@@ -313,9 +331,9 @@ lastupdated: "2018-06-11"
 
 
 
-## B1.S2.H8801
+## BI.S2.H8801
 {: #H8801}
- 
+
 | RAID |元件|磁碟機|陣列|大小|
 | --- | --- | --- | --- | --- |
 | RAID 1 + 緊急備用| 3x 960 GB 5100 |`hdd0, hdd1, hdd2` |RAID1-A | 960 GB |
@@ -336,9 +354,9 @@ lastupdated: "2018-06-11"
 |   |`/dev/sdb2` |`/hana/data` |`rest` |
 
 
-## B1.S2.H8800
+## BI.S2.H8800
 {: #8192_GB_memory}
- 
+
 | RAID |元件|磁碟機|陣列|大小|
 | --- | --- | --- | --- | --- |
 |RAID 1 |2x 800 GB s3710 |+1 緊急備用 |RAID1-A |800 GB |
@@ -363,11 +381,57 @@ lastupdated: "2018-06-11"
 |   |`/dev/sdc1` |`/hana/data` |`rest` |
 
 
+## BI.S3.H2192
+{: #2192_GB_memory}
+
+| RAID |元件|磁碟機|陣列|大小|
+| --- | --- | --- | --- | --- |
+|RAID 1 | 2x 960 GB 5100 |`hdd0, hdd1` |RAID1-A | 960 GB |
+|RAID 1 | 2x 960 GB 5100 | `hdd2, hdd3` | RAID1-B | 960 GB |
+|廣域緊急備用| 1x 960 GB 5100 | `hdd4` |  |  |
+
+|陣列|分割區|名稱|大小 (GB) |
+| --- | --- | --- | --- |
+|RAID1-A |`/dev/sda` |   |  |
+|   |`/dev/sda1` |`/boot` |50 |
+|   |`/dev/sda2` | `/` | 150 |
+|   |`/dev/sda3` |`/usr/sap` | 150 |
+|   |`/dev/sda4` |`/hana/log` |  |
+
+|陣列|分割區|名稱|大小 (GB) |
+| --- | --- | --- | --- |
+| RAID1-B |`/dev/sdb` |   |  |
+|   |`/dev/sdb1` |`/hana/shared` | 250 |
+|   | `/dev\sdb2` |`/hana/data` |`rest` |
+
+## BI.S3.H2384
+{: #2384_GB_memory}
+
+| RAID |元件|磁碟機|陣列|大小|
+| --- | --- | --- | --- | --- |
+|RAID 1 | 2x 960 GB 5100 |`hdd0, hdd1` |RAID1-A | 960 GB |
+|RAID 10 | 4x 960 GB 5100 | `hdd2, hdd3, hdd4, hdd5` | RAID1-B | 1920 GB |
+|廣域緊急備用| 1x 960 GB 5100 | `hdd` |  |  |
+
+|陣列|分割區|名稱|大小 (GB) |
+| --- | --- | --- | --- |
+|RAID1-A |`/dev/sda` |   |  |
+|   |`/dev/sda1` |`/boot` |50 |
+|   |`/dev/sda2` | `/` | 150 |
+|   |`/dev/sda3` |`/usr/sap` | 150 |
+|   |`/dev/sda4` |`/hana/log` |  |
+
+|陣列|分割區|名稱|大小 (GB) |
+| --- | --- | --- | --- |
+| RAID1-B |`/dev/sdb` |   |  |
+|   |`/dev/sdb1` |`/hana/shared` | 500 |
+|   | `/dev\sdb2` |`/hana/data` |`rest` |
+
 ## VMware
 {: #vmware}
 
-您負責設定伺服器的 VMware 相關配置。您可以從三種大小進行選擇：1 TB (B1.S2.H4100 (VMware))、2 TB (B1.S2.H4200 (VMware)) 及 4 TB (B1.S2.4400 (VMware))。如需在 SAP 認證 {{site.data.keyword.baremetal_short}} 上配置 VMware 的相關資訊，請參閱 [Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf) (PDF)。
+您負責設定伺服器的 VMware 相關配置。您可以從三種大小進行選擇：1 TB (BI.S2.H4100 (VMware))、2 TB (BI.S2.H4200 (VMware)) 及 4 TB (BI.S2.4400 (VMware))。如需在 SAP 認證 {{site.data.keyword.baremetal_short}} 上配置 VMware 的相關資訊，請參閱 [Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf){: new_window} (PDF)。
 
 ## 後續步驟
 
-您現在已準備好開始佈建 {{site.data.keyword.baremetal_short}}。如需後續步驟，請參閱[佈建 SAP HANA 環境](/docs/infrastructure/sap-hana/hana-provision-environment.html)。
+您現在已準備好開始佈建 {{site.data.keyword.baremetal_short}}。如需後續步驟，請參閱[佈建 SAP HANA 環境](/docs/infrastructure/sap-hana?topic=sap-hana-provision_environment#provision_environment)。
