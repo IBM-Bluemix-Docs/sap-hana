@@ -1,42 +1,54 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="sap-netweaver-rhel-qrg" audience="compute" href="/docs/infrastructure/sap-netweaver-rhel-qrg?topic=sap-netweaver-rhel-qrg-getting-started-tutorial" path="infrastructure/sap-netweaver-rhel-qrg"}
-SAP NetWeaver su IBM Cloud - Guida di riferimento rapido per Red Hat Enterprise Linux
+{: .toc subcollection="sap-hana" audience="compute" href="/docs/infrastructure/sap-hana?topic=sap-hana-getting-started#getting-started" path="infrastructure/sap-hana"}
+SAP HANA on IBM Cloud
 
     {: .navgroup id="learn"}
-    rhel-index.md
-    [SAP NetWeaver su IBM Cloud](https://cloud.ibm.com/docs/infrastructure/sap-netweaver?topic=sap-netweaver-getting-started#getting-started)
+    hana-index.md
+    hana-about.md
+    hana-general-iaas-concepts.md
+    hana-byol.md
+
+    {: .topicgroup}
+    Link correlati
+        [Fulcrum: Transformational digital business platform enables operational excellence](https://www.youtube.com/watch?v=RHDIcxguyIE)
+        [Case study: Fulcrum](https://www.ibm.com/case-studies/fulcrum-cloud-sap-legal-services)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    Provisioning
-        rhel-installing-32-GB-single-server-node.md
-        rhel-set-up-infrastructure-32GB.md
-        rhel-prepare-server-32GB.md
-        rhel-partition-32GB.md
-        rhel-installing-256-GB-32-GB-server-three-tier-setup.md
-        rhel-set-up-infrastructure-three-tier.md
-        rhel-prepare-server-256GB.md
-        rhel-partition-256GB.md
-        rhel-prepare-network.md
+    Pianificazione
+        hana-planning-your-system-landscape.md
+        hana-considerations.md
+        hana-get-credentials.md
+        hana-review-doc.md
+        hana-determine-apps.md
+        hana-size-server.md
+        hana-determine-configuration.md
 
     {: .topicgroup}
-    Configurazione
-        rhel-provisioning-external-storage-to-server.md
-        rhel-installing-your-SAP-landscape.md
-    {: .navgroup-end}
+    Provisioning
+        hana-provision-environment.md
+        hana-requesting-setting-up-VPN.md
+        hana-setting-up-infrastructure.md
 
-    {: .navgroup id="reference"}
-    rhel-sample.md
+    {: .topicgroup}
+    Gestione
+        hana-manage-environment.md
+        hana-order-storage.md
+        hana-secure-environment.md
+        hana-installing-guest-operating-system-VMware-deployments.md
+        hana-installing-SAP-landscape.md
+        hana-multi-node.md
+        hana-ha.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
     [Come ottenere aiuto e supporto](/bare-metal/bare-metal-gettinghelp#gettinghelp)
 
     {: .topicgroup}
-    Domande frequenti
-        [FAQs: SAP on IBM Cloud](/infrastructure/sap-netweaver/sap-netweaver-faqs#faqs)
+    FAQ
+        [FAQ: SAP on IBM Cloud](/infrastructure/sap-netweaver/sap-netweaver-faqs#faqs)
 
 {: .navgroup-end}

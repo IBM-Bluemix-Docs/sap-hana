@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-08-20"
+  years: 2018, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}}
+
+subcollection: sap-hana
 
 ---
 
@@ -27,11 +28,11 @@ Tabella 1. Panoramica sulla gestione del tuo ambiente
 
 | Passo | Dettagli |
 | --- | --- |
-| 1 | [Ordine dell'archiviazione](/docs/infrastructure/sap-hana/hana-order-storage.html) |
-| 2 | [Protezione dell'ambiente](/docs/infrastructure/sap-hana/hana-secure-environment.html) |
-| 3 | [Installazione del SO guest nell'hypervisor VMware ESX](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html) |
-| 4 | [Scaricamento e installazione delle applicazioni e del software SAP](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html) |
-| 5 | [Configurazione della tua infrastruttura IBM Cloud per supportare SAP HANA a più nodi](/docs/infrastructure/sap-hana/hana-multi-node.html)
+| 1 | [Ordine dell'archiviazione](/docs/infrastructure/sap-hana?topic=sap-hana-order_storage#order_storage) |
+| 2 | [Protezione dell'ambiente](/docs/infrastructure/sap-hana?topic=sap-hana-secure_environment#secure_environment) |
+| 3 | [Installazione del SO guest nell'hypervisor VMware ESX](/docs/infrastructure/sap-hana?topic=sap-hana-install_guest_os#install_guest_os) |
+| 4 | [Scaricamento e installazione delle applicazioni e del software SAP](/docs/infrastructure/sap-hana?topic=sap-hana-install_sap#install_sap) |
+| 5 | [Configurazione della tua infrastruttura IBM Cloud per supportare SAP HANA a più nodi](/docs/infrastructure/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage)
 
 ## Passi successivi
 
