@@ -1,35 +1,47 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="sap-netweaver-rhel-qrg" audience="compute" href="/docs/infrastructure/sap-netweaver-rhel-qrg?topic=sap-netweaver-rhel-qrg-getting-started-tutorial" path="infrastructure/sap-netweaver-rhel-qrg"}
-SAP NetWeaver on IBM Cloud - Red Hat Enterprise Linux 快速参考指南
+{: .toc subcollection="sap-hana" audience="compute" href="/docs/infrastructure/sap-hana?topic=sap-hana-getting-started#getting-started" path="infrastructure/sap-hana"}
+IBM Cloud 上的 SAP HANA
 
     {: .navgroup id="learn"}
-    rhel-index.md
-    [SAP NetWeaver on IBM Cloud](https://cloud.ibm.com/docs/infrastructure/sap-netweaver?topic=sap-netweaver-getting-started#getting-started)
+    hana-index.md
+    hana-about.md
+    hana-general-iaas-concepts.md
+    hana-byol.md
+
+    {: .topicgroup}
+    相关链接
+        [Fulcrum: Transformational digital business platform enables operational excellence](https://www.youtube.com/watch?v=RHDIcxguyIE)
+        [Case study: Fulcrum](https://www.ibm.com/case-studies/fulcrum-cloud-sap-legal-services)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     {: .topicgroup}
-    供应
-        rhel-installing-32-GB-single-server-node.md
-        rhel-set-up-infrastructure-32GB.md
-        rhel-prepare-server-32GB.md
-        rhel-partition-32GB.md
-        rhel-installing-256-GB-32-GB-server-three-tier-setup.md
-        rhel-set-up-infrastructure-three-tier.md
-        rhel-prepare-server-256GB.md
-        rhel-partition-256GB.md
-        rhel-prepare-network.md
+    规划
+        hana-planning-your-system-landscape.md
+        hana-considerations.md
+        hana-get-credentials.md
+        hana-review-doc.md
+        hana-determine-apps.md
+        hana-size-server.md
+        hana-determine-configuration.md
 
     {: .topicgroup}
-    配置
-        rhel-provisioning-external-storage-to-server.md
-        rhel-installing-your-SAP-landscape.md
-    {: .navgroup-end}
+    供应
+        hana-provision-environment.md
+        hana-requesting-setting-up-VPN.md
+        hana-setting-up-infrastructure.md
 
-    {: .navgroup id="reference"}
-    rhel-sample.md
+    {: .topicgroup}
+    管理
+        hana-manage-environment.md
+        hana-order-storage.md
+        hana-secure-environment.md
+        hana-installing-guest-operating-system-VMware-deployments.md
+        hana-installing-SAP-landscape.md
+        hana-multi-node.md
+        hana-ha.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
@@ -37,6 +49,6 @@ SAP NetWeaver on IBM Cloud - Red Hat Enterprise Linux 快速参考指南
 
     {: .topicgroup}
     常见问题
-        [常见问题：SAP on IBM Cloud](/infrastructure/sap-netweaver/sap-netweaver-faqs#faqs)
+        [常见问题：IBM Cloud 上的 SAP](/infrastructure/sap-netweaver/sap-netweaver-faqs#faqs)
 
 {: .navgroup-end}

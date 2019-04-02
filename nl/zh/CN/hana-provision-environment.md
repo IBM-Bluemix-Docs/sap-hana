@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-05-30"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, VPN
+
+subcollection: sap-hana
 
 ---
 
@@ -20,14 +21,14 @@ lastupdated: "2018-05-30"
 # 供应 SAP HANA 环境
 {: #provision_environment}
 
-表 1 包含供应 {{site.data.keyword.cloud}} SAP-Certified Infrastructure 的步骤。 
+表 1 包含供应 {{site.data.keyword.cloud}} SAP-Certified Infrastructure 的步骤。
 
 表 1. 供应概述
 
 |步骤 |详细信息 |
 | --- | --- |
-|1 |[请求 {{site.data.keyword.cloud_notm}} VPN 连接](/docs/infrastructure/sap-hana/hana-requesting-setting-up-VPN.html) |
-|2 |[设置基础架构](/docs/infrastructure/sap-hana/hana-setting-up-infrastructure.html) |
+|1 |[请求 {{site.data.keyword.cloud_notm}} VPN 连接](/docs/infrastructure/sap-hana?topic=sap-hana-request_vpn_connect#request_vpn_connect) |
+|2 |[设置基础架构](/docs/infrastructure/sap-hana?topic=sap-hana-set_up_infrastructure#set_up_infrastructure) |
 
 ## 后续步骤
 

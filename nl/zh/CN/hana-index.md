@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-08-10"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}}
+
+subcollection: sap-hana
 
 ---
 
@@ -40,27 +41,27 @@ lastupdated: "2018-08-10"
    <li><a href="https://ibm.com/cloud-computing/">什么是 IBM Cloud</a></li>
    <li><a href="https://ibm.com/cloud/get-started">IBM Cloud 入门</a></li>
    <li><a href="https://www.ibm.com/cloud/bare-metal-servers/sap">IBM Cloud 上 SAP 认证的基础架构</a></li>
-     
+
    您还可能发现以下 SAP 文档很有用：     
-   <li><a href="https://www.sap.com/products/hana/implementation/resources.html">SAP HANA Installation Guide</a>；下载安装指南</li> 
-   <li><a href="https://www.sapappsdevelopmentpartnercenter.com/en/faq/program-faqs_2/how-to-receive-an-s-user-to-access-the-s_77/">How to set up an SAP S-user ID</a></li>
+   <li><a href="https://www.sap.com/products/hana/implementation/resources.html">SAP HANA Installation Guide</a>；下载安装指南</li>
+  <li><a href="https://www.youtube.com/watch?v=4wICiRTP8u0/">如何创建 SAP S 用户标识</a>。请注意，只有超级管理员或具有所需授权的 S 用户才可以创建 S 用户标识。</li>
    <li><a href="https://help.sap.com/hana/SAP_HANA_Administration_Guide_en.pdf">SAP HANA Administration Guide</a></li>
    <li><a href="https://support.sap.com">SAP Note</a>；需要 SAP S 用户标识</li>
    <tr>
    <td>2. 注册 IBM Cloud</td>
-   <td>请参阅<a href="https://console.bluemix.net/docs/admin/adminpublic.html#signing-up-for-ibm-cloud">注册 IBM Cloud</a> 以获取有关如何设置 IBM Cloud 帐户的步骤。</td>
+   <td>请参阅<a href="https://cloud.ibm.com/docs/account?topic=account-signup#signing-up-for-ibm-cloud">注册 IBM Cloud</a> 以获取有关如何设置 IBM Cloud 帐户的步骤。</td>
  <tr>
-   <td>3. 访问 IBM Cloud 基础架构客户门户网站</td>
-   <td><a href="https://control.softlayer.com">IBM Cloud 基础架构客户门户网站</a>是所有基础架构组件（计算、连接、存储器、网络和数据中心）的图形网关。需要 <a href="https://console.bluemix.net/docs/customer-portal/getting-started.html#getting-started">IBM 标识和密码</a>才能访问客户门户网站。</td> 
+   <td>3. 访问 IBM Cloud Infrastructure 客户门户网站</td>
+   <td><a href="https://control.softlayer.com">IBM Cloud Infrastructure 客户门户网站</a>是所有基础架构组件（计算、连接、存储器、网络和数据中心）的图形网关。需要 <a href="https://console.bluemix.net/docs/customer-portal?topic=customer-portal-getting-started#getting-started">IBM 标识和密码</a>才能访问客户门户网站。</td>
    <tr>
    <td>4. 规划系统格局</td>
-   <td>使用<a href="hana-planning-your-system-landscape.html">规划系统格局</a>中的信息，设计 IBM Cloud 环境的架构、设置其大小并进行供应，以支持 SAP HANA 工作负载。</td>  
+   <td>使用<a href="sap-hana?topic=sap-hana-planning-your-system-landscape#planning-your-system-landscape">规划系统格局</a>中的信息，设计 IBM Cloud 环境的架构、设置其大小并进行供应，以支持 SAP HANA 工作负载。</td>  
  <tr>
    <td>5. 供应系统</td>
-   <td>使用<a href="hana-provision-environment.html#provision_environment">供应 SAP HANA 环境</a>中的步骤和信息来设置 IBM Cloud 基础架构。</td>
+   <td>使用<a href="sap-hana?topic=sap-hana-provision_environment#provision_environment">供应 SAP HANA 环境</a>中的步骤和信息来设置 IBM Cloud Infrastructure。</td>
    <tr>
    <td>6. 安装 SAP 格局</td>
-   <td>您在 IBM Cloud 基础架构上安装 SAP 格局时，就如同服务器是内部部署的一样进行安装。请参阅<a href="hana-installing-SAP-landscape.html#install_sap">下载和安装 SAP 软件和应用程序</a>以获取更多信息。</td>
+   <td>您在 IBM Cloud Infrastructure 上安装 SAP 格局时，就如同服务器是内部部署的一样进行安装。请参阅<a href="sap-hana?topic=sap-hana-install_sap#install_sap">下载和安装 SAP 软件和应用程序</a>以获取更多信息。</td>
    </td>
    </tr>
    </TBODY>
