@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-08-10"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}}
+
+subcollection: sap-hana
 
 ---
 
@@ -40,27 +41,27 @@ Le tableau 1 contient des étapes permettant de générer votre produit {{site.d
    <li><a href="https://ibm.com/cloud-computing/">Qu'est-ce qu'IBM Cloud ?</a></li>
    <li><a href="https://ibm.com/cloud/get-started">Get started with IBM Cloud</a></li>
    <li><a href="https://www.ibm.com/cloud/bare-metal-servers/sap">SAP-certified Infrastructure dans IBM Cloud</a></li>
-     
+
    La documentation SAP suivante peut également vous être utile :     
-   <li><a href="https://www.sap.com/products/hana/implementation/resources.html">SAP HANA Installation Guide</a> ; téléchargez le guide d'installation</li> 
-   <li><a href="https://www.sapappsdevelopmentpartnercenter.com/en/faq/program-faqs_2/how-to-receive-an-s-user-to-access-the-s_77/">How to access restricted content e.g. learning materials and events on the SAP PartnerEdge Portal?</a></li>
+   <li><a href="https://www.sap.com/products/hana/implementation/resources.html">SAP HANA Installation Guide</a> ; téléchargez le guide d'installation</li>
+  <li><a href="https://www.youtube.com/watch?v=4wICiRTP8u0/">How to create an SAP S-user ID</a>. Seuls les administrateurs centraux ou les utilisateurs S ayant l'autorisation requise sont autorisés à créer des ID d'utilisateur S.</li>
    <li><a href="https://help.sap.com/hana/SAP_HANA_Administration_Guide_en.pdf">SAP HANA Administration Guide</a></li>
    <li><a href="https://support.sap.com">Notes SAP</a> ; requiert un ID utilisateur SAP S</li>
    <tr>
    <td>2. Inscrivez-vous à IBM Cloud.</td>
-   <td>Voir <a href="https://console.bluemix.net/docs/admin/adminpublic.html#signing-up-for-ibm-cloud">Signing up for IBM Cloud</a> pour les étapes à suivre pour configurer votre compte IBM Cloud.</td>
+   <td>Voir <a href="https://cloud.ibm.com/docs/account?topic=account-signup#signing-up-for-ibm-cloud">Signing up for IBM Cloud</a> pour les étapes à suivre pour configurer votre compte IBM Cloud.</td>
  <tr>
    <td>3. Accédez au portail IBM Cloud Infrastructure Customer Portal.</td>
-   <td>Le portail <a href="https://control.softlayer.com">IBM Cloud Infrastructure Customer Portal</a> constitue votre passerelle graphique vers vos composants d'infrastructure (calcul, connectivité, stockage, réseau et centres de données). Vous avez besoin d'un <a href="https://console.bluemix.net/docs/customer-portal/getting-started.html#getting-started">IBMid et d'un mot de passe</a> pour accéder au portail client.</td> 
+   <td>Le portail <a href="https://control.softlayer.com">IBM Cloud Infrastructure Customer Portal</a> constitue votre passerelle graphique vers vos composants d'infrastructure (calcul, connectivité, stockage, réseau et centres de données). Vous avez besoin d'un <a href="https://console.bluemix.net/docs/customer-portal?topic=customer-portal-getting-started#getting-started">IBMid et d'un mot de passe</a> pour accéder au portail client.</td>
    <tr>
    <td>4. Planifiez le paysage de votre système.</td>
-   <td>Servez-vous des informations présentées dans la rubrique <a href="hana-planning-your-system-landscape.html">Planification du paysage de votre système</a> pour créer l'architecture de votre environnement IBM Cloud, le dimensionner et le mettre à disposition en vue de la prise en charge de votre charge de travail SAP HANA.</td>  
+   <td>Servez-vous des informations présentées dans la rubrique <a href="sap-hana?topic=sap-hana-planning-your-system-landscape#planning-your-system-landscape">Planification du paysage de votre système</a> pour créer l'architecture de votre environnement IBM Cloud, le dimensionner et le mettre à disposition en vue de la prise en charge de votre charge de travail SAP HANA.</td>  
  <tr>
    <td>5. Mettez votre système à disposition.</td>
-   <td>Suivez les étapes et servez-vous des informations présentées dans la rubrique <a href="hana-provision-environment.html#provision_environment">Mise à disposition de votre système SAP HANA</a> pour configurer votre produit IBM Cloud Infrastructure.</td>
+   <td>Suivez les étapes et servez-vous des informations présentées dans la rubrique <a href="sap-hana?topic=sap-hana-provision_environment#provision_environment">Mise à disposition de votre système SAP HANA</a> pour configurer votre produit IBM Cloud Infrastructure.</td>
    <tr>
    <td>6. Installez le paysage SAP.</td>
-   <td>Vous installez votre paysage SAP dans votre produit IBM Cloud Infrastructure de la même façon que si vos serveurs se trouvaient sur site. Voir <a href="hana-installing-SAP-landscape.html#install_sap">Téléchargement et installation des logiciels et des applications SAP</a> pour plus d'informations.</td>
+   <td>Vous installez votre paysage SAP dans votre produit IBM Cloud Infrastructure de la même façon que si vos serveurs se trouvaient sur site. Voir <a href="sap-hana?topic=sap-hana-install_sap#install_sap">Téléchargement et installation des logiciels et des applications SAP</a> pour plus d'informations.</td>
    </td>
    </tr>
    </TBODY>

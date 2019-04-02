@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2018
-lastupdated: "2018-08-20"
+  years: 2018, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}} storage, {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}
+
+subcollection: sap-hana
 
 ---
 
@@ -24,19 +25,14 @@ Vous commandez {{site.data.keyword.blockstoragefull}}, {{site.data.keyword.files
 ## Commande de stockage {{site.data.keyword.cloud_notm}}
 {: #ibm_storage}
 
-Vous pouvez suivre les étapes décrites dans [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](https://console.bluemix.net/docs/infrastructure/BlockStorage/provisioning-block_storage.html#provisioning-and-managing-block-storage) ou [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](https://console.bluemix.net/docs/infrastructure/FileStorage/provisioning-file-storage.html#provisioning-and-managing-ibm-file-storage-for-ibm-cloud) pour commander votre solution de stockage pour la sauvegarde et la restauration. Vous serez guidé pour choisir le type de stockage à utiliser, savoir comment le commander et savoir comment le déployer sur votre serveur.
-
-## Commande de stockage NAS
-{: #order-nas}
-
-Le stockage NAS peut constituer une autre extension intéressante du stockage local de votre serveur si vous avez besoin de stockage pour les fichiers journaux archivés de votre base de données ou des sauvegardes en ligne et hors ligne fréquentes. Visitez la page [Ordering NAS/FTP Storage](https://console.bluemix.net/docs/infrastructure/network-attached-storage/index.html#ordering-nas-ftp-storage) pour commander et configurer un stockage NAS. De plus, consultez la rubrique [Mounting NAS Storage in Linux](https://console.bluemix.net/docs/infrastructure/network-attached-storage/mount-nas-storage-linux.html#mounting-nas-storage-in-linux) pour apprendre à mapper le stockage de fichiers réseau (NFS) à votre serveur Linux. [Le stockage NAS peut également être mappé à VMware ESXi en tant que magasin de données via NFS](https://console.bluemix.net/docs/infrastructure/network-attached-storage/connect-nas-storage-windows.html#connecting-to-nas-storage-in-windows).
+Vous pouvez suivre les étapes décrites dans [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) ou [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) pour commander votre solution de stockage pour la sauvegarde et la restauration. Vous serez guidé pour choisir le type de stockage à utiliser, savoir comment le commander et savoir comment le déployer sur votre serveur.
 
 ## Etapes suivantes
 
-  [2. Sécurisation de votre environnement](/docs/infrastructure/sap-hana/hana-secure-environment.html)
+  [2. Sécurisation de votre environnement](/docs/infrastructure/sap-hana?topic=sap-hana-secure_environment#secure_environment)
 
-  [3. Installation de votre système d'exploitation invité sur l'hyperviseur ESX (facultatif) ](/docs/infrastructure/sap-hana/hana-installing-guest-operating-system-VMware-deployments.html)
+  [3. Installation de votre système d'exploitation invité sur l'hyperviseur ESX (facultatif)](/docs/infrastructure/sap-hana?topic=sap-hana-install_guest_os#install_guest_os)
 
-  [4. Téléchargement et installation des logiciels et des applications SAP](/docs/infrastructure/sap-hana/hana-installing-SAP-landscape.html)
+  [4. Téléchargement et installation des logiciels et des applications SAP](/docs/infrastructure/sap-hana?topic=sap-hana-install_sap#install_sap)
 
-  [5. Configuration de votre infrastructure IBM Cloud pour la prise en charge d'un système SAP HANA à plusieurs noeuds](/docs/infrastructure/sap-hana/hana-multi-node.html)
+  [5. Configuration de votre infrastructure IBM Cloud pour la prise en charge d'un système SAP HANA à plusieurs noeuds](/docs/infrastructure/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage)
