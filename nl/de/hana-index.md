@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-08-10"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}}
+
+subcollection: sap-hana
 
 ---
 
@@ -35,32 +36,32 @@ Tabelle 1 enthält die Schritte, mit denen Sie Ihre {{site.data.keyword.cloud_no
    </THEAD>
    <TBODY>
    <tr>
-   <td>1. Die Abschnitte zu IBM Cloud und SAP lesen, die sich auf Ihre Implementierung beziehen </td>
+   <td>1. Die Abschnitte zu IBM Cloud und SAP lesen, die sich auf Ihre Implementierung beziehen</td>
    <td>Wenn Ihre Organisation neu bei IBM Cloud ist, können die folgenden Informationen hilfreich sein, die noch vor der Planungsphase gelesen werden sollten.
    <li><a href="https://ibm.com/cloud-computing/">Was ist IBM Cloud?</a></li>
    <li><a href="https://ibm.com/cloud/get-started">Einführung in IBM Cloud</a></li>
    <li><a href="https://www.ibm.com/cloud/bare-metal-servers/sap">SAP-zertifizierte Infrastruktur in IBM Cloud</a></li>
-     
+
    Zusätzlich könnte folgende SAP-Dokumentation hilfreich sein:     
-   <li><a href="https://www.sap.com/products/hana/implementation/resources.html">SAP HANA-Installationshandbuch</a>; laden Sie das Installationshandbuch herunter</li> 
-   <li><a href="https://www.sapappsdevelopmentpartnercenter.com/en/faq/program-faqs_2/how-to-receive-an-s-user-to-access-the-s_77/">Vorgehensweise zum Einrichten einer SAP S-Benutzer-ID</a></li>
+   <li><a href="https://www.sap.com/products/hana/implementation/resources.html">SAP HANA-Installationshandbuch</a>; laden Sie das Installationshandbuch herunter</li>
+  <li><a href="https://www.youtube.com/watch?v=4wICiRTP8u0/">Vorgehensweise zum Erstellen einer SAP S-Benutzer-ID</a>. Beachten Sie, dass dies nur durch Superadministratoren oder S-Benutzer mit der erforderlichen Berechtigung zum Erstellen von S-Benutzer-IDs möglich ist.</li>
    <li><a href="https://help.sap.com/hana/SAP_HANA_Administration_Guide_en.pdf">SAP HANA-Administrationshandbuch</a></li>
    <li><a href="https://support.sap.com">SAP-Hinweise</a>; erfordern eine SAP S-Benutzer-ID</li>
    <tr>
    <td>2. Bei IBM Cloud registrieren</td>
-   <td>Unter <a href="https://console.bluemix.net/docs/admin/adminpublic.html#signing-up-for-ibm-cloud">Bei IBM Cloud registrieren</a> finden Sie Schritte zur Einrichtung Ihres IBM Cloud-Kontos.</td>
+   <td>Unter <a href="https://cloud.ibm.com/docs/account?topic=account-signup#signing-up-for-ibm-cloud">Bei IBM Cloud registrieren</a> finden Sie Schritte zur Einrichtung Ihres IBM Cloud-Kontos.</td>
  <tr>
    <td>3. Auf das Kundenportal der IBM Cloud-Infrastruktur zugreifen</td>
-   <td>Das <a href="https://control.softlayer.com">Kundenportal der IBM Cloud-Infrastruktur</a> ist das grafische Gateway zu allen Ihren Infrastrukturkomponenten: Computer, Konnektivität, Speihcer Netz und Rechenzentren. Für den Zugriff auf das Kundenportal benötigen Sie <a href="https://console.bluemix.net/docs/customer-portal/getting-started.html#getting-started">IBM-ID und Kennwort</a>.</td> 
+   <td>Das <a href="https://control.softlayer.com">Kundenportal der IBM Cloud-Infrastruktur</a> ist das grafische Gateway zu allen Ihren Infrastrukturkomponenten: Computer, Konnektivität, Speihcer Netz und Rechenzentren. Für den Zugriff auf das Kundenportal benötigen Sie <a href="https://console.bluemix.net/docs/customer-portal?topic=customer-portal-getting-started#getting-started">IBM-ID und Kennwort</a>.</td>
    <tr>
    <td>4. Systemumgebung planen</td>
-   <td>Gehen Sie anhand der Informationen in <a href="hana-planning-your-system-landscape.html">Systemumgebung planen</a> vor, um die IBM Cloud-Umgebung für die Unterstützung Ihrer SAP HANA-Workload zu konstruieren, dimensionieren und bereitzustellen.</td>  
+   <td>Gehen Sie anhand der Informationen in <a href="sap-hana?topic=sap-hana-planning-your-system-landscape#planning-your-system-landscape">Systemumgebung planen</a> vor, um die IBM Cloud-Umgebung für die Unterstützung Ihrer SAP HANA-Workload zu konstruieren, dimensionieren und bereitzustellen.</td>  
  <tr>
    <td>5. System bereitstellen</td>
-   <td>Gehen Sie anhand der Schritte und Informationen in <a href="hana-provision-environment.html#provision_environment">SAP HANA-Umgebung bereitstellen</a> vor, um Ihre IBM Cloud-Infrastruktur einzurichten.</td>
+   <td>Gehen Sie anhand der Schritte und Informationen in <a href="sap-hana?topic=sap-hana-provision_environment#provision_environment">SAP HANA-Umgebung bereitstellen</a> vor, um Ihre IBM Cloud-Infrastruktur einzurichten.</td>
    <tr>
    <td>6. SAP-Umgebung installieren</td>
-   <td>Die SAP-Umgebung wird in gleicher Weise in Ihrer IBM Cloud-Infrastruktur installiert wie die Server vor Ort. Weitere Informationen finden Sie unter <a href="hana-installing-SAP-landscape.html#install_sap">SAP-Software und -anwendungen herunterladen und installieren</a>.</td>
+   <td>Die SAP-Umgebung wird in gleicher Weise in Ihrer IBM Cloud-Infrastruktur installiert wie die Server vor Ort. Weitere Informationen finden Sie unter <a href="sap-hana?topic=sap-hana-install_sap#install_sap">SAP-Software und -anwendungen herunterladen und installieren</a>.</td>
    </td>
    </tr>
    </TBODY>

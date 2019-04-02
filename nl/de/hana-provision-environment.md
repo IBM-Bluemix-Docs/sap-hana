@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-05-30"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, VPN
+
+subcollection: sap-hana
 
 ---
 
@@ -20,14 +21,14 @@ lastupdated: "2018-05-30"
 # SAP HANA-Umgebung bereitstellen
 {: #provision_environment}
 
-Tabelle 1 enthält die Schritte zur Bereitstellung Ihrer SAP-zertifizierten {{site.data.keyword.cloud}}-Infrastruktur.  
+Tabelle 1 enthält die Schritte zur Bereitstellung Ihrer SAP-zertifizierten {{site.data.keyword.cloud}}-Infrastruktur.
 
 Tabelle 1. Bereitstellung - Übersicht
 
 | Schritt | Details |
 | --- | --- |
-| 1 | [{{site.data.keyword.cloud_notm}}-VPN-Konnektivität anfordern](/docs/infrastructure/sap-hana/hana-requesting-setting-up-VPN.html) |
-| 2 | [Infrastruktur einrichten](/docs/infrastructure/sap-hana/hana-setting-up-infrastructure.html) |
+| 1 | [{{site.data.keyword.cloud_notm}}-VPN-Konnektivität anfordern](/docs/infrastructure/sap-hana?topic=sap-hana-request_vpn_connect#request_vpn_connect) |
+| 2 | [Infrastruktur einrichten](/docs/infrastructure/sap-hana?topic=sap-hana-set_up_infrastructure#set_up_infrastructure) |
 
 ## Nächste Schritte
 
