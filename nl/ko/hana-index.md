@@ -1,11 +1,12 @@
 ---
 
-
-
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-08-10"
+  years: 2017, 2019
+lastupdated: "2019-02-26"
 
+keywords: SAP HANA, {{site.data.keyword.cloud_notm}}
+
+subcollection: sap-hana
 
 ---
 
@@ -40,27 +41,27 @@ lastupdated: "2018-08-10"
    <li><a href="https://ibm.com/cloud-computing/">IBM Cloud의 개념</a></li>
    <li><a href="https://ibm.com/cloud/get-started">IBM Cloud 시작하기</a></li>
    <li><a href="https://www.ibm.com/cloud/bare-metal-servers/sap">IBM Cloud의 SAP 인증 인프라</a></li>
-     
+
    다음과 같은 SAP 문서도 유용할 수 있습니다.     
-   <li><a href="https://www.sap.com/products/hana/implementation/resources.html">SAP HANA 설치 안내서</a>: 설치 안내서 다운로드</li> 
-   <li><a href="https://www.sapappsdevelopmentpartnercenter.com/en/faq/program-faqs_2/how-to-receive-an-s-user-to-access-the-s_77/">SAP S-사용자 ID를 설정하는 방법</a></li>
+   <li><a href="https://www.sap.com/products/hana/implementation/resources.html">SAP HANA 설치 안내서</a>: 설치 안내서 다운로드</li>
+  <li><a href="https://www.youtube.com/watch?v=4wICiRTP8u0/">SAP S-사용자 ID를 작성하는 방법입니다</a>. 필수 권한이 있는 수퍼 관리자 또는 S-사용자만 S-사용자 ID를 작성할 수 있습니다.</li>
    <li><a href="https://help.sap.com/hana/SAP_HANA_Administration_Guide_en.pdf">SAP HANA 관리 안내서</a></li>
-   <li><a href="https://support.sap.com">SAP 노트</a>: SAP S-사용자 ID가 필요함</li>
+   <li><a href="https://support.sap.com">SAP Notes</a>: SAP S-사용자 ID가 필요함</li>
    <tr>
-   <td>2. IBM Cloud에 등록</td>
-   <td>IBM Cloud 계정을 설정하는 방법에 대한 단계는 <a href="https://console.bluemix.net/docs/admin/adminpublic.html#signing-up-for-ibm-cloud">IBM Cloud에 등록</a>을 참조하십시오.</td>
+   <td>2. IBM Cloud에 가입</td>
+   <td>IBM Cloud 계정을 설정하는 방법에 대한 단계는 <a href="https://cloud.ibm.com/docs/account?topic=account-signup#signing-up-for-ibm-cloud">IBM Cloud에 가입</a>을 참조하십시오.</td>
  <tr>
-   <td>3. IBM Cloud 인프라 고객 포털 액세스</td>
-   <td><a href="https://control.softlayer.com">IBM Cloud 인프라 고객 포털</a>은 컴퓨팅, 연결, 스토리지, 네트워크 및 데이터 센터 등 모든 인프라 컴포넌트에 대한 그래픽 게이트웨이입니다. 고객 포털에 액세스하려면 <a href="https://console.bluemix.net/docs/customer-portal/getting-started.html#getting-started">IBM ID 및 비밀번호</a>가 필요합니다.</td> 
+   <td>3. IBM Cloud 인프라 고객 포털에 액세스</td>
+   <td><a href="https://control.softlayer.com">IBM Cloud 인프라 고객 포털</a>은 컴퓨팅, 연결, 스토리지, 네트워크 및 데이터 센터 등 모든 인프라 컴포넌트에 대한 그래픽 게이트웨이입니다. 고객 포털에 액세스하려면 <a href="https://console.bluemix.net/docs/customer-portal?topic=customer-portal-getting-started#getting-started">IBM ID 및 비밀번호</a>가 필요합니다.</td>
    <tr>
    <td>4. 시스템 랜드스케이프 계획</td>
-   <td><a href="hana-planning-your-system-landscape.html">시스템 랜드스케이프 계획</a>의 정보를 사용하여 SAP HANA 워크로드를 지원하기 위한 IBM Cloud 환경을 설계, 크기 조정 및 프로비저닝하십시오.</td>  
+   <td><a href="sap-hana?topic=sap-hana-planning-your-system-landscape#planning-your-system-landscape">시스템 랜드스케이프 계획</a>의 정보를 사용하여 SAP HANA 워크로드를 지원하기 위한 IBM Cloud 환경을 설계, 크기 조정 및 프로비저닝하십시오.</td>  
  <tr>
    <td>5. 시스템 프로비저닝</td>
-   <td><a href="hana-provision-environment.html#provision_environment">SAP HANA 환경 프로비저닝</a>의 단계 및 정보를 사용하여 IBM Cloud 인프라를 설정하십시오.</td>
+   <td><a href="sap-hana?topic=sap-hana-provision_environment#provision_environment">SAP HANA 환경 프로비저닝</a>의 단계 및 정보를 사용하여 IBM Cloud 인프라를 설정하십시오.</td>
    <tr>
    <td>6. SAP 랜드스케이프 설치</td>
-   <td>서버가 온프레미스에 있었던 것과 동일하게 IBM Cloud 인프라에 SAP 랜드스케이프를 설치합니다. 자세한 정보는 <a href="hana-installing-SAP-landscape.html#install_sap">SAP 소프트웨어 및 애플리케이션 다운로드 및 설치</a>를 참조하십시오.</td>
+   <td>서버가 온프레미스에 있었던 것과 동일하게 IBM Cloud 인프라에 SAP 랜드스케이프를 설치합니다. 자세한 정보는 <a href="sap-hana?topic=sap-hana-install_sap#install_sap">SAP 소프트웨어 및 애플리케이션 다운로드 및 설치</a>를 참조하십시오.</td>
    </td>
    </tr>
    </TBODY>
