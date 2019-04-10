@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-26"
+lastupdated: "2019-04-10"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, {{site.data.keywords.baremetal_short}}, data centers, VPN,
 
@@ -44,14 +44,14 @@ Virtual private network (VPN) connectivity to the {{site.data.keyword.cloud_notm
 
 While the network requirements for SAP HANA (10 Gb redundant network) are fulfilled by the {{site.data.keyword.cloud_notm}} offering, you might require certain latency and throughput key performance indicators (KPIs) to be met, depending on your application scenario. For more information on determining which data center to locate your SAP HANA server and deciding on the best network connectivity solution, see [Network connectivity](/docs/infrastructure/sap-hana?topic=sap-hana-considerations#network_connectivity) considerations.
 
-For more information, see [Getting started with Virtual Private Networking](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-#getting-started-with-virtual-private-networking-vpn-) and the [*SAP HANA Network Requirements* ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.sap.com/documents/2016/08/1cd2c2fb-807c-0010-82c7-eda71af511fa.html){: new_window} white paper.
+For more information, see [Getting started with Virtual Private Networking](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking) and the [*SAP HANA Network Requirements* ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.sap.com/documents/2016/08/1cd2c2fb-807c-0010-82c7-eda71af511fa.html){: new_window} white paper.
 
 ## Storage
 {: #storage}
 
 Local storage is provided with your {{site.data.keyword.baremetal_short}} and uses the {{site.data.keyword.cloud_notm}} private network virtual LAN (VLAN) to help provide enterprise-grade security while not obstructing administrator access. For the SAP HANA-certified servers, it is designed and configured to meet the KPIs defined by SAP for both throughput and latency in compliance with the SAP HANA certification criteria. Local storage has the relevant size of the different subfile systems as defined by the SAP HANA Installation Guide (`data.log` and `shared`). No further adaptation needs to be done on your part.
 
-There are two types of storage for {{site.data.keyword.cloud_notm}}-block and file-from which to choose to perform backups and restores for SAP HANA. Both types use input/output operations per second (IOPS), which are used to determine storage needs. IOPS are measured based on 16 KB block size with a 50/50 read/write mix. To achieve maximum IOPS on a volume, adequate network resources need to be in place. Other considerations include private network usage outside of storage and host side, and application-specific tunings (for example, IP stacks and queue depths). For more information, see [Getting started with Block Storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-GettingStarted#GettingStarted) and [Getting started with File Storage](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-file-storage).
+There are two types of storage for {{site.data.keyword.cloud_notm}}-block and file-from which to choose to perform backups and restores for SAP HANA. Both types use input/output operations per second (IOPS), which are used to determine storage needs. IOPS are measured based on 16 KB block size with a 50/50 read/write mix. To achieve maximum IOPS on a volume, adequate network resources need to be in place. Other considerations include private network usage outside of storage and host side, and application-specific tunings (for example, IP stacks and queue depths). For more information, see [Getting started with Block Storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) and [Getting started with File Storage](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started).
 
 ## Deployment and management
 
