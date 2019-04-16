@@ -25,7 +25,7 @@ subcollection: sap-hana
 ## Ordering {{site.data.keyword.cloud_notm}} storage
 {: #ibm_storage}
 
-You can use the steps under [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) or [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) to order your backup and restore storage solution. You are guided through the process of deciding which storage type to use, how to order it, and how to deploy it to your server.
+You can use the steps under [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) or [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) to order your backup and restore storage solution. You are guided through the process of deciding which storage type to use, how to order it, and how to deploy it to your server.
 
 ## Next Steps
 

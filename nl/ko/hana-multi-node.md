@@ -66,7 +66,7 @@ SAP에 필요한 성능 및 처리량 KPI를 충족하려면 VLAN, 스토리지 
 
 로그 볼륨의 경우, 하나의 512GB 볼륨의 Performance 스토리지가 성능 KPI가 10K IOPS인 각 노드에 필요합니다.
 
-[{{site.data.keyword.blockstorageshort}} 프로비저닝 및 관리](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) 또는 [{{site.data.keyword.filestorage_full_notm}} 프로비저닝 및 관리](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole)의 단계를 사용하여 Endurance 및 Performance 스토리지를 주문할 수 있습니다.
+[{{site.data.keyword.blockstorageshort}} 프로비저닝 및 관리](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) 또는 [{{site.data.keyword.filestorage_full_notm}} 프로비저닝 및 관리](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole)의 단계를 사용하여 Endurance 및 Performance 스토리지를 주문할 수 있습니다.
 
 ## SAP HANA 다중 노드 구성
 {: #configuring}

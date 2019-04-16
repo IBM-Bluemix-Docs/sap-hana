@@ -51,7 +51,7 @@ Die 12 TB ermöglichen Ihnen 3x10 E/A-Operationen pro Sekunde/GB, also insgesamt
 
 {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}} oder NAS können als Backup-Bereich oder als Speicher für zusätzliche Softwarekomponenten dienen, die auf Ihrem Server installiert sind. {{site.data.keyword.cloud_notm}}-Speicher und NSA können jedoch nicht als Speicher für SAP HANA verwendet werden, da diese Optionen nicht die KPI-Kriterien erfüllen.
 
-Weitere Informationen finden Sie unter [Einführung in {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-GettingStarted#GettingStarted) und [Einführung in {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-file-storage).
+Weitere Informationen finden Sie unter [Einführung in {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) und [Einführung in {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started).
 
 ## Hochverfügbarkeits- und Disaster Recovery-Szenarien
 {: #ha_dr}

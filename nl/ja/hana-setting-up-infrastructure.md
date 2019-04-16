@@ -70,7 +70,7 @@ _{{site.data.keyword.cloud_notm}} の注文 ## が承認されました_とい�
 ## 個人所有ライセンスの持ち込み
 {: #byol}
 
-自分でオペレーティング・システム・ライセンスを所有している場合、ベンダーの指示に基づいて、それを {{site.data.keyword.baremetal_short}} にインストールします。詳しくは、[OS なしオプション](/docs/bare-metal?topic=bare-metal-how-to-install-an-operating-system-on-a-no-os-server-#how-to-install-an-operating-system-on-a-no-os-server-)を参照してください。
+自分でオペレーティング・システム・ライセンスを所有している場合、ベンダーの指示に基づいて、それを {{site.data.keyword.baremetal_short}} にインストールします。詳しくは、[OS なしオプション](/docs/bare-metal?topic=bare-metal-how-to-install-an-operating-system-on-a-no-os-server-#bm-no-os)を参照してください。
 
 ## 次のステップ
 

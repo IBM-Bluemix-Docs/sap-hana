@@ -25,7 +25,7 @@ subcollection: sap-hana
 ## 订购 {{site.data.keyword.cloud_notm}} 存储器
 {: #ibm_storage}
 
-您可以执行[供应和管理 {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) 或[供应和管理 {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) 下的步骤，以订购备份和复原存储器解决方案。这些步骤将逐步指导您确定要使用哪种存储器类型、如何进行订购以及如何将其部署到服务器。
+您可以执行[供应和管理 {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) 或[供应和管理 {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) 下的步骤，以订购备份和复原存储器解决方案。这些步骤将逐步指导您确定要使用哪种存储器类型、如何进行订购以及如何将其部署到服务器。
 
 ## 后续步骤
 

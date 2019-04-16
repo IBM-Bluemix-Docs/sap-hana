@@ -66,7 +66,7 @@ Há critérios de desempenho específicos que devem ser atendidos pelos volumes 
 
 Para volumes de log, um volume de 512 GB de armazenamento do Performance é necessário para cada nó com um KPI de desempenho de IOPS de 10 K.
 
-É possível usar as etapas em [Provisionando e gerenciando o {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) ou [Provisionando e gerenciando o {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) para pedir seu armazenamento do Endurance e de desempenho.
+É possível usar as etapas em [Provisionando e gerenciando o {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) ou [Provisionando e gerenciando o {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) para pedir seu armazenamento do Endurance e de desempenho.
 
 ## Configurando multinós do SAP HANA
 {: #configuring}

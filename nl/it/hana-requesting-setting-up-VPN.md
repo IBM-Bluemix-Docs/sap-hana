@@ -22,7 +22,7 @@ subcollection: sap-hana
 
 Collabora con il [Supporto {{site.data.keyword.cloud}}](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) per ottenere il tuo accesso alla VPN (Virtual Private Network) di {{site.data.keyword.cloud_notm}} se pianifichi di disattivare la porta pubblica o di eseguire il provisioning della tua macchina come solo privata. Dopo aver creato i tuoi utenti, puoi assegnar loro l'accesso VPN alla rete privata di {{site.data.keyword.cloud_notm}} utilizzando una delle opzioni VPN al livello di produzione.
 
-Consulta [Getting started with Virtual Private Network](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-#getting-started-with-virtual-private-networking-vpn-) per la procedura su come configurare l'accesso VPN.
+Consulta [Getting started with Virtual Private Network](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking) per la procedura su come configurare l'accesso VPN.
 
 ## Passi successivi
 

@@ -44,14 +44,14 @@ subcollection: sap-hana
 
 {{site.data.keyword.cloud_notm}} 供應項目滿足 SAP HANA（10 Gb 備用網路）的網路需求時，您可能需要符合特定延遲及傳輸量關鍵績效指標 (KPI)（根據應用程式情境而定）。如需判斷哪個資料中心找到 SAP HANA 伺服器以及決定最佳網路連線功能解決方案的相關資訊，請參閱[網路連線功能](/docs/infrastructure/sap-hana?topic=sap-hana-considerations#network_connectivity)考量。
 
-如需相關資訊，請參閱[開始使用 Virtual Private Networking](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-#getting-started-with-virtual-private-networking-vpn-) 及 [*SAP HANA 網路需求* ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.sap.com/documents/2016/08/1cd2c2fb-807c-0010-82c7-eda71af511fa.html){: new_window} 白皮書。
+如需相關資訊，請參閱[開始使用 Virtual Private Networking](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking) 及 [*SAP HANA 網路需求* ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.sap.com/documents/2016/08/1cd2c2fb-807c-0010-82c7-eda71af511fa.html){: new_window} 白皮書。
 
 ## 儲存空間
 {: #storage}
 
 本端儲存空間隨附於 {{site.data.keyword.baremetal_short}}，並使用 {{site.data.keyword.cloud_notm}} 專用網路虛擬 LAN (VLAN) 來協助提供企業級安全，而又不會妨礙管理者存取。對於 SAP HANA 認證的伺服器，其設計並配置成符合 SAP 針對 SAP HANA 憑證準則的傳輸量及延遲所定義的 KPI。本端儲存空間具有不同子檔案系統的相關大小（如《SAP HANA 安裝手冊》所定義）（`data.log` 及 `shared`）。您不需要再進一步改寫。
 
-{{site.data.keyword.cloud_notm}}-block 及 file-from 有兩種類型的儲存空間，而您可以從中選擇來執行 SAP HANA 的備份及還原。兩種類型都使用每秒輸入/輸出作業數 (IOPS)，以用來決定儲存空間需求。IOPS 是根據 16 KB 區塊大小與 50/50 讀寫混合大小進行測量。若要達到磁區的 IOPS 上限，需要備妥足夠的網路資源。其他考量包括在儲存空間和主機端外的專用網路使用情形，以及應用程式特定的調整（例如，IP 堆疊及佇列深度）。如需相關資訊，請參閱[開始使用區塊儲存空間](/docs/infrastructure/BlockStorage?topic=BlockStorage-GettingStarted#GettingStarted)及[開始使用檔案儲存空間](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-file-storage)。
+{{site.data.keyword.cloud_notm}}-block 及 file-from 有兩種類型的儲存空間，而您可以從中選擇來執行 SAP HANA 的備份及還原。兩種類型都使用每秒輸入/輸出作業數 (IOPS)，以用來決定儲存空間需求。IOPS 是根據 16 KB 區塊大小與 50/50 讀寫混合大小進行測量。若要達到磁區的 IOPS 上限，需要備妥足夠的網路資源。其他考量包括在儲存空間和主機端外的專用網路使用情形，以及應用程式特定的調整（例如，IP 堆疊及佇列深度）。如需相關資訊，請參閱[開始使用區塊儲存空間](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started)及[開始使用檔案儲存空間](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started)。
 
 ## 部署及管理
 

@@ -66,7 +66,7 @@ Es gibt bestimmte Leistungskriterien, die von den angehängten NFS-Datenträgern
 
 Für Datenträger für Protokolle ist für jeden Knoten ein 512-GB-Datenträger Performance-Speicher mit einem Leistungs-KPI von 10 K E/A-Operationen pro Sekunde erforderlich.
 
-Anhand der Schritte unter [{{site.data.keyword.blockstorageshort}} bereitstellen oder verwalten](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) oder [{{site.data.keyword.filestorage_full_notm}} bereitstellen und verwalten](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) können Sie Ihren Endurance- und Performance-Speicher bestellen.
+Anhand der Schritte unter [{{site.data.keyword.blockstorageshort}} bereitstellen oder verwalten](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) oder [{{site.data.keyword.filestorage_full_notm}} bereitstellen und verwalten](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) können Sie Ihren Endurance- und Performance-Speicher bestellen.
 
 ## SAP HANA-Multiknotensystem konfigurieren
 {: #configuring}

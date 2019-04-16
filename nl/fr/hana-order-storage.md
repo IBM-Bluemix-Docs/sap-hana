@@ -25,7 +25,7 @@ Vous commandez {{site.data.keyword.blockstoragefull}}, {{site.data.keyword.files
 ## Commande de stockage {{site.data.keyword.cloud_notm}}
 {: #ibm_storage}
 
-Vous pouvez suivre les étapes décrites dans [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) ou [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) pour commander votre solution de stockage pour la sauvegarde et la restauration. Vous serez guidé pour choisir le type de stockage à utiliser, savoir comment le commander et savoir comment le déployer sur votre serveur.
+Vous pouvez suivre les étapes décrites dans [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) ou [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) pour commander votre solution de stockage pour la sauvegarde et la restauration. Vous serez guidé pour choisir le type de stockage à utiliser, savoir comment le commander et savoir comment le déployer sur votre serveur.
 
 ## Etapes suivantes
 

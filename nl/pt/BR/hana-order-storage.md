@@ -25,7 +25,7 @@ O {{site.data.keyword.blockstoragefull}}, o {{site.data.keyword.filestorage_full
 ## Pedindo armazenamento do {{site.data.keyword.cloud_notm}}
 {: #ibm_storage}
 
-É possível usar as etapas em [Provisionando e gerenciando o {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) ou [Provisionando e gerenciando o {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) para pedir sua solução de armazenamento de backup e restauração. Você é guiado pelo processo de decidir qual tipo de armazenamento usar, como pedi-lo e como implementá-lo em seu servidor.
+É possível usar as etapas em [Provisionando e gerenciando o {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) ou [Provisionando e gerenciando o {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) para pedir sua solução de armazenamento de backup e restauração. Você é guiado pelo processo de decidir qual tipo de armazenamento usar, como pedi-lo e como implementá-lo em seu servidor.
 
 ## Próximas Etapas
 

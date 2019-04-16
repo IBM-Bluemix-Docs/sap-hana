@@ -66,7 +66,7 @@ SAP で必要とされるパフォーマンスとスループットの KPI を�
 
 ログ・ボリュームの場合は、ノードごとに、512 GB のパフォーマンス・ストレージ (パフォーマンス KPI は 10 K IOPS) のボリュームが 1 つ必要になります。
 
-[{{site.data.keyword.blockstorageshort}} のプロビジョニングと管理](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage)または[{{site.data.keyword.filestorage_full_notm}} のプロビジョニングと管理](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole)の手順を実行して、エンデュランスとパフォーマンス用のストレージを注文できます。
+[{{site.data.keyword.blockstorageshort}} のプロビジョニングと管理](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started)または[{{site.data.keyword.filestorage_full_notm}} のプロビジョニングと管理](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole)の手順を実行して、エンデュランスとパフォーマンス用のストレージを注文できます。
 
 ## SAP HANA マルチノードの構成
 {: #configuring}

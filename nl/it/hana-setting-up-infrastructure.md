@@ -70,7 +70,7 @@ Viene inviata un'email di conferma con l'oggetto _{{site.data.keyword.cloud_notm
 ## BYOL (Bring your own license)
 {: #byol}
 
-Quando hai la tua licenza del sistema operativo, installala sul tuo {{site.data.keyword.baremetal_short}} in base alle istruzioni del fornitore. Per ulteriori informazioni, consulta [Opzione di nessun sistema operativo (No OS)](/docs/bare-metal?topic=bare-metal-how-to-install-an-operating-system-on-a-no-os-server-#how-to-install-an-operating-system-on-a-no-os-server-).
+Quando hai la tua licenza del sistema operativo, installala sul tuo {{site.data.keyword.baremetal_short}} in base alle istruzioni del fornitore. Per ulteriori informazioni, consulta [Opzione di nessun sistema operativo (No OS)](/docs/bare-metal?topic=bare-metal-how-to-install-an-operating-system-on-a-no-os-server-#bm-no-os).
 
 ## Passi successivi
 

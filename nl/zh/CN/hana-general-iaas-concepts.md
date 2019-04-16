@@ -44,14 +44,14 @@ subcollection: sap-hana
 
 虽然 {{site.data.keyword.cloud_notm}} 产品满足 SAP HANA 的网络需求（10 Gb 冗余网络），但是根据应用程序场景，可能还需要满足特定等待时间和吞吐量关键性能指标 (KPI)。有关确定放置 SAP HANA 服务器的数据中心和决定最佳网络连接解决方案的更多信息，请参阅[网络连接](/docs/infrastructure/sap-hana?topic=sap-hana-considerations#network_connectivity)注意事项。
 
-有关更多信息，请参阅[虚拟专用网入门](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-#getting-started-with-virtual-private-networking-vpn-)和 [*SAP HANA Network Requirements* ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.sap.com/documents/2016/08/1cd2c2fb-807c-0010-82c7-eda71af511fa.html){: new_window} 白皮书。
+有关更多信息，请参阅[虚拟专用网入门](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking)和 [*SAP HANA Network Requirements* ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.sap.com/documents/2016/08/1cd2c2fb-807c-0010-82c7-eda71af511fa.html){: new_window} 白皮书。
 
 ## 存储器
 {: #storage}
 
 本地存储器随 {{site.data.keyword.baremetal_short}} 一起提供，它使用 {{site.data.keyword.cloud_notm}} 专用网络虚拟 LAN (VLAN) 来帮助提供企业级安全性，而不阻碍管理员访问。对于 SAP HANA 认证的服务器，本地存储器设计并配置为满足 SAP 依据 SAP HANA 认证条件针对吞吐量和等待时间定义的 KPI。本地存储器具有不同子文件系统的相关大小，如 SAP HANA Installation Guide 所定义（`data.log` 和 `shared`）。您无需执行任何进一步修改。
 
-提供了适用于 {{site.data.keyword.cloud_notm}} 的两种类型的存储器，即块存储器和文件存储器，可选择用于为 SAP HANA 执行备份和复原。这两种类型都使用每秒输入/输出操作数 (IOPS)，这些操作数用于确定存储需求。IOPS 基于 16 KB 块大小（50/50 读/写混合）进行度量。要在卷上实现最大 IOPS，需要有足够的网络资源。其他注意事项包括专用网络在存储器和主机端之外的使用量，以及特定于应用程序的调整（例如，IP 堆栈和队列深度）。有关更多信息，请参阅 [Block Storage 入门](/docs/infrastructure/BlockStorage?topic=BlockStorage-GettingStarted#GettingStarted)和 [File Storage 入门](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-file-storage)。
+提供了适用于 {{site.data.keyword.cloud_notm}} 的两种类型的存储器，即块存储器和文件存储器，可选择用于为 SAP HANA 执行备份和复原。这两种类型都使用每秒输入/输出操作数 (IOPS)，这些操作数用于确定存储需求。IOPS 基于 16 KB 块大小（50/50 读/写混合）进行度量。要在卷上实现最大 IOPS，需要有足够的网络资源。其他注意事项包括专用网络在存储器和主机端之外的使用量，以及特定于应用程序的调整（例如，IP 堆栈和队列深度）。有关更多信息，请参阅 [Block Storage 入门](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started)和 [File Storage 入门](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started)。
 
 ## 部署和管理
 

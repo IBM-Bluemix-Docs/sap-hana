@@ -25,7 +25,7 @@ subcollection: sap-hana
 ## Ordine dell'archiviazione {{site.data.keyword.cloud_notm}}
 {: #ibm_storage}
 
-Puoi utilizzare la procedura in [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) o [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) per ordinare la tua soluzione di archiviazione del backup e del ripristino. Vieni guidato attraverso il processo di decisione di quale tipo di archiviazione utilizzare, come ordinarla e come distribuirla al tuo server.
+Puoi utilizzare la procedura in [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) o [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) per ordinare la tua soluzione di archiviazione del backup e del ripristino. Vieni guidato attraverso il processo di decisione di quale tipo di archiviazione utilizzare, come ordinarla e come distribuirla al tuo server.
 
 ## Passi successivi
 

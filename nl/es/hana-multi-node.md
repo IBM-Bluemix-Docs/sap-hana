@@ -66,7 +66,7 @@ Existen criterios de rendimiento específicos que deben cumplir los volúmenes N
 
 Para los volúmenes de registro, es necesario un volumen de 512 GB de almacenamiento de rendimiento para cada nodo con un KPI de rendimiento de 10.000 IOPS.
 
-Puede seguir los pasos indicados en [Suministro y gestión de {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) o [Suministro y gestión de {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) para realizar el pedido de almacenamiento de Resistencia y Rendimiento.
+Puede seguir los pasos indicados en [Suministro y gestión de {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) o [Suministro y gestión de {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) para realizar el pedido de almacenamiento de Resistencia y Rendimiento.
 
 ## Configuración de varios nodos de SAP HANA
 {: #configuring}

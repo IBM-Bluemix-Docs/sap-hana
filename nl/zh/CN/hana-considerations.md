@@ -51,7 +51,7 @@ subcollection: sap-hana
 
 {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}} 和 {{site.data.keyword.filestorage_full_notm}} 或 NAS 可充当备份空间或服务器上安装的其他软件组件的存储器。但是，{{site.data.keyword.cloud_notm}} 存储器和 NSA 无法用作 SAP HANA 的存储器，因为这些选项不符合 KPI 条件。
 
-有关更多信息，请参阅 [{{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-GettingStarted#GettingStarted) 入门和 [{{site.data.keyword.filestorage_full_notm}} 入门](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-file-storage)。
+有关更多信息，请参阅 [{{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) 入门和 [{{site.data.keyword.filestorage_full_notm}} 入门](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started)。
 
 ## 高可用性和灾难恢复场景
 {: #ha_dr}

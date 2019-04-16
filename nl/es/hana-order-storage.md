@@ -25,7 +25,7 @@ El pedido de {{site.data.keyword.blockstoragefull}}, {{site.data.keyword.filesto
 ## Realización del pedido de almacenamiento de {{site.data.keyword.cloud_notm}}
 {: #ibm_storage}
 
-Puede seguir los pasos indicados en [Suministro y gestión de {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) o [Suministro y gestión de {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) para realizar el pedido de su solución de almacenamiento de copia de seguridad y restauración. Se le guiará en el proceso de decidir qué tipo de almacenamiento utilizar, cómo realizar el pedido y cómo desplegarlo en el servidor.
+Puede seguir los pasos indicados en [Suministro y gestión de {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) o [Suministro y gestión de {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) para realizar el pedido de su solución de almacenamiento de copia de seguridad y restauración. Se le guiará en el proceso de decidir qué tipo de almacenamiento utilizar, cómo realizar el pedido y cómo desplegarlo en el servidor.
 
 ## Siguientes pasos
 

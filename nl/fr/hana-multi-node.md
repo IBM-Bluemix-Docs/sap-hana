@@ -66,7 +66,7 @@ Il existe des critères de performance spécifiques que les volumes NFS doivent 
 
 Concernant les volumes de journaux, un volume de 512 Go de stockage Performance est requis pour chaque noeud avec un indicateur clé de performance de 10 IOPS/ko.
 
-Vous pouvez suivre la procédure décrite dans [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) ou dans [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) pour commander votre solution de stockage Endurance et Performance.
+Vous pouvez suivre la procédure décrite dans [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) ou dans [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) pour commander votre solution de stockage Endurance et Performance.
 
 ## Configuration d'un système SAP HANA à plusieurs noeuds
 {: #configuring}

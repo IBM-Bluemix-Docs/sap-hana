@@ -66,7 +66,7 @@ SAP HANA 多节点需要存在特定网络并发挥功能。在订购其他系�
 
 对于日志卷，每个节点需要一个 512 GB 的性能存储卷，其性能 KPI 为 10 K IOPS。
 
-您可以使用[供应和管理 {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) 或[供应和管理 {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) 下的步骤来订购“耐久性”和“性能”存储器。
+您可以使用[供应和管理 {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) 或[供应和管理 {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) 下的步骤来订购“耐久性”和“性能”存储器。
 
 ## 配置 SAP HANA 多节点
 {: #configuring}

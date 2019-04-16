@@ -25,7 +25,7 @@ subcollection: sap-hana
 ## 訂購 {{site.data.keyword.cloud_notm}} 儲存空間
 {: #ibm_storage}
 
-您可以使用[佈建及管理 {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) 或[佈建及管理 {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) 下的步驟，來訂購備份及還原儲存空間解決方案。引導您完成下列處理程序：決定要使用的儲存空間類型、訂購方式，以及如何將它部署至伺服器。
+您可以使用[佈建及管理 {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) 或[佈建及管理 {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) 下的步驟，來訂購備份及還原儲存空間解決方案。引導您完成下列處理程序：決定要使用的儲存空間類型、訂購方式，以及如何將它部署至伺服器。
 
 ## 後續步驟
 

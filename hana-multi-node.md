@@ -66,7 +66,7 @@ There are specific performance criteria that must be met by the attached Network
 
 For log volumes, one 512 GB volume of Performance storage is required for each node with a performance KPI of 10 K IOPS.
 
-You can use the steps under [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) or [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) to order your Endurance and Performance storage.
+You can use the steps under [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) or [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) to order your Endurance and Performance storage.
 
 ## Configuring SAP HANA multi-nodes
 {: #configuring}

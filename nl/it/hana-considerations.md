@@ -51,7 +51,7 @@ I 12 TB ti consentono 3x10 IOPS/GB, per un totale di 122,880 IOPS/GB a 16 KB. Qu
 
 {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}} o NAS possono essere utilizzati come spazio di backup o di archiviazione per ulteriori componenti software installati sul tuo server. L'archiviazione {{site.data.keyword.cloud_notm}} e NSA non può, tuttavia, essere utilizzata come archiviazione per SAP HANA perché queste opzioni non soddisfano i criteri KPI.
 
-Per ulteriori informazioni, vedi [Getting started with {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-GettingStarted#GettingStarted) e [Getting started with {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-file-storage).
+Per ulteriori informazioni, vedi [Getting started with {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) e [Getting started with {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started).
 
 ## Scenari di elevata disponibilità e di ripristino di emergenza
 {: #ha_dr}

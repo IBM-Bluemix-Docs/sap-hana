@@ -51,7 +51,7 @@ VPN によるアクセスでもジャンプボックスからのアクセスで�
 
 {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}、{{site.data.keyword.filestorage_full_notm}}、NAS のいずれも、バックアップ・スペースとしての役割と、サーバーにインストールする追加のソフトウェア・コンポーネントのストレージとしての役割の両方を果たせます。 ただし、{{site.data.keyword.cloud_notm}} ストレージと NSA を SAP HANA のストレージとして使用することはできません。どちらのオプションも KPI の基準を満たしていないからです。
 
-詳細については、[Getting started with {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-GettingStarted#GettingStarted) と [Getting started with {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-file-storage) を参照してください。
+詳細については、[Getting started with {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) と [Getting started with {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started) を参照してください。
 
 ## 高可用性と災害復旧のシナリオ
 {: #ha_dr}

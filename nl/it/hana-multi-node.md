@@ -66,7 +66,7 @@ Esistono criteri di prestazioni specifici che devono essere soddisfatti dai volu
 
 Per i volumi di log, è obbligatorio un volume di 512 GB dell'archiviazione Performance per ogni nodo con un KPI delle prestazioni di 10 K IOPS.
 
-Puoi utilizzare la procedura in [Provisioning e gestione di {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) o [Provisioning e gestione di {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) per ordinare la tua archiviazione Endurance e Performance.
+Puoi utilizzare la procedura in [Provisioning e gestione di {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) o [Provisioning e gestione di {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) per ordinare la tua archiviazione Endurance e Performance.
 
 ## Configurazione di SAP HANA a più nodi
 {: #configuring}

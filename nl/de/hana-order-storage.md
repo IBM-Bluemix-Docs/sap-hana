@@ -25,7 +25,7 @@ subcollection: sap-hana
 ## {{site.data.keyword.cloud_notm}}-Speicher bestellen
 {: #ibm_storage}
 
-Anhand der Schritte unter [{{site.data.keyword.blockstorageshort}} bereitstellen und verwalten](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) oder [{{site.data.keyword.filestorage_full_notm}} bereitstellen und verwalten](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) können Sie Ihre Sicherungs- und Wiederherstellungslösung bestellen. Sie werden durch den Entscheidungsprozess geführt, welcher Speichertyp für Sie sinnvoll ist, wie er bestellt und wie er auf Ihrem Server bereitgestellt wird.
+Anhand der Schritte unter [{{site.data.keyword.blockstorageshort}} bereitstellen und verwalten](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) oder [{{site.data.keyword.filestorage_full_notm}} bereitstellen und verwalten](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) können Sie Ihre Sicherungs- und Wiederherstellungslösung bestellen. Sie werden durch den Entscheidungsprozess geführt, welcher Speichertyp für Sie sinnvoll ist, wie er bestellt und wie er auf Ihrem Server bereitgestellt wird.
 
 ## Nächste Schritte
 

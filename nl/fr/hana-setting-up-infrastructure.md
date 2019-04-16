@@ -70,7 +70,7 @@ Un courrier électronique de confirmation dont l'objet est _Votre commande {{sit
 ## Apport de votre propre licence
 {: #byol}
 
-Lorsque vous disposez de votre propre licence de système d'exploitation, installez-la sur vos serveurs Bare Metal en suivant les instructions du fournisseur. Pour plus d'informations, voir l'option [Sans système d'exploitation](/docs/bare-metal?topic=bare-metal-how-to-install-an-operating-system-on-a-no-os-server-#how-to-install-an-operating-system-on-a-no-os-server-).
+Lorsque vous disposez de votre propre licence de système d'exploitation, installez-la sur vos serveurs Bare Metal en suivant les instructions du fournisseur. Pour plus d'informations, voir l'option [Sans système d'exploitation](/docs/bare-metal?topic=bare-metal-how-to-install-an-operating-system-on-a-no-os-server-#bm-no-os).
 
 ## Etapes suivantes
 

@@ -22,7 +22,7 @@ subcollection: sap-hana
 
 Demandez au [support {{site.data.keyword.cloud}}](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) de vous accorder l'accès au réseau privé virtuel (VPN) d'{{site.data.keyword.cloud_notm}} si vous prévoyez de désactiver votre port public ou de mettre votre machine à disposition en tant que machine privée seulement. Une fois vos utilisateurs créés, vous pouvez leur accorder l'accès au réseau privé virtuel d'{{site.data.keyword.cloud_notm}} si vous utilisez l'une des options de réseau privé virtuel de niveau production.
 
-Voir [Getting started with Virtual Private Network](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-#getting-started-with-virtual-private-networking-vpn-) pour apprendre à configurer l'accès au réseau privé virtuel.
+Voir [Getting started with Virtual Private Network](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking) pour apprendre à configurer l'accès au réseau privé virtuel.
 
 ## Etapes suivantes
 

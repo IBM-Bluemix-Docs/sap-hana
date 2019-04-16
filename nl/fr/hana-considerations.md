@@ -51,7 +51,7 @@ Les 12 To vous permettent d'effectuer 3 x 10 opérations d'entrée-sortie par se
 
 {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}} et NAS peuvent servir d'espace de sauvegarde ou de stockage pour les composants logiciels supplémentaires installés sur votre serveur. Toutefois, {{site.data.keyword.cloud_notm}} Storage et NSA ne peuvent pas être utilisés comme stockage pour SAP HANA car ces options ne répondent pas aux critères des indicateurs clés de performance.
 
-Pour plus d'informations, voir [About {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-GettingStarted#GettingStarted) et [Getting started with {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-file-storage).
+Pour plus d'informations, voir [About {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) et [Getting started with {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started).
 
 ## Scénarios de haute disponibilité et de reprise après incident
 {: #ha_dr}

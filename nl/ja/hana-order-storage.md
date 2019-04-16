@@ -25,7 +25,7 @@ subcollection: sap-hana
 ## {{site.data.keyword.cloud_notm}} ストレージの注文
 {: #ibm_storage}
 
-[Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) か [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) の手順を実行して、バックアップ/リストア用のストレージ・ソリューションを注文できます。 ガイドに従って、ストレージのタイプ、注文方法、サーバーへのデプロイ方法を決定するプロセスを進めていくことができます。
+[Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) か [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) の手順を実行して、バックアップ/リストア用のストレージ・ソリューションを注文できます。 ガイドに従って、ストレージのタイプ、注文方法、サーバーへのデプロイ方法を決定するプロセスを進めていくことができます。
 
 ## 次のステップ
 

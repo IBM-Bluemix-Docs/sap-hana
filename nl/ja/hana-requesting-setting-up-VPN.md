@@ -22,7 +22,7 @@ subcollection: sap-hana
 
 パブリック・ポートをオフにしたりマシンをプライベート専用としてプロビジョニングしたりする場合は、[{{site.data.keyword.cloud}}サポート](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support)に依頼して、{{site.data.keyword.cloud_notm}} 仮想プライベート・ネットワーク (VPN) にアクセスできるようにしてください。 実動レベルの VPN オプションを利用する場合は、ユーザーを作成してから、{{site.data.keyword.cloud_notm}} プライベート・ネットワークへの VPN アクセス権をユーザーに割り当ててください。
 
-VPN アクセス権のセットアップ手順については、[Getting started with Virtual Private Network](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-#getting-started-with-virtual-private-networking-vpn-) を参照してください。
+VPN アクセス権のセットアップ手順については、[Getting started with Virtual Private Network](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking) を参照してください。
 
 ## 次のステップ
 

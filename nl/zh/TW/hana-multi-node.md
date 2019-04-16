@@ -66,7 +66,7 @@ SAP HANA 多節點需要特定網路就緒才能運作。在您訂購其他系�
 
 若為日誌磁區，每個節點需要一個 512 GB 磁區的效能儲存空間，並且具有效能 KPI 10 K IOPS。
 
-您可以使用[佈建及管理 {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole#provisioning-and-managing-block-storage) 或[佈建及管理 {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) 下的步驟，來訂購耐久性及效能儲存空間。
+您可以使用[佈建及管理 {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) 或[佈建及管理 {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) 下的步驟，來訂購耐久性及效能儲存空間。
 
 ## 配置 SAP HANA 多節點
 {: #configuring}

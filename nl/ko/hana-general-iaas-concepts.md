@@ -44,14 +44,14 @@ SAP 인증 서버에는 RAM 용량과 CPU 수가 사전 구성되어 있으므�
 
 {{site.data.keyword.cloud_notm}} 오퍼링을 통해 SAP HANA에 대한 네트워크 요구사항(10Gb 중복 네트워크)이 충족되지만 애플리케이션 시나리오에 따라 특정 대기 시간 및 처리량 핵심성과지표(KPI)가 충족되어야 할 수도 있습니다. SAP HANA 서버를 찾을 데이터 센터 판별 및 최적의 네트워크 연결 솔루션 결정에 대한 자세한 정보는 [네트워크 연결](/docs/infrastructure/sap-hana?topic=sap-hana-considerations#network_connectivity) 고려사항을 참조하십시오.
 
-자세한 정보는 [가상 사설망(VPN) 시작하기](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-#getting-started-with-virtual-private-networking-vpn-) 및 [*SAP HANA Network Requirements* ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.sap.com/documents/2016/08/1cd2c2fb-807c-0010-82c7-eda71af511fa.html){: new_window} 백서를 참조하십시오.
+자세한 정보는 [가상 사설망(VPN) 시작하기](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking) 및 [*SAP HANA Network Requirements* ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.sap.com/documents/2016/08/1cd2c2fb-807c-0010-82c7-eda71af511fa.html){: new_window} 백서를 참조하십시오.
 
 ## 스토리지
 {: #storage}
 
 로컬 스토리지는 {{site.data.keyword.baremetal_short}}와 함께 제공되며 {{site.data.keyword.cloud_notm}} 사설 네트워크 가상 LAN(VLAN)을 사용하여 관리자 액세스를 방해하지 않는 동시에 엔터프라이즈급 보안을 제공합니다. SAP HANA 인증 서버의 경우 SAP에서 SAP HANA 인증 기준에 따라 처리량 및 대기 시간 모두에 대해 정의한 KPI를 충족하도록 디자인되고 구성됩니다. 로컬 스토리지에는 SAP HANA 설치 안내서에 정의된 대로 여러 서브파일 시스템의 적절한 크기가 있습니다(`data.log` 및 `shared`). 사용자 파트에서 추가 적응을 수행할 필요가 없습니다.
 
-SAP HANA에 대한 백업 및 복원을 수행하기 위해 선택하는 두 가지 유형의 {{site.data.keyword.cloud_notm}} 스토리지(블록 및 파일)가 있습니다. 두 가지 유형 모두 스토리지 요구사항을 판별하는 데 사용되는 초당 입출력(I/O) 오퍼레이션(IOPS)을 사용합니다. IOPS는 16KB 블록 크기와 50/50 읽기/쓰기 혼합을 기준으로 측정됩니다. 볼륨에서 최대 IOPS를 달성하려면 적절한 네트워크 리소스가 준비되어 있어야 합니다. 다른 고려사항으로는 스토리지 및 호스트 측 외부의 사설 네트워크 사용 및 애플리케이션별 튜닝(예: IP 스택 및 큐 깊이)이 있습니다. 자세한 정보는 [블록 스토리지 시작하기](/docs/infrastructure/BlockStorage?topic=BlockStorage-GettingStarted#GettingStarted) 및 [파일 스토리지 시작하기](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-file-storage)를 참조하십시오.
+SAP HANA에 대한 백업 및 복원을 수행하기 위해 선택하는 두 가지 유형의 {{site.data.keyword.cloud_notm}} 스토리지(블록 및 파일)가 있습니다. 두 가지 유형 모두 스토리지 요구사항을 판별하는 데 사용되는 초당 입출력(I/O) 오퍼레이션(IOPS)을 사용합니다. IOPS는 16KB 블록 크기와 50/50 읽기/쓰기 혼합을 기준으로 측정됩니다. 볼륨에서 최대 IOPS를 달성하려면 적절한 네트워크 리소스가 준비되어 있어야 합니다. 다른 고려사항으로는 스토리지 및 호스트 측 외부의 사설 네트워크 사용 및 애플리케이션별 튜닝(예: IP 스택 및 큐 깊이)이 있습니다. 자세한 정보는 [블록 스토리지 시작하기](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) 및 [파일 스토리지 시작하기](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started)를 참조하십시오.
 
 ## 배치 및 관리
 

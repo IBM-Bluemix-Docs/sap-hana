@@ -51,7 +51,7 @@ The 12 TB allows you 3x10 IOPS/GB, which is a total of 122,880 IOPS/GB at 16 KB.
 
 Both {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}, or NAS can serve as either backup space or as storage for additional software components that are installed on your server. {{site.data.keyword.cloud_notm}} Storage and NSA cannot, however, be used as storage for SAP HANA because these options do not fulfill the KPI criteria.
 
-For more information, see [Getting started with {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-GettingStarted#GettingStarted) and [Getting started with {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-file-storage).
+For more information, see [Getting started with {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) and [Getting started with {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started).
 
 ## High availability and disaster recover scenarios
 {: #ha_dr}

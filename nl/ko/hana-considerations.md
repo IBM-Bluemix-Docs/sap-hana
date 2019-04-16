@@ -52,7 +52,7 @@ subcollection: sap-hana
 
 {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}} 또는 NAS는 서버에 설치된 추가 소프트웨어 컴포넌트에 대한 스토리지 또는 백업 공간으로 사용될 수 있습니다. 그러나 {{site.data.keyword.cloud_notm}} Storage 및 NSA는 SAP HANA에 대한 스토리지로 사용될 수 없습니다. 이러한 옵션은 KPI 기준을 충족하지 않기 때문입니다.
 
-자세한 정보는 [{{site.data.keyword.blockstorageshort}} 시작하기](/docs/infrastructure/BlockStorage?topic=BlockStorage-GettingStarted#GettingStarted) 및 [{{site.data.keyword.filestorage_full_notm}} 시작하기](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-file-storage)를 참조하십시오.
+자세한 정보는 [{{site.data.keyword.blockstorageshort}} 시작하기](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) 및 [{{site.data.keyword.filestorage_full_notm}} 시작하기](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started)를 참조하십시오.
 
 ## 고가용성 및 재해 복구 시나리오
 {: #ha_dr}

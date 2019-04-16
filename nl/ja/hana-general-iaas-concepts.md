@@ -44,14 +44,14 @@ SAP 認証サーバーでは、RAM の量と CPU の数が事前に設定され�
 
 SAP HANA のネットワーク要件 (10 Gb 冗長ネットワーク) は、{{site.data.keyword.cloud_notm}} オファリングによって実現されますが、アプリケーションのシナリオによっては、待ち時間とスループットに関する一定の重要パフォーマンス指標 (KPI) を満たすことが必要になる場合もあります。 SAP HANA サーバーを配置するデータ・センターと最適なネットワーク接続ソリューションを選定するための詳細情報については、[ネットワーク接続](/docs/infrastructure/sap-hana?topic=sap-hana-considerations#network_connectivity)の注意点を参照してください。
 
-詳しくは、[仮想プライベート・ネットワーキング (VPN) の概要](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-#getting-started-with-virtual-private-networking-vpn-)および [*SAP HANA Network Requirements* ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.sap.com/documents/2016/08/1cd2c2fb-807c-0010-82c7-eda71af511fa.html){: new_window} のホワイト・ペーパーを参照してください。
+詳しくは、[仮想プライベート・ネットワーキング (VPN) の概要](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking)および [*SAP HANA Network Requirements* ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.sap.com/documents/2016/08/1cd2c2fb-807c-0010-82c7-eda71af511fa.html){: new_window} のホワイト・ペーパーを参照してください。
 
 ## ストレージ
 {: #storage}
 
 {{site.data.keyword.baremetal_short}} には、ローカル・ストレージが用意されています。ローカル・ストレージでは、{{site.data.keyword.cloud_notm}} のプライベート・ネットワーク仮想 LAN (VLAN) を使用するので、管理者権限を妨害しないエンタープライズ・グレードのセキュリティーを実現することが可能になります。 SAP HANA 認定サーバーの場合、ローカル・ストレージは、スループットと待ち時間について SAP が定めた KPI に、SAP HANA 認定基準に準拠して適合する設計/構成になっています。 ローカル・ストレージには、各サブファイル・システム (`data.log` と `shared`) に対応するサイズがあり、それぞれのサイズが SAP HANA Installation Guide で定められています。 お客様の側でそれ以上の調整を行う必要はありません。
 
-{{site.data.keyword.cloud_notm}} には、2 種類のストレージ (ブロックとファイル) があります。SAP HANA のバックアップとリストアのためにどちらかのストレージを選択できます。 どちらのタイプの場合も、IOPS (1 秒あたりの入出力操作) に基づいてストレージ必要量を判別します。 IOPS の計測は、16 KB ブロック・サイズと 50/50 の読み取り/書き込み混合比率に基づいています。 1 つのボリュームで最大の IOPS を達成するために、適切なネットワーク・リソースを用意する必要があります。 その他の注意点としては、ストレージやホスト・サイドの外部でのプライベート・ネットワーク使用量や、アプリケーション固有の調整 (IP スタックやキュー項目数など) があります。 詳細については、[Getting started with Block Storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-GettingStarted#GettingStarted) と [Getting started with File Storage](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-file-storage) を参照してください。
+{{site.data.keyword.cloud_notm}} には、2 種類のストレージ (ブロックとファイル) があります。SAP HANA のバックアップとリストアのためにどちらかのストレージを選択できます。 どちらのタイプの場合も、IOPS (1 秒あたりの入出力操作) に基づいてストレージ必要量を判別します。 IOPS の計測は、16 KB ブロック・サイズと 50/50 の読み取り/書き込み混合比率に基づいています。 1 つのボリュームで最大の IOPS を達成するために、適切なネットワーク・リソースを用意する必要があります。 その他の注意点としては、ストレージやホスト・サイドの外部でのプライベート・ネットワーク使用量や、アプリケーション固有の調整 (IP スタックやキュー項目数など) があります。 詳細については、[Getting started with Block Storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) と [Getting started with File Storage](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started) を参照してください。
 
 ## デプロイメントと管理
 
