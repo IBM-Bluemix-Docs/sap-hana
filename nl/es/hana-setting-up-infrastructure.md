@@ -76,7 +76,7 @@ Se le enviará un correo electrónico de confirmación con el asunto _Se ha apro
 ## Traiga su propia licencia
 {: #byol}
 
-Si tiene su propia licencia del sistema operativo, instálelo en el {{site.data.keyword.baremetal_short}} según las instrucciones del proveedor. Para obtener más información, consulte [La opción sin SO](/docs/bare-metal?topic=bare-metal-how-to-install-an-operating-system-on-a-no-os-server-#bm-no-os).
+Si tiene su propia licencia del sistema operativo, instálelo en el {{site.data.keyword.baremetal_short}} según las instrucciones del proveedor. Para obtener más información, consulte [La opción sin SO](/docs/bare-metal?topic=bare-metal-bm-no-os#bm-no-os).
 
 ## Siguientes pasos
 
