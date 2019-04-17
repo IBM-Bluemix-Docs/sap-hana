@@ -70,7 +70,7 @@ Eine Bestätigungs-E-Mail mit dem Betreff _Ihre {{site.data.keyword.cloud_notm}}
 ## "Bring your own license" - BYOL
 {: #byol}
 
-Wenn Sie über eine eigene Lizenz für Ihr Betriebssystem verfügen, installieren Sie sie unter Beachtung der Anweisungen des Anbieters auf Ihrer {{site.data.keyword.baremetal_short}}-Instanz. Weitere Informationen finden Sie unter [Die Option "Ohne Betriebssystem"](/docs/bare-metal?topic=bare-metal-how-to-install-an-operating-system-on-a-no-os-server-#bm-no-os).
+Wenn Sie über eine eigene Lizenz für Ihr Betriebssystem verfügen, installieren Sie sie unter Beachtung der Anweisungen des Anbieters auf Ihrer {{site.data.keyword.baremetal_short}}-Instanz. Weitere Informationen finden Sie unter [Die Option "Ohne Betriebssystem"](/docs/bare-metal?topic=bare-metal-bm-no-os#bm-no-os).
 
 ## Nächste Schritte
 
