@@ -62,7 +62,7 @@ SAP で必要とされるパフォーマンスとスループットの KPI を�
 
 ご使用のストレージ LAN 接続とノード間接続は、{{site.data.keyword.cloud_notm}} デプロイメントによって構成されます。 必ず、双方にフェイルオーバーが構成されている 2 つの 10 GB アダプターを備えた接続を注文するようにしてください。 このセットアップにより、Linux 結合と LACP 構成が正しく行われるようになります。 不明な点があれば、{{site.data.keyword.cloud_notm}} サポート・チームにご連絡ください。
 
-接続された Network File System (NFS) のボリュームが満たさなければならない特定のパフォーマンス基準があります (詳しくは、[{{site.data.keyword.filestorage_short}} の概要](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-ibm-file-storage-for-bluemix)を参照してください)。`/data/` ボリュームの場合、テストに基づく経験上、ワーカー・ノードごとに 2 TB のエンデュランス・ストレージ (パフォーマンス KPI は 10 IOPS/GB) が必要です。SAP HANA `/shared/` ボリュームとして同じサイズのボリュームがさらに 1 つ必要になりますが、これはすべてのノードで共有されます。テストに基づく経験上、`/shared/` ボリュームは 12 IOPS/GB のパフォーマンス用ストレージ・ボリュームであることが必要です。
+接続された Network File System (NFS) のボリュームが満たさなければならない特定のパフォーマンス基準があります (詳しくは、[{{site.data.keyword.filestorage_short}} の概要](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started)を参照してください)。`/data/` ボリュームの場合、テストに基づく経験上、ワーカー・ノードごとに 2 TB のエンデュランス・ストレージ (パフォーマンス KPI は 10 IOPS/GB) が必要です。SAP HANA `/shared/` ボリュームとして同じサイズのボリュームがさらに 1 つ必要になりますが、これはすべてのノードで共有されます。テストに基づく経験上、`/shared/` ボリュームは 12 IOPS/GB のパフォーマンス用ストレージ・ボリュームであることが必要です。
 
 ログ・ボリュームの場合は、ノードごとに、512 GB のパフォーマンス・ストレージ (パフォーマンス KPI は 10 K IOPS) のボリュームが 1 つ必要になります。
 
