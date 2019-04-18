@@ -62,7 +62,7 @@ SAP HANA 多节点需要存在特定网络并发挥功能。在订购其他系�
 
 您的存储 LAN 连接和节点间连接是由 {{site.data.keyword.cloud_notm}} 部署配置的。请确保订购的连接具有两个 10 GB 适配器，每个都有故障转移配置。此设置可确保正确的 Linux 绑定和 LACP 配置。如有任何问题，请联系 {{site.data.keyword.cloud_notm}} 支持团队。
 
-连接的网络文件系统 (NFS) 卷必须满足特定性能标准（请参阅[{{site.data.keyword.filestorage_short}} 入门](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-ibm-file-storage-for-bluemix)以获取更多信息）。对于 `/data/` 卷，根据测试，每个工作程序节点需要性能 KPI 为 10 IOPS/GB 的 2 TB 耐久性存储器。还需要另一个大小相同的卷作为 SAP HANA `/shared/` 卷，并由所有节点共享。基于测试，`/shared/` 卷应为 12 IOPS/GB 的性能存储卷。
+连接的网络文件系统 (NFS) 卷必须满足特定性能标准（请参阅[{{site.data.keyword.filestorage_short}} 入门](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started)以获取更多信息）。对于 `/data/` 卷，根据测试，每个工作程序节点需要性能 KPI 为 10 IOPS/GB 的 2 TB 耐久性存储器。还需要另一个大小相同的卷作为 SAP HANA `/shared/` 卷，并由所有节点共享。基于测试，`/shared/` 卷应为 12 IOPS/GB 的性能存储卷。
 
 对于日志卷，每个节点需要一个 512 GB 的性能存储卷，其性能 KPI 为 10 K IOPS。
 
