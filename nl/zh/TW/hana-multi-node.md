@@ -62,7 +62,7 @@ SAP HANA 多節點需要特定網路就緒才能運作。在您訂購其他系�
 
 您的儲存空間 LAN 連線和節點間連線已由 {{site.data.keyword.cloud_notm}} 部署配置。請務必訂購具有兩張 10 Gb 配接卡的連線，且每張配接卡都有失效接手配置。此設定可確保正確的 Linux 連結和 LACP 配置。如有任何問題，請與 {{site.data.keyword.cloud_notm}} 支援中心團隊聯絡。
 
-附加的「網路檔案系統 (NFS)」磁區必須符合此處的特定效能準則（如需相關資訊，請參閱[開始使用 {{site.data.keyword.filestorage_short}}](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-ibm-file-storage-for-bluemix)）。若為 `/data/` 磁區，則根據測試，每個工作者節點需要具有效能 KPI 10 IOPS/GB 的 2 TB 耐久性儲存空間。需要額外有一個相同大小的磁區作為 SAP HANA `/shared/` 磁區，將由所有節點所共用。根據測試，`/shared/` 磁區應該是 12 IOPS/GB 的效能儲存空間磁區。
+附加的「網路檔案系統 (NFS)」磁區必須符合此處的特定效能準則（如需相關資訊，請參閱[開始使用 {{site.data.keyword.filestorage_short}}](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started）。若為 `/data/` 磁區，則根據測試，每個工作者節點需要具有效能 KPI 10 IOPS/GB 的 2 TB 耐久性儲存空間。需要額外有一個相同大小的磁區作為 SAP HANA `/shared/` 磁區，將由所有節點所共用。根據測試，`/shared/` 磁區應該是 12 IOPS/GB 的效能儲存空間磁區。
 
 若為日誌磁區，每個節點需要一個 512 GB 磁區的效能儲存空間，並且具有效能 KPI 10 K IOPS。
 
