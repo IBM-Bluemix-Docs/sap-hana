@@ -62,7 +62,7 @@ SAP에 필요한 성능 및 처리량 KPI를 충족하려면 VLAN, 스토리지 
 
 스토리지 LAN 연결 및 인터노드 연결은 {{site.data.keyword.cloud_notm}} 배치를 통해 구성됩니다. 각각 장애 복구 구성이 있는 두 개의 10Gb 어댑터에 대한 연결을 주문하십시오. 이 설정은 올바른 Linux 본딩 및 LACP 구성을 보장합니다. 질문이 있는 경우 {{site.data.keyword.cloud_notm}} 지원 팀에 문의하십시오.
 
-연결된 NFS(Network File System) 볼륨에서 충족해야 하는 특정 성능 기준이 있습니다(자세한 정보는 [{{site.data.keyword.filestorage_short}} 시작하기](/docs/infrastructure/FileStorage?topic=FileStorage-GettingStarted#getting-started-with-ibm-file-storage-for-bluemix) 참조). `/data/` 볼륨의 경우, 테스트에 의하면 성능 KPI가 10IOPS/GB인 2TB Endurance 스토리지가 각 작업자 노드에 필요합니다. 동일한 크기의 하나의 추가 볼륨이 SAP HANA `/shared/` 볼륨으로 필요하며 모든 노드에서 공유됩니다. 테스트에 의하면 `/shared/` 볼륨이 12 IOPS/GB의 성능 스토리지 볼륨이어야 합니다.
+연결된 NFS(Network File System) 볼륨에서 충족해야 하는 특정 성능 기준이 있습니다(자세한 정보는 [{{site.data.keyword.filestorage_short}} 시작하기](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started) 참조). `/data/` 볼륨의 경우, 테스트에 의하면 성능 KPI가 10IOPS/GB인 2TB Endurance 스토리지가 각 작업자 노드에 필요합니다. 동일한 크기의 하나의 추가 볼륨이 SAP HANA `/shared/` 볼륨으로 필요하며 모든 노드에서 공유됩니다. 테스트에 의하면 `/shared/` 볼륨이 12 IOPS/GB의 성능 스토리지 볼륨이어야 합니다.
 
 로그 볼륨의 경우, 하나의 512GB 볼륨의 Performance 스토리지가 성능 KPI가 10K IOPS인 각 노드에 필요합니다.
 
