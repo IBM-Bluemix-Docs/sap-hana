@@ -13,7 +13,7 @@ subcollection: sap-hana
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:pre: .pre}
 {:tip: .tip}
 {:table: .aria-labeledby="caption"}

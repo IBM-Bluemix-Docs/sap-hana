@@ -13,7 +13,7 @@ subcollection: sap-hana
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
@@ -21,7 +21,7 @@ subcollection: sap-hana
 # IBM Cloud high-availability support
 {: #ha}
 
-The {{site.data.keyword.cloud}} Infrastructure as a Service (IaaS) offers you a robust compute environment with an optional operating system (OS) deployment on top that supports high availability (HA) solutions. The solution is based on the supported OS version, which is discussed in [SAP Note 2414097 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2414097){: new_window}. The HA solution is restricted to the ordered OS licenses that come with your deployment, or third-party licenses, such as bring your own license (BYOL). Be sure to discuss HA details with {{site.data.keyword.cloud_notm}} Support before your deployment.
+The {{site.data.keyword.cloud}} Infrastructure as a Service (IaaS) offers you a robust compute environment with an optional operating system (OS) deployment on top that supports high availability (HA) solutions. The solution is based on the supported OS version, which is discussed in [SAP Note 2414097)](https://launchpad.support.sap.com/#/notes/2414097){: external}. The HA solution is restricted to the ordered OS licenses that come with your deployment, or third-party licenses, such as bring your own license (BYOL). Be sure to discuss HA details with {{site.data.keyword.cloud_notm}} Support before your deployment.
 
 The operating systems supported and deployed by {{site.data.keyword.cloud_notm}} for SAP are
 * Linux [Red Hat Enterprise Linux (RHEL) or SUSE Enterprise Linux Server (SLES)] supports both SAP NetWeaver and SAP HANA HA solutions. There are minor restrictions in the {{site.data.keyword.cloud_notm}} environment, which are discussed in [Overview of SAP NetWeaver high-availability configurations](#overview-configs).
@@ -34,17 +34,17 @@ There are numerous documents that provide in-depth help on planning and installi
 
 All the operating systems and distributions supported by {{site.data.keyword.cloud_notm}} for an SAP deployment (Windows, Linux RHEL, and SLES) come with high-availability software and specific extensions. Following are the supported OS and distributions.
 
-* [New Failover Clustering Improvements in Windows Server 2012 and Its Benefits for SAP NetWeaver High Availability ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://blogs.sap.com/2013/10/16/new-failover-clustering-improvements-in-windows-server-2012-and-its-benefits-for-sap-netweaver-high-availability/){: new_window} provides a description based on Microsoft Windows Server Failover Clustering (WFSC) on the Windows OS with SAP NetWeaver.
+* [New Failover Clustering Improvements in Windows Server 2012 and Its Benefits for SAP NetWeaver High Availability)](https://blogs.sap.com/2013/10/16/new-failover-clustering-improvements-in-windows-server-2012-and-its-benefits-for-sap-netweaver-high-availability/){: external} provides a description based on Microsoft Windows Server Failover Clustering (WFSC) on the Windows OS with SAP NetWeaver.
 
 * There are two references for guidance on deploying SAP NetWeaver in a Linux-based HA environment with Linux Pacemaker:
   * SUSE SAP NetWeaver High Availability Cluster 7.40 Setup Guide
   * Deploying Highly Available SAP NetWeaver-based Servers Using Red Hat Enterprise Linux HA add-on with Pacemaker
 
-* [Building High Availability for SAP NetWeaver and SAP HANA on Linux ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.sap.com/content/dam/SAAP/SAP_Activate/AGS_70.pdf){: new_window} is an SAP best-practice document and provides an in-depth technical description with a strong focus on SAP HANA.
+* [Building High Availability for SAP NetWeaver and SAP HANA on Linux ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.sap.com/content/dam/SAAP/SAP_Activate/AGS_70.pdf){: external} is an SAP best-practice document and provides an in-depth technical description with a strong focus on SAP HANA.
 
-* [SAP NetWeaver High Availability and Business Continuity in Virtual Environments with VMware and Hyper-V on Microsoft Windows ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.sap.com/documents/2015/07/508b62bc-5b7c-0010-82c7-eda71af511fa.html){: new_window} covers the virtualization aspects if you’re planning to implement HA on virtualized servers.
+* [SAP NetWeaver High Availability and Business Continuity in Virtual Environments with VMware and Hyper-V on Microsoft Windows)](https://www.sap.com/documents/2015/07/508b62bc-5b7c-0010-82c7-eda71af511fa.html){: external} covers the virtualization aspects if you’re planning to implement HA on virtualized servers.
 
-For more high-availability products certified by SAP partners for high-availability scenarios, see [High Availability Partner Information ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://wiki.scn.sap.com/wiki/display/SI/High+Availability+Partner+Information){: new_window}.
+For more high-availability products certified by SAP partners for high-availability scenarios, see [High Availability Partner Information)](https://wiki.scn.sap.com/wiki/display/SI/High+Availability+Partner+Information){: external}.
 For non-HANA SAP databases, more information on HA fail-over, and DR configurations, is available in your database documentation.
 
 Note that shared access to Network File System (NFS)/Common Internet File System (CIFS) storage, or shared access to iSCSI-based logical unique number storage (LUNS), is usually required to support system failover. Local storage, combined with a replication method, is usually required to support a DR-like setup. As with on-premises installations, check the performance and latency requirements of the database product when planning your deployment.
@@ -58,8 +58,8 @@ Note that shared access to Network File System (NFS)/Common Internet File System
 {: #quorum}
 
 Because of security restrictions in the {{site.data.keyword.cloud_notm}} IBM Cloud environment, network-based access to remote management devices through the Intelligent Platform Management Interface (IPMI) isn’t available. Cluster environments typically use IPMI-based components for the “fencing of cluster nodes” to always ensure a quorum. In the absence of an IPMI-enabled device, shared storage devices are used. In an {{site.data.keyword.cloud_notm}} environment, shared storage devices are implemented by deploying an iSCSI LUN to your servers as a quorum device. For example, a File Share Witness (FSW) on a Microsoft Cluster, and for storage-based death (SDB) for Linux Pacemaker's Stonith.
-* Click [here ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://linux-ha.org/wiki/Cluster_Concepts){: new_window} for more information on Linux High Availability Cluster Concepts.
-* Click [here ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.microsoft.com/en-us/windows-server/failover-clustering/manage-cluster-quorum){: new_window} for more information on configuring and managing quorum servers for Windows Server 2012 and Windows Server 2012 R2.
+* Click [here)](http://linux-ha.org/wiki/Cluster_Concepts){: external} for more information on Linux High Availability Cluster Concepts.
+* Click [here)](https://docs.microsoft.com/en-us/windows-server/failover-clustering/manage-cluster-quorum){: external} for more information on configuring and managing quorum servers for Windows Server 2012 and Windows Server 2012 R2.
 
 {{site.data.keyword.cloud_notm}} Storage has built-in HA capabilities, so a single shared iSCSI LUN won’t introduce a Single Point Of Failure (SPOF) because your network layout is redundant. However, the specifics of your cluster product might require multiple quorum devices.
 

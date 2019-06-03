@@ -13,7 +13,7 @@ subcollection: sap-hana
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
@@ -26,7 +26,7 @@ An Infrastructure-as-a-server (IaaS) environment consists of many components: da
 
 With data centers across North and South America, Europe, Asia, and Australia, you can provision cloud resources where (and when) you need them. Each data center is connected to the {{site.data.keyword.cloud_notm}} global private network, making data transfers faster and more efficient anywhere in the world.
 
-For more information, see [Data Centers ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/data-centers){: new_window}.
+For more information, see [Data Centers)](https://www.ibm.com/cloud/data-centers/){: external}.
 
 ## Bare metal servers
 
@@ -36,7 +36,7 @@ Because customization is limited on bare metal servers, faster provisioning time
 
 You are offered an array of RAM and CPU combinations as the SAP-certified servers have a pre-configured amount of RAM and number of CPUs. The combination *cannot* be changed during the ordering process or through a support ticket after servers are deployed.
 
-For more information, see [About bare metal servers](/docs/bare-metal?topic=bare-metal-about#about).
+For more information, see [About bare metal servers](/docs/bare-metal?topic=bare-metal-about-bm).
 
 ## Network connectivity
 
@@ -44,7 +44,7 @@ Virtual private network (VPN) connectivity to the {{site.data.keyword.cloud_notm
 
 While the network requirements for SAP HANA (10 Gb redundant network) are fulfilled by the {{site.data.keyword.cloud_notm}} offering, you might require certain latency and throughput key performance indicators (KPIs) to be met, depending on your application scenario. For more information on determining which data center to locate your SAP HANA server and deciding on the best network connectivity solution, see [Network connectivity](/docs/infrastructure/sap-hana?topic=sap-hana-considerations#network_connectivity) considerations.
 
-For more information, see [Getting started with Virtual Private Networking](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking) and the [*SAP HANA Network Requirements* ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.sap.com/documents/2016/08/1cd2c2fb-807c-0010-82c7-eda71af511fa.html){: new_window} white paper.
+For more information, see [Getting started with Virtual Private Networking](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking) and the [*SAP HANA Network Requirements*)](https://www.sap.com/documents/2016/08/1cd2c2fb-807c-0010-82c7-eda71af511fa.html){: external} white paper.
 
 ## Storage
 {: #storage}
@@ -55,14 +55,14 @@ There are two types of storage for {{site.data.keyword.cloud_notm}}-block and fi
 
 ## Deployment and management
 
-{{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} are deployed through the {{site.data.keyword.cloud_notm}} infrastructure customer portal or API after you create your {{site.data.keyword.cloud_notm}} customer account. The servers can be managed through the customer portal, API, or command line interface (CLI). For more information, see [About bare metal servers](/docs/bare-metal?topic=bare-metal-about#about).
+{{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}} are deployed through the {{site.data.keyword.cloud_notm}} infrastructure customer portal or API after you create your {{site.data.keyword.cloud_notm}} customer account. The servers can be managed through the customer portal, API, or command line interface (CLI). For more information, see [About bare metal servers](/docs/bare-metal?topic=bare-metal-about-bm).
 
 ## Support
 
 [{{site.data.keyword.cloud_notm}} Customer Support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) handles any support questions and issues that might arise through various outlets, including chat, phone, and ticket-based support. Customer support is offered at no cost to all {{site.data.keyword.cloud_notm}} customers and covers most tickets that are placed each day. For more information, see [Getting Customer Support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
-You can also continue to create tickets through SAP Support that are related to your {{site.data.keyword.cloud_notm}} IaaS and SAP products. For more information, see [SAP Support ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.sap.com/en/index.html){: new_window} and [SAP Note 2414820 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2414820){: new_window}.
+You can also continue to create tickets through SAP Support that are related to your {{site.data.keyword.cloud_notm}} IaaS and SAP products. For more information, see [SAP Support)](https://support.sap.com/en/index.html){: external} and [SAP Note 2414820)](https://launchpad.support.sap.com/#/notes/2414820){: external}.
 
 ## Installing SAP HANA
 
-Your SAP HANA software must be installed by a certified SAP HANA installer who has completed the SAP HANA installation certification course. For more information, see [Who Can Install SAP HANA? ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.saphanacentral.com/p/who-can-install-sap-hana.html){: new_window}.
+Your SAP HANA software must be installed by a certified SAP HANA installer who has completed the SAP HANA installation certification course. For more information, see [Who Can Install SAP HANA?)](http://www.saphanacentral.com/p/who-can-install-sap-hana.html){: external}.

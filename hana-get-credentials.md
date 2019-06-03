@@ -13,7 +13,7 @@ subcollection: sap-hana
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
@@ -27,13 +27,13 @@ The following steps provide guidance on how to obtain the necessary credentials 
 ## SAP credentials and accounts for new users
 {: #sap_credentials}
 
-1. Set up an account on the [SAP home page ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.sap.com/){: new_window} and follow the instructions.
-2. [Set up a HANA user account ![External link icon](../icons/launch-glyph.svg "External link icon")](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/2.0.00/en-US/c0555f0bbb5710148faabb0a6e35c457){: new_window}.
+1. Set up an account on the [SAP home page](https://www.sap.com/){: external} and follow the instructions.
+2. [Set up a HANA user account)](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/2.0.00/en-US/c0555f0bbb5710148faabb0a6e35c457){: external}.
 
 ## {{site.data.keyword.cloud_notm}} credentials and accounts for new users
 {: #ibm_credentials}
 
-1. Go to [Getting started with {{site.data.keyword.cloud_notm}} ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/get-started){: new_window} and scroll to the bottom of the page for the **Sign up** link.
+1. Go to [Getting started with {{site.data.keyword.cloud_notm}}](https://www.ibm.com/cloud/get-started){: external} and click the **Sign up** link.
 
    You will receive an email from {{site.data.keyword.cloud_notm}} Support containing your verification code, from which you can create your initial login ID and password.
 

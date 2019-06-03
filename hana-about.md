@@ -13,7 +13,7 @@ subcollection: sap-hana
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
@@ -42,4 +42,4 @@ You must have a current license for the SAP HANA database if you are a bring-you
 The {{site.data.keyword.cloud_notm}} provides more than 2000 GB of connectivity across a global footprint of more than 60 {{site.data.keyword.cloud_notm}} data centers and 28 points of presence (PoPs). {{site.data.keyword.cloud_notm}} has 20 Gbps network connections across its locations. These connections are provided by leading global network providers and include multiple public peering links to dozens of additional internet access networks.
 
 The network is three distinct and redundant gigabit network architectures-public, private, and data center-to-data center-seamlessly integrated to the industry's first network-within-a-network topology. This design provides maximum accessibility, security, and control for your IT infrastructure. For more information, see
-[The {{site.data.keyword.cloud_notm}} network ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/our-network){: new_window}.
+[The {{site.data.keyword.cloud_notm}} network)](https://www.ibm.com/cloud/data-centers/){: external}.

@@ -13,7 +13,7 @@ subcollection: sap-hana
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
@@ -34,7 +34,7 @@ The second option accesses the {{site.data.keyword.cloud_notm}} Virtual Private 
 ### VLANs
 {: #vlans}
 
-If you want to separate different types of network traffic in your landscape, you can order more virtual LANs (VLANs). Keep in mind that the additional VLANs only lead to traffic segregation, not increased performance. SAP generally recommends using 10 Gb networks for traffic between its application servers and SAP HANA databases, and for other SAP HANA clients, such as SAP Business Intelligence. If you want to segregate administrative access to your SAP HANA server from other clients, you should order another VLAN for your landscape. Another option is to separate the traffic through the public and private network, since further "physical" uplinks are not supported by {{site.data.keyword.cloud_notm}}. Follow the recommendations by SAP for [SAP HANA Tailored Data Center Integration (TDI) ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/){: new_window}.
+If you want to separate different types of network traffic in your landscape, you can order more virtual LANs (VLANs). Keep in mind that the additional VLANs only lead to traffic segregation, not increased performance. SAP generally recommends using 10 Gb networks for traffic between its application servers and SAP HANA databases, and for other SAP HANA clients, such as SAP Business Intelligence. If you want to segregate administrative access to your SAP HANA server from other clients, you should order another VLAN for your landscape. Another option is to separate the traffic through the public and private network, since further "physical" uplinks are not supported by {{site.data.keyword.cloud_notm}}. Follow the recommendations by SAP for [SAP HANA Tailored Data Center Integration (TDI))](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/){: external}.
 
 Access through VPN, as well as access from a jump box, allows transparent access to your SAP HANA instances from SAP HANA Studio.
 
@@ -65,12 +65,12 @@ Be aware that SAP HANA Scale-Out (multi node) environments are still under evalu
 For more information on high availability and disaster recovery, see [{{site.data.keyword.cloud_notm}} high-availability support](/docs/infrastructure/sap-hana?topic=sap-hana-ha#ha), and [Disaster recovery](/docs/infrastructure/sap-reference-architecture?topic=sap-reference-architecture-recommendations#dr).
 
 For more information on system replication, and network throughput and latency, see
-  * [How To Perform System Replication for SAP HANA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.sap.com/documents/2013/10/26c02b58-5a7c-0010-82c7-eda71af511fa.html){: new_window}
-  * [Network Required for SAP HANA System Replication ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.sap.com/documents/2014/06/babb2b55-5a7c-0010-82c7-eda71af511fa.html){: new_window}
+  * [How To Perform System Replication for SAP HANA)](https://www.sap.com/documents/2013/10/26c02b58-5a7c-0010-82c7-eda71af511fa.html){: external}
+  * [Network Required for SAP HANA System Replication)](https://www.sap.com/documents/2014/06/babb2b55-5a7c-0010-82c7-eda71af511fa.html){: external}
 
 For more information on setting up the HA cluster extensions for your Linux operating system, see
-  * [Automated SAP HANA System Replication with Pacemaker on RHEL Setup Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://access.redhat.com/articles/1466063){: new_window}
-  * [SAP HANA SR Performance Optimized Scenario ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.suse.com/docrep/documents/ir8w88iwu7/suse_linux_enterprise_server_for_sap_applications_12_sp1.pdf){: new_window}
+  * [Automated SAP HANA System Replication with Pacemaker on RHEL Setup Guide)](https://access.redhat.com/articles/1466063){: external}
+  * [SAP HANA SR Performance Optimized Scenario](https://www.suse.com/docrep/documents/ir8w88iwu7/suse_linux_enterprise_server_for_sap_applications_12_sp1.pdf){: external}
 
 ## VMware ESXi server deployments
 {: #vmware_server}
@@ -82,10 +82,10 @@ The sizing process for an ESX-based deployment differs from that of a bare metal
 Several other SAP-defined rules must be followed to deploy SAP HANA in a virtualized environment. For production, follow the restrictions that are outlined in SAP Note 1995460. SAP Note 2024433 describes the rules for multiple VMs on one server.
 
 For more information, see the following documentation:
-  * [SAP Note 2414820 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2414820){: new_window}
-  * [*Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide* ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf){: new_window}
-  * [SAP Note 1943937 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/1943937){: new_window}
-  * [SAP HANA Tailored Data Center Integration Frequently Asked Questions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.sap.com/documents/2016/05/e8705aae-717c-0010-82c7-eda71af511fa.html){: new_window}
-  * [SAP Note 1995460 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/1995460){: new_window}
-  * [SAP Note 2024433 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://launchpad.support.sap.com/#/notes/2024433){: new_window}
-  * [SAP HANA Tailored Data Center Intgration (TDI) Overview ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/){: new_window}
+  * [SAP Note 2414820](https://launchpad.support.sap.com/#/notes/2414820){: external}
+  * [*Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide*)](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf){: external}
+  * [SAP Note 1943937](https://launchpad.support.sap.com/#/notes/1943937){: external}
+  * [SAP HANA Tailored Data Center Integration Frequently Asked Questions)](https://www.sap.com/documents/2016/05/e8705aae-717c-0010-82c7-eda71af511fa.html){: external}
+  * [SAP Note 1995460](https://launchpad.support.sap.com/#/notes/1995460){: external}
+  * [SAP Note 2024433](https://launchpad.support.sap.com/#/notes/2024433){: external}
+  * [SAP HANA Tailored Data Center Intgration (TDI) Overview)](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/){: external}

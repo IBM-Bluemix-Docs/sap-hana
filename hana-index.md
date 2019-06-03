@@ -13,7 +13,7 @@ subcollection: sap-hana
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
@@ -27,7 +27,7 @@ This content provides you with recommendations for the provisioning and installa
 
 Table 1 contains steps to help you get your {{site.data.keyword.cloud_notm}} infrastructure built quickly.
 <table>
-   <CAPTION>Table 1. Quick start steps</CAPTION>
+   <CAPTION align="top">Table 1. Quick start steps</CAPTION>
    <THEAD>
    <TR>
    <th>Task</th>
@@ -52,7 +52,7 @@ Table 1 contains steps to help you get your {{site.data.keyword.cloud_notm}} inf
    <td>See <a href="https://cloud.ibm.com/docs/account?topic=account-signup#signing-up-for-ibm-cloud">Signing up for IBM Cloud</a> for the steps on how to set up your IBM Cloud account.</td>
  <tr>
    <td>3. Access the IBM Cloud infrastructure customer portal</td>
-   <td>The <a href="https://control.softlayer.com">IBM Cloud infrastructure customer portal</a> is your graphical gateway to all your infrastructure components-compute, connectivity, storage, network, and data centers. You need an <a href="https://console.bluemix.net/docs/customer-portal?topic=customer-portal-getting-started#getting-started">IBMid and password</a> to access the customer portal.</td>
+   <td>The <a href="https://control.softlayer.com">IBM Cloud infrastructure customer portal</a> is your graphical gateway to all your infrastructure components-compute, connectivity, storage, network, and data centers. You need an <a href="https://cloud.ibm.com/docs/customer-portal?topic=customer-portal-getting-started#getting-started">IBMid and password</a> to access the customer portal.</td>
    <tr>
    <td>4. Plan your system landscape</td>
    <td>Use the information in <a href="sap-hana?topic=sap-hana-planning-your-system-landscape#planning-your-system-landscape">Planning your system landscape</a> to architect, size, and provision your IBM Cloud environment to support your SAP HANA workload.</td>  

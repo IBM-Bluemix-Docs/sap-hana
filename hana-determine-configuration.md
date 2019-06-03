@@ -13,7 +13,7 @@ subcollection: sap-hana
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:pre: .pre}
 {:tip: .tip}
 {:table: .aria-labeledby="caption"}
@@ -430,7 +430,7 @@ Here's an example on how to decipher the SAP HANA server names.
 ## VMware
 {: #vmware}
 
-You are responsible for setting up VMware-related configurations for your server. You can choose from three sizes-1 TB (BI.S2.H4100 (VMware)), 2 TB (BI.S2.H4200 (VMware)), and 4 TB (BI.S2.4400 (VMware)). For more information on configuring VMware on your SAP-certified {{site.data.keyword.baremetal_short}}, see [Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf){: new_window} (PDF).
+You are responsible for setting up VMware-related configurations for your server. You can choose from three sizes-1 TB (BI.S2.H4100 (VMware)), 2 TB (BI.S2.H4200 (VMware)), and 4 TB (BI.S2.4400 (VMware)). For more information on configuring VMware on your SAP-certified {{site.data.keyword.baremetal_short}}, see [Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide)](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf){: external} (PDF).
 
 ## Next Steps
 

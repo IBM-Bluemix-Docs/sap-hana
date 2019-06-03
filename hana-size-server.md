@@ -13,7 +13,7 @@ subcollection: sap-hana
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:pre: .pre}
 {:tip: .tip}
 {:table: .aria-labeledby="caption"}
@@ -44,12 +44,12 @@ You need to correctly size your server *before* you purchase it, because sizing 
 ## Accessing the SAP Quick Sizer
 {: #quick_sizer}
 
-Main memory is one of the most important resources to consider when sizing an SAP HANA-certified appliance. The public [*SAP HANA Master Guide* ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://help.sap.com/doc/e95f6750b0fd10148ea5c6be75016694/2.0.00/en-US/SAP_HANA_Master_Guide_en.pdf){: new_window} provides a starting point for sizing-related topics. The [Sizing SAP HANA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://help.sap.com/viewer/eb3777d5495d46c5b2fa773206bbfb46/2.0.00/en-US/d4a122a7bb57101493e3f5ca08e6b039.html){: new_window} information within the guide provides guidance on how to sized your SAP HANA system. It points to the different installation and migration scenarios for both greenfield installations and existing systems. There is a link to the SAP HANA version of the SAP Quick Sizer tool (an SAP S-user ID is required to access the tool). The page also lists the SAP Notes related to sizing your SAP  HANA server.
+Main memory is one of the most important resources to consider when sizing an SAP HANA-certified appliance. The public [*SAP HANA Master Guide*)](https://help.sap.com/doc/e95f6750b0fd10148ea5c6be75016694/2.0.00/en-US/SAP_HANA_Master_Guide_en.pdf){: external} provides a starting point for sizing-related topics. The [Sizing SAP HANA)](https://help.sap.com/viewer/eb3777d5495d46c5b2fa773206bbfb46/2.0.00/en-US/d4a122a7bb57101493e3f5ca08e6b039.html){: external} information within the guide provides guidance on how to sized your SAP HANA system. It points to the different installation and migration scenarios for both greenfield installations and existing systems. There is a link to the SAP HANA version of the SAP Quick Sizer tool (an SAP S-user ID is required to access the tool). The page also lists the SAP Notes related to sizing your SAP  HANA server.
 
 ## Sizing for a virtualized environment
 {: #size_virtual}
 
-For additional sizing considerations when running SAP HANA in a virtualized environment, see [VMware ESXi server deployments](/docs/infrastructure/sap-hana?topic=sap-hana-considerations#vmware_server) and [*Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide* ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf){: new_window}.
+For additional sizing considerations when running SAP HANA in a virtualized environment, see [VMware ESXi server deployments](/docs/infrastructure/sap-hana?topic=sap-hana-considerations#vmware_server) and [*Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide*)](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf){: external}.
 
 ## Next Steps
 

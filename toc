@@ -17,6 +17,8 @@ SAP HANA on IBM Cloud
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    /vsi/virtual-servers-navigating-devices
+
     {: .topicgroup}
     Planning
         hana-planning-your-system-landscape.md

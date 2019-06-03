@@ -13,7 +13,7 @@ subcollection: sap-hana
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
@@ -24,9 +24,9 @@ subcollection: sap-hana
 Review relevant documentation to help you determine any prerequisites for the SAP products you are planning to install on your {{site.data.keyword.baremetal_long}}.
 {: shortdesc}
 
-  * SAP release notes, which can be found in the application help of the relevant SAP product documentation on the [SAP Help Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://help.sap.com/){: new_window}; requires an SAP S-user ID.
-  * [SAP Product Availability Matrix (PAM) ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://apps.support.sap.com/sap/support/pam){: new_window}; requires an SAP S-user ID.
-  * [SAP Notes ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.sap.com/notes){:new_window}; requires an SAP S-user ID.
+  * SAP release notes, which can be found in the application help of the relevant SAP product documentation on the [SAP Help Portal)](https://help.sap.com/){: external}; requires an SAP S-user ID.
+  * [SAP Product Availability Matrix (PAM))](https://apps.support.sap.com/sap/support/pam){: external}; requires an SAP S-user ID.
+  * [SAP Notes)](https://support.sap.com/notes){:new_window}; requires an SAP S-user ID.
   * [SAP NetWeaver on {{site.data.keyword.cloud_notm}}](/docs/infrastructure/sap-netweaver?topic=sap-netweaver-getting-started#getting-started)
   * [{{site.data.keyword.cloud_notm}} SAP Reference Architecture](/docs/infrastructure/sap-reference-architecture?topic=sap-reference-architecture-getting-started#getting-started)
   * Third-party documentation
