@@ -28,7 +28,7 @@ The following steps provide guidance on how to obtain the necessary credentials 
 {: #sap_credentials}
 
 1. Set up an account on the [SAP home page](https://www.sap.com/){: external} and follow the instructions.
-2. [Set up a HANA user account)](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/2.0.00/en-US/c0555f0bbb5710148faabb0a6e35c457){: external}.
+2. [Set up a HANA user account](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/2.0.00/en-US/c0555f0bbb5710148faabb0a6e35c457){: external}.
 
 ## {{site.data.keyword.cloud_notm}} credentials and accounts for new users
 {: #ibm_credentials}
