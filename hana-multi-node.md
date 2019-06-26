@@ -73,10 +73,10 @@ You can use the steps under [Provisioning and Managing {{site.data.keyword.block
 
 The SAP HANA shared volume, and each of the data and log volumes, must be accessible to all nodes. This approach means all volumes are accessible to the entire storage VLAN, which you configured under [Ordering your multi-node system](#ordering). If you don't want to list each IP address involved, make the volumes accessible to the entire IP subnet of the VLAN.
 
-Follow the guidance in [SAP HANA on NetApp FAS Systems with NFS)](https://www.netapp.com/us/media/tr-4290.pdf){: external} to configure your SAP HANA multi-node system. Use the following Network File System (NFS) mount options for each volume to mount:
+Follow the guidance in [SAP HANA on NetApp FAS Systems with NFS](https://www.netapp.com/us/media/tr-4290.pdf){: external} to configure your SAP HANA multi-node system. Use the following Network File System (NFS) mount options for each volume to mount:
 
 `rw,bg,hard,timeo=600,intr,noatime,vers=4,minorversion=1,lock,rsize=1048576,wsize=1048576` in `/etc/fstab`.
 
 These options have been tested by NetApp and {{site.data.keyword.cloud_notm}}. Contact {{site.data.keyword.cloud_notm}} Support if you plan to change any of the mount options or values.
 
-After you mount all of your volumes to all the nodes, your multi-node servers are configured and ready to install the SAP HANA multi-node database. Follow the steps in the [SAP HANA Server Installation and Update Guide)](https://help.sap.com/viewer/2c1988d620e04368aa4103bf26f17727/2.0.03/en-US){: external} to install an SAP HANA database of your required version.
+After you mount all of your volumes to all the nodes, your multi-node servers are configured and ready to install the SAP HANA multi-node database. Follow the steps in the [SAP HANA Server Installation and Update Guide](https://help.sap.com/viewer/2c1988d620e04368aa4103bf26f17727/2.0.03/en-US){: external} to install an SAP HANA database of your required version.
