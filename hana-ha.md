@@ -40,7 +40,7 @@ All the operating systems and distributions supported by {{site.data.keyword.clo
   * SUSE SAP NetWeaver High Availability Cluster 7.40 Setup Guide
   * Deploying Highly Available SAP NetWeaver-based Servers Using Red Hat Enterprise Linux HA add-on with Pacemaker
 
-* [Building High Availability for SAP NetWeaver and SAP HANA on Linux ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.sap.com/content/dam/SAAP/SAP_Activate/AGS_70.pdf){: external} is an SAP best-practice document and provides an in-depth technical description with a strong focus on SAP HANA.
+* [Building High Availability for SAP NetWeaver and SAP HANA on Linux](https://support.sap.com/content/dam/SAAP/SAP_Activate/AGS_70.pdf){: external} is an SAP best-practice document and provides an in-depth technical description with a strong focus on SAP HANA.
 
 * [SAP NetWeaver High Availability and Business Continuity in Virtual Environments with VMware and Hyper-V on Microsoft Windows](https://www.sap.com/documents/2015/07/508b62bc-5b7c-0010-82c7-eda71af511fa.html){: external} covers the virtualization aspects if you’re planning to implement HA on virtualized servers.
 
