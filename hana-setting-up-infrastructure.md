@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-05-30"
+lastupdated: "2019-006-26"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, infrastructure, {{site.data.keyword.baremetal_short}}, SAP-certified infrastructure, deployment, BYOL,
 
@@ -31,7 +31,7 @@ You have two options to get to provision your {{site.data.keyword.baremetal_shor
 ## Provisioning your {{site.data.keyword.baremetal_short}} using the {{site.data.keyword.cloud_notm}} console
 {: #using-console}
 
-1. Log in to the [{site.data.keyword.cloud_notm} console](https://cloud.ibm.com/){: external} with your unique credentials.
+1. Log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com/){: external} with your unique credentials.
 2. Click **Create resource** > **Compute** > **Bare Metal Server** > **Continue**.
 3. Enter the number of servers you are ordering in the **Quantity** field and select your **Location**, which is your data center.
 4. Click **All servers** > **SAP certified**.
