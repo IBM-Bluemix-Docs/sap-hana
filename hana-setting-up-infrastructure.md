@@ -35,7 +35,7 @@ You have two options to get to provision your {{site.data.keyword.baremetal_shor
 2. Click **Create resource** > **Compute** > **Bare Metal Server** > **Continue**.
 3. Enter the number of servers you are ordering in the **Quantity** field and select your **Location**, which is your data center.
 4. Click **All servers** > **SAP certified**.
-5. Select the appropriate SAP HANA-certified server for your workload. SAP HANA-certified servers are identified with an **-H** under CPU Model.
+5. Select the appropriate SAP HANA-certified server for your workload. SAP HANA-certified servers are identified with an **-H** under CPU Model. For more information on how to decipher the server name, see [Deciphering the server names](/docs/infrastructure/sap-hana?topic=sap-hana-determine_configuration#server-names).
 
 The BI.S3.H2192 and BI.S3.H238 servers are also available for **Hourly** billing.
 {: note}
@@ -52,7 +52,7 @@ If you are bringing your own license (BYOL) for your operating system, select **
 1. Log in to the [{{site.data.keyword.cloud_notm}} infrastructure customer portal](https://control.softlayer.com){: external} with your unique credentials.
 2. Click **Account** > **Place an Order** on the Account Summary page.
 3. Click the **Monthly** link under {{site.data.keyword.baremetal_short}} on the Devices page.
-4. Click the hyperlink under **STARTING PRICE PER MONTH** to select the appropriate SAP HANA-certified server and be taken to the Configure/Order page. SAP HANA-certified servers are identified with an **-H** under CPU Model.  
+4. Click the hyperlink under **STARTING PRICE PER MONTH** to select the appropriate SAP HANA-certified server and be taken to the Configure/Order page. SAP HANA-certified servers are identified with an **-H** under CPU Model. For more information on how to decipher the server name, see [Deciphering the server names](/docs/infrastructure/sap-hana?topic=sap-hana-determine_configuration#server-names). 
 
 The BI.S3.H2192 and BI.S3.H238 servers are also available for **Hourly** billing.
 {: note}

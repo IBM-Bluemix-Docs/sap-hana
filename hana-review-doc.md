@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-26"
+lastupdated: "2019-06-04"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, documentation, PAM
 

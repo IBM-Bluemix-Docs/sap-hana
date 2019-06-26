@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-04-10"
+lastupdated: "2019-06-26"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, {{site.data.keywords.baremetal_short}}, data centers, VPN,
 
@@ -59,7 +59,7 @@ There are two types of storage for {{site.data.keyword.cloud_notm}}-block and fi
 
 ## Support
 
-[{{site.data.keyword.cloud_notm}} Customer Support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) handles any support questions and issues that might arise through various outlets, including chat, phone, and ticket-based support. Customer support is offered at no cost to all {{site.data.keyword.cloud_notm}} customers and covers most tickets that are placed each day. For more information, see [Getting Customer Support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
+[{{site.data.keyword.cloud_notm}} Customer Support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) handles any support questions and cases that might arise through various outlets, including chat, phone, and case-based support. Customer support is offered at no cost to all {{site.data.keyword.cloud_notm}} customers and covers most cases that are placed each day. For more information, see [Getting Customer Support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support).
 
 You can also continue to create tickets through SAP Support that are related to your {{site.data.keyword.cloud_notm}} IaaS and SAP products. For more information, see [SAP Support)](https://support.sap.com/en/index.html){: external} and [SAP Note 2414820)](https://launchpad.support.sap.com/#/notes/2414820){: external}.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-02-26"
+lastupdated: "2019-06-05"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}
 
@@ -42,5 +42,6 @@ Table 1 contains hyperlinks to help you through the management process.
 {: caption="Table 1. Managing your environment overview" caption-side="top"}
 
 ## Next Steps
+{: #manage-environment-next-steps}
 
 Follow the hyperlinks in Table 1 to begin managing your SAP HANA environment.

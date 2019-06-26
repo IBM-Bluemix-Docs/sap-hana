@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-02-26"
+lastupdated: "2019-06-26"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, SAP ABAP, LACP, KPIs,VLANs
 
@@ -54,7 +54,7 @@ To meet the performance and throughput KPIs required by SAP, your VLANs, storage
 
 1. Order three different VLANs and servers with four adapters (two private and two public). For more information on order VLANs, see [Step 1 Ordering Primary and Public VLANs](/docs/infrastructure/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture#step-1-ordering-primary-public-and-private-vlans). For more information on ordering your servers, see [Setting up your infrastructure](/docs/infrastructure/sap-hana?topic=sap-hana-set_up_infrastructure#set_up_infrastructure#set_up_infrastructure).
 2. Set up the initial private VLAN as a "storage VLAN."
-3. [Open a ticket](/docs/get-support?topic=get-support-open-case#open-case) with {{site.data.keyword.cloud_notm}} Support to (a) move the public interfaces to the second VLAN, and (b) order two more adapters to be assigned to the third VLAN, which is the client VLAN.
+3. [Create a support case](/docs/get-support?topic=get-support-open-case#open-case) with {{site.data.keyword.cloud_notm}} Support to (a) move the public interfaces to the second VLAN, and (b) order two more adapters to be assigned to the third VLAN, which is the client VLAN.
 
 You now have the number of servers based on your sizing effort, and your network is set up so that
 * Storage can be attached to all nodes
