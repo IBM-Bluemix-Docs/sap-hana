@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-07-02"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}} storage, {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}
 
@@ -25,7 +25,17 @@ subcollection: sap-hana
 ## Ordering {{site.data.keyword.cloud_notm}} storage
 {: #ibm_storage}
 
-You can use the steps under [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) or [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) to order your backup and restore storage solution. You are guided through the process of deciding which storage type to use, how to order it, and how to deploy it to your server.
+{{site.data.keyword.cloud_notm}} storage LUNS ({{site.data.keyword.blockstorageshort}}) and volumes ({{site.data.keyword.filestorage_full_notm}}) can be provisioned with two options - Endurance and Performance. Endurance tiers feature pre-defined performance levels and other features, such as [snapshot](/docs/infrastructure/BlockStorage?topic=BlockStorage-snapshots) and replication. A custom Performance environment is built with allocated input/output/operations per second (IOPS) between 100 and 1,000.
+
+[Getting started with Block Storage](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started) and [Getting started with File Storage](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started) provides you with provisioning considerations, how to submit your order (if you didn't order when you originally provisioned your server), and connecting to and managing your new storage.
+
+Use the following links to learn more about {{site.data.keyword.blockstorageshort}} and {{site.data.keyword.filestorage_full_notm}}:
+* [Learn about {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-About)
+* [Learn about {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-about)
+
+Provisioning steps can be found under
+* [Ordering Block Storage through the Console](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole)
+* [Ordering File Storage through the Console](/docs/infrastructure/FileStorage?topic-FileStorage-orderConsole)
 
 ## Next Steps
 
