@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-07-18"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}
 
@@ -17,7 +17,7 @@ subcollection: sap-hana
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Getting started tutorial
+# Getting started with SAP HANA on IBM Cloud
 {: #getting-started}
 
 {{site.data.keyword.IBM_notm}} and SAP have been collaborating for over 45 years in multiple areas, including hardware, software, cloud, services, and finance. They are now collaborating to optimize the {{site.data.keyword.cloud}} infrastructure products to include support for the SAP HANA solution in the more than 60 {{site.data.keyword.cloud_notm}} data centers worldwide.
