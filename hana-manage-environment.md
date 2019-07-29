@@ -27,7 +27,7 @@ Managing your {{site.data.keyword.cloud}} environment includes ordering your sto
 
 First, navigate to the device menu, and ensure you have the correct account permissions to complete the tasks.
 
-* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/ssh-keys?topic=virtual-servers-navigating-devices).
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/sap-hana?topic=virtual-servers-navigating-devices).
 * Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
 Table 1 contains hyperlinks to help you through the management process.
