@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-08-22"
 
 keywords: SAP HANA, SAP landscape, {{site.data.keyword.cloud_notm}}
 
@@ -41,5 +41,6 @@ Table 1 contains the steps within the planning process. Use it to help build you
 {: caption="Table 1. Planning process overview" caption-side="top"}
 
 ## Next Steps
+{: #next-steps-planning-your-system-landscape}
 
 Select the appropriate step in Table 1 to begin planning your SAP landscape.

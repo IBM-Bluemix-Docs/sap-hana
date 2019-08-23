@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-08-22"
 
 keywords: SAP HANA, network connectivity, VLANs, external storage, high availability, highly available, disaster recovery, HA, DR, VLANs,
 
@@ -21,6 +21,7 @@ subcollection: sap-hana
 {: #considerations}
 
 The SAP systems in a landscape have specific requirements for connectivity, either among each other or to external systems. You also need to think about external storage for your landscape, and what to do if you decide to deploy VMware on your server.
+{:shortdesc}
 
 ## Network connectivity
 {: #network_connectivity}
@@ -36,7 +37,7 @@ The second option accesses the {{site.data.keyword.cloud_notm}} Virtual Private 
 
 If you want to separate different types of network traffic in your landscape, you can order more virtual LANs (VLANs). Keep in mind that the additional VLANs only lead to traffic segregation, not increased performance. SAP generally recommends using 10 Gb networks for traffic between its application servers and SAP HANA databases, and for other SAP HANA clients, such as SAP Business Intelligence. If you want to segregate administrative access to your SAP HANA server from other clients, you should order another VLAN for your landscape. Another option is to separate the traffic through the public and private network, since further "physical" uplinks are not supported by {{site.data.keyword.cloud_notm}}. Follow the recommendations by SAP for [SAP HANA Tailored Data Center Integration (TDI))](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/){: external}.
 
-Access through VPN, as well as access from a jump box, allows transparent access to your SAP HANA instances from SAP HANA Studio.
+Access through VPN and from a jump box provides transparent access to your SAP HANA instances from SAP HANA Studio.
 
 ## External storage
 {: #external_storage}

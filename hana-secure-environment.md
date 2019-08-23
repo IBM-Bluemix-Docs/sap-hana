@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-08-22"
 
 keywords: SAP HANA, firewalls, {{site.data.keyword.baremetal_short}}, {{site.data.keyword.cloud_notm}}, Fortinet FortiGate
 
@@ -23,11 +23,12 @@ subcollection: sap-hana
 {{site.data.keyword.cloud}} offers firewalls that can provide your {{site.data.keyword.baremetal_short}} with a layer of security that is provisioned on demand and designed to eliminate service interruptions.
 {: shortdesc}
 
-Firewalls help prevent unwanted traffic from hitting your server, help reduce your attack vulnerability, and lets your server resource be dedicated for its use. You can choose a shared firewall, dedicated firewall, or the [Fortinet FortiGate security appliance](/docs/infrastructure/fortigate-10g?topic=fortigate-10g-getting-started-with-fortigate-security-appliance-10gbps#getting-started-with-fortigate-security-appliance-10gbps) based on your specific performance and feature requirements.
+Firewalls help prevent unwanted traffic from hitting your server, help reduce your attack vulnerability, and lets your server resource be dedicated for its use. You can choose a shared firewall, dedicated firewall, or the [Fortinet FortiGate security appliance](/docs/infrastructure/fortigate-10g?topic=fortigate-10g-getting-started) based on your specific performance and feature requirements.
 
-For more information on the firewalls offered by {{site.data.keyword.cloud_notm}}, see [Getting Started Hardware Firewall (Shared)](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started-with-hardware-firewall-shared#getting-started), and for guidance on how to set up a dedicated firewall, see [Getting Started Hardware Firewall (Dedicated)](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-getting-started-with-hardware-firewall-dedicated#getting-started).
+For more information on the firewalls offered by {{site.data.keyword.cloud_notm}}, see [Getting Started Hardware Firewall (Shared)](/docs/infrastructure/hardware-firewall-shared?topic=hardware-firewall-shared-getting-started), and for guidance on how to set up a dedicated firewall, see [Getting Started Hardware Firewall (Dedicated)](/docs/infrastructure/hardware-firewall-dedicated?topic=hardware-firewall-dedicated-getting-started).
 
 ## Next Steps
+{: #next-steps-secure-environment}
 
   [3. Installing your guest OS on the ESX hypervisor (optional)](/docs/infrastructure/sap-hana?topic=sap-hana-install_guest_os#install_guest_os)
 

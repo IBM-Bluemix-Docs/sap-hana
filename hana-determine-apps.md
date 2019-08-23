@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-08-22"
 
 keywords: SAP HANA, SAP applications
 
@@ -28,6 +28,7 @@ You need to determine which SAP-based applications you plan to run on your {{sit
  * Do you use an {{site.data.keyword.cloud_notm}} Virtual Private Network service-SSL or Point-to-Point Tunneling Protocol (PPTP)?
 
 ## Next Steps
+{: #next-steps-determin-apps}
 
   [4. Sizing the server](/docs/infrastructure/sap-hana?topic=sap-hana-size_the_server#size_the_server)
 

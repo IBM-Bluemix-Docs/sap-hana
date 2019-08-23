@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-08-22"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, high availability, highly available, SPOF, VLANs, HA, DR, disaster recovery, SAP NetWeaver
 
@@ -22,6 +22,7 @@ subcollection: sap-hana
 {: #ha}
 
 The {{site.data.keyword.cloud}} Infrastructure as a Service (IaaS) offers you a robust compute environment with an optional operating system (OS) deployment on top that supports high availability (HA) solutions. The solution is based on the supported OS version, which is discussed in [SAP Note 2414097](https://launchpad.support.sap.com/#/notes/2414097){: external}. The HA solution is restricted to the ordered OS licenses that come with your deployment, or third-party licenses, such as bring your own license (BYOL). Be sure to discuss HA details with {{site.data.keyword.cloud_notm}} Support before your deployment.
+{:shortdesc}
 
 The operating systems supported and deployed by {{site.data.keyword.cloud_notm}} for SAP are
 * Linux [Red Hat Enterprise Linux (RHEL) or SUSE Enterprise Linux Server (SLES] supports both SAP NetWeaver and SAP HANA HA solutions. There are minor restrictions in the {{site.data.keyword.cloud_notm}} environment, which are discussed in [Overview of SAP NetWeaver high-availability configurations](#overview-configs).
@@ -58,8 +59,8 @@ Note that shared access to Network File System (NFS)/Common Internet File System
 {: #quorum}
 
 Because of security restrictions in the {{site.data.keyword.cloud_notm}} IBM Cloud environment, network-based access to remote management devices through the Intelligent Platform Management Interface (IPMI) isn’t available. Cluster environments typically use IPMI-based components for the “fencing of cluster nodes” to always ensure a quorum. In the absence of an IPMI-enabled device, shared storage devices are used. In an {{site.data.keyword.cloud_notm}} environment, shared storage devices are implemented by deploying an iSCSI LUN to your servers as a quorum device. For example, a File Share Witness (FSW) on a Microsoft Cluster, and for storage-based death (SDB) for Linux Pacemaker's Stonith.
-* Click [here](http://linux-ha.org/wiki/Cluster_Concepts){: external} for more information on Linux High Availability Cluster Concepts.
-* Click [here](https://docs.microsoft.com/en-us/windows-server/failover-clustering/manage-cluster-quorum){: external} for more information on configuring and managing quorum servers for Windows Server 2012 and Windows Server 2012 R2.
+* Click [here)](http://linux-ha.org/wiki/Cluster_Concepts){: external} for more information on Linux High Availability Cluster Concepts.
+* Click [here)](https://docs.microsoft.com/en-us/windows-server/failover-clustering/manage-cluster-quorum){: external} for more information on configuring and managing quorum servers for Windows Server 2012 and Windows Server 2012 R2.
 
 {{site.data.keyword.cloud_notm}} Storage has built-in HA capabilities, so a single shared iSCSI LUN won’t introduce a Single Point Of Failure (SPOF) because your network layout is redundant. However, the specifics of your cluster product might require multiple quorum devices.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-08-22"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, documentation, PAM
 
@@ -32,6 +32,7 @@ Review relevant documentation to help you determine any prerequisites for the SA
   * Third-party documentation
 
 ## Next Steps
+{: #next-steps-review-doc}
 
   [3. Determining your SAP applications](/docs/infrastructure/sap-hana?topic=sap-hana-3-determining-your-sap-applications#3-determining-your-sap-applications)
 

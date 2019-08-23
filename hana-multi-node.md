@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-26"
+lastupdated: "2019-08-22"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, SAP ABAP, LACP, KPIs,VLANs
 
@@ -22,13 +22,14 @@ subcollection: sap-hana
 {: #multi-node-storage}
 
 {{site.data.keyword.cloud}} supports SAP HANA multi-node storage for online analytical processing (OLAP) workloads, such as SAP Business Warehouse (SAP BW) and SAP BW/4HANA. The {{site.data.keyword.cloud_notm}} solution for SAP HANA multi-node consists of up to 15+1 nodes (15 worker nodes, plus one standby) for up to 30 TB of memory used for one system.
+{:shortdesc}
 
-With multi-node, multiple SAP HANA nodes build a single SAP HANA system. Data is distributed among these nodes, which form a single database. The multi-node configuration supports scalability and high availability through the standby configuration. The {{site.data.keyword.cloud_notm}} offering for this configuration follows [SAP HANA Tailored Data Center Integration)](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/){: external} (TDI), and uses {{site.data.keyword.cloud_notm}} SAP-HANA certified servers for centralized, shared enterprise storage.
+With multi-node, multiple SAP HANA nodes build a single SAP HANA system. Data is distributed among these nodes, which form a single database. The multi-node configuration supports scalability and high availability through the standby configuration. The {{site.data.keyword.cloud_notm}} offering for this configuration follows [SAP HANA Tailored Data Center Integration](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/){: external} (TDI), and uses {{site.data.keyword.cloud_notm}} SAP-HANA certified servers for centralized, shared enterprise storage.
 
 You must follow the configuration guidelines outlined under [Ordering your multi-node system](#ordering) to fulfill the SAP HANA TDI requirements and be supported by SAP.
 {: note}
 
-Follow the guidelines in [Sizing SAP HANA)](https://help.sap.com/viewer/eb3777d5495d46c5b2fa773206bbfb46/2.0.00/en-US/d4a122a7bb57101493e3f5ca08e6b039.html){: external} to determine the required size for your target SAP HANA system, including the total amount of memory and storage required for your deployment. The sizing requirements help you establish the number of SAP HANA nodes required for your SAP HANA multi-node system, and the storage required to host the data.
+Follow the guidelines in [Sizing SAP HANA](https://help.sap.com/viewer/eb3777d5495d46c5b2fa773206bbfb46/2.0.00/en-US/d4a122a7bb57101493e3f5ca08e6b039.html){: external} to determine the required size for your target SAP HANA system, including the total amount of memory and storage required for your deployment. The sizing requirements help you establish the number of SAP HANA nodes required for your SAP HANA multi-node system, and the storage required to host the data.
 
 ## Reviewing the network topology and storage layout
 {: #reviewing-topology}
@@ -73,10 +74,10 @@ You can use the steps under [Provisioning and Managing {{site.data.keyword.block
 
 The SAP HANA shared volume, and each of the data and log volumes, must be accessible to all nodes. This approach means all volumes are accessible to the entire storage VLAN, which you configured under [Ordering your multi-node system](#ordering). If you don't want to list each IP address involved, make the volumes accessible to the entire IP subnet of the VLAN.
 
-Follow the guidance in [SAP HANA on NetApp FAS Systems with NFS](https://www.netapp.com/us/media/tr-4290.pdf){: external} to configure your SAP HANA multi-node system. Use the following Network File System (NFS) mount options for each volume to mount:
+Follow the guidance in [SAP HANA on NetApp FAS Systems with NFS)](https://www.netapp.com/us/media/tr-4290.pdf){: external} to configure your SAP HANA multi-node system. Use the following Network File System (NFS) mount options for each volume to mount:
 
 `rw,bg,hard,timeo=600,intr,noatime,vers=4,minorversion=1,lock,rsize=1048576,wsize=1048576` in `/etc/fstab`.
 
 These options have been tested by NetApp and {{site.data.keyword.cloud_notm}}. Contact {{site.data.keyword.cloud_notm}} Support if you plan to change any of the mount options or values.
 
-After you mount all of your volumes to all the nodes, your multi-node servers are configured and ready to install the SAP HANA multi-node database. Follow the steps in the [SAP HANA Server Installation and Update Guide](https://help.sap.com/viewer/2c1988d620e04368aa4103bf26f17727/2.0.03/en-US){: external} to install an SAP HANA database of your required version.
+After you mount all of your volumes to all the nodes, your multi-node servers are configured and ready to install the SAP HANA multi-node database. Follow the steps in the [SAP HANA Server Installation and Update Guide)](https://help.sap.com/viewer/2c1988d620e04368aa4103bf26f17727/2.0.03/en-US){: external} to install an SAP HANA database of your required version.

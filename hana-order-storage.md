@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-07-02"
+lastupdated: "2019-08-22"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}} storage, {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}
 
@@ -21,6 +21,7 @@ subcollection: sap-hana
 {: #order_storage}
 
 {{site.data.keyword.blockstoragefull}}, {{site.data.keyword.filestorage_full_notm}}, and Network Attached Storage (NAS) are ordered after you deploy your {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}.
+{:shortdesc}
 
 ## Ordering {{site.data.keyword.cloud_notm}} storage
 {: #ibm_storage}
@@ -38,6 +39,7 @@ Provisioning steps can be found under
 * [Ordering File Storage through the Console](/docs/infrastructure/FileStorage?topic-FileStorage-orderConsole)
 
 ## Next Steps
+{: #next-steps-order-storage}
 
   [2. Securing your environment](/docs/infrastructure/sap-hana?topic=sap-hana-secure_environment#secure_environment)
 

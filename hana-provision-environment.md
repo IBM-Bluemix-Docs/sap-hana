@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-08-22"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, VPN
 
@@ -22,6 +22,7 @@ subcollection: sap-hana
 {: #provision_environment}
 
 Table 1 contains the steps to provision your {{site.data.keyword.cloud}} SAP-Certified Infrastructure.
+{:shortdesc}
 
 | Step | Details |
 | --- | --- |
@@ -31,5 +32,6 @@ Table 1 contains the steps to provision your {{site.data.keyword.cloud}} SAP-Cer
 
 
 ## Next Steps
+{: #next-steps-provision-environment}
 
 Click on the links to begin building and deploying your SAP HANA environment on {{site.data.keyword.cloud_notm}}.

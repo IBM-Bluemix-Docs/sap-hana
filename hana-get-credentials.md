@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-08-22"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, support
 
@@ -42,6 +42,7 @@ The following steps provide guidance on how to obtain the necessary credentials 
 You can [create other accounts](/docs/customer-portal?topic=customer-portal-getting-started#getting-started) and [create new users](/docs/customer-portal?topic=customer-portal-getting-started#users-permissions) after you have received your login credentials, and you have connectivity to the {{site.data.keyword.cloud_notm}} private network.
 
 ## Next Steps
+{: #next-steps-get-credentials}
 
   [2. Reviewing any relevant SAP and IBM Cloud documentation](/docs/infrastructure/sap-hana?topic=sap-hana-review_doc#review_doc)
 
