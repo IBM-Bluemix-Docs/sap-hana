@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-08-22"
+lastupdated: "2019-09-24"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, {{site.data.keyword.baremetal_short}}, BYOL
 
@@ -16,6 +16,7 @@ subcollection: sap-hana
 {:external: target="_blank" .external}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
 
 
 # About IBM Cloud SAP-Certified Infrastructure
@@ -28,12 +29,15 @@ It’s because of this relationship, and other {{site.data.keyword.cloud}} capab
 
 The SAP HANA on {{site.data.keyword.cloud_notm}} offerings are developed to meet the needs of the world's largest businesses. It's because of the scale of {{site.data.keyword.cloud_notm}} that those same offerings are available to everyone who wishes to use them. These offerings are true infrastructure; {{site.data.keyword.IBM_notm}} wants to provide you with the most powerful building blocks available in the cloud so that you can design and implement SAP landscapes that meet your business needs and requirements.
 
-You can use your servers for production, non-production, and proof-of-concept (POC) environments. It's important to note that virtually all SAP HANA non-production and SAP Business Warehouse environments are supported on single-node {{site.data.keyword.baremetal_short}}.
+You can use your servers for production, non-production, and proof-of-concept (POC) environments. It's important to note that virtually all SAP HANA non-production and SAP BW/4HANA environments are supported on single- and multi-node {{site.data.keyword.baremetal_short}}.
 
 ## {{site.data.keyword.cloud_notm}} for SAP HANA offering model
 {: #sap_hana_offering_model}
 
-The offering is ideal for practically all SAP HANA use case-support scenarios {{site.data.keyword.baremetal_short}} over the {{site.data.keyword.cloud_notm}} network. The SAP HANA on {{site.data.keyword.cloud_notm}} offering consists of {{site.data.keyword.baremetal_short}} with the Red Hat Enterprise Linux for SAP HANA 7.4 OS. Note that SAP Business Warehouse is supported in production on single-node SAP HANA bare metal servers. The servers are available in the following configurations-512 GB, 1 TB, 2 TB, 4 TB, 6TB, 8 TB, and 12 TB.
+The offering is ideal for practically all SAP HANA use case-support scenarios {{site.data.keyword.baremetal_short}} over the {{site.data.keyword.cloud_notm}} network. The SAP HANA on {{site.data.keyword.cloud_notm}} offering consists of {{site.data.keyword.baremetal_short}} with the Red Hat Enterprise Linux for SAP HANA 7.4 OS.
+
+SAP BW/4HANA is supported in production on single- and multi-node SAP HANA-certified bare metal servers. The servers are available in the following configurations-512 GB, 1 TB, 2 TB, 4 TB, 6TB, 8 TB, and 12 TB.
+{: note}
 
 You must have a current license for the SAP HANA database if you are a bring-your-own-license customer, specifically verifying access to the SAP HANA Platform Edition media.
 
