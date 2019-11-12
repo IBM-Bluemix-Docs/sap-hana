@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-22"
+lastupdated: "2019-11-12"
 
 keywords: SAP HANA, SAP Quick Sizer, {{site.data.keyword.cloud_notm}}, {{site.data.keyword.baremetal_short}}, deployment
 
@@ -28,18 +28,9 @@ After you decide which SAP solutions you plan to use, your next step is to deter
 ## Understanding the SAP sizing methodology
 {: #size_method}
 
-SAP HANA is offered on {{site.data.keyword.cloud_notm}} in single-node configurations with total RAM sizes of
-  * 512 GB
-  * 1024 GB (1 TB)
-  * 2048 GB (2 TB)
-  * 4096 GB (4 TB)
-  * 6144 GB (6 TB)
-  * 8192 GB (8 TB)
-  * 12288 GB (12 TB)
+SAP BW/4HANA is supported in production on single- and multi-node SAP HANA-certified bare metal servers. The servers are available in the following configurations-192 GB, to 1 TB, to 8 TB. It's a columnar database that typically requires less space to store data compared to a traditional row-based Relation Database Management System (RDMS). Data can be highly compressed and compression ratios can range from 3:1 to over 10:1 based on the source data and database.
 
-It's a columnar database that typically requires less space to store data compared to a traditional row-based Relation Database Management System (RDMS). Data can be highly compressed and compression ratios can range from 3:1 to over 10:1 based on the source data and database.
-
-You need to correctly size your server *before* you purchase it, because sizing is key to the success of your project. Improperly sized memory or storage requirements can lead to an upgrade and migration to a larger server.
+You need to correctly size your server *before* you purchase it because sizing is key to the success of your project. Improperly sized memory or storage requirements can lead to an upgrade and migration to a larger server.
 
 ## Accessing the SAP Quick Sizer
 {: #quick_sizer}

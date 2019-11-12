@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-22"
+lastupdated: "2019-11-12"
 
 keywords: SAP HANA, {{site.data.keyword.baremetal_short}}, {{site.data.keyword.cloud_notm}}, database, application server
 
@@ -17,6 +17,7 @@ subcollection: sap-hana
 {:pre: .pre}
 {:tip: .tip}
 {:table: .aria-labeledby="caption"}
+{:note: .note}
 
 
 # 5. Determining your configuration
@@ -34,94 +35,16 @@ Here's an example on how to decipher the SAP HANA server names.
 | --- | --- | --- |
 | BI.S2.H8401 | BI | Bluemix Interface |
 | | S2 | Series 2 (processor generation) |
-| | | S1 is Ivy Bridge/Haswell |
 | | | S2 is Broadwell |
 | | | S3 is Skylake/Kaby Lake |
+| | | S4 is Cascade Lake
 | | H | HANA-certified server |
 | | 8 | 8-socket server |
 | | 4 | 4 TB RAM |
 | | 01 | Revision number (00 is launch, 01 is first revision, and so on) |
 
-## BI.S1.H512
-{: #512_GB_memory}
 
-| RAID | Components | Drives | Array | Size |
-| --- | --- | --- | --- | --- |
-| RAID 1 | 2x 800 GB s3710 |`hdd0, hdd1` | RAID1-A | 800 GB |
-| RAID 10 | 6x 800 GB s3710 | `hdd2, hdd3, hdd4, hdd5, hdd6, hdd7` | RAID10-B | 550 GB |
-| RAID 10 | 6x 800 GB s3710 | `hdd2, hdd3, hdd4, hdd5, hdd6, hdd7` | RAID-10C | 1851 GB |
-| Global hot spare | 1x 800 GB s3710 | `hdd8` | 800 GB GHS | 800 GB |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID1-A | `/dev/sda` |   | 800 |
-|   | `/dev/sda1` | `/boot` | 0.25 |
-|   | `/dev/sda2` | `/` | 50 |
-|   | `/dev/sda3` | `/usr/sap` | 50 |
-|   | `/dev/sda4` | `/hana/shared` | 512 |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID10-B | `/dev/sdb` |   | 550 |
-|   | `/dev/sdb1` | `/hana/log` | `rest` |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID10-C | `/dev/sdc` |   | 1851 |
-|   | `/dev/sdc1` | `/hana/data` | `rest` |
-
-
-## BI.S1.H1000
-{: #1024_GB_memory}
-
-| RAID | Components | Drives | Array | Size |
-| --- | --- | --- | --- | --- |
-| RAID 1 | 2x 800 GB s3710 |`hdd0, hdd1` | RAID1-A | 800 GB |
-| RAID 10 | 6x 800 GB s3710 | `hdd2, hdd3, hdd4, hdd5, hdd6, hdd7` | RAID10-B | 2400 GB |
-| RAID 10 | 8x 800 GB s3710 | `hdd8, hdd9, hdd10, hdd11, hdd12, hdd13, hdd14, hdd15` | RAID-10C | 3200 GB |
-| Global hot spare | 1x 800 GB s3710 | `hdd16` | 800 GB GHS | 800 GB |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID1-A | `/dev/sda` |   | 800 |
-|   | `/dev/sda1` | `/boot` | 0.25 |
-|   | `/dev/sda2` | `/` | 50 |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID10-B | `/dev/sdb` |   | 2400 |
-|   | `/dev/sdb1` | `/hana/shared` | 1104 |
-|   |  | `/hana/log` | `rest` |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID10-C | `/dev/sdc` |   | 3200 |
-|   | `/dev/sdc1` | `/hana/data` | `rest` |
-
-
-## BI.S2.H4101
-{: #H4101}
-
-| RAID | Components | Drives | Array | Size |
-| --- | --- | --- | --- | --- |
-| RAID 1 + hot spare | 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
-| RAID 1 + hot spare | 3x 3.84 TB 5100 | `hdd3, hdd4, hdd5` | RAID1-B | 3.84 TB |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID1-A | `/dev/sda` |   |  |
-|   | `/dev/sda1` | `/boot` | 1.0 |
-|   | `/dev/sda2` | `/` | 150 |
-|   | `/dev/sda3` | `/usr/sap` |
-|   | `/dev/sda4` | `/hana/log` |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID1-B | `/dev/sdb` |   |  |
-|   | `/dev/sdb1` | `/hana/shared` | 1024 |
-|   | `/dev/sdb2` | `/hana/data` | `rest` |
-
-## BI.S2.H4100
+## BI.S2.H4100 (VMware)
 {: #H4100}
 
 | RAID | Components | Drives | Array | Size |
@@ -149,30 +72,32 @@ Here's an example on how to decipher the SAP HANA server names.
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
 
 
-## BI.S2.H4201
-{: #4201}
+## BI.S2.H4101
+{: #H4101}
+
+Available for multi-node.
 
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
-| RAID 1 + hot spare| 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
-| RAID 10 + hot spare | 7x 1.92 TB 5100 | `hdd3, hdd4, hdd5, hdd6, hdd7, hdd8, hdd9` | RAID10-B | 5.76 TB |
+| RAID 1 + hot spare | 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
+| RAID 1 + hot spare | 3x 3.84 TB 5100 | `hdd3, hdd4, hdd5` | RAID1-B | 3.84 TB |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
 | RAID1-A | `/dev/sda` |   |  |
 |   | `/dev/sda1` | `/boot` | 1.0 |
 |   | `/dev/sda2` | `/` | 150 |
-|   | `/dev/sda3` | `/usr/sap` | 150 |
-|   | `/dev/sda4` | `/hana/log` | `rest` |
+|   | `/dev/sda3` | `/usr/sap` |
+|   | `/dev/sda4` | `/hana/log` |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
-| RAID10-B | `/dev/sdb` |   |  |
+| RAID1-B | `/dev/sdb` |   |  |
 |   | `/dev/sdb1` | `/hana/shared` | 1024 |
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S2.H4200
+## BI.S2.H4200 (VMware)
 {: #H4200}
 
 | RAID | Components | Drives | Array | Size |
@@ -200,65 +125,15 @@ Here's an example on how to decipher the SAP HANA server names.
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
 
 
-## BI.S1.H2000
-{: #2048_GB_memory}
+## BI.S2.H4201
+{: #4201}
 
-| RAID | Components | Drives | Array | Size |
-| --- | --- | --- | --- | --- |
-| RAID 1 | 2x 800 GB s3710 |`hdd0, hdd1` | RAID1-A | 800 GB |
-| RAID 10 | 8x 800 GB s3710 | `hdd2, hdd3, hdd4, hdd5, hdd6, hdd7, hdd8, hdd9` | RAID10-B | 4800 GB |
-| RAID 10 | 106x 1.2 TB S3710 | `hdd10, hdd11, hdd12, hdd15, hdd16, hdd17, hdd18, hdd19, hdd20, hdd21` | RAID-10C | 7200 GB |
-| Global hot spare | 1x 800 GB S3710 | `hdd22` | 800 GB GHS | 800 GB |
-| RAID 10-C hot spare | 1x 1.2 TB S3710 | `hdd23` | 1.2 TB Hotspare | 1.2 TB |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID1-A | `/dev/sda` |   | 800 |
-|   | `/dev/sda1` | `/boot` | 0.25 |
-|   | `/dev/sda2` | `/` | `rest` |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID10-B | `/dev/sdb` |   | 4800 |
-|   | `/dev/sdb1` | `/hana/log` | `rest` |
-|   | `/dev/sdb2` | `/hana/shared` | 2200 |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID10-C | `/dev/sdc` |   | 7200 |
-|   | `/dev/sdc1` | `/hana/data` | `rest` |
-
-
-## BI.S2.H4401
-{: #H4401}
-
-| RAID | Components | Drives | Array | Size |
-| --- | --- | --- | --- | --- |
-| RAID 1 + hot spare | 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
-| RAID 10 + hot spare | 5x 3.84 TB 5100 | `hdd3, hdd4, hdd5, hdd6, hdd7` | RAID10-B | 7.68 TB |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID1-A | `/dev/sda` |   |  |
-|   | `/dev/sda1` | `/boot` | 1.0 |
-|   | `/dev/sda2` | `/` | 150 |
-|   | `/dev/sda3` | `/usr/sap` | 150 |
-|   | `/dev/sda4` | `/hana/log` | `rest` |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID10-B  | `/dev/sdb` |   |  |
-|   | `/dev/sdb1` | `/hana/shared` | 1024 |
-|   | `/dev/sdb2` | `/hana/data` | `rest` |
-
-
-## BI.S2.H8401
-{: #H8401}
+Available for multi-node.
 
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 + hot spare| 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
-| RAID 10 + hot spare | 5x 3.84 TB 5100 | `hdd3, hdd4, hdd5, hdd6, hdd7` | RAID10-B | 7.68 TB |
+| RAID 10 + hot spare | 7x 1.92 TB 5100 | `hdd3, hdd4, hdd5, hdd6, hdd7, hdd8, hdd9` | RAID10-B | 5.76 TB |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
@@ -270,12 +145,12 @@ Here's an example on how to decipher the SAP HANA server names.
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
-| RAID10-B  | `/dev/sdb` |   |  |
+| RAID10-B | `/dev/sdb` |   |  |
 |   | `/dev/sdb1` | `/hana/shared` | 1024 |
-|   | `/dev/sdb2` | `hana/data` | `rest` |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S2.H4400
+## BI.S2.H4400 (VMware)
 {: #4096_GB_memory}
 
 | RAID | Components | Drives | Array | Size |
@@ -303,33 +178,73 @@ Here's an example on how to decipher the SAP HANA server names.
 |   | `/dev/sdc1` | `/hana/data` | `rest` |
 
 
-## BI.S2.H4400
-{: #H4400}
+## BI.S2.H4401
+{: #H4401}
 
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
-| RAID 1 | 3x 800 GB s3710 |`hdd0` | RAID1-A | 800 GB |
-| RAID 5 | 6x 1.2 TB s3710 | `hdd1` | RAID5-B | 4100 GB |
-| RAID 5 | 9x 1.2 TB s3710 | `hdd2` | RAID-5C | 8400 GB |
-|Global hot spare | 1x 800 GB S3710 | `hdd22` | 800 GB GHS | 800 GB |
+| RAID 1 + hot spare | 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
+| RAID 10 + hot spare | 5x 3.84 TB 5100 | `hdd3, hdd4, hdd5, hdd6, hdd7` | RAID10-B | 7.68 TB |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
-| RAID1-A | `/dev/sda` |   | 800 |
-|   | `/dev/sda1` | `/boot` | 0.25 |
-|   | `/dev/sda2` | `/hana/log` | 512 |
-|   | `/dev/sda3` | `/` | `rest` |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 1.0 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | `rest` |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
-| RAID5-B  | `/dev/sdb` |   | 4100 |
-|   | `/dev/sdb1` | `/hana/shared` | `rest` |
+| RAID10-B  | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 1024 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S2.H4601
+{: #H4601}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 + hot spare | 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
+| RAID 10 + hot spare | 7x 3.84 TB 5100 | `hdd3, hdd4, hdd5, hdd6, hdd7, hdd8, hdd9` | RAID10-B | 11.52 TB |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
-| RAID5-C  | `/dev/sdc` |   | 4100 |
-|   | `/dev/sdc1` | `/hana/data` | `rest` |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 1.0 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | `rest` |
 
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID5-B  | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 1024 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S2.H8401
+{: #H8401}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 + hot spare| 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
+| RAID 10 + hot spare | 5x 3.84 TB 5100 | `hdd3, hdd4, hdd5, hdd6, hdd7` | RAID10-B | 7.68 TB |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 1.0 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | `rest` |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID10-B  | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 1024 |
+|   | `/dev/sdb2` | `hana/data` | `rest` |
 
 
 ## BI.S2.H8801
@@ -355,33 +270,6 @@ Here's an example on how to decipher the SAP HANA server names.
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S2.H8800
-{: #8192_GB_memory}
-
-| RAID | Components | Drives | Array | Size |
-| --- | --- | --- | --- | --- |
-| RAID 1 | 2x 800 GB s3710 | +1 Hotspare | RAID1-A | 800 GB |
-| RAID 5 | 8x 1.2 TB S3710 |  | RAID5-B | 8400 GB |
-| RAID 5 | 18x 1.2 TB S3710 | +1 Hotspare | RAID5-C | 20400 GB |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID1-A | `/dev/sda` |   | 800 |
-|   | `/dev/sda1` | `/boot` | 0.25 |
-|   | `/dev/sda2` | `/` | `rest` |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID5-B | `/dev/sdb` |   | 4800 |
-|   | `/dev/sdb1` | `/hana/log` | `rest` |
-|   | `/dev/sdb2` | `/hana/shared` | 2200 |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID5-C | `/dev/sdc` |   | 7200 |
-|   | `/dev/sdc1` | `/hana/data` | `rest` |
-
-
 ## BI.S3.H2192
 {: #2192_GB_memory}
 
@@ -403,7 +291,8 @@ Here's an example on how to decipher the SAP HANA server names.
 | --- | --- | --- | --- |
 | RAID1-B | `/dev/sdb` |   |  |
 |   | `/dev/sdb1` | `/hana/shared` | 250 |
-|   | `/dev\sdb2` | `/hana/data` | `rest` |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
 
 ## BI.S3.H2384
 {: #2384_GB_memory}
@@ -412,7 +301,7 @@ Here's an example on how to decipher the SAP HANA server names.
 | --- | --- | --- | --- | --- |
 | RAID 1 | 2x 960 GB 5100 |`hdd0, hdd1` | RAID1-A | 960 GB |
 | RAID 10 | 4x 960 GB 5100 | `hdd2, hdd3, hdd4, hdd5` | RAID1-B | 1920 GB |
-| Global hot spare | 1x 960 GB 5100 | `hdd` |  |  |
+| Global hot spare | 1x 960 GB 5100 | `hdd6` |  |  |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
@@ -420,13 +309,275 @@ Here's an example on how to decipher the SAP HANA server names.
 |   | `/dev/sda1` | `/boot` | 50 |
 |   | `/dev/sda2` | `/` | 150 |
 |   | `/dev/sda3` | `/usr/sap` | 150 |
-|   | `/dev/sda4` | `/hana/log` |  |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
 | RAID1-B | `/dev/sdb` |   |  |
 |   | `/dev/sdb1` | `/hana/shared` | 500 |
-|   | `/dev\sdb2` | `/hana/data` | `rest` |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S3.H2768
+{: #2768_GB_memory}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 960 GB 5100 |`hdd0, hdd1` | RAID1-A | 960 GB |
+| RAID 10 | 4x 960 GB 5100 | `hdd2, hdd3, hdd4, hdd5` | RAID1-B | 1920 GB |
+| Global hot spare | 1x 960 GB 5100 | `hdd6` |  |  |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 800 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+The following servers are available as appliances with preconfigured built-in disks (A) or as boot servers only (B); you have to attach the NFS storage. For more information, see [SAP Note 2414097)](https://launchpad.support.sap.com/#/notes/2414097){: external}.
+{: note}
+
+## BI.S4.H2.192A
+{: S4192A}
+
+[BI.S4.H2.192A](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1087&location=dal13&imageItemId=13467){: external}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 960 GB 5100 | `hdd0, hdd1` | RAID1-A | 960 GB |
+| RAID 1 | 2x 960 GB 5100 | `hdd2, hdd3` | RAID1-B | 960 GB |
+| Global hot spare | 1x 960 GB 5100 | `hdd4` |  |  |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 250 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S4.H2.384A
+{: #S4384A}
+
+[BI.S4.H2.384A](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1091&location=dal13&imageItemId=13467){: external}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 960 GB 5100 |`hdd0, hdd1` | RAID1-A | 960 GB |
+| RAID 10 | 4x 960 GB 5100 | `hdd2, hdd3, hdd4, hdd5` | RAID1-B | 1920 GB |
+| Global hot spare | 1x 960 GB 5100 | `hdd6` |  |  |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 500 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S4.H2.768A
+{: #S4768A}
+
+[BI.S4.H2.768A](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1095&location=dal13&imageItemId=13467){: external}
+
+|| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 960 GB 5100 |`hdd0, hdd1` | RAID1-A | 960 GB |
+| RAID 10 | 4x 960 GB 5100 | `hdd2, hdd3, hdd4, hdd5` | RAID1-B | 1920 GB |
+| Global hot spare | 1x 960 GB 5100 | `hdd6` |  |  |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 800 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S4.H2.1500A
+{: #S41500A}
+
+[BI.S4.H2.1500A](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1099&location=dal13&imageItemId=13467){: external}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+|  |  | |  |  |
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 960 GB SSD SED |`hdd0, hdd1` | RAID1-A | 960 GB |
+| RAID 1 | 2x 3.8 TB SSD SED | `hdd2, hdd3` | RAID1-B | 3.8 TB |
+| Global hot spare | 1x 3.8 TB SSD SED | `hdd4` |  |  |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 1024 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S4.H2.3000A
+{: #S43000A}
+
+[BI.S4.H2.3000A](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1103&location=dal13&imageItemId=13467){: external}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 960 GB SSD SED |`hdd0, hdd1` | RAID1-A | 960 GB |
+| RAID 10 | 4x 3.8 TB SSD SED | `hdd2, hdd3, hdd4, hdd5` | RAID1-B | 7.6 TB |
+| Global hot spare | 1x 3.8 TB SSD SED | `hdd6` |  |  |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 1024 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S4.H2.192B
+{: S4192B}
+
+[BI.S4.H2.192B](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1089&location=dal13&imageItemId=13467){: external}
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 250 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S4.H2.384B
+{: #S4384B}
+
+[BI.S4.H2.384B](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1093&location=dal13&imageItemId=13467){: external}
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 500 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S4.H2.768B
+{: #S4768B}
+
+[BI.S4.H2.768B](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1097&location=dal13&imageItemId=13467){: external}
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 800 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S4.H2.1500B
+{: #S41500B}
+
+[BI.S4.H2.1500B](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1101&location=dal13&imageItemId=13467){: external}
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 1024 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S4.H2.3000B
+{: #S43000B}
+
+[BI.S4.H2.3000B](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1105&location=dal13&imageItemId=13467){: external}
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 1024 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
 
 ## VMware
 {: #vmware}

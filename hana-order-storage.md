@@ -36,7 +36,7 @@ Use the following links to learn more about {{site.data.keyword.blockstorageshor
 
 Provisioning steps can be found under
 * [Ordering Block Storage through the Console](/docs/infrastructure/BlockStorage?topic=BlockStorage-orderingthroughConsole)
-* [Ordering File Storage through the Console](/docs/infrastructure/FileStorage?topic-FileStorage-orderConsole)
+* [Ordering File Storage through the Console](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started&topic-FileStorage-orderConsole#submitting-your-order)
 
 ## Next Steps
 {: #next-steps-order-storage}

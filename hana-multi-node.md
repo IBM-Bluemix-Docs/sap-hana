@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-22"
+lastupdated: "2019-10-10"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, SAP ABAP, LACP, KPIs,VLANs
 
@@ -21,10 +21,10 @@ subcollection: sap-hana
 # 5. Configuring your IBM Cloud infrastructure to support SAP HANA multi-node
 {: #multi-node-storage}
 
-{{site.data.keyword.cloud}} supports SAP HANA multi-node storage for online analytical processing (OLAP) workloads, such as SAP Business Warehouse (SAP BW) and SAP BW/4HANA. The {{site.data.keyword.cloud_notm}} solution for SAP HANA multi-node consists of up to 15+1 nodes (15 worker nodes, plus one standby) for up to 30 TB of memory used for one system.
+{{site.data.keyword.cloud}} supports SAP HANA multi-node storage (also known as *scale out*) for online analytical processing (OLAP) workloads, such as SAP Business Warehouse (SAP BW) and SAP BW/4HANA. The {{site.data.keyword.cloud_notm}} solution for SAP HANA multi-node consists of up to 15+1 nodes (15 worker nodes, plus one standby) for up to 30 TB of memory used for one system.
 {:shortdesc}
 
-With multi-node, multiple SAP HANA nodes build a single SAP HANA system. Data is distributed among these nodes, which form a single database. The multi-node configuration supports scalability and high availability through the standby configuration. The {{site.data.keyword.cloud_notm}} offering for this configuration follows [SAP HANA Tailored Data Center Integration](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/){: external} (TDI), and uses {{site.data.keyword.cloud_notm}} SAP-HANA certified servers for centralized, shared enterprise storage.
+With multi-node, multiple SAP HANA nodes build a single SAP HANA system. Data is distributed among these nodes, which form a single database. The multi-node configuration supports scalability and high availability through the standby configuration. The {{site.data.keyword.cloud_notm}} offering for this configuration follows [SAP HANA Tailored Data Center Integration](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/){: external} (TDI), and uses {{site.data.keyword.cloud_notm}} SAP-HANA certified servers (currently BI.S2.H4101 and BI.S2.H4201) for centralized, shared enterprise storage.
 
 You must follow the configuration guidelines outlined under [Ordering your multi-node system](#ordering) to fulfill the SAP HANA TDI requirements and be supported by SAP.
 {: note}
@@ -45,7 +45,7 @@ Figure 1. IBM Cloud Infrastructure as a Service SAP HANA TDI network topology
 
 SAP HANA multi-node requires certain networks be in place to function. Before you order other components of your system, these networks must be set up correctly, together with the database nodes. You need
 * A client-side network, which connects the SAP Advanced Business Application Programming (SAP ABAP) application servers, SAP HANA Studio clients, and any other network client to the multi-node system. The network throughput and availability options depend on the usage scenario of your SAP HANA multi-node system. Consider the amount of data transferred from and to the SAP HANA database, and the availability key performance indicators (KPIs), required for your application.
-* A storage network, which is required to connect to the back-end {{site.data.keyword.blockstoragefull}} and {{site.data.keyword.filestorage_full_notm}}. To maximize performance and redundancy, a 10 Gb network with two interfaces under Linux bonding with Link Aggregation Control Protocol (LACP) is required. Without the provided performance figures from the SAP HANA sizing guidelines, SAP HANA TDI KPIs can't be met.
+* A storage network, which is required to connect to the back-end {{site.data.keyword.blockstoragefull}} and {{site.data.keyword.filestorage_full_notm}}. To maximize performance and redundancy, a 10 Gb network with two interfaces under Linux bonding with Link Aggregation Control Protocol (LACP) is required. A bonding network interface controller (NIC) with LACP is provisioned. If you request a "redundant NIC" in the customer portal, switches are configured automatically. Without the provided performance figures from the SAP HANA sizing guidelines, SAP HANA TDI KPIs can't be met.
 * An internode network for SAP HANA internal communication that is set up equivalent to the storage network. The internode network is only used for communication between nodes and the data transfer that might be required between the nodes during operations. This required network configuration is on two physical 10 Gb adapters under Linux bonding with LACP.
 
 ## Ordering your multi-node system
@@ -63,7 +63,7 @@ You now have the number of servers based on your sizing effort, and your network
 
 Your storage LAN connections and internode connections are configured by the {{site.data.keyword.cloud_notm}} deployment. Be sure to order the connections with two 10 Gb adapters each with failover configuration. This setup ensures the correct Linux bonding and LACP configuration. Contact the {{site.data.keyword.cloud_notm}} Support team with any questions.
 
-There are specific performance criteria that must be met by the attached Network File System (NFS) volumes (see [Getting started with {{site.data.keyword.filestorage_short}}](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started) for more information). For `/data/` volumes, based on testing, 2 TB Endurance storage with a performance KPI of 10 IOPS/GB is required for each worker node. One additional volume of the same size is required as an SAP HANA `/shared/` volume and will be shared by all nodes. Based on testing, the `/shared/` volume should be a Performance storage volume with 12 IOPS/GB.
+There are specific performance criteria that must be met by the attached Network File System (NFS) volumes (see [Getting started with {{site.data.keyword.filestorage_short}}](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started) for more information). For `/hana/data/` and `/hana/log` volumes, based on testing, 2 TB Endurance storage with a performance KPI of 10 IOPS/GB is required for each worker node. One additional volume of the same size is required as an SAP HANA `/hana/shared/` volume and is shared by all nodes. Based on testing, the `/hana/shared/` volume should be a Performance storage volume with 12 IOPS/GB.
 
 For log volumes, one 512 GB volume of Performance storage is required for each node with a performance KPI of 10 K IOPS.
 

@@ -6,7 +6,7 @@ SAP HANA on IBM Cloud
 
     {: .navgroup id="learn"}
     hana-index.md
-    hana-about.md
+    [What is the SAP-Certified Infrastructure?](https://www.ibm.com/cloud/sap/certified-infrastructure)
     hana-general-iaas-concepts.md
     hana-byol.md
 
@@ -44,6 +44,14 @@ SAP HANA on IBM Cloud
         hana-installing-SAP-landscape.md
         hana-multi-node.md
         hana-ha.md
+
+    {: .topicgroup}
+    Veeam Backup & Replication
+        hana-veeam-overview.md
+        hana-veeam-provision.md
+        hana-veeam-configure.md
+        hana-veeam-repo.md
+        hana-veeam-initial-backup.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
