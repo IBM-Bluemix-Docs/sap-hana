@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-22"
+lastupdated: "2019-11-13"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}} storage, {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}
 
@@ -20,7 +20,7 @@ subcollection: sap-hana
 # 1. Ordering storage
 {: #order_storage}
 
-{{site.data.keyword.blockstoragefull}}, {{site.data.keyword.filestorage_full_notm}}, and Network Attached Storage (NAS) are ordered after you deploy your {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}.
+{{site.data.keyword.blockstoragefull}} and {{site.data.keyword.filestorage_full_notm}} are ordered after you deploy your {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}.
 {:shortdesc}
 
 ## Ordering {{site.data.keyword.cloud_notm}} storage

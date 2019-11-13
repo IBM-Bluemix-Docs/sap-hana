@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-11-12"
+lastupdated: "2019-11-13"
 
 keywords: SAP HANA, network connectivity, VLANs, external storage, high availability, highly available, disaster recovery, HA, DR, VLANs,
 
@@ -42,7 +42,7 @@ Access through VPN and from a jump box provides transparent access to your SAP H
 ## External storage
 {: #external_storage}
 
-In addition to the local storage, you might require more external storage to perform backups. For these requirements, you can order block storage or Network Attached Storage (NAS) as described in [Storage](/docs/infrastructure/sap-hana?topic=sap-hana-iaas-overview#storage). Since extra block storage and Network File System (NFS) data is transferred through the same physical adapters as all other network traffic, the impact needs to be kept in mind.
+In addition to the local storage, you might require more external storage to perform backups. For these requirements, you can order block storage as described in [Storage](/docs/infrastructure/sap-hana?topic=sap-hana-iaas-overview#storage). Since extra block storage and Network File System (NFS) data is transferred through the same physical adapters as all other network traffic, the impact needs to be kept in mind.
 
 For external storage, it's important to calculate your project requirements before deciding on a storage solution. If you need to restore an SAP HANA system, then the IOPS of your storage have a significant influence on your restore window. Backup windows are not as critical with SAP HANA since all backups are online backups no matter how you configure SAP HANA.
 
@@ -50,7 +50,7 @@ For example, using {{site.data.keyword.cloud_notm}} {{site.data.keyword.blocksto
 
 The 12 TB allows you 3x10 IOPS/GB, which is a total of 122,880 IOPS/GB at 16 KB. This gives you a restore time of 1.875 GB per second, or a total restore time of below 2 hours. Since the measurement for the IOPS is taken at a 50/50 distribution of read and write, you can consider the numbers as a lower boundary of restore performance. It is advisable to perform backup and restore tests if you rely on a certain restore window.
 
-Both {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.filestorage_full_notm}}, or NAS can serve as either backup space or as storage for additional software components that are installed on your server. {{site.data.keyword.cloud_notm}} Storage and NAS cannot, however, be used as storage for SAP HANA because these options do not fulfill the KPI criteria.
+Both {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}} or {{site.data.keyword.filestorage_full_notm}} can serve as either backup space or as storage for additional software components that are installed on your server. {{site.data.keyword.cloud_notm}} Storage cannot, however, be used as storage for SAP HANA because these options do not fulfill the KPI criteria.
 
 For more information, see [Getting started with {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) and [Getting started with {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started).
 
