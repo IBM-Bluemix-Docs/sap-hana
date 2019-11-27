@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-11-13"
+lastupdated: "2019-11-27"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, infrastructure, {{site.data.keyword.baremetal_short}}, SAP-certified infrastructure, deployment, BYOL,
 
@@ -21,7 +21,7 @@ subcollection: sap-hana
 # 2. Setting up your infrastructure
 {: #set_up_infrastructure}
 
-The guidance for setting up your SAP HANA {{site.data.keyword.baremetal_long}}, network, security, storage, and operating system (OS) are in the following section. CConsult the [Design Decision Tool](https://github.com/ibm-cloud-architecture/infrastructure-design-decision-tool){: external} or [{{site.data.keyword.cloud_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) for more information.
+The guidance for setting up your SAP HANA {{site.data.keyword.baremetal_long}}, network, security, storage, and operating system (OS) is in the following section. CConsult the [Design Decision Tool](https://github.com/ibm-cloud-architecture/infrastructure-design-decision-tool){: external} or [{{site.data.keyword.cloud_notm}} Support](/docs/get-support?topic=get-support-getting-customer-support#getting-customer-support) for more information.
 {:shortdesc}
 
 ## Ordering your server
@@ -46,15 +46,18 @@ The {{site.data.keyword.cloud}} console requires a unique log-in IDs, which is a
 
 Select your SAP-certified server and OS.
 
-1. Select the appropriate SAP HANA-certified server for your workload.
+1. Select the appropriate SAP HANA-certified server for your workload from the URLs in [Determining your configuration](/docs/infrastructure/sap-hana?topic=sap-hana-determine_configuration).
 
   The BI.S3.H2192 and BI.S3.H238 servers are also available for **Hourly** billing.
   {: note}
 
 2. **Server**, **RAM**, and your private storage option default based on your server selection and cannot be changed. {{site.data.keyword.IBM_notm}} {{site.data.keyword.blockstorageshort}} for {{site.data.keyword.cloud_notm}} or {{site.data.keyword.filestorage_full_notm}} are ordered after you have ordered your server.
-3. Select your **Operating System** from either Red Hat or SUSE and select the specific operating system, or VMware hypervisor for your server.
+3. Select your **Image** (operating system) from either Red Hat or SUSE and select the specific operating system, or VMware hypervisor for your server.
 
   If you are bringing your own license (BYOL) for your operating system, select **Other** > **No Operating System**. For more information, see [Bring your own license](#byol).
+  {: note}
+
+  If you are using SAP Business One, you need to select one of the [servers](/docs/infrastructure/sap-hana?topic=sap-hana-determine_configuration) that supports it and SUSE 12 SP4 as your image.
   {: note}
 
 ## Adding storage disks

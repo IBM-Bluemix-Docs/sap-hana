@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-11-12"
+lastupdated: "2019-11-27"
 
 keywords: SAP HANA, {{site.data.keyword.baremetal_short}}, {{site.data.keyword.cloud_notm}}, database, application server
 
@@ -47,6 +47,8 @@ Here's an example on how to decipher the SAP HANA server names.
 ## BI.S2.H4100 (VMware)
 {: #H4100}
 
+[BI.S2.H4100 (VMware)](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=975&itemId=10633){: external}
+
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 | 2x 800 GB s3710 | `hdd0, hdd1, hdd2` | RAID1-A | 800 GB |
@@ -75,6 +77,8 @@ Here's an example on how to decipher the SAP HANA server names.
 ## BI.S2.H4101
 {: #H4101}
 
+[BI.S2.H4101](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=885&presetId=545){: external}
+
 Available for multi-node.
 
 | RAID | Components | Drives | Array | Size |
@@ -99,6 +103,8 @@ Available for multi-node.
 
 ## BI.S2.H4200 (VMware)
 {: #H4200}
+
+[BI.S2.H4200 (VMware)](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=969&itemId=10777){: external}
 
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
@@ -128,6 +134,8 @@ Available for multi-node.
 ## BI.S2.H4201
 {: #4201}
 
+[BI.S2.4201](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=885&presetId=547){: external}
+
 Available for multi-node.
 
 | RAID | Components | Drives | Array | Size |
@@ -152,6 +160,8 @@ Available for multi-node.
 
 ## BI.S2.H4400 (VMware)
 {: #4096_GB_memory}
+
+[BI.S2.H4400 (VMware)](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=967&itemId=10775){: external}
 
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
@@ -181,6 +191,8 @@ Available for multi-node.
 ## BI.S2.H4401
 {: #H4401}
 
+[BI.S2.H4401](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=885&presetId=549){: external}
+
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 + hot spare | 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
@@ -203,6 +215,8 @@ Available for multi-node.
 
 ## BI.S2.H4601
 {: #H4601}
+
+[BI.S2.H4601](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=885&presetId=551){: external}
 
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
@@ -227,6 +241,8 @@ Available for multi-node.
 ## BI.S2.H8401
 {: #H8401}
 
+[BI.S2.H8401](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=861&presetId=537){: external}
+
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 + hot spare| 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
@@ -250,6 +266,8 @@ Available for multi-node.
 ## BI.S2.H8801
 {: #H8801}
 
+[BI.S2.H8801](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=861&presetId=539){: external}
+
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 + hot spare | 3x 960 GB 5100 |`hdd0, hdd1, hdd2` | RAID1-A | 960 GB |
@@ -270,8 +288,12 @@ Available for multi-node.
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S3.H2192
+## BI.S3.H2.192 (Supports SAP Business One)
 {: #2192_GB_memory}
+
+[BI.S3.H2192](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1045&presetId=823){: external}
+
+Supports [SAP Business One](https://www.sap.com/products/business-one.html){: external}.
 
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
@@ -294,8 +316,12 @@ Available for multi-node.
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S3.H2384
+## BI.S3.H2.384 (Supports SAP Business One)
 {: #2384_GB_memory}
+
+[BI.S3.H2384](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1045&presetId=825){: external}
+
+Supports [SAP Business One](https://www.sap.com/products/business-one.html){: external}.
 
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
@@ -318,8 +344,12 @@ Available for multi-node.
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S3.H2768
+## BI.S3.H2.768 (Supports SAP Business One)
 {: #2768_GB_memory}
+
+[BI.S3.H2768](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1045&presetId=827){: external}
+
+Supports [SAP Business One](https://www.sap.com/products/business-one.html){: external}.
 
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
@@ -342,13 +372,15 @@ Available for multi-node.
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-The following servers are available as appliances with preconfigured built-in disks (A) or as boot servers only (B); you have to attach the NFS storage. For more information, see [SAP Note 2414097)](https://launchpad.support.sap.com/#/notes/2414097){: external}.
+The following dual-socket servers are available as appliances with preconfigured built-in disks (A) or as boot servers only (B); you have to attach the NFS storage. For more information, see [SAP Note 2414097)](https://launchpad.support.sap.com/#/notes/2414097){: external}.
 {: note}
 
-## BI.S4.H2.192A
+## BI.S4.H2.192A (Supports SAP Business One)
 {: S4192A}
 
 [BI.S4.H2.192A](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1087&location=dal13&imageItemId=13467){: external}
+
+Supports [SAP Business One](https://www.sap.com/products/business-one.html){: external}.
 
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
@@ -371,10 +403,12 @@ The following servers are available as appliances with preconfigured built-in di
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.384A
+## BI.S4.H2.384A (Supports SAP Business One)
 {: #S4384A}
 
 [BI.S4.H2.384A](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1091&location=dal13&imageItemId=13467){: external}
+
+Supports [SAP Business One](https://www.sap.com/products/business-one.html){: external}.
 
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
@@ -397,10 +431,12 @@ The following servers are available as appliances with preconfigured built-in di
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.768A
+## BI.S4.H2.768A (Supports SAP Business One)
 {: #S4768A}
 
 [BI.S4.H2.768A](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1095&location=dal13&imageItemId=13467){: external}
+
+Supports [SAP Business One](https://www.sap.com/products/business-one.html){: external}.
 
 || RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
