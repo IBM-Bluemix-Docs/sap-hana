@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-11-27"
+lastupdated: "2019-12-10"
 
 keywords: SAP HANA, {{site.data.keyword.baremetal_short}}, {{site.data.keyword.cloud_notm}}, database, application server
 
@@ -33,7 +33,7 @@ Here's an example on how to decipher the SAP HANA server names.
 
 | Server name | Naming convention component | What it means |
 | --- | --- | --- |
-| BI.S2.H8401 | BI | Bluemix Interface |
+| BI.S3.H8401 | BI | Bluemix Interface |
 | | S2 | Series 2 (processor generation) |
 | | | S2 is Broadwell |
 | | | S3 is Skylake/Kaby Lake |
@@ -42,6 +42,7 @@ Here's an example on how to decipher the SAP HANA server names.
 | | 8 | 8-socket server |
 | | 4 | 4 TB RAM |
 | | 01 | Revision number (00 is launch, 01 is first revision, and so on) |
+| | A or B | Available as appliances with preconfigured built-in disks (A) or as boot servers only (B) |
 
 
 ## BI.S2.H4100 (VMware)
@@ -291,7 +292,7 @@ Available for multi-node.
 ## BI.S3.H2.192 (Supports SAP Business One)
 {: #2192_GB_memory}
 
-[BI.S3.H2192](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1045&presetId=823){: external}
+[BI.S3.H2.192](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1045&presetId=823){: external}
 
 Supports [SAP Business One](https://www.sap.com/products/business-one.html){: external}.
 
@@ -319,7 +320,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 ## BI.S3.H2.384 (Supports SAP Business One)
 {: #2384_GB_memory}
 
-[BI.S3.H2384](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1045&presetId=825){: external}
+[BI.S3.H2.384](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1045&presetId=825){: external}
 
 Supports [SAP Business One](https://www.sap.com/products/business-one.html){: external}.
 
@@ -347,7 +348,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 ## BI.S3.H2.768 (Supports SAP Business One)
 {: #2768_GB_memory}
 
-[BI.S3.H2768](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1045&presetId=827){: external}
+[BI.S3.H2.768](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1045&presetId=827){: external}
 
 Supports [SAP Business One](https://www.sap.com/products/business-one.html){: external}.
 
@@ -372,13 +373,13 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-The following dual-socket servers are available as appliances with preconfigured built-in disks (A) or as boot servers only (B); you have to attach the NFS storage. For more information, see [SAP Note 2414097)](https://launchpad.support.sap.com/#/notes/2414097){: external}.
+The following dual-socket servers are available as appliances with preconfigured built-in disks Appliance or as boot servers only; you have to attach the NFS storage. For more information, see [SAP Note 2414097)](https://launchpad.support.sap.com/#/notes/2414097){: external}.
 {: note}
 
-## BI.S4.H2.192A (Supports SAP Business One)
+## BI.S4.H2.192 Appliance (Supports SAP Business One)
 {: S4192A}
 
-[BI.S4.H2.192A](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1087&location=dal13&imageItemId=13467){: external}
+[BI.S4.H2.192 Appliance](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1087&location=dal13&imageItemId=13467){: external}
 
 Supports [SAP Business One](https://www.sap.com/products/business-one.html){: external}.
 
@@ -403,10 +404,10 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.384A (Supports SAP Business One)
+## BI.S4.H2.384 Appliance (Supports SAP Business One)
 {: #S4384A}
 
-[BI.S4.H2.384A](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1091&location=dal13&imageItemId=13467){: external}
+[BI.S4.H2.384 Appliance](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1091&location=dal13&imageItemId=13467){: external}
 
 Supports [SAP Business One](https://www.sap.com/products/business-one.html){: external}.
 
@@ -431,10 +432,10 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.768A (Supports SAP Business One)
+## BI.S4.H2.768 Appliance (Supports SAP Business One)
 {: #S4768A}
 
-[BI.S4.H2.768A](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1095&location=dal13&imageItemId=13467){: external}
+[BI.S4.H2.768 Appliance](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1095&location=dal13&imageItemId=13467){: external}
 
 Supports [SAP Business One](https://www.sap.com/products/business-one.html){: external}.
 
@@ -459,10 +460,10 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.1500A
+## BI.S4.H2.1500 Appliance
 {: #S41500A}
 
-[BI.S4.H2.1500A](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1099&location=dal13&imageItemId=13467){: external}
+[BI.S4.H2.1500 Appliance](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1099&location=dal13&imageItemId=13467){: external}
 
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
@@ -489,10 +490,10 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.3000A
+## BI.S4.H2.3000 Appliance
 {: #S43000A}
 
-[BI.S4.H2.3000A](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1103&location=dal13&imageItemId=13467){: external}
+[BI.S4.H2.3000 Appliance](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1103&location=dal13&imageItemId=13467){: external}
 
 | RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
@@ -515,70 +516,16 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.192B
-{: S4192B}
+## BI.S4.H4.3000 Appliance
+{: #S4H43000A}
 
-[BI.S4.H2.192B](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1089&location=dal13&imageItemId=13467){: external}
+[BI.S4.H4.3000 Appliance](http://ibm.biz/S4_H4_3000A){: external}
 
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID1-A | `/dev/sda` |   |  |
-|   | `/dev/sda1` | `/boot` | 50 |
-|   | `/dev/sda2` | `/` | 150 |
-|   | `/dev/sda3` | `/usr/sap` | 150 |
-|   | `/dev/sda4` | `/hana/log` | 'rest' |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID1-B | `/dev/sdb` |   |  |
-|   | `/dev/sdb1` | `/hana/shared` | 250 |
-|   | `/dev/sdb2` | `/hana/data` | `rest` |
-
-
-## BI.S4.H2.384B
-{: #S4384B}
-
-[BI.S4.H2.384B](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1093&location=dal13&imageItemId=13467){: external}
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID1-A | `/dev/sda` |   |  |
-|   | `/dev/sda1` | `/boot` | 50 |
-|   | `/dev/sda2` | `/` | 150 |
-|   | `/dev/sda3` | `/usr/sap` | 150 |
-|   | `/dev/sda4` | `/hana/log` | 'rest' |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID1-B | `/dev/sdb` |   |  |
-|   | `/dev/sdb1` | `/hana/shared` | 500 |
-|   | `/dev/sdb2` | `/hana/data` | `rest` |
-
-
-## BI.S4.H2.768B
-{: #S4768B}
-
-[BI.S4.H2.768B](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1097&location=dal13&imageItemId=13467){: external}
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID1-A | `/dev/sda` |   |  |
-|   | `/dev/sda1` | `/boot` | 50 |
-|   | `/dev/sda2` | `/` | 150 |
-|   | `/dev/sda3` | `/usr/sap` | 150 |
-|   | `/dev/sda4` | `/hana/log` | 'rest' |
-
-| Array | Partition | Name | Size (GB) |
-| --- | --- | --- | --- |
-| RAID1-B | `/dev/sdb` |   |  |
-|   | `/dev/sdb1` | `/hana/shared` | 800 |
-|   | `/dev/sdb2` | `/hana/data` | `rest` |
-
-
-## BI.S4.H2.1500B
-{: #S41500B}
-
-[BI.S4.H2.1500B](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1101&location=dal13&imageItemId=13467){: external}
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 960 GB SSD SED |`hdd0, hdd1` | RAID1-A | 960 GB |
+| RAID 10 | 4x 3.8 TB SSD SED | `hdd2, hdd3, hdd4, hdd5` | RAID1-B | 7.6 TB |
+| Global hot spare | 1x 3.8 TB SSD SED | `hdd6` |  |  |
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
@@ -595,10 +542,115 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.3000B
+# BI.S4.H4.6000 Appliance
+{: #S4H46000A}
+
+[BI.S4.H4.6000 Appliance](http://ibm.biz/S4_H4_6000A){: external}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 960 GB SSD SED |`hdd0, hdd1` | RAID1-A | 960 GB |
+| RAID 10 | 4x 3.8 TB SSD SED | `hdd2, hdd3, hdd4, hdd5` | RAID1-B | 7.6 TB |
+| Global hot spare | 1x 3.8 TB SSD SED | `hdd6` |  |  |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 1024 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+## BI.S4.H2.192 (boot only)
+{: S4192B}
+
+[BI.S4.H2.192 (boot only)](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1089&location=dal13&imageItemId=13467){: external}
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 250 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S4.H2.384 (boot only)
+{: #S4384B}
+
+[BI.S4.H2.384 (boot only)](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1093&location=dal13&imageItemId=13467){: external}
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 500 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S4.H2.768 (boot only)
+{: #S4768B}
+
+[BI.S4.H2.768 (boot only)](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1097&location=dal13&imageItemId=13467){: external}
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 800 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S4.H2.1500 (boot only)
+{: #S41500B}
+
+[BI.S4.H2.1500 (boot only)](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1101&location=dal13&imageItemId=13467){: external}
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 1024 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## BI.S4.H2.3000 (boot only)
 {: #S43000B}
 
-[BI.S4.H2.3000B](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1105&location=dal13&imageItemId=13467){: external}
+[BI.S4.H2.3000 (boot only)](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1105&location=dal13&imageItemId=13467){: external}
 
 | Array | Partition | Name | Size (GB) |
 | --- | --- | --- | --- |
