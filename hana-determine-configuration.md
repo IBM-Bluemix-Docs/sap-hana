@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-12-10"
+lastupdated: "2019-12-11"
 
 keywords: SAP HANA, {{site.data.keyword.baremetal_short}}, {{site.data.keyword.cloud_notm}}, database, application server
 
@@ -542,7 +542,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-# BI.S4.H4.6000 Appliance
+## BI.S4.H4.6000 Appliance
 {: #S4H46000A}
 
 [BI.S4.H4.6000 Appliance](http://ibm.biz/S4_H4_6000A){: external}
