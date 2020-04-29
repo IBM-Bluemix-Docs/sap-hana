@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-12"
+  years: 2018, 2020
+lastupdated: "2020-04-22"
 
 keywords: SAP HANA, SAP Quick Sizer, {{site.data.keyword.cloud_notm}}, {{site.data.keyword.baremetal_short}}, deployment
 
@@ -40,8 +40,8 @@ Main memory is one of the most important resources to consider when sizing an SA
 ## Sizing for a virtualized environment
 {: #size_virtual}
 
-For additional sizing considerations when running SAP HANA in a virtualized environment, see [VMware ESXi server deployments](/docs/infrastructure/sap-hana?topic=sap-hana-considerations#vmware_server) and [*Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide*)](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf){: external}.
+For additional sizing considerations when running SAP HANA in a virtualized environment, see [VMware ESXi server deployments](/docs/sap-hana?topic=sap-hana-considerations#vmware_server) and [*Architecture Guidelines and Best Practices for Deployments of SAP HANA on VMware vSphere Architecture and Technical Considerations Guide*)](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/whitepaper/sap_hana_on_vmware_vsphere_best_practices_guide-white-paper.pdf){: external}.
 
 ## Next Steps
 
- [5. Determining your configuration](/docs/infrastructure/sap-hana?topic=sap-hana-determine_configuration#determine_configuration)
+ [5. Determining your configuration](/docs/sap-hana?topic=sap-hana-determine_configuration#determine_configuration)

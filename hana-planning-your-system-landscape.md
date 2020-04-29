@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-08-22"
+  years: 2017, 2020
+lastupdated: "2020-04-22"
 
 keywords: SAP HANA, SAP landscape, {{site.data.keyword.cloud_notm}}
 
@@ -27,17 +27,17 @@ There are several possible landscape configurations, such as server (size)/stora
 
 SAP HANA can run as a database for an SAP NetWeaver stack-based solution or as a standalone entity depending on your usage scenario. For both scenarios, the {{site.data.keyword.cloud_notm}} offering provides preconfigured SAP NetWeaver-certified servers where the landscape around those servers can be built from any other server.
 
-You want to be as detailed as possible when you determine the size of your server based on the applications you plan to run, potential growth, and performance. Additionally, keep in mind your storage and memory requirements for your applications. SAP systems in a landscape have specific requirements for connectivity, either among each other or to external systems. For more information, see [Items to consider when planning your SAP landscape](/docs/infrastructure/sap-hana?topic=sap-hana-considerations#considerations).
+You want to be as detailed as possible when you determine the size of your server based on the applications you plan to run, potential growth, and performance. Additionally, keep in mind your storage and memory requirements for your applications. SAP systems in a landscape have specific requirements for connectivity, either among each other or to external systems. For more information, see [Items to consider when planning your SAP landscape](/docs/sap-hana?topic=sap-hana-considerations#considerations).
 
 Table 1 contains the steps within the planning process. Use it to help build your target SAP landscape.
 
 | Step | Details |
 | --- | --- |
-| 1 | [Get SAP and {{site.data.keyword.cloud_notm}} credentials and create accounts](/docs/infrastructure/sap-hana?topic=sap-hana-get_sap_ibm_credentials#get_sap_ibm_credentials) |
-| 2 | [Review any relevant SAP and {{site.data.keyword.cloud_notm}} documentation](/docs/infrastructure/sap-hana?topic=sap-hana-review_doc#review_doc) |
-| 3 | [Determine your SAP applications](/docs/infrastructure/sap-hana?topic=sap-hana-3-determining-your-sap-applications#3-determining-your-sap-applications) |
-| 4 | [Size the server](/docs/infrastructure/sap-hana?topic=sap-hana-size_the_server#size_the_server) |
-| 5 | [Determine your configuration](/docs/infrastructure/sap-hana?topic=sap-hana-determine_configuration#determine_configuration) |
+| 1 | [Get SAP and {{site.data.keyword.cloud_notm}} credentials and create accounts](/docs/sap-hana?topic=sap-hana-get_sap_ibm_credentials#get_sap_ibm_credentials) |
+| 2 | [Review any relevant SAP and {{site.data.keyword.cloud_notm}} documentation](/docs/sap-hana?topic=sap-hana-review_doc#review_doc) |
+| 3 | [Determine your SAP applications](/docs/sap-hana?topic=sap-hana-3-determining-your-sap-applications#3-determining-your-sap-applications) |
+| 4 | [Size the server](/docs/sap-hana?topic=sap-hana-size_the_server#size_the_server) |
+| 5 | [Determine your configuration](/docs/sap-hana?topic=sap-hana-determine_configuration#determine_configuration) |
 {: caption="Table 1. Planning process overview" caption-side="top"}
 
 ## Next Steps

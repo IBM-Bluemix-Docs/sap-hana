@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-10-10"
+  years: 2018, 2020
+lastupdated: "2020-04-22"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, SAP ABAP, LACP, KPIs,VLANs
 
@@ -53,7 +53,7 @@ SAP HANA multi-node requires certain networks be in place to function. Before yo
 
 To meet the performance and throughput KPIs required by SAP, your VLANs, storage, and compute nodes must be ordered in the same data center. If your components are distributed over multiple data centers, SAP will not support your multi-node system.
 
-1. Order three different VLANs and servers with four adapters (two private and two public). For more information on order VLANs, see [Step 1 Ordering Primary and Public VLANs](/docs/infrastructure/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture#step-1-ordering-primary-public-and-private-vlans). For more information on ordering your servers, see [Setting up your infrastructure](/docs/infrastructure/sap-hana?topic=sap-hana-set_up_infrastructure#set_up_infrastructure#set_up_infrastructure).
+1. Order three different VLANs and servers with four adapters (two private and two public). For more information on order VLANs, see [Step 1 Ordering Primary and Public VLANs](/docs/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture#step-1-ordering-primary-public-and-private-vlans). For more information on ordering your servers, see [Setting up your infrastructure](/docs/sap-hana?topic=sap-hana-set_up_infrastructure#set_up_infrastructure#set_up_infrastructure).
 2. Set up the initial private VLAN as a "storage VLAN."
 3. [Create a support case](/docs/get-support?topic=get-support-open-case#open-case) with {{site.data.keyword.cloud_notm}} Support to (a) move the public interfaces to the second VLAN, and (b) order two more adapters to be assigned to the third VLAN, which is the client VLAN.
 
@@ -63,11 +63,11 @@ You now have the number of servers based on your sizing effort, and your network
 
 Your storage LAN connections and internode connections are configured by the {{site.data.keyword.cloud_notm}} deployment. Be sure to order the connections with two 10 Gb adapters each with failover configuration. This setup ensures the correct Linux bonding and LACP configuration. Contact the {{site.data.keyword.cloud_notm}} Support team with any questions.
 
-There are specific performance criteria that must be met by the attached Network File System (NFS) volumes (see [Getting started with {{site.data.keyword.filestorage_short}}](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started) for more information). For `/hana/data/` and `/hana/log` volumes, based on testing, 2 TB Endurance storage with a performance KPI of 10 IOPS/GB is required for each worker node. One additional volume of the same size is required as an SAP HANA `/hana/shared/` volume and is shared by all nodes. Based on testing, the `/hana/shared/` volume should be a Performance storage volume with 12 IOPS/GB.
+There are specific performance criteria that must be met by the attached Network File System (NFS) volumes (see [Getting started with {{site.data.keyword.filestorage_short}}](/docs/FileStorage?topic=FileStorage-getting-started#getting-started) for more information). For `/hana/data/` and `/hana/log` volumes, based on testing, 2 TB Endurance storage with a performance KPI of 10 IOPS/GB is required for each worker node. One additional volume of the same size is required as an SAP HANA `/hana/shared/` volume and is shared by all nodes. Based on testing, the `/hana/shared/` volume should be a Performance storage volume with 12 IOPS/GB.
 
 For log volumes, one 512 GB volume of Performance storage is required for each node with a performance KPI of 10 K IOPS.
 
-You can use the steps under [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) or [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) to order your Endurance and Performance storage.
+You can use the steps under [Provisioning and Managing {{site.data.keyword.blockstorageshort}}](/docs/BlockStorage?topic=BlockStorage-getting-started#getting-started) or [Provisioning and Managing {{site.data.keyword.filestorage_full_notm}}](/docs/FileStorage?topic=FileStorage-orderingConsole#orderingConsole) to order your Endurance and Performance storage.
 
 ## Configuring SAP HANA multi-nodes
 {: #configuring}

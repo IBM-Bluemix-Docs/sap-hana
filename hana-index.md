@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2020
-lastupdated: "2020-02-21"
+lastupdated: "2020-04-22"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}
 
@@ -23,7 +23,7 @@ subcollection: sap-hana
 {{site.data.keyword.IBM}} and SAP have been collaborating for over 45 years in multiple areas, including hardware, software, cloud, services, and finance. They are now collaborating to optimize the {{site.data.keyword.cloud}} infrastructure products to include support for the SAP HANA solution in the more than 60 {{site.data.keyword.cloud_notm}} data centers worldwide.
 {: shortdesc}
 
-This content provides you with recommendations for the provisioning and installation of the SAP HANA infrastructure and subscription on {{site.data.keyword.cloud_notm}}. It does not replace any SAP HANA documentation nor is it intended to give a full description of the installation process. Its purpose is to help you with infrastructure planning and provisioning so you can begin your SAP installation. The SAP installation (including database installation) does not vary from installations for on-premises environments. Recommendations and guidelines are provided to help you operate your SAP system in the {{site.data.keyword.cloud_notm}} environment regarding the infrastructure provided, for example, network setup or back up storage. The operation of the SAP HANA system does not differ from its operation in any other data center after the infrastructure is in place.
+This content provides you with recommendations for the provisioning and installation of the SAP HANA infrastructure and subscription on {{site.data.keyword.cloud_notm}}. It does not replace to any SAP HANA documentation nor is it intended to give a full description of the installation process. Its purpose is to help you with infrastructure planning and provisioning so you can begin your SAP installation. The SAP installation (including database installation) does not vary from installations for on-premises environments. Recommendations and guidelines are provided to help you operate your SAP system in the {{site.data.keyword.cloud_notm}} environment regarding the infrastructure provided, for example, network setup or back up storage. The operation of the SAP HANA system does not differ from its operation in any other data center after the infrastructure is in place.
 
 Table 1 contains steps to help you get your {{site.data.keyword.cloud_notm}} infrastructure built quickly.
 <table>

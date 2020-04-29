@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-12-03"
+  years: 2017, 2020
+lastupdated: "2020-04-22"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, infrastructure, {{site.data.keyword.baremetal_short}}, SAP-certified infrastructure, deployment, BYOL,
 
@@ -38,7 +38,7 @@ The {{site.data.keyword.cloud}} console requires a unique log-in IDs, which is a
 8. The data centers displayed under **Location** depend on product availability within a particular data center. Select your data center.
 9. Click **All servers** > **SAP certified**. SAP HANA-certified servers are identified with an **.H** under CPU Model.
 
-  For more information on how to decipher the server name, see [Deciphering the server names](/docs/infrastructure/sap-hana?topic=sap-hana-determine_configuration#server-names).
+  For more information on how to decipher the server name, see [Deciphering the server names](/docs/sap-hana?topic=sap-hana-determine_configuration#server-names).
   {: note}
 
 ## Configuring your server
@@ -46,7 +46,7 @@ The {{site.data.keyword.cloud}} console requires a unique log-in IDs, which is a
 
 Select your SAP-certified server and OS.
 
-1. Select the appropriate SAP HANA-certified server for your workload from the URLs in [Determining your configuration](/docs/infrastructure/sap-hana?topic=sap-hana-determine_configuration).
+1. Select the appropriate SAP HANA-certified server for your workload from the URLs in [Determining your configuration](/docs/sap-hana?topic=sap-hana-determine_configuration).
 
   The BI.S3.H2192 and BI.S3.H238 servers are also available for **Hourly** billing.
   {: note}
@@ -57,7 +57,7 @@ Select your SAP-certified server and OS.
   If you are bringing your own license (BYOL) for your operating system, select **Other** > **No Operating System**. For more information, see [Bring your own license](#byol).
   {: note}
 
-  If you are using SAP Business One, you need to select one of the [servers](/docs/infrastructure/sap-hana?topic=sap-hana-determine_configuration) that supports it and SUSE 12 SP4 as your image.
+  If you are using SAP Business One, you need to select one of the [servers](/docs/sap-hana?topic=sap-hana-determine_configuration) that supports it and SUSE 12 SP4 as your image.
   {: note}
 
 ## Adding storage disks
@@ -92,4 +92,4 @@ When you have your own operating system license, you install it on your {{site.d
 ## Next Steps
 {: #next-steps-set-up-infrastructure}
 
-You are now ready to begin Managing your {{site.data.keyword.baremetal_short}}. See [Managing your SAP HANA environment](/docs/infrastructure/sap-hana?topic=sap-hana-manage_environment#manage_environment) for your next steps.
+You are now ready to begin Managing your {{site.data.keyword.baremetal_short}}. See [Managing your SAP HANA environment](/docs/sap-hana?topic=sap-hana-manage_environment#manage_environment) for your next steps.

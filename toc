@@ -1,12 +1,13 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="sap-hana" audience="compute" href="/docs/infrastructure/sap-hana?topic=sap-hana-getting-started#getting-started" path="infrastructure/sap-hana"}
+{: .toc subcollection="sap-hana" category="compute" audience="compute" href="/docs/sap-hana?topic=sap-hana-getting-started#getting-started" path="sap-hana"}
 SAP HANA on IBM Cloud
 
     {: .navgroup id="learn"}
     hana-index.md
     [What is the SAP-Certified Infrastructure?](https://www.ibm.com/cloud/sap/certified-infrastructure)
+    [Solutions for SAP](https://www.ibm.com/cloud/sap)
     hana-general-iaas-concepts.md
     hana-byol.md
 

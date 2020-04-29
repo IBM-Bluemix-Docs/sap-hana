@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-08-22"
+  years: 2017, 2020
+lastupdated: "2020-04-22"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, VPN
 
@@ -26,8 +26,8 @@ Table 1 contains the steps to provision your {{site.data.keyword.cloud}} SAP-Cer
 
 | Step | Details |
 | --- | --- |
-| 1 | [Requesting {{site.data.keyword.cloud_notm}} VPN connectivity](/docs/infrastructure/sap-hana?topic=sap-hana-request_vpn_connect#request_vpn_connect) |
-| 2 | [Setting up your infrastructure](/docs/infrastructure/sap-hana?topic=sap-hana-set_up_infrastructure#set_up_infrastructure) |
+| 1 | [Requesting {{site.data.keyword.cloud_notm}} VPN connectivity](/docs/sap-hana?topic=sap-hana-request_vpn_connect#request_vpn_connect) |
+| 2 | [Setting up your infrastructure](/docs/sap-hana?topic=sap-hana-set_up_infrastructure#set_up_infrastructure) |
 {: caption="Table 1. Provisioning overview" caption-side="top"}
 
 

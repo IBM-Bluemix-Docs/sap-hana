@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-12-11"
+  years: 2018, 2020
+lastupdated: "2020-04-29"
 
 keywords: SAP HANA, {{site.data.keyword.baremetal_short}}, {{site.data.keyword.cloud_notm}}, database, application server
 
@@ -23,7 +23,7 @@ subcollection: sap-hana
 # 5. Determining your configuration
 {: #determine_configuration}
 
-The following tables list the {{site.data.keyword.baremetal_long}} configurations available with the {{site.data.keyword.cloud}} SAP-Certified Infrastructure offering. For additional considerations when running SAP HANA in a virtualized environment, see [VMware ESXi server deployments](/docs/infrastructure/sap-hana?topic=sap-hana-considerations#vmware_server).
+The following tables list the {{site.data.keyword.baremetal_long}} configurations available with the {{site.data.keyword.cloud}} SAP-Certified Infrastructure offering. For additional considerations when running SAP HANA in a virtualized environment, see [VMware ESXi server deployments](/docs/sap-hana?topic=sap-hana-considerations#vmware_server).
 {: #shortdesc}
 
 ## Deciphering the server names
@@ -373,11 +373,14 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
+## Appliance servers
+{: #appliance-boot}
+
 The following dual-socket servers are available as appliances with preconfigured built-in disks Appliance or as boot servers only; you have to attach the NFS storage. For more information, see [SAP Note 2414097)](https://launchpad.support.sap.com/#/notes/2414097){: external}.
 {: note}
 
-## BI.S4.H2.192 Appliance (Supports SAP Business One)
-{: S4192A}
+### BI.S4.H2.192 Appliance (Supports SAP Business One)
+{: #S4192A}
 
 [BI.S4.H2.192 Appliance](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1087&location=dal13&imageItemId=13467){: external}
 
@@ -404,7 +407,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.384 Appliance (Supports SAP Business One)
+### BI.S4.H2.384 Appliance (Supports SAP Business One)
 {: #S4384A}
 
 [BI.S4.H2.384 Appliance](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1091&location=dal13&imageItemId=13467){: external}
@@ -432,7 +435,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.768 Appliance (Supports SAP Business One)
+### BI.S4.H2.768 Appliance (Supports SAP Business One)
 {: #S4768A}
 
 [BI.S4.H2.768 Appliance](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1095&location=dal13&imageItemId=13467){: external}
@@ -460,7 +463,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.1500 Appliance
+### BI.S4.H2.1500 Appliance
 {: #S41500A}
 
 [BI.S4.H2.1500 Appliance](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1099&location=dal13&imageItemId=13467){: external}
@@ -490,7 +493,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.3000 Appliance
+### BI.S4.H2.3000 Appliance
 {: #S43000A}
 
 [BI.S4.H2.3000 Appliance](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1103&location=dal13&imageItemId=13467){: external}
@@ -516,7 +519,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H4.3000 Appliance
+### BI.S4.H4.3000 Appliance
 {: #S4H43000A}
 
 [BI.S4.H4.3000 Appliance](http://ibm.biz/S4_H4_3000A){: external}
@@ -542,7 +545,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H4.6000 Appliance
+### BI.S4.H4.6000 Appliance
 {: #S4H46000A}
 
 [BI.S4.H4.6000 Appliance](http://ibm.biz/S4_H4_6000A){: external}
@@ -567,8 +570,91 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb1` | `/hana/shared` | 1024 |
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
-## BI.S4.H2.192 (boot only)
-{: S4192B}
+
+### BI.S4.H8.6000 Appliance
+{: #S4H86000A}
+
+[BI.S4.H8.6000 Appliance](http://ibm.biz/S4_H8_6000A){: external}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 960 GB SSD SED |`hdd0, hdd1` | RAID1-A | 960 GB |
+| RAID 10 | 4x 3.8 TB SSD SED | `hdd2, hdd3, hdd4, hdd5` | RAID1-B | 7.6 TB |
+| Global hot spare | 1x 3.8 TB SSD SED | `hdd6` |  |  |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 1024 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+### BI.S4.H8.12000 Appliance
+{: #S4H81200A}
+
+[BI.S4.H8.12000 Appliance](http://ibm.biz/S4_H8_12000A){: external}
+
+| RAID | Components | Drives | Array | Size |
+| --- | --- | --- | --- | --- |
+| RAID 1 | 2x 960 GB SSD SED |`hdd0, hdd1` | RAID1-A | 960 GB |
+| RAID 10 | 8x 3.8 TB SSD SED | `hdd2, hdd3, hdd4, hdd5, hdd6, hdd7, hdd8, hdd9` | RAID1-B | 15.2 TB |
+| Global hot spare | 1x 3.8 TB SSD SED | `hdd6` |  |  |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-A | `/dev/sda` |   |  |
+|   | `/dev/sda1` | `/boot` | 50 |
+|   | `/dev/sda2` | `/` | 150 |
+|   | `/dev/sda3` | `/usr/sap` | 150 |
+|   | `/dev/sda4` | `/hana/log` | 'rest' |
+
+| Array | Partition | Name | Size (GB) |
+| --- | --- | --- | --- |
+| RAID1-B | `/dev/sdb` |   |  |
+|   | `/dev/sdb1` | `/hana/shared` | 1024 |
+|   | `/dev/sdb2` | `/hana/data` | `rest` |
+
+
+## Boot-only servers
+{: #boot-only}
+
+By default, {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}s come with high-performance and highly-reliable internal storage based on solid state disks and high-performance RAID adapters. For projects with different requirements, such as storage snapshots, and don't have a very high through-put requirement, {{site.data.keyword.cloud_notm}} offers "boot-only servers."
+
+Boot-only servers have the same configuration as standard {{site.data.keyword.baremetal_short}}s, however, only the boot disks for the operating system is configured. The storage required for the SAP file systems - `/usr/sap`, `/hana/shared`, `/hana/data`, and `/hana/log` - is not provided, which means the cost for these servers is significantly reduced. To SAP HANA on top of a boot-only server, you have to add {{site.data.keyword.cloud_notm}} storage to the server.
+
+SAP HANA Tailored Data Center Integration (TDI) requirements must be met to run SAP HANA in production, or in a production-like environment. {{site.data.keyword.filestorage_full_notm}}, based on the Network File System (NFS), has two options - _Endurance_ and _Performance_. Endurance storage is a predefined IOPS per GB of storage, for example, 0.25 up to 10 IOPS per GB. Performance storage has different ranges of IOPS per GB, depending on the total size of the storage device.
+
+| Size (GB) | Performance custom IOPS |
+| --- | --- |
+| 20-39 | 100-1,000 |
+| 40-79 | 100-2,000 |
+| 80-99 | 100-4,000 |
+| 100-499 | 100-6,000 |
+| 500-999 | 100-10,000 |
+| 1,000-1,999 | 100-20,000 |
+| 2,000-2,999 | 200-40,000 |
+| 3,000-3,999 | 200-48,000 |
+| 4,000-7,999 | 300-48,000 |
+| 8,000-9,999 | 500-48,000 |
+| 10,000-12,000 | 1,000-48,000 |
+| 12,001-13,999 | 6,000-56,000 |
+| 14,000-15,999 | 8,000-64,000 |
+| 16,000-18,999 | 10,000-76,000 |
+| 19,000-24,000 | 10,000-96,000 |
+{: caption="Table 1. Performance storage GB and IOPS" caption-side="top"}
+
+The minimum storage requirement to meet the SAP HANA TDI is 8,000 IOPS for `/hana/log`, and 7,000 IOPS for `/hana/data`. Independent of a storage option selected from Table 1, a 500 GB `/hana/log` is the minimum required storage size. The same applies to `/hana/data`.
+
+### BI.S4.H2.192 (boot only)
+{: #S4192B}
 
 [BI.S4.H2.192 (boot only)](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1089&location=dal13&imageItemId=13467){: external}
 
@@ -587,7 +673,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.384 (boot only)
+### BI.S4.H2.384 (boot only)
 {: #S4384B}
 
 [BI.S4.H2.384 (boot only)](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1093&location=dal13&imageItemId=13467){: external}
@@ -607,7 +693,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.768 (boot only)
+### BI.S4.H2.768 (boot only)
 {: #S4768B}
 
 [BI.S4.H2.768 (boot only)](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1097&location=dal13&imageItemId=13467){: external}
@@ -627,7 +713,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.1500 (boot only)
+### BI.S4.H2.1500 (boot only)
 {: #S41500B}
 
 [BI.S4.H2.1500 (boot only)](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1101&location=dal13&imageItemId=13467){: external}
@@ -647,7 +733,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 |   | `/dev/sdb2` | `/hana/data` | `rest` |
 
 
-## BI.S4.H2.3000 (boot only)
+### BI.S4.H2.3000 (boot only)
 {: #S43000B}
 
 [BI.S4.H2.3000 (boot only)](https://cloud.ibm.com/gen1/infrastructure/provision/bm?packageId=1109&presetId=1105&location=dal13&imageItemId=13467){: external}
@@ -674,4 +760,4 @@ You are responsible for setting up VMware-related configurations for your server
 
 ## Next Steps
 
-You are now ready to begin Provisioning your {{site.data.keyword.baremetal_short}}. See [Provisioning your SAP HANA environment](/docs/infrastructure/sap-hana?topic=sap-hana-provision_environment#provision_environment) for your next steps.
+You are now ready to begin Provisioning your {{site.data.keyword.baremetal_short}}. See [Provisioning your SAP HANA environment](/docs/sap-hana?topic=sap-hana-provision_environment#provision_environment) for your next steps.

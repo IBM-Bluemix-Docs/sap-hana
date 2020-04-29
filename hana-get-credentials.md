@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-08-22"
+  years: 2017, 2020
+lastupdated: "2020-04-22"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}, support
 
@@ -44,10 +44,10 @@ You can [create other accounts](/docs/customer-portal?topic=customer-portal-gett
 ## Next Steps
 {: #next-steps-get-credentials}
 
-  [2. Reviewing any relevant SAP and IBM Cloud documentation](/docs/infrastructure/sap-hana?topic=sap-hana-review_doc#review_doc)
+  [2. Reviewing any relevant SAP and IBM Cloud documentation](/docs/sap-hana?topic=sap-hana-review_doc#review_doc)
 
-  [3. Determining your SAP applications](/docs/infrastructure/sap-hana?topic=sap-hana-3-determining-your-sap-applications#3-determining-your-sap-applications)
+  [3. Determining your SAP applications](/docs/sap-hana?topic=sap-hana-3-determining-your-sap-applications#3-determining-your-sap-applications)
 
-  [4. Sizing the server](/docs/infrastructure/sap-hana?topic=sap-hana-size_the_server#size_the_server)
+  [4. Sizing the server](/docs/sap-hana?topic=sap-hana-size_the_server#size_the_server)
 
-  [5. Determining your configuration](/docs/infrastructure/sap-hana?topic=sap-hana-determine_configuration#determine_configuration)
+  [5. Determining your configuration](/docs/sap-hana?topic=sap-hana-determine_configuration#determine_configuration)

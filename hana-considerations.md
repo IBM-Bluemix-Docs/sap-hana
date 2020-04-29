@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2019
-lastupdated: "2019-11-13"
+  years: 2017, 2020
+lastupdated: "2020-04-20"
 
 keywords: SAP HANA, network connectivity, VLANs, external storage, high availability, highly available, disaster recovery, HA, DR, VLANs,
 
@@ -26,7 +26,7 @@ The SAP systems in a landscape have specific requirements for connectivity, eith
 ## Network connectivity
 {: #network_connectivity}
 
-[{{site.data.keyword.cloud_notm}} network](/docs/infrastructure/sap-hana?topic=sap-hana-about_ibmcloud_for_sap#ibm_cloud_network) provided an overview of the {{site.data.keyword.cloud}} approach to network connectivity. Issues with network connectivity can cause significant delays for your project if you do not plan appropriately, regardless of how you plan to use your system.
+[{{site.data.keyword.cloud_notm}} network](/docs/sap-hana?topic=sap-hana-about_ibmcloud_for_sap#ibm_cloud_network) provided an overview of the {{site.data.keyword.cloud}} approach to network connectivity. Issues with network connectivity can cause significant delays for your project if you do not plan appropriately, regardless of how you plan to use your system.
 
 In general, you have two interface choices for your IaaS-provisioned {{site.data.keyword.cloud_notm}} servers—the first is an external interface with a public IP. The second is an internal interface that is provided with a “private IP” in compliance with Request for Comment (RFC) 1918. You can also choose a single internal interface with a “private IP.” The external IP might be easier to use, but there is a potential risk, even though a basic firewall is installed and preconfigured.
 
@@ -42,7 +42,7 @@ Access through VPN and from a jump box provides transparent access to your SAP H
 ## External storage
 {: #external_storage}
 
-In addition to the local storage, you might require more external storage to perform backups. For these requirements, you can order block storage as described in [Storage](/docs/infrastructure/sap-hana?topic=sap-hana-iaas-overview#storage). Since extra block storage and Network File System (NFS) data is transferred through the same physical adapters as all other network traffic, the impact needs to be kept in mind.
+In addition to the local storage, you might require more external storage to perform backups. For these requirements, you can order block storage as described in [Storage](/docs/sap-hana?topic=sap-hana-iaas-overview#storage). Since extra block storage and Network File System (NFS) data is transferred through the same physical adapters as all other network traffic, the impact needs to be kept in mind.
 
 For external storage, it's important to calculate your project requirements before deciding on a storage solution. If you need to restore an SAP HANA system, then the IOPS of your storage have a significant influence on your restore window. Backup windows are not as critical with SAP HANA since all backups are online backups no matter how you configure SAP HANA.
 
@@ -52,7 +52,7 @@ The 12 TB allows you 3x10 IOPS/GB, which is a total of 122,880 IOPS/GB at 16 KB.
 
 Both {{site.data.keyword.cloud_notm}} {{site.data.keyword.blockstorageshort}} or {{site.data.keyword.filestorage_full_notm}} can serve as either backup space or as storage for additional software components that are installed on your server. {{site.data.keyword.cloud_notm}} Storage cannot, however, be used as storage for SAP HANA because these options do not fulfill the KPI criteria.
 
-For more information, see [Getting started with {{site.data.keyword.blockstorageshort}}](/docs/infrastructure/BlockStorage?topic=BlockStorage-getting-started#getting-started) and [Getting started with {{site.data.keyword.filestorage_full_notm}}](/docs/infrastructure/FileStorage?topic=FileStorage-getting-started#getting-started).
+For more information, see [Getting started with {{site.data.keyword.blockstorageshort}}](/docs/BlockStorage?topic=BlockStorage-getting-started#getting-started) and [Getting started with {{site.data.keyword.filestorage_full_notm}}](/docs/FileStorage?topic=FileStorage-getting-started#getting-started).
 
 ## High availability and disaster recover scenarios
 {: #ha_dr}
@@ -63,7 +63,7 @@ SAP HANA system replication can be configured with an automated fail-over from o
 
 Be aware that SAP HANA Scale-Out (multi node) environments are still under evaluation. In other words, a standby-node for SAP HANA is not a current option in an {{site.data.keyword.cloud_notm}} environment.
 
-For more information on high availability and disaster recovery, see [{{site.data.keyword.cloud_notm}} high-availability support](/docs/infrastructure/sap-hana?topic=sap-hana-ha#ha), and [Disaster recovery](/docs/infrastructure/sap-reference-architecture?topic=sap-reference-architecture-recommendations#dr).
+For more information on high availability and disaster recovery, see [{{site.data.keyword.cloud_notm}} high-availability support](/docs/sap-hana?topic=sap-hana-ha#ha), and [Disaster recovery](/docs/sap-reference-architecture?topic=sap-reference-architecture-recommendations#dr).
 
 For more information on system replication, and network throughput and latency, see
   * [How To Perform System Replication for SAP HANA)](https://www.sap.com/documents/2013/10/26c02b58-5a7c-0010-82c7-eda71af511fa.html){: external}
@@ -89,4 +89,4 @@ For more information, see the following documentation:
   * [SAP HANA Tailored Data Center Integration Frequently Asked Questions)](https://www.sap.com/documents/2016/05/e8705aae-717c-0010-82c7-eda71af511fa.html){: external}
   * [SAP Note 1995460](https://launchpad.support.sap.com/#/notes/1995460){: external}
   * [SAP Note 2024433](https://launchpad.support.sap.com/#/notes/2024433){: external}
-  * [SAP HANA Tailored Data Center Intgration (TDI) Overview)](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/){: external}
+  * [SAP HANA Tailored Data Center Integration (TDI) Overview)](https://blogs.saphana.com/2015/02/18/sap-hana-tailored-data-center-integration-tdi-overview/){: external}

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-08-22"
+  years: 2018, 2020
+lastupdated: "2020-04-22"
 
 keywords: SAP HANA, {{site.data.keyword.cloud_notm}}
 
@@ -28,18 +28,18 @@ Managing your {{site.data.keyword.cloud}} environment includes ordering your sto
 
 First, navigate to the device menu, and ensure you have the correct account permissions to complete the tasks.
 
-* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/sap-hana?topic=virtual-servers-navigating-devices).
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/sap-hana?topic=virtual-servers-navigating-devices).
 * Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
 Table 1 contains hyperlinks to help you through the management process.
 
 | Step | Details |
 | --- | --- |
-| 1 | [Ordering storage](/docs/infrastructure/sap-hana?topic=sap-hana-order_storage#order_storage) |
-| 2 | [Securing your environment](/docs/infrastructure/sap-hana?topic=sap-hana-secure_environment#secure_environment) |
-| 3 | [Installing guest OS on the VMware ESX hypervisor](/docs/infrastructure/sap-hana?topic=sap-hana-install_guest_os#install_guest_os) |
-| 4 | [Downloading and installing SAP software and applications](/docs/infrastructure/sap-hana?topic=sap-hana-install_sap#install_sap) |
-| 5 | [Configuring your IBM Cloud infrastructure to support SAP HANA multi-node](/docs/infrastructure/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage)
+| 1 | [Ordering storage](/docs/sap-hana?topic=sap-hana-order_storage#order_storage) |
+| 2 | [Securing your environment](/docs/sap-hana?topic=sap-hana-secure_environment#secure_environment) |
+| 3 | [Installing guest OS on the VMware ESX hypervisor](/docs/sap-hana?topic=sap-hana-install_guest_os#install_guest_os) |
+| 4 | [Downloading and installing SAP software and applications](/docs/sap-hana?topic=sap-hana-install_sap#install_sap) |
+| 5 | [Configuring your IBM Cloud infrastructure to support SAP HANA multi-node](/docs/sap-hana?topic=sap-hana-multi-node-storage#multi-node-storage)
 {: caption="Table 1. Managing your environment overview" caption-side="top"}
 
 ## Next Steps
