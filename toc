@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="sap-hana" category="compute" audience="compute" href="/docs/sap-hana?topic=sap-hana-getting-started#getting-started" path="sap-hana"}
+{: .toc subcollection="sap-hana" category="compute" audience="compute" href="/docs/sap-hana?topic=sap-hana-getting-started#getting-started" product-page="https://www.ibm.com/cloud/sap" path="sap-hana"}
 SAP HANA on IBM Cloud
 
     {: .navgroup id="learn"}
@@ -60,6 +60,6 @@ SAP HANA on IBM Cloud
 
     {: .topicgroup}
     FAQs
-        [FAQs: SAP on IBM Cloud](/infrastructure/sap-netweaver/sap-netweaver-faqs#faqs)
+        [FAQs: SAP on IBM Cloud](/sap-netweaver/sap-netweaver-faqs)
 
 {: .navgroup-end}
