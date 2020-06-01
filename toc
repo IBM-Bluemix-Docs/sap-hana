@@ -46,14 +46,14 @@ SAP HANA on IBM Cloud
         hana-multi-node.md
         hana-ha.md
 
-    {: .topicgroup}
+    <!-- {: .topicgroup}
     Veeam Backup & Replication
         hana-veeam-overview.md
         hana-veeam-provision.md
         hana-veeam-configure.md
         hana-veeam-repo.md
         hana-veeam-initial-backup.md
-    {: .navgroup-end}
+    {: .navgroup-end} -->
 
     {: .navgroup id="help"}
     [Getting help and support](/vsi/virtual-servers-gettinghelp#gettinghelp)
