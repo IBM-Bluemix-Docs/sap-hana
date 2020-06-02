@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-04-29"
+lastupdated: "2020-06-01"
 
 keywords: SAP HANA, {{site.data.keyword.baremetal_short}}, {{site.data.keyword.cloud_notm}}, database, application server
 
@@ -442,7 +442,7 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 
 Supports [SAP Business One](https://www.sap.com/products/business-one.html){: external}.
 
-|| RAID | Components | Drives | Array | Size |
+| RAID | Components | Drives | Array | Size |
 | --- | --- | --- | --- | --- |
 | RAID 1 | 2x 960 GB 5100 |`hdd0, hdd1` | RAID1-A | 960 GB |
 | RAID 10 | 4x 960 GB 5100 | `hdd2, hdd3, hdd4, hdd5` | RAID1-B | 1920 GB |
@@ -626,9 +626,9 @@ Supports [SAP Business One](https://www.sap.com/products/business-one.html){: ex
 ## Boot-only servers
 {: #boot-only}
 
-By default, {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}s come with high-performance and highly-reliable internal storage based on solid state disks and high-performance RAID adapters. For projects with different requirements, such as storage snapshots, and don't have a very high through-put requirement, {{site.data.keyword.cloud_notm}} offers "boot-only servers."
+By default, {{site.data.keyword.cloud_notm}} {{site.data.keyword.baremetal_short}}s come with high-performance and highly-reliable internal storage based on solid state disks and high-performance RAID adapters. For projects with different requirements, such as storage snapshots, and that don't have a very high through-put requirement, {{site.data.keyword.cloud_notm}} offers "boot-only servers."
 
-Boot-only servers have the same configuration as standard {{site.data.keyword.baremetal_short}}s, however, only the boot disks for the operating system is configured. The storage required for the SAP file systems - `/usr/sap`, `/hana/shared`, `/hana/data`, and `/hana/log` - is not provided, which means the cost for these servers is significantly reduced. To SAP HANA on top of a boot-only server, you have to add {{site.data.keyword.cloud_notm}} storage to the server.
+Boot-only servers have the same configuration as standard {{site.data.keyword.baremetal_short}}s, however, only the boot disks for the operating system is configured. The storage required for the SAP file systems - `/usr/sap`, `/hana/shared`, `/hana/data`, and `/hana/log` - is not provided, which means the cost for these servers is significantly reduced. To run SAP HANA on top of a boot-only server, you have to add {{site.data.keyword.cloud_notm}} storage to the server.
 
 SAP HANA Tailored Data Center Integration (TDI) requirements must be met to run SAP HANA in production, or in a production-like environment. {{site.data.keyword.filestorage_full_notm}}, based on the Network File System (NFS), has two options - _Endurance_ and _Performance_. Endurance storage is a predefined IOPS per GB of storage, for example, 0.25 up to 10 IOPS per GB. Performance storage has different ranges of IOPS per GB, depending on the total size of the storage device.
 
@@ -651,7 +651,7 @@ SAP HANA Tailored Data Center Integration (TDI) requirements must be met to run 
 | 19,000-24,000 | 10,000-96,000 |
 {: caption="Table 1. Performance storage GB and IOPS" caption-side="top"}
 
-The minimum storage requirement to meet the SAP HANA TDI is 8,000 IOPS for `/hana/log`, and 7,000 IOPS for `/hana/data`. Independent of a storage option selected from Table 1, a 500 GB `/hana/log` is the minimum required storage size. The same applies to `/hana/data`.
+To fulfill SAP HANA TDI key performance indicators (TDIs), the minimum values to run SAP HANA in produciton and production-like setups is 8 K IOPS for `/hana/log` and a minimum of 7 K IOPS for `/hana/data`. These minimums are for Endurance and Performance storage. You can share storage areas for `/hana/shared` with `/hana/log` or `/hana/data` if these areas are too large for your particular use case. For non-production use, you can use one storage area for `/hana/shared`, `/hana/log`, and `/hana/data`.
 
 ### BI.S4.H2.192 (boot only)
 {: #S4192B}
