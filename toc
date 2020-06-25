@@ -18,7 +18,7 @@ SAP HANA on IBM Cloud
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    /vsi/virtual-servers-navigating-devices
+    /virtual-servers/virtual-servers-navigating-devices
 
     {: .topicgroup}
     Planning
@@ -56,10 +56,9 @@ SAP HANA on IBM Cloud
     {: .navgroup-end} -->
 
     {: .navgroup id="help"}
-    [Getting help and support](/vsi/virtual-servers-gettinghelp#gettinghelp)
+    [Getting help and support](/virtual-servers/virtual-servers-gettinghelp#gettinghelp)
 
     {: .topicgroup}
     FAQs
         [FAQs: SAP on IBM Cloud](/sap-netweaver/sap-netweaver-faqs)
-
 {: .navgroup-end}
