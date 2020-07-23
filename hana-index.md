@@ -40,7 +40,7 @@ Table 1 contains steps to help you get your {{site.data.keyword.cloud_notm}} inf
    <td>If your organization is new to IBM Cloud, the following information can be useful and should be read before your planning phase.
    <li><a href="https://www.ibm.com/cloud">What is IBM Cloud</a></li>
    <li><a href="https://www.ibm.com/cloud/get-started">Get started with IBM Cloud</a></li>
-   <li><a href="https://www.ibm.com/cloud/sap/certified-infrastructure">SAP wokloads on IBM Cloud</a></li>
+   <li><a href="https://www.ibm.com/cloud/sap/certified-infrastructure">SAP workloads on IBM Cloud</a></li>
 
    You might also find the following SAP documentation useful:     
    <li><a href="https://www.sap.com/products/hana/implementation/resources.html">SAP HANA Installation Guide</a>; download the installation guide</li>
